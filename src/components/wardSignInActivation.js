@@ -19,6 +19,7 @@ const WardSignInActivation = (props) =>{
         </div>
         {children}
         <div className="ward_input_wrap">
+         <div class="input_row">
             <div className="input_wrap">
                 <label>Ward Username</label>
                 <Input
@@ -36,7 +37,6 @@ const WardSignInActivation = (props) =>{
             </div>
             <div className="input_wrap">
                 <label>Password</label>
-                <span>Forget Password?</span>
                 <Input
                     type={type}
                     className="form-control"
@@ -50,6 +50,8 @@ const WardSignInActivation = (props) =>{
                     onKeyPress={onKeyPress}
                 />
             </div>
+            </div>
+            <span>Forget Password?</span>
         </div>
         <div className="ward_btn_wrap">
          <button class="mnt_btn sign_btn_wrd" onClick={onClick}>{buttonLabel}</button>
