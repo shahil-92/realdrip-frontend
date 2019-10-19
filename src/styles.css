@@ -8,7 +8,11 @@ h1,h2,h3,h4,h5,h6{
 }
 ul,li{
   margin: 0px;
+  cursor: pointer;
   padding: 0px;
+}
+a{
+  cursor: pointer;
 }
 .main_wrapper{
   background: url(/static/media/Pattern.942d95d5.png) 100% 100%;
@@ -161,7 +165,6 @@ ul,li{
     border-right: 1px solid #bdbcbc;
 }
 .left_dashboard {
-  width: 9%;
     background: #fff;
     /* float: left; */
     border-right: 1px solid #bdbcbc;
@@ -172,7 +175,7 @@ ul,li{
 }
 .right_dashboard{
   display: flex;
-  width: 85%;
+  width: 96%;
   background: #fff;
   flex-direction: column;
 }
@@ -214,7 +217,7 @@ ul,li{
   top: 22px;
 }
 .mid-section-dshbrd {
-  background: #e1ecef;
+  background: #e1ecef4f;
   float: left;
   height: 100%;
   width: 100%;
@@ -521,7 +524,7 @@ ul,li{
   margin: 13px 0 -6px 0px;
   border-radius: 11px;
   /* z-index: 11; */
-  box-shadow: 0 0 4px 0px;
+  box-shadow: 0 0 1px 0px lightgrey;
 }
 .devide_inuse_txt {
   text-align: center;
@@ -579,4 +582,7 @@ ul,li{
 }
 .second_menu_wrap ul li {
   padding: 15px;
+}
+.device_inuse.see_all_wrap {
+  justify-content: center;
 }
