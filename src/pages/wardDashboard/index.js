@@ -61,6 +61,7 @@ export class WardDashBoard extends React.Component {
                   <div className="left-mid-dash">
                     <h2>Dashboard</h2>
                     <h4 class="sumry_head">Summary</h4>
+                  <div className="wrap_left_section">
                     <div className="dash_ward_oprtn_wrap">
                       <div className="urgnt_oprtn_wrap">
                         <div className="urgnt_row">
@@ -71,8 +72,10 @@ export class WardDashBoard extends React.Component {
                           <span className="cirlcle_dot"></span>
                           <span className="number_txt_white">1</span>
                         </div>
-                        <h5>Operation</h5>
-                        <span>is almost Complete</span>
+                        <div align="center">
+                          <h5>Operation</h5>
+                          <span>is almost Complete</span>
+                        </div>
                       </div>
                       <div className="infusn_nrse_wrap">
                         <div className="infusn_wrap">
@@ -96,7 +99,7 @@ export class WardDashBoard extends React.Component {
                     <div className="device_in_use_wrapper">
                       <div className="device_inuse">
                         <span class="urgnt_txt">02</span>
-                        <span className="drip_img_wrap"><img src={require('../../assets/Images/drip.png')} /></span>
+                        <span className="drip_img_wrap"><img class="device_inuse_img" src={require('../../assets/Images/drip.png')} /></span>
                       </div>
                       <div className="device_inuse">
                         <span class="devide_inuse_txt">Devide in use</span>
@@ -120,7 +123,7 @@ export class WardDashBoard extends React.Component {
                       </div>
                       <div className="device_inuse see_all_wrap"><span class="see_all_txt">see all</span></div>
                     </div>
-                  
+                    </div>
                   </div>
                   <div className="right-mid-dash">
                     <div className="right-wrap-heading"> 
