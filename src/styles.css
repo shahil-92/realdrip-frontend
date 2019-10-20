@@ -775,9 +775,10 @@ a{
 
 .header_left_dash {
   position: relative;
-  right: 32px;
-  top: 14px;
-  width: 36%;
+  left: 16px;
+  top: 4px;
+  width: 48%;
+  font-size: 1.23em;
 }
 .right_dashboard{
   display: flex;
@@ -787,7 +788,15 @@ a{
 }
 .header_right_dash img {
   width: 14%;
-  padding: 6px 7px 0px 15px;
+  padding: 6px 1px 0px 15px;
+}
+.header_dash {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  border-bottom: 1px solid #bdbcbc;
+  position: relative;
+  flex-direction: column;
 }
 
 
