@@ -608,7 +608,7 @@ a{
 
 @media only screen and (max-width: 955px) {
   .inner_dash {
-    padding: 15px 57px;
+    padding: 15px 5px;
     height: 100%;
     width: 100%;
     display: flex;
@@ -773,6 +773,22 @@ a{
   overflow: scroll;
 }
 
+.header_left_dash {
+  position: relative;
+  right: 32px;
+  top: 14px;
+  width: 36%;
+}
+.right_dashboard{
+  display: flex;
+  width: 86%;
+  background: #fff;
+  flex-direction: column;
+}
+.header_right_dash img {
+  width: 14%;
+  padding: 6px 7px 0px 15px;
+}
 
 }
 

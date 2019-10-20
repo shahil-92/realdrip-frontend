@@ -139,7 +139,6 @@ export class WardDashBoard extends React.Component {
                           <li>Nurse</li>
                           <li>Patient Case</li>
                         </ul>
-                       
                         <ul className="list_heading_ul ul_contnt active_dsh_list">    
                           <li>
                             <div className="bld_prcnt">89%</div>
