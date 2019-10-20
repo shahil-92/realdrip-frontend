@@ -221,6 +221,7 @@ a{
   float: left;
   height: 100%;
   width: 100%;
+  min-height: 695px;
 }
 .inner_dash {
   padding: 15px 57px;
@@ -242,7 +243,7 @@ a{
   height: 100%;
 }
 .sumry_head{
-  padding: 32px 0;
+  padding: 10px 0;
   font-size: 1.2em;
   font-weight: 600;
   letter-spacing: 1px;
@@ -593,13 +594,150 @@ a{
 }
 
 
+/* operation--- ward--- csss*/
+
+.opertn_srch_mainwrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+.operation_search_tab_bar {
+  display: flex;
+  justify-content: flex-end;
+}
+.operation_pdng {
+  padding: 0 4px;
+  position: relative;
+}
+.operation_pdng {
+  padding: 0 4px;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  display: flex;
+}
+.oprtn_urgncy_wrap.operation_pdng {
+  width: 9%;
+  display: flex;
+  justify-content: space-between;
+}
+.fa.fa-chevron-down.cstm_dwn_arrow {
+  color: #13D596;
+  font-size: 0.89em;
+}
+.search_icon {
+  position: absolute;
+  right: 26px;
+  top: 12px;
+  font-size: 0.89em
+}
+input.form-control.cstm_search {
+  border-radius: 15px;
+  background: #ecf1f2;
+  height: 39px;
+  width: 213px;
+  border: none;
+}
+.txt_urgncy {
+  font-size: 0.89em;
+}
+.oprtn_tabs_main_wrapper {
+  display: flex;
+  width: 55%;
+  justify-content: space-between;
+}
+.oprtn_active_tab {
+   padding: 5px 28px;
+    background: #ffff;
+    margin-bottom: 17px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    height: 34px;
+    font-weight: 600
+}
+.oprtn_history_tab{
+    padding: 5px 28px;
+    background: none;
+    margin-bottom: 17px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    height: 34px;
+    opacity: 0.6;
+    font-weight: 600;
+    margin-left: 10px;
+}
+.dash_active_wrap.oprtn_scroll_list {
+  max-height: 600px;
+  overflow-y: scroll;
+  border-radius: 12px;
+}
+
+/* device ward dashboard css----*/
+.dash_ward_device_wrap {
+  display: flex;
+  justify-content: space-evenly;
+  width: 68%;
+  flex-direction: column;
+}
+.infusn_device_wrap {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 12px;
+  justify-content: space-between;
+}
+.infusn_wrap.green_device {
+  background: #13D596;
+  color: #fff;
+}
+
+.device_infusn h5 {
+  text-align: left !important;
+}
+.right-wrap-heading.devics_lst_clmn {
+  padding: 18px 0;
+}
+.add_new_device_wrap {
+  display: flex;
+  justify-content: flex-end;
+}
+.add_device_btn {
+  border: 1px solid lightgray;
+  padding: 5px 19px;
+  margin: 10px;
+  border-radius: 15px;
+  font-size: 0.92em;
+  font-weight: 600;
+}
+.add_new_device_wrap {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px 0px;
+}
+ul.list_heading_ul.device_ul {
+  /* display: flex; */
+  /* justify-content: space-evenly; */
+  /* align-items: center; */
+  padding: 22px 3px 13px 24px;
+  text-align: center;
+  border-bottom: 1px solid lightgray;
+}
+.devic_txt {
+  font-size: 1.45em;
+}
+
+/*----nurse ward active css--*/
 
 
-
-
-
-
-
+.infusn_wrap.device_infusn.green_device.nurse_active_wrd {
+  margin-bottom: 14px;
+}
+ul.list_heading_ul.nurse_heding_ul {
+  padding: 17px 0;
+  border-bottom: 1px solid lightgray;
+}
+.fst_nurs_li {
+    width: 18%;
+    text-align: center;
+}
 
 
 /*------media ----query---dashbpard---- max-width 955 */
@@ -684,6 +822,15 @@ a{
   right: 0;
   position: relative;
 }
+
+
+/*ward-opertn--responsive--csss --*/
+
+.operation_search_tab_bar {
+  display: flex;
+  justify-content: flex-start;
+}
+
 }
 
 @media only screen and (max-width: 720px) {
@@ -799,6 +946,12 @@ a{
   flex-direction: column;
 }
 
+.dash_ward_device_wrap {
+  display: flex;
+  justify-content: space-evenly;
+  width: 98%;
+  flex-direction: column;
+}
 
 }
 

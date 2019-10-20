@@ -6,6 +6,9 @@ import Home from '../pages/Home';
 import WardSignIn from '../pages/wardSignin'
 import WardActivation from '../pages/wardActivation'
 import WardDashBoard from '../pages/wardDashboard'
+import WardOperation from '../pages/wardOperation'
+import WardDevice from '../pages/wardDevice'
+import WardNurse from '../pages/wardNurse'
 
 export default (props) => (
 	<Router>
@@ -15,6 +18,9 @@ export default (props) => (
 			<Route exact path="/ward-activation" component={props => <WardActivation {...props}/>} />
 			<Route exact path="/signup" component={props => <Signup {...props}/>} />
 			<Route exact path="/ward-dashboard" component={props => <WardDashBoard {...props}/>} />
+			<Route exact path="/ward-operation" component={props => <WardOperation {...props}/>} />
+			<Route exact path="/ward-device" component={props => <WardDevice {...props}/>} />
+			<Route exact path="/ward-nurse" component={props => <WardNurse {...props}/>} />
 			<Route exact path="/email-confirmation" component={EmailConfirmation} />
 		</Switch>
 	</Router>

@@ -1,7 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Link } from 'react-router-dom'
-export class WardDashBoard extends React.Component {
+import { Link } from 'react-router-dom';
+
+export class WardOperation extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -57,8 +58,12 @@ export class WardDashBoard extends React.Component {
                 </div>}
                 <div className="inner_dash">
                   <div className="left-mid-dash">
-                    <h2>Dashboard</h2>
+                    <h2>Operations</h2>
                     <h4 class="sumry_head">Summary</h4>
+                  <div className="oprtn_tabs_main_wrapper">
+                      <div className="oprtn_active_tab">Active</div>
+                      <div className="oprtn_history_tab">History</div>
+                  </div>
                   <div className="wrap_left_section">
                     <div className="dash_ward_oprtn_wrap">
                       <div className="urgnt_oprtn_wrap">
@@ -86,56 +91,41 @@ export class WardDashBoard extends React.Component {
                         <div className="infusn_wrap active_nurse">
                           <div className="wrpd_icon_num">
                             <span className="urgnt_txt">6</span>
-                            <span className="drip_img_wrap"><img src={require('../../assets/Images/drip.png')} /></span>
+                            {/* <span className="drip_img_wrap"></span> */}
                           </div>
                           <h5>Active Infusion</h5>
                         </div>
                       </div>
                     </div>
-                  
-                  
-                    <div className="device_in_use_wrapper">
-                      <div className="device_inuse">
-                        <span class="urgnt_txt">02</span>
-                        <span className="drip_img_wrap"><img class="device_inuse_img" src={require('../../assets/Images/drip.png')} /></span>
-                      </div>
-                      <div className="device_inuse">
-                        <span class="devide_inuse_txt">Devide in use</span>
-                        <span className="device_idle"><span className="idle_number">45</span> <span className="idle_txt">Idle</span></span>
-                      </div>
-                    </div>
-
-                    <div className="device_in_use_wrapper time_left_wrapper">
-                      <div className="device_inuse">
-                        <span class="tag_name">Tag Name</span>
-                        <span className="tag_name">Time left</span>
-                      </div>
-                      <div className="device_inuse">
-                        <span class="tag_name">B4</span>
-                        <span className="device_idle">00:12:20</span>
-                      </div>
-                      <div className="device_inuse">
-                        <span class="tag_name">B17</span>
-                        <span className="device_idle">01:40:20</span>
-                      </div>
-                      <div className="device_inuse see_all_wrap"><span class="see_all_txt">see all</span></div>
-                    </div>
                     </div>
                   </div>
                   <div className="right-mid-dash">
                     <div className="right-wrap-heading"> 
-                      <div className="infusion_wrap">
-                        <h4 class="sumry_head2">Active Infusion</h4>
-                        <span class="see_all_txt">see all</span>
+                      <div className="opertn_srch_main_wrapper">
+                        <div className="operation_search_tab_bar">
+                            <div className="oprtn_search_wrap operation_pdng">
+                                <input type="text" className="form-control cstm_search"/>
+                                <span className="search_icon"><i class="fa fa-search" aria-hidden="true"></i></span>
+                            </div>
+                            <div className="oprtn_hmbrgr_image operation_pdng">
+                             <i class="fa fa-bars"></i>
+                            </div>
+                            <div className="oprtn_urgncy_wrap operation_pdng">
+                                <span className="txt_urgncy">Urgency</span>
+                                <span className="oprtn_down_arrow"><i class="fa fa-chevron-down cstm_dwn_arrow"></i></span>
+                            </div>
+                        </div>
                       </div>
                       <div class="dash_active_wrap">
-                        <ul className="list_heading_ul">
+                      <ul className="list_heading_ul">
                           <li>Volume</li>
                           <li>Countdown</li>
                           <li>Flowerate</li>
                           <li>Nurse</li>
                           <li>Patient Case</li>
                         </ul>
+                        </div>
+                      <div class="dash_active_wrap oprtn_scroll_list">
                         <ul className="list_heading_ul ul_contnt active_dsh_list">    
                           <li>
                             <div className="bld_prcnt">89%</div>
@@ -208,57 +198,75 @@ export class WardDashBoard extends React.Component {
                             <div className="infusn_disease_name">Malaria</div>
                           </li>
                         </ul>
-                      </div>
-                    
-                    
-                      <div className="infusion_wrap bottom">
-                        <h4 class="sumry_head2">Active Infusion</h4>
-                        <span class="see_all_txt">see all</span>
-                      </div>
-                      <div className="active_dsh_list">
-                      <ul className="list_heading_ul ul_contnt active_dsh_list bottom">    
+                        <ul className="list_heading_ul ul_contnt">    
                           <li>
-                            <div className="user_img_nme_wrap">
-                              <img class="user_img" src={require('../../assets/Images/user.png')}></img>
-                              <span>Frank Joseph</span>
-                            </div>    
+                            <div className="bld_prcnt">89%</div>
+                            <div className="wrapper_progress_bar"><div className="inner_progress_bar"></div></div>
+                            <div className="bld_txt">Blood</div>
                           </li>
                           <li>
-                            <div className="time_in_second bld_txt time_btm">Frank Joseph</div>
+                            <div className="time_in_second bld_txt">00:13:00</div>
+                            <div className="time_only">12:23pm</div>
                           </li>
                           <li>
-                            <div className="time_only time_btm">12:23pm</div>
-                          </li>
-                      </ul>
-                      
-                      <ul className="list_heading_ul ul_contnt active_dsh_list bottom">    
-                          <li>
-                            <div className="user_img_nme_wrap">
-                              <img class="user_img" src={require('../../assets/Images/user.png')}></img>
-                              <span>Frank Joseph</span>
-                            </div>    
+                            <div className="speed_hr"> <span> 28 </span> <img class="speed_up" src={require('../../assets/Images/dummy_logo.jpg')}></img></div>
+                            <div className="speed_unit bld_txt">ml/hr</div>
                           </li>
                           <li>
-                            <div className="time_in_second bld_txt time_btm">- - - - -</div>
+                            <div className="infusn_usr_img"><img src={require('../../assets/Images/user.png')}></img></div>
+                            <div className="infusn_usr_name">Titlayo Olaide</div>
                           </li>
                           <li>
-                            <div className="time_only time_btm">12:23pm</div>
+                            <div className="infusn_usr_fname">Frank</div>
+                            <div className="infusn_disease_name">Malaria</div>
                           </li>
-                      </ul>
-                      <ul className="list_heading_ul ul_contnt active_dsh_list bottom">    
+                        </ul>
+                        <ul className="list_heading_ul ul_contnt">    
                           <li>
-                            <div className="user_img_nme_wrap">
-                              <img class="user_img" src={require('../../assets/Images/user.png')}></img>
-                              <span>Frank Joseph</span>
-                            </div>    
-                          </li>
-                          <li>
-                            <div className="time_in_second bld_txt time_btm">Frank Joseph</div>
+                            <div className="bld_prcnt">89%</div>
+                            <div className="wrapper_progress_bar"><div className="inner_progress_bar"></div></div>
+                            <div className="bld_txt">Blood</div>
                           </li>
                           <li>
-                            <div className="time_only time_btm">12:23pm</div>
+                            <div className="time_in_second bld_txt">00:13:00</div>
+                            <div className="time_only">12:23pm</div>
                           </li>
-                      </ul>
+                          <li>
+                            <div className="speed_hr"> <span> 28 </span> <img class="speed_up" src={require('../../assets/Images/dummy_logo.jpg')}></img></div>
+                            <div className="speed_unit bld_txt">ml/hr</div>
+                          </li>
+                          <li>
+                            <div className="infusn_usr_img"><img src={require('../../assets/Images/user.png')}></img></div>
+                            <div className="infusn_usr_name">Titlayo Olaide</div>
+                          </li>
+                          <li>
+                            <div className="infusn_usr_fname">Frank</div>
+                            <div className="infusn_disease_name">Malaria</div>
+                          </li>
+                        </ul>
+                        <ul className="list_heading_ul ul_contnt">    
+                          <li>
+                            <div className="bld_prcnt">89%</div>
+                            <div className="wrapper_progress_bar"><div className="inner_progress_bar"></div></div>
+                            <div className="bld_txt">Blood</div>
+                          </li>
+                          <li>
+                            <div className="time_in_second bld_txt">00:13:00</div>
+                            <div className="time_only">12:23pm</div>
+                          </li>
+                          <li>
+                            <div className="speed_hr"> <span> 28 </span> <img class="speed_up" src={require('../../assets/Images/dummy_logo.jpg')}></img></div>
+                            <div className="speed_unit bld_txt">ml/hr</div>
+                          </li>
+                          <li>
+                            <div className="infusn_usr_img"><img src={require('../../assets/Images/user.png')}></img></div>
+                            <div className="infusn_usr_name">Titlayo Olaide</div>
+                          </li>
+                          <li>
+                            <div className="infusn_usr_fname">Frank</div>
+                            <div className="infusn_disease_name">Malaria</div>
+                          </li>
+                        </ul>
                       </div>
                     </div>
                   </div>
@@ -277,4 +285,4 @@ const mapStateToProps = (state) => ({
   addingUserError: state.user.createAdmin.addingUserError,
 });
 
-export default connect(mapStateToProps)(WardDashBoard);
+export default connect(mapStateToProps)(WardOperation);
