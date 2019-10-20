@@ -107,7 +107,6 @@ export class WardDashBoard extends React.Component {
                       </div>
                     </div>
 
-                    
                     <div className="device_in_use_wrapper time_left_wrapper">
                       <div className="device_inuse">
                         <span class="tag_name">Tag Name</span>
