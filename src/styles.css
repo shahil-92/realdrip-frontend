@@ -962,6 +962,79 @@ ul.list_heading_ul.nurse_heding_ul {
   justify-content: flex-start;
   margin: 10px 0px;
 }
+.heading_wrapper h2 {
+  font-weight: 600;
+  font-size: 2.02em;
+}
 
+/*----ward-sign-in ----dashboard*----resposnsive */
+
+.main_wrapper.ward_main_wrap {
+  display: flex;
+  flex-direction: column;
+}
+.ward_sign_wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  position: relative;
+}
+.ward_heading_wrap {
+  position: relative;
+  top: 33px;
+  left: 0;
+  padding: 20px 35px;
+}
+
+.ward_input_wrap {
+  display: flex;
+  padding: 31px;
+  position: relative;
+  justify-content: start;
+  left: 0;
+  width: 100%;
+  margin: 0;
+}
+.ward_input_wrap span {
+  position: absolute;
+  color: #979292;
+  letter-spacing: 1px;
+  font-weight: 600;
+  bottom: 21px;
+  right: 88px;
+  /* width: 50%; */
+}
+.ward_btn_wrap {
+  position: relative;
+  margin: 30px 0;
+  left: 0px;
+  bottom: 42px;
+}
+.ward_left_banner {
+  background: url(/static/media/ward_sign_in.d939ec68.png) 100% 100%;
+  height: 100%;
+  width: 100%;
+}
+.input_wrap {
+  padding: 0px 0px 15px 12px;
+  width: 100%;
+}
+.input_row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 78%;
+  margin: 0 auto;
+}
+.ward_bottom {
+  position: absolute;
+  bottom: 15px;
+  left: 17px;
+  font-size: 1.0em;
+  font-weight: 700;
+}
 }
 
