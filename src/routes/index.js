@@ -9,6 +9,7 @@ import WardDashBoard from '../pages/wardDashboard'
 import WardOperation from '../pages/wardOperation'
 import WardDevice from '../pages/wardDevice'
 import WardNurse from '../pages/wardNurse'
+import OperationDetail from '../pages/operationDetail'
 
 export default (props) => (
 	<Router>
@@ -22,6 +23,7 @@ export default (props) => (
 			<Route exact path="/ward-device" component={props => <WardDevice {...props}/>} />
 			<Route exact path="/ward-nurse" component={props => <WardNurse {...props}/>} />
 			<Route exact path="/email-confirmation" component={EmailConfirmation} />
+			<Route exact path="/operation-detail" component={props => <OperationDetail {...props}/>}/>
 		</Switch>
 	</Router>
 );

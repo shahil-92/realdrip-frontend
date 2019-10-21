@@ -146,12 +146,13 @@ a{
   letter-spacing:1px;
 }
 .input_wrap span{
-  position: absolute;
+  position: relative;
   font-weight: 600;
-  right: 192px;
+  right: 0px;
   color: #979292;
   letter-spacing: 1px;
-  bottom: 0;
+  top: 6px;
+  margin: 0 auto;
 }
 .input_row {
   display: flex;
@@ -176,6 +177,7 @@ a{
 .right_dashboard{
   display: flex;
   width: 96%;
+  height: 100%;
   background: #fff;
   flex-direction: column;
 }
@@ -743,7 +745,100 @@ ul.list_heading_ul.nurse_heding_ul {
     text-align: center;
 }
 
-
+/*------------operation----deatil------------css*/
+.oprtn_dlt_wrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 62px;
+}
+.nurc_img_wrap img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.nurc_detail_wrap {
+  display: flex;
+  flex-direction: column;
+}
+.patnt_list_wrap {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 25px;
+}
+.patnt_ul_list {
+  list-style: none;
+  display: flex;
+  width: 60%;
+  justify-content: space-evenly;
+}
+.patnt_ul_list li {
+  display: flex;
+  border-right: 1px solid lightgray;
+  width: 21%;
+  flex-direction: row;
+}
+.nurc_img_wrap {
+  width: 30%;
+}
+.nurc_post {
+  font-size: 1.08em;
+  opacity: 0.7;
+  font-weight: 500;
+}
+.whitebg {
+  background: #fff;
+  border-radius: 11px;
+  margin: 10px 0;
+  padding: 15px;
+}
+.oprtn_instrtn_wrap h5 {
+  font-weight: 600;
+  padding: 5px 0;
+  opacity: 0.7;
+}
+.oprtn_instrtn_wrap div {
+  font-weight: 600;
+  padding: 5px 0;
+  opacity: 0.5;
+  font-size: 0.98em;
+}
+.dash_active_wrap2 {
+  display: flex;
+  justify-content: space-evenly;
+}
+.oprtn_device_control.whitebg {
+  width: 30%;
+  height: 100px;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  padding: 14px;
+}
+.cstm_icon {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: #13d59663;
+}
+.cstm_icon .fa {
+  padding: 14px 16px;
+  color: #13D596;
+}
+.dash_ward_device_wrap.oprtn_wrap {
+  width: 75%;
+  margin: 12px 0;
+}
+.infusn_wrap.device_infusn.oprtn_dtl_wrd {
+  margin: 14px 0;
+}
+.prcnt_opt_detail {
+  font-size: 0.80em;
+  font-weight: 600;
+  padding: 10px 1px;
+}
+.prcnt_op_txt {
+  padding: 0px !important;
+}
 /*------media ----query---dashbpard---- max-width 955 */
 
 
@@ -934,6 +1029,7 @@ ul.list_heading_ul.nurse_heding_ul {
 .right_dashboard{
   display: flex;
   width: 86%;
+  height: 100%;
   background: #fff;
   flex-direction: column;
 }

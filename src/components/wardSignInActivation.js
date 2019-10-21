@@ -49,9 +49,10 @@ const WardSignInActivation = (props) =>{
                     disabled={disabled}
                     onKeyPress={onKeyPress}
                 />
+                <span>Forget Password?</span>
             </div>
             </div>
-            <span>Forget Password?</span>
+            
         </div>
         <div className="ward_btn_wrap">
          <button class="mnt_btn sign_btn_wrd" onClick={onClick}>{buttonLabel}</button>
