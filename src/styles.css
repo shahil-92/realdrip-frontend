@@ -243,7 +243,7 @@ a{
   height: 100%;
 }
 .sumry_head{
-  padding: 10px 0;
+  padding: 26px 0;
   font-size: 1.2em;
   font-weight: 600;
   letter-spacing: 1px;
@@ -256,6 +256,10 @@ a{
   /* position: absolute;
   left: 0;
   bottom: -7px; */
+}
+.inner_dash h2 {
+  font-size: 2.25em;
+  font-weight: 600;
 }
 .infusion_wrap {
   display: flex;
@@ -951,6 +955,12 @@ ul.list_heading_ul.nurse_heding_ul {
   justify-content: space-evenly;
   width: 98%;
   flex-direction: column;
+}
+
+.add_new_device_wrap {
+  display: flex;
+  justify-content: flex-start;
+  margin: 10px 0px;
 }
 
 }

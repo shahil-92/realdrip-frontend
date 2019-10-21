@@ -21,6 +21,9 @@ export class WardSignIn extends React.Component {
   handleClick = () =>{
      this.props.history.push('/ward-activation')
   }
+  handleWardSignIn = () =>{
+    this.props.history.push('/ward-dashboard')
+ }
 
   render() {
     return (
@@ -30,7 +33,7 @@ export class WardSignIn extends React.Component {
             buttonLabel="Sign In"
             redirectLink="Activate"
             onClickAnchr={this.handleClick}
-            // onClick
+            onClick={this.handleWardSignIn}
             // type
             // holder
             // onChange
