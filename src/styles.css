@@ -839,6 +839,16 @@ ul.list_heading_ul.nurse_heding_ul {
 .prcnt_op_txt {
   padding: 0px !important;
 }
+
+
+/*---------======connect -inuse=page css====*/
+.b2_txt {
+  font-size: 2.2em;
+  font-weight: 600;
+}
+
+
+
 /*------media ----query---dashbpard---- max-width 955 */
 
 
@@ -1132,6 +1142,25 @@ ul.list_heading_ul.nurse_heding_ul {
   margin: 0 auto;
   font-size: 1.0em;
   font-weight: 700;
+}
+.oprtn_dlt_wrap {
+  display: flex;
+  justify-content: flex-start;
+  padding: 8px 15px;
+  flex-direction: column;
+}
+.patnt_ul_list {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  min-width: 600px;
+  justify-content: space-evenly;
+}
+.patnt_list_wrap {
+  overflow: scroll;
+}
+.add_device_btn {
+  margin: 0px;
 }
 }
 

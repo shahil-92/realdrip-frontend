@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom'
 
 
-export class OperationDetail extends React.Component {
+export class ConnectedInuse extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -58,53 +58,17 @@ export class OperationDetail extends React.Component {
                   </ul>
                 </div>}
             
-                <div className="oprtn_dlt_wrap">
-                   <div className="patnt_name">
-                      <h2>Nurses</h2>
-                   </div>
-                   
-                    <div className="add_new_device_wrap">
-                        <div className="add_device_btn">Delete Operation</div>
-                    </div>
-                </div>
-                <div className="patnt_list_wrap">
-                        <ul className="patnt_ul_list">
-                            <li>
-                                <div className="nurc_img_wrap">
-                                  <img  src={require('../../assets/Images/user.png')}/>
-                                </div>
-                                <div className="nurc_detail_wrap">
-                                    <span className="nurc_post">Nurse</span>
-                                    <span className="nurc_name">Tatilayo Olaide</span>
-                                </div>
-                            </li>
-                            <li>
-                                
-                                <div className="nurc_detail_wrap">
-                                    <span className="nurc_post">Nurse</span>
-                                    <span className="nurc_name">Tatilayo Olaide</span>
-                                </div>
-                            </li>
-                            <li>
-                                
-                                <div className="nurc_detail_wrap">
-                                    <span className="nurc_post">Nurse</span>
-                                    <span className="nurc_name">Tatilayo Olaide</span>
-                                </div>
-                            </li>
-                            <li>
-                                
-                                <div className="nurc_detail_wrap">
-                                    <span className="nurc_post">Nurse</span>
-                                    <span className="nurc_name">Tatilayo Olaide</span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+         
                
                 <div className="inner_dash">
                   <div className="left-mid-dash">
-                  
+                 
+                   <div className="wrap_ontxt">
+                      <span className="b2_txt">B2</span>
+                      <span className="wrap_on"><span className="on_txt">On</span> <span className="round_green_circle"></span></span>
+                   </div>
+                
+                 
                   <div className="wrap_left_section">
                     <div className="dash_ward_device_wrap oprtn_wrap">
                     
@@ -183,4 +147,4 @@ const mapStateToProps = (state) => ({
   addingUserError: state.user.createAdmin.addingUserError,
 });
 
-export default connect(mapStateToProps)(OperationDetail);
+export default connect(mapStateToProps)(ConnectedInuse);
