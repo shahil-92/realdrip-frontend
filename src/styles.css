@@ -843,12 +843,98 @@ ul.list_heading_ul.nurse_heding_ul {
 
 /*---------======connect -inuse=page css====*/
 .b2_txt {
-  font-size: 2.2em;
+  font-size: 1.7em;
   font-weight: 600;
 }
+.on_txt {
+  padding: 2px 12px;
+}
+.wrap_on_txt {
+  background: #13d59663;
+  position: relative;
+  display: flex;
+  width: 59%;
+  justify-content: space-between;
+  border-radius: 6px;
+}
+.wrap_ontxt {
+  display: flex;
+  justify-content: space-between;
+  width: 29%;
+  align-items: center;
+}
+.round_green_circle {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: #13D596;
+  position: absolute;
+  right: 5px;
+  top: 4px;
+  box-shadow: 1px 0px 4px 0px green;
+}
+.wrap_label_main_wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 52%;
+  margin-top: 20px;
+}
+.label_wrapper {
+  width: 82%;
+  border-right: 1px solid lightgray;
 
-
-
+}
+.label_wrapper.pdng_right_label {
+  padding: 0 13px;
+}
+.small_txt {
+  font-size: 1.0em;
+  font-weight: 600;
+}
+.edit_label_wrap {
+  padding: 6px 37px;
+    background: white;
+    margin: 17px 0;
+    width: 36%;
+    border-radius: 11px;
+    font-size: 12px;
+    color: #dce2e4f0;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.status_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.status_icon_txt_wrap {
+  background: #ffff;
+  width: 48%;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  padding: 11px;
+  border-radius: 12px;
+}
+.status_img_wrap img {
+  width: 36%;
+}
+.dash_ward_device_wrap.oprtn_wrap.connect_left_top_margin {
+  margin-top: 50px;
+}
+.history_insuse_tabs_wrap {
+  display: flex;
+  width: 16%;
+  justify-content: space-between;
+  font-size: 1.23em;
+}
+.con_text.active {
+  font-weight: 600;
+}
+.infusion_heading {
+  font-size: 1.39em;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
 /*------media ----query---dashbpard---- max-width 955 */
 
 
