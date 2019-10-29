@@ -122,11 +122,29 @@ export class ConnectedInuse extends React.Component {
                     <div className="right-wrap-heading devics_lst_clmn">  
                       <h3>Doctor Instruction</h3>
                       <div class="dash_active_wrap whitebg">
-                         <div className="oprtn_instrtn_wrap">
-                             <h5>Instruction</h5>
-                             <div>1. give patient 360ml of blood</div>
-                             <div>2. let him have a 30 minute of sleep</div>
-                         </div>
+                      <ul className="list_heading_ul ul_contnt active_dsh_list">    
+                          <li>
+                            <div className="bld_prcnt">89%</div>
+                            <div className="wrapper_progress_bar"><div className="inner_progress_bar"></div></div>
+                            <div className="bld_txt">Blood</div>
+                          </li>
+                          <li>
+                            <div className="time_in_second bld_txt">00:13:00</div>
+                            <div className="time_only">12:23pm</div>
+                          </li>
+                          <li>
+                            <div className="speed_hr"> <span> 28 </span> <img class="speed_up" src={require('../../assets/Images/dummy_logo.jpg')}></img></div>
+                            <div className="speed_unit bld_txt">ml/hr</div>
+                          </li>
+                          <li>
+                            <div className="infusn_usr_fname">Frank</div>
+                            <div className="infusn_disease_name">Malaria</div>
+                          </li>
+                          <li>
+                            <div className="infusn_usr_img"><img src={require('../../assets/Images/user.png')}></img></div>
+                            <div className="infusn_usr_name">Titlayo Olaide</div>
+                          </li>
+                        </ul>
                       </div>
                       <h3>Device Control</h3>
                       <div class="dash_active_wrap2">
