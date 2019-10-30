@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom'
 
 
-export class ConnectedInuse extends React.Component {
+export class NurseDetail extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -63,18 +63,17 @@ export class ConnectedInuse extends React.Component {
                
                 <div className="inner_dash">
                   <div className="left-mid-dash">
-                   <div className="wrap_ontxt">
-                      <div className="wrap_b2_txt"><span className="b2_txt">B2</span></div>
-                      <div className="wrap_on_txt"><div className="on_txt">On</div> <div className="round_green_circle"></div></div>
-                   </div>
-                   <div className="wrap_label_main_wrap">
-                      <div className="label_wrapper"><div className="Label_b2_name">Label</div><div className="small_txt">B2</div></div>
-                      <div className="label_wrapper pdng_right_label"><div className="Label_b2_name">ID</div><div className="small_txt">02113322</div></div>
-                   </div>
-
-
-                  <div className="edit_label_wrap">Edit Label</div>
-                 
+                   <div className="nurse_profile_detail">
+                    <div className="wrap_img_profile">
+                        <div className="wrap_b2_txt"><img src={require('../../assets/Images/user.png')}></img></div>
+                        <div className="nurs_name">Titilayo ayoade</div>
+                    </div>
+                    <div className="wrap_label_main_wrap cstm_nurse_detail">
+                        <div className="label_wrapper">Hospital no.</div>
+                        <div className="label_wrapper pdng_right_label">LJK/B2013/011</div>
+                    </div>
+                    <div className="edit_label_wrap cstm_nurse_detail">Edit Label</div>
+                  </div>
                 
                   <div className="wrap_left_section">
                     <div className="dash_ward_device_wrap oprtn_wrap connect_left_top_margin">
@@ -161,7 +160,7 @@ export class ConnectedInuse extends React.Component {
                           </li>
                         </ul>
                       </div>
-                      <h3 className="small_txt_h3">Device Control</h3>
+                      <h3 className="small_txt_h3">Awating actions</h3>
                       <div class="dash_active_wrap2">
                          <div className="oprtn_device_control whitebg">
                              <div>Pause</div>
@@ -170,10 +169,6 @@ export class ConnectedInuse extends React.Component {
                          <div className="oprtn_device_control whitebg">
                              <div>Pause</div>
                              <div className="cstm_icon"><i class="fa fa-repeat" aria-hidden="true"></i></div>
-                         </div>
-                         <div className="oprtn_device_control whitebg">
-                             <div>Pause</div>
-                             <div className="cstm_icon"><i class="fa fa-play" aria-hidden="true"></i></div>
                          </div>
                          <div className="oprtn_device_control whitebg">
                              <div>Pause</div>
@@ -319,4 +314,4 @@ const mapStateToProps = (state) => ({
   addingUserError: state.user.createAdmin.addingUserError,
 });
 
-export default connect(mapStateToProps)(ConnectedInuse);
+export default connect(mapStateToProps)(NurseDetail);

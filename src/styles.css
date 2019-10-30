@@ -313,7 +313,7 @@ a{
   width: 100%;
   height: 7px;
   background: pink;
-  margin: 8px 0;
+  margin: 8px auto;
   border-radius: 15px;
 }
 .ul_contnt_wrapper {
@@ -804,7 +804,7 @@ ul.list_heading_ul.nurse_heding_ul {
 }
 .dash_active_wrap2 {
   display: flex;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 .oprtn_device_control.whitebg {
   width: 30%;
@@ -813,6 +813,7 @@ ul.list_heading_ul.nurse_heding_ul {
   align-items: center;
   display: flex;
   padding: 14px;
+  margin: 7px;
 }
 .cstm_icon {
   height: 40px;
@@ -882,7 +883,9 @@ ul.list_heading_ul.nurse_heding_ul {
 .label_wrapper {
   width: 82%;
   border-right: 1px solid lightgray;
-
+}
+ul.list_heading_ul.ul_contnt.connected_ul li div {
+  font-size: 0.89em;
 }
 .label_wrapper.pdng_right_label {
   padding: 0 13px;
@@ -934,6 +937,81 @@ ul.list_heading_ul.nurse_heding_ul {
   font-size: 1.39em;
   font-weight: 600;
   margin-bottom: 24px;
+}
+h3.small_txt_h3 {
+  font-size: 1.2em;
+  opacity: 0.7;
+}
+.list_heading_ul.ul_contnt.connected_ul {
+    margin: 0px !important;
+    padding: 0px !important;
+    border: 0px;
+}
+.conctd_history_ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+ul.conctd_history_ul li {
+  flex: 1;
+}
+.dash_active_wrap_history {
+  padding: 10px 0px;
+}
+.history_table_ul.connected_ul li {
+  flex: 1;
+}
+.history_table_ul.connected_ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  margin: 15px 0px;
+}
+.history_table_ul.connected_ul li div {
+  padding: 5px 0;
+}
+.histry_table_wrap {
+  margin-top: 20px;
+}
+.light_txt_hstry {
+  font-size: 0.98em;
+  opacity: 0.6;
+  font-weight: 600;
+}
+.bld_txt_hstry {
+  font-size: 0.99em;
+  font-weight: 600;
+}
+.wrapper_progress_bar.conted-inuse-bar {
+  width: 50%;
+}
+.wrap_b2_txt {
+  width: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrap_b2_txt img {
+  width: 100%;
+}
+.nurse_profile_detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+.wrap_img_profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.wrap_label_main_wrap.cstm_nurse_detail {
+  width: 64%;
+}
+.edit_label_wrap.cstm_nurse_detail {
+  width: 52%;
 }
 /*------media ----query---dashbpard---- max-width 955 */
 
@@ -1158,7 +1236,9 @@ ul.list_heading_ul.nurse_heding_ul {
   font-weight: 600;
   font-size: 2.02em;
 }
-
+.wrapper_progress_bar.conted-inuse-bar {
+  width: 50%;
+}
 /*----ward-sign-in ----dashboard*----resposnsive */
 
 .main_wrapper.ward_main_wrap {
@@ -1248,5 +1328,26 @@ ul.list_heading_ul.nurse_heding_ul {
 .add_device_btn {
   margin: 0px;
 }
+.history_table_ul.connected_ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  margin: 15px 0px;
+  overflow: scroll;
+  min-width: 500px;
+}
+.dash_active_wrap_history {
+  padding: 10px 0px;
+  overflow: auto;
+}
+.conctd_history_ul {
+  min-width: 500px;
+  /* overflow: scroll; */
+}
+.histry_table_wrap {
+  overflow: auto;
+  /* width: 500px; */
+}
+
 }
 
