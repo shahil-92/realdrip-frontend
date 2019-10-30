@@ -29,7 +29,7 @@ export class NurseDetail extends React.Component {
                    <Link to="/ward-operation"><li><img src={require('../../assets/Images/menu4.png')} /></li></Link>
                    <Link to="/ward-device"><li><img src={require('../../assets/Images/menu2.png')} /></li></Link>
                    <Link to="/ward-nurse"><li><img src={require('../../assets/Images/menu5.png')} /></li></Link>
-                   <Link to=""><li><img src={require('../../assets/Images/menu3.png')} /></li></Link>
+                   <Link to="/ward-setting"><li><img src={require('../../assets/Images/menu3.png')} /></li></Link>
                  </ul>
                </div>
             </div>
@@ -294,10 +294,7 @@ export class NurseDetail extends React.Component {
                             <div className="light_txt_hstry">Frank</div>
                           </li>
                         </ul>
-
                       </div>}
-                      
-
                   </div>
                 </div>
               </div>
