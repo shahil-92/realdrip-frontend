@@ -12,7 +12,9 @@ export class WardDashBoard extends React.Component {
   handleClick = () =>{
     this.setState({showMenu : !this.state.showMenu})
   }
-
+  handleRedirectClick = () =>{
+    this.props.history.push('/operation-detail')
+ }
 
   render() {
     return (
@@ -136,7 +138,7 @@ export class WardDashBoard extends React.Component {
                           <li>Nurse</li>
                           <li>Patient Case</li>
                         </ul>
-                        <ul className="list_heading_ul ul_contnt active_dsh_list">    
+                        <ul className="list_heading_ul ul_contnt active_dsh_list" onClick={()=>this.handleRedirectClick()}>    
                           <li>
                             <div className="bld_prcnt">89%</div>
                             <div className="wrapper_progress_bar"><div className="inner_progress_bar"></div></div>

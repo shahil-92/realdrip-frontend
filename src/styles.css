@@ -694,6 +694,28 @@ input.form-control.cstm_search {
   background: #13D596;
   color: #fff;
 }
+.prcnt_op_txt {
+  opacity: 0.5;
+}
+.down_arrow_wrap{
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+  position: relative;
+  margin-bottom: -17px;
+}
+.fa.fa-caret-down.green_down {
+  color: #13D596;
+  position: relative;
+  left: -8%;
+  right: 8%;
+}
+.fa.fa-caret-down.red_down {
+  color: red;
+  position: relative;
+  right: -8%;
+  left: 8%;
+}
 
 .device_infusn h5 {
   text-align: left !important;
@@ -750,6 +772,84 @@ ul.list_heading_ul.nurse_heding_ul {
   display: flex;
   justify-content: space-between;
   padding: 8px 62px;
+}
+.prcnt_op_txt {
+  opacity: 0.4;
+}
+.vlm_txt {
+  font-size: 0.36em;
+  font-weight: 600;
+  opacity: 1 !important;
+}
+.dot-dot-line {
+  /* height: 1px; */
+  width: 61%;
+  background: #fff;
+  position: absolute;
+  left: 20%;
+  right: -20%;
+  top: 17px;
+  border: 1px solid #13D596;
+  border-style: dashed;
+}
+.thrd_progress_wrap {
+  /* width: 100%; */
+  width: 92%;
+  height: 7px;
+  background: #f2f0f0;
+  margin: 20px auto;
+  border-radius: 15px;
+}
+.device_infusn .vlm_txt_right {
+  text-align: right !important;
+  font-size: 0.333em;
+  opacity: 1;
+}
+.right-wrap-heading.devics_lst_clmn h3 {
+  font-size: 1.333em;
+  font-weight: 700;
+}
+.device_page_wrap {
+  display: flex;
+  align-items: center;
+}
+.add_device_page_btn {
+  border: 1px solid lightgray;
+  padding: 5px 17PX;
+  margin: 10px;
+  border-radius: 15px;
+  font-size: 0.82em;
+  font-weight: 600;
+  color: #13D596;
+}
+.wrapper_progress_bar.middle_bar {
+  width: 75%;
+}
+.deg {
+  position: absolute;
+  right: -7px;
+  height: 8px;
+  width: 8px;
+  background: #13D596;
+  top: 19px;
+  border-radius: 100%;
+}
+.bloodflow {
+  position: absolute;
+  font-size: 21px;
+  top: 12px;
+  left: 50%;
+  right: -50%;
+  font-weight: 600;
+}
+.wrapper_blood_flow {
+  position: relative;
+}
+.patnt_name h2 {
+  font-size: 2.0em;
+  font-weight: 700;
+  position: relative;
+  top: 12px;
 }
 .nurc_img_wrap img {
   width: 30px;
@@ -826,11 +926,12 @@ ul.list_heading_ul.nurse_heding_ul {
   color: #13D596;
 }
 .dash_ward_device_wrap.oprtn_wrap {
-  width: 75%;
+  width: 80%;
   margin: 12px 0;
 }
 .infusn_wrap.device_infusn.oprtn_dtl_wrd {
   margin: 14px 0;
+  padding: 19px 17px 19px 26px;
 }
 .prcnt_opt_detail {
   font-size: 0.80em;
