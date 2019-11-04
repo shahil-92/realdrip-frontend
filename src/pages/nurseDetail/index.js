@@ -14,7 +14,7 @@ export class NurseDetail extends React.Component {
   handleClick = (tab) =>{
     this.setState({selectedTab : tab})
   }
-
+ 
 
   render() {
     const { selectedTab } = this.state

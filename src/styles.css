@@ -1089,7 +1089,6 @@ ul.conctd_history_ul li {
 .wrap_b2_txt {
   width: 55%;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 .wrap_b2_txt img {
@@ -1497,6 +1496,9 @@ input.form-control.cstm_acnt_input {
 .histry_table_wrap {
   overflow: auto;
   /* width: 500px; */
+}
+.oprtn_device_control.whitebg {
+  width: 100%;
 }
 
 }

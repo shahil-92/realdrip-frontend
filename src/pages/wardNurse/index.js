@@ -15,6 +15,9 @@ export class WardNurse extends React.Component {
     this.setState({showMenu : !this.state.showMenu})
   }
 
+  handleRedirectClick = () =>{
+    this.props.history.push('/nurse-detail')
+ }
 
   render() {
     return (
@@ -124,7 +127,7 @@ export class WardNurse extends React.Component {
                         </ul>
                      </div>
                       <div class="dash_active_wrap oprtn_scroll_list active_dsh_list">
-                        <ul className="list_heading_ul nurse_heding_ul">
+                        <ul className="list_heading_ul nurse_heding_ul" onClick={()=>this.handleRedirectClick()}>
                           <li>
                             <div className="bld_txt">
                               <img class="user_img" src={require('../../assets/Images/user.png')}></img>

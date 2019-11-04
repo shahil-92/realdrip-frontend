@@ -13,7 +13,9 @@ export class WardDevice extends React.Component {
   handleClick = () =>{
     this.setState({showMenu : !this.state.showMenu})
   }
-
+  handleRedirectClick = () =>{
+    this.props.history.push('/connected-inuse')
+ }
 
   render() {
     return (
@@ -119,7 +121,7 @@ export class WardDevice extends React.Component {
                         </ul>
                      </div>
                       <div class="dash_active_wrap oprtn_scroll_list active_dsh_list">
-                        <ul className="list_heading_ul device_ul">    
+                        <ul className="list_heading_ul device_ul" onClick={()=>this.handleRedirectClick()}>    
                           <li>
                             <div className="bld_txt devic_txt">02:00pm</div>
                           </li>
