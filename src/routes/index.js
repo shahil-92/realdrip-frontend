@@ -13,6 +13,9 @@ import OperationDetail from '../pages/operationDetail'
 import ConnectedInuse from '../pages/connectedInuse'
 import NurseDetail from '../pages/nurseDetail'
 import WardAccountSetting from '../pages/wardAccountSetting'
+import ManagementSignIn from '../pages/managementSignIn'
+import ManagementDashboard from '../pages/managementDashboard'
+import ManagementWard from '../pages/managementWard'
 export default (props) => (
 	<Router>
 		<Switch>
@@ -29,6 +32,9 @@ export default (props) => (
 			<Route exact path="/connected-inuse" component={props => <ConnectedInuse {...props}/>}/>
 			<Route exact path="/nurse-detail" component={props => <NurseDetail {...props}/>}/>
 			<Route exact path="/ward-setting" component={props => <WardAccountSetting {...props}/>}/>
+			<Route exact path="/management-signin" component={props => <ManagementSignIn {...props}/>}/>
+			<Route exact path="/management-dashboard" component={props => <ManagementDashboard {...props}/>}/>
+			<Route exact path="/management-ward" component={props => <ManagementWard {...props}/>}/>
 		</Switch>
 	</Router>
 );

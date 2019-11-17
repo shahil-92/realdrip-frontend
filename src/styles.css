@@ -1162,6 +1162,107 @@ input.form-control.cstm_acnt_input {
   font-weight: 600;
 }
 
+
+/*-----management signup-------*/
+.wrp-mngmnt-form {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.alrdyaccnt {
+  margin: 13px 0;
+}
+
+/*------management-----dashboard------*/
+.wrap_mngmnt_sectn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.device_in_use_wrapper.mngnt_inner_wrap {
+  width: 45%;
+}
+.txt_dashboard {
+  font-size: 3.244em;
+  font-weight: 600;
+}
+.devide_inuse_txt_mgnt {
+  text-align: center;
+  font-size: 1.00em;
+  opacity: 0.7;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.idle_number_mgnt {
+  font-weight: 600;
+  font-size: 1.89em;
+}
+.idle_txt_mgnt {
+  opacity: 0.7;
+  font-size: 1.89em;
+}
+.see_all_txt_mgmnt {
+  border-radius: 28px;
+  border: 1px solid gray;
+  padding: 0px 8px;
+}
+.wrap_dash_new_wrad {
+  display: flex;
+  justify-content: space-between;
+}
+.add_new_device_wrap_mgmnt {
+  /* display: flex; */
+  /* justify-content: flex-end; */
+  margin: 10px 0px;
+  position: absolute;
+  right: 54px;
+}
+
+/*-----management---wrad----*/
+.left-mid-dash-mgmnt {
+  float: left;
+  position: relative;
+  width: 55%;
+  /* background: red; */
+  height: 100%;
+}
+.ul_contnt_mgnt {
+  padding: 7px 0;
+  display: flex;
+  /* justify-content: flex-start; */
+  /* border-radius: 12px; */
+  flex-wrap: wrap;
+}
+.ul_contnt_mgnt li{
+  width: 25%;
+}
+.opertn_srch_main_wrapper_mgnt {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 0;
+}
+.operation_search_tab_bar_mgnt{
+  display: flex;
+  justify-content: flex-start;
+}
+.right-wrap-heading_mgmnt{
+  display: flex;
+    /* justify-content: space-between; */
+    position: relative;
+    flex-direction: column;
+    padding: 14px 0px;
+}
+.mngmnt_top_heading {
+  padding: 22px 10px;
+}
+.right-mid-dash_mgnt{
+  position: relative;
+    float: left;
+    width: 45%;
+    /* background: blue; */
+    height: 100%;
+}
 /*------media ----query---dashbpard---- max-width 955 */
 
 

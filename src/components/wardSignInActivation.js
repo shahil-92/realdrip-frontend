@@ -57,9 +57,9 @@ const WardSignInActivation = (props) =>{
         <div className="ward_btn_wrap">
          <button class="mnt_btn sign_btn_wrd" onClick={onClick}>{buttonLabel}</button>
         </div>
-        <div className="ward_bottom">
-        <span>Haven't Activated your ward yet ?</span> <a onClick={onClickAnchr}>{redirectLink}</a>
-    </div>
+        {redirectLink && <div className="ward_bottom">
+          <span>Haven't Activated your ward yet ?</span> <a onClick={onClickAnchr}>{redirectLink}</a>
+        </div>}
     </div>
 </div>
   )

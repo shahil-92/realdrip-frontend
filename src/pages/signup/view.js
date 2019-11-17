@@ -9,13 +9,12 @@ const View = props => (
     <div className="app-layout-canvas">
       <div className="app-layout-container">
         <main className="app-layout-content">
-
           {/* Page Content  */}
           <div className="container-fluid">
             <div className="row">
-              <div className="col-sm-12 no-padding-x">
+              <div className="col-sm-12 no-padding-x wrp-mngmnt-form">
                 <div className="col-sm-6 no-padding-x hidden-xs">
-                  <img alt="" className="img img-responsive focus-image" src="/assets/img/photos/unsplash.jpg" />
+                  <img alt="" className="img img-responsive focus-image" src={require('../../assets/Images/ward_sign_in.png')} />
                 </div>
                 <div className="col-sm-6">
 
@@ -23,7 +22,7 @@ const View = props => (
                     <form className="form-horizontal m-t-xs">
                       <p className="login-head">Welcome to RealDrip</p>
                       <h4 className=" form-title">Management Registration</h4>
-                      <p className="form-text"> Already have a management account? <span className="login-head">Sign in</span></p>
+                      
                       <div className="col-sm-10 text-center">
                         <ErrorText text={props.submissionError} />
                         <LoadingIcon display={props.addingUserStarted} height={50} width={50} />
@@ -108,6 +107,10 @@ const View = props => (
                         <div className="col-xs-8">
                           <button className="btn form-btn" type="submit" onClick={props.register} disabled={props.addingUserStarted}>Create account</button>
                         </div>
+                      </div>
+
+                      <div className="alrdyaccnt">
+                          <p> Already have a management account? <span className="login-head">Sign in</span></p>
                       </div>
                     </form>
                   </div>
