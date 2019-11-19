@@ -673,7 +673,7 @@ input.form-control.cstm_search {
 }
 .dash_active_wrap.oprtn_scroll_list {
   max-height: 600px;
-  overflow-y: scroll;
+  overflow: auto;
   border-radius: 12px;
 }
 
@@ -1222,12 +1222,12 @@ input.form-control.cstm_acnt_input {
 .left-mid-dash-mgmnt {
   float: left;
   position: relative;
-  width: 55%;
+  width: 100%;
   /* background: red; */
   height: 100%;
 }
 .ul_contnt_mgnt {
-  padding: 7px 0;
+  padding: 28px 0;
   display: flex;
   /* justify-content: flex-start; */
   /* border-radius: 12px; */
@@ -1259,9 +1259,93 @@ input.form-control.cstm_acnt_input {
 .right-mid-dash_mgnt{
   position: relative;
     float: left;
-    width: 45%;
+    width: 100%;
     /* background: blue; */
     height: 100%;
+}
+
+.inner_dash_mgnt_left {
+  padding: 0px 57px;
+  height: 100%;
+  width: 55%;
+  float: left;
+  background: #e1ecef4f;
+
+}
+.inner_dash_mgnt_right {
+  padding: 0px 57px;
+  height: 100%;
+  width: 45%;
+  float: left;
+  background: #fff;
+}
+.img_ward_info {
+  width: 60%;
+}
+.img_heading_wrap_mgnt {
+  position: relative;
+  margin: 45px 0;
+}
+.img_ward_info {
+  width: 60%;
+  margin: 20px 0;
+}
+.ward_info_txt {
+  font-weight: 600;
+}
+.wrad_name_label_wrap {
+  display: flex;
+}
+.ward_info_ul_wrap {
+  padding: 10px 0;
+  border-bottom: 1px solid gray;
+}
+.ward_name {
+  font-size: 1.2em;
+  font-weight: 600;
+  opacity: 0.7;
+  width: 36%;
+}
+.ward_label {
+  font-size: 1.2em;
+  font-weight: 600;
+  width: 36%;
+  /* opacity: 0.7; */
+}
+.img_cntnt_wrap {
+  display: flex;
+  float: left;
+  width: 50%;
+}
+.img_info_list {
+  width: 44%;
+}
+.img_info_list_wrap {
+  display: flex;
+  align-items: center;
+}
+.wrad_img_txt {
+  display: flex;
+  width: 75%;
+  flex-direction: column;
+  padding: 14px 0;
+}
+.ward_name_img_txt {
+  font-size: 1.2em;
+  font-weight: 600;
+  opacity: 0.7;
+}
+.two_img_cntnt_wrap {
+  /* display: block; */
+  /* height: auto; */
+  /* width: 100%; */
+  display: flex;
+  border-bottom: 1px solid gray;
+}
+.mid-section-dshbrd_mgnt {
+  float: left;
+  height: 100%;
+  width: 100%;
 }
 /*------media ----query---dashbpard---- max-width 955 */
 

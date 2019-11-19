@@ -43,7 +43,7 @@ export class ManagementWard extends React.Component {
                   </div>
               </div>
               
-              <div class="mid-section-dshbrd">
+              <div class="mid-section-dshbrd_mgnt">
                 {this.state.showMenu && <div className="second_menu_wrap">
                   <ul>
                     <li>Home</li>
@@ -56,11 +56,8 @@ export class ManagementWard extends React.Component {
                     <li>Sign Out</li>
                   </ul>
                 </div>}
-                <div className="inner_dash">
-               
+                <div className="inner_dash_mgnt_left">
                   <div className="left-mid-dash-mgmnt">
-                  <div className="wrap_left_section">
-                  <div className="right-wrap-heading_mgmnt">
                   <div className="wrap_dash_new_wrad">
                     <div className="mngmnt_top_heading">
                         <h2>All Ward</h2>
@@ -117,17 +114,81 @@ export class ManagementWard extends React.Component {
                           <li>20</li>
                           <li>43</li>
                         </ul>
-
-                       
-                      
-                  
-                      
-                      </div>
-                    </div>
-                    </div>
+                      </div>      
                   </div>
+                </div>
+                <div className="inner_dash_mgnt_right">
                   <div className="right-mid-dash_mgnt">
-                    hi
+                      <div className="wrap_dash_new_wrad">
+                        <div className="img_heading_wrap_mgnt">
+                          <img className="img_ward_info" src={require('../../assets/Images/menu4.png')}/>
+                          <h4 className="ward_info_txt">Ward Info</h4>
+                        </div>
+                        <div className="add_new_device_wrap_mgmnt">
+                            <div className="add_device_btn">Add new ward </div>
+                        </div>
+                      </div>
+                      <div className="ward_info_ul_wrap">
+                          <div className="wrad_name_label_wrap">
+                            <div className="ward_name">
+                              Ward Name
+                            </div>
+                            <div className="ward_name">
+                              Ward Label
+                            </div>  
+                          </div>
+                          <div className="wrad_name_label_wrap">
+                            <div className="ward_label">
+                              Heart center
+                            </div>
+                            <div className="ward_label">
+                              Ward B
+                            </div>  
+                          </div>
+                     </div>
+                    
+                     <div className="two_img_cntnt_wrap">
+                        <div className="img_cntnt_wrap">
+                            <div className="img_info_list_wrap">
+                                <img className="img_info_list" src={require('../../assets/Images/drip.png')}/>
+                            </div>
+                            <div className="wrad_img_txt">
+                              <div className="ward_name_img_txt">
+                                Ward Name
+                              </div>
+                              <div className="ward_name_img_txt">
+                                Ward Label
+                              </div>  
+                            </div>
+                        </div>
+                        <div className="img_cntnt_wrap">
+                            <div className="img_info_list_wrap">
+                                <img className="img_info_list" src={require('../../assets/Images/drip.png')}/>
+                            </div>
+                            <div className="wrad_img_txt">
+                              <div className="ward_name_img_txt">
+                                Ward Name
+                              </div>
+                              <div className="ward_name_img_txt">
+                                Ward Label
+                              </div>  
+                            </div>
+                        </div>
+                     </div>
+                     <div className="img_cntnt_wrap">
+                        <div className="img_info_list_wrap">
+                            <img className="img_info_list" src={require('../../assets/Images/drip.png')}/>
+                        </div>
+                        <div className="wrad_img_txt">
+                          <div className="ward_name_img_txt">
+                            Ward Name
+                          </div>
+                          <div className="ward_name_img_txt">
+                            Ward Label
+                          </div>  
+                        </div>
+                     </div>
+                    
                   </div>
                 </div>
               </div>
