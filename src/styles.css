@@ -1270,7 +1270,6 @@ input.form-control.cstm_acnt_input {
   width: 55%;
   float: left;
   background: #e1ecef4f;
-
 }
 .inner_dash_mgnt_right {
   padding: 0px 57px;
@@ -1346,6 +1345,14 @@ input.form-control.cstm_acnt_input {
   float: left;
   height: 100%;
   width: 100%;
+}
+.btn_para {
+  position: absolute;
+  bottom: 0;
+  font-size: 1.4em;
+  font-weight: 600;
+  opacity: 0.6;
+  padding: 0 138px 0px 0px;
 }
 /*------media ----query---dashbpard---- max-width 955 */
 

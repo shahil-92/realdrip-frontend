@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 
-export class ManagementWard extends React.Component {
+export class ManagementNurses extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -220,4 +220,4 @@ const mapStateToProps = (state) => ({
   addingUserError: state.user.createAdmin.addingUserError,
 });
 
-export default connect(mapStateToProps)(ManagementWard);
+export default connect(mapStateToProps)(ManagementNurses);
