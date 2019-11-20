@@ -24,11 +24,11 @@ export class ManagementDashboard extends React.Component {
               <div className="inner_left_dashboard">
                <div className="logo" onClick={this.handleClick}><i class="fa fa-bars"></i></div>
                <ul className="menu_wrap">
-                   <Link to="/ward-dashboard" ><li><img src={require('../../assets/Images/menu1_active.png')} /> </li></Link>
-                   <Link to="/ward-operation"><li><img src={require('../../assets/Images/menu4.png')} /></li></Link>
-                   <Link to="/ward-device"><li><img src={require('../../assets/Images/menu2.png')} /></li></Link>
-                   <Link to="/ward-nurse"><li><img src={require('../../assets/Images/menu5.png')} /></li></Link>
-                   <Link to="/ward-setting"><li><img src={require('../../assets/Images/menu3.png')} /></li></Link>
+                   <Link to="/management-dashboard" ><li><img src={require('../../assets/Images/menu1_active.png')} /> </li></Link>
+                   <Link to="/management-ward"><li><img src={require('../../assets/Images/menu4.png')} /></li></Link>
+                   <Link to="/management-device"><li><img src={require('../../assets/Images/menu2.png')} /></li></Link>
+                   <Link to="/management-nurse"><li><img src={require('../../assets/Images/menu5.png')} /></li></Link>
+                   <Link to="/management-setting"><li><img src={require('../../assets/Images/menu3.png')} /></li></Link>
                  </ul>
                </div>
             </div>

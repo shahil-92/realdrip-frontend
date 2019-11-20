@@ -645,6 +645,7 @@ input.form-control.cstm_search {
 }
 .txt_urgncy {
   font-size: 0.89em;
+  padding-right: 5px;
 }
 .oprtn_tabs_main_wrapper {
   display: flex;
@@ -1354,6 +1355,74 @@ input.form-control.cstm_acnt_input {
   opacity: 0.6;
   padding: 0 138px 0px 0px;
 }
+.oprtn_urgncy_wrap.operation_pdng.mgnt_sort_by {
+  width: 34%;
+  display: flex;
+}
+.bld_txt_mgnt {
+  font-size: 0.89em;
+  font-weight: 600;
+  position: relative;
+}
+.oprtn_down_arrow {
+  padding-left: 3px;
+}
+
+/*============device info =========managment*/
+.img_device_info {
+  width: 10%;
+  margin: 28px 0;
+}
+.device_info_txt {
+  font-size: 1.89em;
+  font-weight: 600;
+  padding: 10px 0;
+  margin: 0;
+}
+.device_ul_right_wrap {
+  list-style: none;
+}
+.device_ul_right_wrap li {
+  padding: 20px 0;
+}
+.wrap_device_img_mgnt {
+  margin-top: 40px;
+}
+.lght_txtmgnt {
+  color: gray;
+  font-weight: 600;
+}
+.ul_contnt_mgnt_nurse{
+  padding: 28px 0;
+  display: flex;
+  /* justify-content: flex-start; */
+  /* border-radius: 12px; */
+  flex-wrap: wrap;
+}
+.ul_contnt_mgnt_nurse li {
+  width: 30%;
+  text-align: center;
+}
+.grncircl {
+  height: 8px;
+  width: 8px;
+  background: green;
+  position: absolute;
+  border-radius: 50%;
+  top: 5px;
+  left: 70px;
+  right: -70px;
+}
+.bld_txt.name_img_wrap {
+  position: relative;
+  bottom: 8px;
+}
+.mngmnt_top_heading h2 {
+  font-size: 2.02em;
+  font-weight: 600;
+}
+
+
 /*------media ----query---dashbpard---- max-width 955 */
 
 
