@@ -19,10 +19,10 @@ export class ManagementSignIn extends React.Component {
   }
 
   handleClick = () =>{
-     this.props.history.push('/ward-activation')
+    this.props.history.push('/signup')
   }
   handleWardSignIn = () =>{
-    this.props.history.push('/ward-dashboard')
+    this.props.history.push('/management-dashboard')
  }
 
   render() {
