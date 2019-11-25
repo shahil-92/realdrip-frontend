@@ -1454,8 +1454,10 @@ input.form-control.cstm_acnt_input {
 .input_wrap_accnt_mgnt {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
+  position: relative;
   margin: 20px;
+  left: 10%;
 }
 .input_wrap_accnt_row.wthout_label {
   position: relative;
@@ -1488,6 +1490,16 @@ input.form-control.cstm_acnt_input {
   width: 100%;
   /* background: red; */
   height: 100%;
+}
+.drip_img_wrap img {
+  position: relative;
+  right: 3px;
+  top: 0px;
+}
+.device_in_use_wrapper.mngnt_inner_wrap {
+  width: 45%;
+  display: flex;
+  flex-direction: row;
 }
 .right-mid-dash {
   position: relative;
@@ -1805,5 +1817,209 @@ input.form-control.cstm_acnt_input {
   width: 100%;
 }
 
+.inner_dash_mgnt_left {
+  padding: 0px 57px;
+  height: 100%;
+  width: 100%;
+  float: left;
+  position: relative;
+  background: #e1ecef4f;
+}
+.inner_dash_mgnt_right {
+  padding: 0px 57px;
+  height: 100%;
+  width: 100%;
+  float: left;
+  position: relative;
+  background: #fff;
+}
+.btn_para {
+  position: relative;
+  bottom: 0;
+  font-size: 1.4em;
+  font-weight: 600;
+  opacity: 0.6;
+  padding: 0;
+}
+.wrad_name_label_wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.mngmnt_top_heading {
+  padding: 20px 0px 0px 7px;
+}
+.add_new_device_wrap_mgmnt {
+  display: flex;
+  justify-content: flex-start;
+  margin: 10px 0px;
+  position: relative;
+  left: 4px;
+}
+.wrap_dash_new_wrad {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.img_ward_info {
+  width: 21%;
+  margin: 20px 0;
+}
+.drip_img_wrap img {
+  position: relative;
+  right: 3px;
+  top: 0px;
+}
+.wrap_mngmnt_sectn {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.device_in_use_wrapper.mngnt_inner_wrap {
+  width: 100%;
 }
 
+.mgnt_heading_setting {
+  display: flex;
+  /* text-align: left; */
+  align-items: center;
+  justify-content: center;
+  margin: 29px 16px;
+}
+.input_wrap_accnt_row {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  width: 80%;
+}
+.input_wrap_accnt_mgnt {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 20px;
+  position: relative;
+  left: 8px;
+}
+.input_row_mgnt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+}
+.form-control.cstm_mgnt_input_clmn {
+  width: 94%;
+}
+.operation_pdng {
+  padding: 4px 4px;
+  /* justify-content: center; */
+  position: relative;
+  align-items: center;
+  display: flex;
+}
+.operation_search_tab_bar_mgnt {
+  display: flex;
+  justify-content: flex-start;
+}
+
+}
+
+@media only screen and (max-width: 450px) {
+  .inner_dash_mgnt_left {
+    padding: 0px 17px;
+    height: 100%;
+    width: 100%;
+    float: left;
+    position: relative;
+    background: #e1ecef4f;
+}
+.operation_search_tab_bar_mgnt {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.operation_pdng {
+  padding: 6px 4px;
+  justify-content: flex-start;
+  /* position: relative; */
+  display: flex;
+}
+.oprtn_urgncy_wrap.operation_pdng.mgnt_sort_by {
+  width: 52%;
+  display: flex;
+}
+.btn_para {
+  position: relative;
+  bottom: 0;
+  font-size: 0.84em;
+  font-weight: 600;
+  opacity: 0.6;
+  padding: 0;
+}
+.user_img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 3px 7px;
+  background: gainsboro;
+}
+.ul_contnt_mgnt_nurse li {
+  width: 27%;
+  text-align: left;
+}
+.user_img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 3px 0px;
+  background: gainsboro;
+}
+.mngmnt_top_heading h2 {
+  font-size: 1.42em;
+  font-weight: 600;
+}
+.img_device_info {
+  width: 49%;
+  margin: 28px 0;
+}
+.mgmnt_input_wrap_main {
+  width: 100%;
+}
+.head_accnt_h3 {
+  font-size: 1.42em;
+  font-weight: 600;
+}
+.mgnt_heading_setting {
+  display: flex;
+  /* text-align: left; */
+  align-items: center;
+  justify-content: center;
+  margin: 29px 16px;
+}
+.input_wrap_accnt_row {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  width: 80%;
+}
+.input_wrap_accnt_mgnt {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 20px;
+  position: relative;
+  left: 8px;
+}
+.input_row_mgnt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+}
+.form-control.cstm_mgnt_input_clmn {
+  width: 94%;
+}
+}
