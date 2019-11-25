@@ -1926,12 +1926,20 @@ input.form-control.cstm_acnt_input {
 
 @media only screen and (max-width: 450px) {
   .inner_dash_mgnt_left {
-    padding: 0px 17px;
+    padding: 0px 15px;
     height: 100%;
     width: 100%;
     float: left;
     position: relative;
     background: #e1ecef4f;
+}
+.inner_dash_mgnt_right {
+  padding: 0px 15px;
+  height: 100%;
+  width: 100%;
+  float: left;
+  position: relative;
+  background: #fff;
 }
 .operation_search_tab_bar_mgnt {
   display: flex;
