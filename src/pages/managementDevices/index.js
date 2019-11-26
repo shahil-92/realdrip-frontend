@@ -164,9 +164,9 @@ export class ManagementDevices extends React.Component {
 }
 
 const mapStateToProps = (state) => ({
-  addingUserStarted: state.user.createAdmin.addingUserStarted,
-  addingUserResolved: state.user.createAdmin.addingUserResolved,
-  addingUserError: state.user.createAdmin.addingUserError,
+   // addingUserStarted: state.user.createAdmin.addingUserStarted,
+  // addingUserResolved: state.user.createAdmin.addingUserResolved,
+  // addingUserError: state.user.createAdmin.addingUserError,
 });
 
 export default connect(mapStateToProps)(ManagementDevices);
