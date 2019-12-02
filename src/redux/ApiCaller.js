@@ -1,23 +1,26 @@
-import fetch from 'cross-fetch';
-// const { Promise } = require('es6-promise');
-const API_URL = "https://admin.ebefresh.com/"
+import axios from "axios";
+import { checkStatus, parseJSON } from "../utils/responseHandler";
+// import { BASE_API_URL } from "../utils/constant";
+// import Vue from "vue";
+// import VueCookie from "vue-cookie";
+// Vue.use(VueCookie);
 // Make an api call
-export default (endpoint, method = 'post', body, token) => fetch(`${API_URL}${endpoint}`, {
-  method,
-  body: JSON.stringify(body),
-  headers: {
-    'Content-Type': 'application/json',
-    'Authorization': token
-  },
-})
-  .then(response => response.json().then(json => ({ json, response })))
-  // .then(({ json, response }) => {
-  //   if (!response.ok) {
-  //     return Promise.reject(json);
-  //   }
-  //   return json;
-  // })
-  .then(
-    response => response,
-    error => error,
-  );
+const API_URL = "//rd-backend-staging.herokuapp.com/api/"
+
+export default async (url, method = 'post', body, token) => {
+	let headers = {
+		"Content-Type": "application/json",
+		// "X-Auth-Id": VueCookie.get("X-Auth-Id") ? VueCookie.get("X-Auth-Id") : null,
+		// "X-Auth-Token": VueCookie.get("X-Auth-Token") ? VueCookie.get("X-Auth-Token") : null
+	};
+	return axios(`${API_URL}${url}`, {
+		method,
+		data: body ? body : null,
+		headers
+	})
+		.then(checkStatus)
+		.then(parseJSON)
+		.catch(error => {
+			throw error;
+		});
+};

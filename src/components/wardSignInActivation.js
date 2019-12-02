@@ -5,7 +5,7 @@ const WardSignInActivation = (props) =>{
   const {
     welcomeHeading, secondHeading, buttonLabel, redirectLink, 
     onClick, type, holder, min, onChange, onKeyPress, id, name, 
-    data, disabled, onClickAnchr, children
+    data, disabled, onClickAnchr, children,errorMessage
   } = props;
 
   return(
@@ -29,8 +29,8 @@ const WardSignInActivation = (props) =>{
                     data={props}
                     id={id}
                     min={min}
-                    name={name}
-                    onChange={(e) => onChange(e,data)}
+                    name="email"
+                    onChange={onChange}
                     disabled={disabled}
                     onKeyPress={onKeyPress}
                 />
@@ -44,17 +44,19 @@ const WardSignInActivation = (props) =>{
                     data={props}
                     id={id}
                     min={min}
-                    name={name}
-                    onChange={(e) => onChange(e,data)}
+                    name="password"
+                    onChange={onChange}
                     disabled={disabled}
                     onKeyPress={onKeyPress}
                 />
                 <span>Forget Password?</span>
             </div>
+                
             </div>
             
         </div>
         <div className="ward_btn_wrap">
+        <div className="error_message">{errorMessage}</div>
          <button class="mnt_btn sign_btn_wrd" onClick={onClick}>{buttonLabel}</button>
         </div>
         {redirectLink && <div className="ward_bottom">

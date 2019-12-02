@@ -1,32 +1,65 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import WardSignInActivation from '../../components/wardSignInActivation'
-// import { Redirect } from 'react-router-dom';
-// import "./signup.css";
-// import View from './view';
-// import validateSignupInputs from './validation';
-// import { createAdminUser } from '../../actions/user/auth';
+import * as CommonHelper from '../../utils'
+import { toast, ToastContainer } from 'react-toastify';
 
 export class WardSignIn extends React.Component {
   constructor() {
     super();
     this.state = {
-      name: null,
-      email: null,
-      country: null,
+      email: "ogunniyitunmise@gmail.com",
+      password: "CWh04BkXB2",
+      ward_user: "",
+      errorMessage:""
+      // "email": "ogunniyitunmise@gmail.com",
+      // "password": "CWh04BkXB2",
+      // "userType": "ward_user"
     };
   }
+  static getDerivedStateFromProps(props, state){
+    const {changingStatus , wardLogin} = props && props.loginResponse
+    const {token, user} = wardLogin
+    if(changingStatus === 'success'){
+      CommonHelper.isToster(toast.success, 'Login Has Been Successfull');
+      props.history.push('/ward-dashboard')
+      return
+    }else{
+      return null
+    }
+  }
 
+  handleChange = (e) => {
+    this.setState({ [e.target.name]: e.target.value })
+    this.setState({errorMessage:""})
+  }
   handleClick = () =>{
      this.props.history.push('/ward-activation')
   }
   handleWardSignIn = () =>{
-    this.props.history.push('/ward-dashboard')
+    const {email, password} = this.state;
+    // !CommonHelper.isValidPassword(password)
+    if(!CommonHelper.validateEmail(email)){
+      this.setState({errorMessage: "please enter valid Email and Password" })
+    }else if(!CommonHelper.validateEmail(email)){
+      this.setState({errorMessage: "please enter valid Email" })
+    }
+    // else if(!CommonHelper.isValidPassword(password)){
+    //   this.setState({errorMessage: "please enter valid Password" })
+    // }
+    let data = {
+      email: email,
+      password: password,
+      userType: "ward_user"
+    }
+    this.props.dispatch({ type: 'WARD_LOGIN_SUBMIT', payload: data })
  }
 
   render() {
+    console.log('=-=-==this.state===',this.props) 
+    const {errorMessage} = this.state;
     return (
+      <div>
         <WardSignInActivation 
             welcomeHeading="Welcome Back"
             secondHeading="Ward Sign In" 
@@ -34,21 +67,17 @@ export class WardSignIn extends React.Component {
             redirectLink="Activate"
             onClickAnchr={this.handleClick}
             onClick={this.handleWardSignIn}
-            // type
-            // holder
-            // onChange
-            // onKeyPress
-            // id
-            // name
+            onChange={this.handleChange}
+            errorMessage={errorMessage}
         />
+        <ToastContainer />
+      </div>
     );
   }
 }
 
 const mapStateToProps = (state) => ({
-   // addingUserStarted: state.user.createAdmin.addingUserStarted,
-  // addingUserResolved: state.user.createAdmin.addingUserResolved,
-  // addingUserError: state.user.createAdmin.addingUserError,
-});
+  loginResponse: state.WardLogin
+})
 
 export default connect(mapStateToProps)(WardSignIn);
