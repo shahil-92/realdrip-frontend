@@ -1,18 +1,21 @@
 export default function reducer(state = {
-    inboxList : '',
+    wardInfusion : '',
   }, action) {
     switch (action.type) {
-      case 'INBOX_LIST_INITATED': {
+      case 'WARD_INFUSION_INITATED': {
         return { ...state, changingStatus: 'uninitiated' };
       }
-      case 'INBOX_LIST_STARTED': {
+      case 'WARD_INFUSION_STARTED': {
         return { ...state, changingStatus: 'ongoing' };
       }
-      case 'INBOX_LIST_SUCCESS': {
-        return { ...state, changingStatus: 'success', inboxList: action.payload };
+      case 'WARD_INFUSION_SUCCESS': {
+        return { ...state, changingStatus: 'success', wardInfusion: action.payload };
       }
-      case 'INBOX_LIST_FAILED': {
+      case 'WARD_INFUSION_FAILED': {
         return { ...state, changingStatus: 'failed' };
+      }
+      case 'RESET': {
+        return { state: '' }
       }
       default: {
         return state;

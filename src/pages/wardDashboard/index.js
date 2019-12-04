@@ -8,6 +8,11 @@ export class WardDashBoard extends React.Component {
       showMenu:false
     };
   }
+  componentDidMount(){
+    this.props.dispatch({ type: 'WARD_NURSE'})
+    this.props.dispatch({ type: 'WARD_INFUSION'})
+    this.props.dispatch({ type: 'WARD_DEVICE'})
+  }
 
   handleClick = () =>{
     this.setState({showMenu : !this.state.showMenu})
@@ -17,6 +22,7 @@ export class WardDashBoard extends React.Component {
  }
 
   render() {
+    console.log('=-=-=-=-=',this.props)
     return (
         <div className="main_wrapper ">
            <div className="inner_dshbrd_wrap">
@@ -90,7 +96,7 @@ export class WardDashBoard extends React.Component {
                             <span className="urgnt_txt">6</span>
                             <span className="drip_img_wrap"><img src={require('../../assets/Images/drip.png')} /></span>
                           </div>
-                          <h5>Active Infusion</h5>
+                          <h5>Active Nurses</h5>
                         </div>
                       </div>
                     </div>
@@ -274,6 +280,10 @@ export class WardDashBoard extends React.Component {
 }
 
 const mapStateToProps = (state) => ({
+  loginResponse: state.WardLogin,
+  WardNurse: state.WardNurse,
+  WardInfusion: state.WardInfusion,
+  WardDevice: state.WardDevice
    // addingUserStarted: state.user.createAdmin.addingUserStarted,
   // addingUserResolved: state.user.createAdmin.addingUserResolved,
   // addingUserError: state.user.createAdmin.addingUserError,

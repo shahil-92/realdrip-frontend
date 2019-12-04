@@ -21,6 +21,7 @@ export class WardSignIn extends React.Component {
     const {changingStatus , wardLogin} = props && props.loginResponse
     const {token, user} = wardLogin
     if(changingStatus === 'success'){
+      localStorage.setItem('token', token);
       CommonHelper.isToster(toast.success, 'Login Has Been Successfull');
       props.history.push('/ward-dashboard')
       return
