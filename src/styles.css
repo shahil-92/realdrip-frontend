@@ -189,8 +189,8 @@ a{
   position: relative;
 }
 .header_right_dash img {
-  width: 14%;
-  padding: 7px 16px 0px 15px;
+  width: 12%;
+  padding: 0px 0px 0px 20px;
 }
 .logo_hedng {
   font-size: 1.5em;
@@ -209,14 +209,14 @@ a{
   background: #e1ecef;
   border-radius: 25px;
   margin: 0 0 0 4px;
-  top: 6px;
+  top: 1px;
   font-weight: normal;
   position: relative;
 }
 .header_left_dash {
   position: absolute;
   right: 100px;
-  top: 22px;
+  top: 30px;
 }
 .mid-section-dshbrd {
   background: #e1ecef4f;
@@ -1153,7 +1153,7 @@ input.form-control.cstm_acnt_input {
   justify-content: center;
 }
 .ward_bottom_setting h4 {
-  padding: 17px;
+  padding: 16px 2px;
   line-height: 23px;
   font-size: 1.4em;
   opacity: 0.7;
@@ -1572,6 +1572,10 @@ input.form-control.cstm_acnt_input {
 }
 
 @media only screen and (max-width: 720px) {
+  .accont_input_wrap_main {
+    width: 100%;
+    margin: 0 auto;
+}
   .wrap_left_section {
     display: flex;
     flex-direction: column;
@@ -1678,11 +1682,11 @@ input.form-control.cstm_acnt_input {
 }
 .header_dash {
   display: flex;
-  padding: 10px;
+  padding: 0 3px;
+  align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #bdbcbc;
   position: relative;
-  flex-direction: column;
 }
 
 .dash_ward_device_wrap {

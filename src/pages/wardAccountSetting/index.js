@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import Input from '../../components/inputComponent'
 // import { Redirect } from 'react-router-dom';
 import { Link } from 'react-router-dom'
-
+import HEADER from '../../components/header'
 export class WardAccountSetting extends React.Component {
   constructor() {
     super();
@@ -40,16 +40,7 @@ export class WardAccountSetting extends React.Component {
             </div>
          </div>
          <div className="right_dashboard">
-            <div className="header_dash">
-               <div className="header_right_dash">
-                 <img src={require('../../assets/Images/dummy_logo.jpg')} />
-                 <span class="logo_hedng">RealDrip</span>
-                 <span className="ward">Ward</span>
-               </div>
-               <div className="header_left_dash">
-                 <span>How it works</span>
-               </div>
-            </div>
+            <HEADER headerName="ward"/>
            
             <div class="mid-section-dshbrd">
             <div className="main_wrapper ward_main_wrap">

@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import HEADER from '../../components/header'
 export class WardDashBoard extends React.Component {
   constructor() {
     super();
@@ -21,8 +22,7 @@ export class WardDashBoard extends React.Component {
     this.props.history.push('/operation-detail')
  }
  activeNurseList = (data) => {
-  //  const {data} = this.props.WardNurse.wardNurse
-   data && data.map((data)=>{
+  return data && data.map((data)=>{
     return(
       <ul className="list_heading_ul ul_contnt active_dsh_list bottom">    
         <li>
@@ -38,6 +38,36 @@ export class WardDashBoard extends React.Component {
           <div className="time_only time_btm">12:23pm</div>
         </li>
      </ul>
+    )
+   })
+ }
+
+ activeInfusionList = (data) => {
+  return data && data.map((data)=>{
+    return(
+      <ul className="list_heading_ul ul_contnt active_dsh_list" onClick={()=>this.handleRedirectClick()}>    
+          <li>
+            <div className="bld_prcnt">{data.startVolume}%</div>
+            <div className="wrapper_progress_bar"><div className="inner_progress_bar"></div></div>
+            <div className="bld_txt">Blood</div>
+          </li>
+          <li>
+            <div className="time_in_second bld_txt">00:13:00</div>
+            <div className="time_only">12:23pm</div>
+          </li>
+          <li>
+            <div className="speed_hr"> <span> 28 </span> <img class="speed_up" src={require('../../assets/Images/dummy_logo.jpg')}></img></div>
+            <div className="speed_unit bld_txt">ml/hr</div>
+          </li>
+          <li>
+            <div className="infusn_usr_img"><img src={require('../../assets/Images/user.png')}></img></div>
+            <div className="infusn_usr_name">Titlayo Olaide</div>
+          </li>
+          <li>
+            <div className="infusn_usr_fname">Frank</div>
+            <div className="infusn_disease_name">Malaria</div>
+          </li>
+      </ul>
     )
    })
  }
@@ -62,17 +92,7 @@ export class WardDashBoard extends React.Component {
                </div>
             </div>
             <div className="right_dashboard">
-               <div className="header_dash">
-                  <div className="header_right_dash">
-                    <img src={require('../../assets/Images/dummy_logo.jpg')} />
-                    <span class="logo_hedng">RealDrip</span>
-                    <span className="ward">Ward</span>
-                  </div>
-                  <div className="header_left_dash">
-                    <span>How it works</span>
-                  </div>
-              </div>
-              
+               <HEADER headerName="ward"/>
               <div class="mid-section-dshbrd">
                 {this.state.showMenu && <div className="second_menu_wrap">
                   <ul>
@@ -122,9 +142,7 @@ export class WardDashBoard extends React.Component {
                           <h5>Active Nurses</h5>
                         </div>
                       </div>
-                    </div>
-                  
-                  
+                    </div>     
                     <div className="device_in_use_wrapper">
                       <div className="device_inuse">
                         <span class="urgnt_txt">02</span>
@@ -168,62 +186,13 @@ export class WardDashBoard extends React.Component {
                           <li>Nurse</li>
                           <li>Patient Case</li>
                         </ul>
-                        
-                        {/* startVolume */}
-
-                        {wardInfusion && wardInfusion.data.map((data)=>(
-                          <ul className="list_heading_ul ul_contnt active_dsh_list" onClick={()=>this.handleRedirectClick()}>    
-                          <li>
-                            <div className="bld_prcnt">{data.startVolume}</div>
-                            <div className="wrapper_progress_bar"><div className="inner_progress_bar"></div></div>
-                            <div className="bld_txt">Blood</div>
-                          </li>
-                          <li>
-                            <div className="time_in_second bld_txt">00:13:00</div>
-                            <div className="time_only">12:23pm</div>
-                          </li>
-                          <li>
-                            <div className="speed_hr"> <span> 28 </span> <img class="speed_up" src={require('../../assets/Images/dummy_logo.jpg')}></img></div>
-                            <div className="speed_unit bld_txt">ml/hr</div>
-                          </li>
-                          <li>
-                            <div className="infusn_usr_img"><img src={require('../../assets/Images/user.png')}></img></div>
-                            <div className="infusn_usr_name">Titlayo Olaide</div>
-                          </li>
-                          <li>
-                            <div className="infusn_usr_fname">Frank</div>
-                            <div className="infusn_disease_name">Malaria</div>
-                          </li>
-                        </ul>
-                      ))}
+                        {wardInfusion.data && this.activeInfusionList(wardInfusion.data)}
                       </div>
-                    
-                    
                       <div className="infusion_wrap bottom">
                         <h4 class="sumry_head2">Active Nurses</h4>
                         <span class="see_all_txt">see all</span>
                       </div>
-                      <div className="active_dsh_list">
-
-
-     
-                      {wardNurse && wardNurse.data.map((data)=>(
-                        <ul className="list_heading_ul ul_contnt active_dsh_list bottom">    
-                        <li>
-                          <div className="user_img_nme_wrap">
-                            <img class="user_img" src={require('../../assets/Images/user.png')}></img>
-                            <span>{data.name}</span>
-                          </div>    
-                        </li>
-                        <li>
-                          <div className="time_in_second bld_txt time_btm">- - - - -</div>
-                        </li>
-                        <li>
-                          <div className="time_only time_btm">12:23pm</div>
-                        </li>
-                      </ul> 
-                      ))}
-                      
+                      <div className="active_dsh_list">    
                        {wardNurse.data && this.activeNurseList(wardNurse.data)}
                       </div>
                     </div>
@@ -242,9 +211,6 @@ const mapStateToProps = (state) => ({
   WardNurse: state.WardNurse,
   WardInfusion: state.WardInfusion,
   WardDevice: state.WardDevice
-   // addingUserStarted: state.user.createAdmin.addingUserStarted,
-  // addingUserResolved: state.user.createAdmin.addingUserResolved,
-  // addingUserError: state.user.createAdmin.addingUserError,
 });
 
 export default connect(mapStateToProps)(WardDashBoard);
