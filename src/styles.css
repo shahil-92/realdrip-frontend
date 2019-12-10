@@ -188,8 +188,11 @@ a{
   border-bottom: 1px solid #bdbcbc;
   position: relative;
 }
+.header_right_dash {
+  width: 44%;
+}
 .header_right_dash img {
-  width: 12%;
+  width: 46%;
   padding: 0px 0px 0px 20px;
 }
 .logo_hedng {
@@ -1664,10 +1667,10 @@ input.form-control.cstm_acnt_input {
 
 .header_left_dash {
   position: relative;
-  left: 3px;
-  top: 4px;
-  width: 48%;
-  font-size: 1.23em;
+  left: 25px;
+  top: 0px;
+  /* width: 48%; */
+  font-size: 1.0em;
 }
 .right_dashboard{
   display: flex;
@@ -1677,16 +1680,19 @@ input.form-control.cstm_acnt_input {
   flex-direction: column;
 }
 .header_right_dash img {
-  width: 6%;
+  width: 40%;
   padding: 0;
+}
+.header_right_dash {
+  width: 100%;
 }
 .header_dash {
   display: flex;
   padding: 0 3px;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   border-bottom: 1px solid #bdbcbc;
   position: relative;
+  flex-direction: column;
 }
 
 .dash_ward_device_wrap {

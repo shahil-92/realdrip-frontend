@@ -5,6 +5,7 @@ import Input from '../../components/inputComponent'
 // import { Redirect } from 'react-router-dom';
 import { Link } from 'react-router-dom'
 import HEADER from '../../components/header'
+import DETAILMENU from '../../components/detailMenu'
 export class WardAccountSetting extends React.Component {
   constructor() {
     super();
@@ -12,6 +13,7 @@ export class WardAccountSetting extends React.Component {
       name: null,
       email: null,
       country: null,
+      showMenu:false
     };
   }
 
@@ -21,7 +23,9 @@ export class WardAccountSetting extends React.Component {
   handleWardSignIn = () =>{
     this.props.history.push('/ward-dashboard')
  }
-
+ handleClickhamburger = () =>{
+  this.setState({showMenu : !this.state.showMenu})
+}
   render() {
     return (
 
@@ -29,7 +33,7 @@ export class WardAccountSetting extends React.Component {
         <div className="inner_dshbrd_wrap">
          <div className="left_dashboard">
            <div className="inner_left_dashboard">
-            <div className="logo"><i class="fa fa-bars"></i></div>
+            <div className="logo" onClick={this.handleClickhamburger}><i class="fa fa-bars"></i></div>
             <ul className="menu_wrap">
                 <Link to="/ward-dashboard" ><li><img src={require('../../assets/Images/menu1_active.png')} /> </li></Link>
                 <Link to="/ward-operation"><li><img src={require('../../assets/Images/menu4.png')} /></li></Link>
@@ -40,9 +44,9 @@ export class WardAccountSetting extends React.Component {
             </div>
          </div>
          <div className="right_dashboard">
-            <HEADER headerName="ward"/>
-           
+            <HEADER headerName="ward"/>     
             <div class="mid-section-dshbrd">
+            {this.state.showMenu && <DETAILMENU />}
             <div className="main_wrapper ward_main_wrap">
                 <div class="accnt_signin_wrap">
                     <div className="ward_heading_wrap">

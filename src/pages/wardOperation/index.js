@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import HEADER from '../../components/header'
+import DETAILMENU from '../../components/detailMenu'
 
 export class WardOperation extends React.Component {
   constructor() {
@@ -36,18 +37,7 @@ export class WardOperation extends React.Component {
               <HEADER headerName="ward"/>
               
               <div class="mid-section-dshbrd">
-                {this.state.showMenu && <div className="second_menu_wrap">
-                  <ul>
-                    <li>Home</li>
-                    <li>Operations</li>
-                    <li>Devices</li>
-                    <li>Nurses</li>
-                    <li>Account</li>
-                  </ul>
-                  <ul>
-                    <li>Sign Out</li>
-                  </ul>
-                </div>}
+                {this.state.showMenu && <DETAILMENU />}
                 <div className="inner_dash">
                   <div className="left-mid-dash">
                     <h2>Operations</h2>

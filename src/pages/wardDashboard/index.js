@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import HEADER from '../../components/header'
+import DETAILMENU from '../../components/detailMenu'
 export class WardDashBoard extends React.Component {
   constructor() {
     super();
@@ -82,7 +83,7 @@ export class WardDashBoard extends React.Component {
             <div className="left_dashboard">
               <div className="inner_left_dashboard">
                <div className="logo" onClick={this.handleClick}><i class="fa fa-bars"></i></div>
-               <ul className="menu_wrap">
+                 <ul className="menu_wrap">
                    <Link to="/ward-dashboard" ><li><img src={require('../../assets/Images/menu1_active.png')} /> </li></Link>
                    <Link to="/ward-operation"><li><img src={require('../../assets/Images/menu4.png')} /></li></Link>
                    <Link to="/ward-device"><li><img src={require('../../assets/Images/menu2.png')} /></li></Link>
@@ -94,18 +95,9 @@ export class WardDashBoard extends React.Component {
             <div className="right_dashboard">
                <HEADER headerName="ward"/>
               <div class="mid-section-dshbrd">
-                {this.state.showMenu && <div className="second_menu_wrap">
-                  <ul>
-                    <li>Home</li>
-                    <li>Operations</li>
-                    <li>Devices</li>
-                    <li>Nurses</li>
-                    <li>Account</li>
-                  </ul>
-                  <ul>
-                    <li>Sign Out</li>
-                  </ul>
-                </div>}
+                {this.state.showMenu && 
+                 <DETAILMENU />
+                }
                 <div className="inner_dash">
                   <div className="left-mid-dash">
                     <h2>Dashboard</h2>
