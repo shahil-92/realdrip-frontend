@@ -58,7 +58,7 @@ export class WardNurse extends React.Component {
                             <span className="urgnt_txt">6</span>
                             <span className="drip_img_wrap"><img src={require('../../assets/Images/drip.png')} /></span>
                           </div>
-                          <h5>Active Infusion</h5>
+                          <h5>Active Nurses</h5>
                      </div>
 
                       <div className="infusn_device_wrap">
@@ -67,14 +67,14 @@ export class WardNurse extends React.Component {
                             <span className="urgnt_txt">45</span>
                           
                           </div>
-                          <h5>Active Infusion</h5>
+                          <h5>All registered</h5>
                         </div>
                         <div className="infusn_wrap">
                           <div className="wrpd_icon_num">
                             <span className="urgnt_txt">43</span>
                             {/* <span className="drip_img_wrap"></span> */}
                           </div>
-                          <h5>Active Infusion</h5>
+                          <h5>Unassigned</h5>
                         </div>
                       </div>
                       
@@ -84,7 +84,7 @@ export class WardNurse extends React.Component {
                   <div className="right-mid-dash">
                     <div className="right-wrap-heading devics_lst_clmn"> 
                       <div className="add_new_device_wrap">
-                          <div className="add_device_btn">Add new device </div>
+                          <div className="add_device_btn">Add new nurse </div>
                       </div>
                         <div className="operation_search_tab_bar">
                             <div className="oprtn_search_wrap operation_pdng">

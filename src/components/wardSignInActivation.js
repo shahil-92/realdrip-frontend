@@ -10,12 +10,14 @@ const WardSignInActivation = (props) =>{
 
   return(
     <div className="main_wrapper ward_main_wrap">
-    <div className="ward_left_banner">    
+    <div className="ward_left_banner">
+       <img src={require('../assets/Images/ward_sign_in.png')} />    
     </div>
     <div class="ward_sign_wrap">
+        <div className="inner_wrap">
         <div className="ward_heading_wrap">
-            <h4 class="head_ward_h4">{welcomeHeading}</h4>
-            <h2 class="head_ward_h2">{secondHeading}</h2>
+            <h4 className="head_ward_h4">{welcomeHeading}</h4>
+            <h2 className="head_ward_h2">{secondHeading}</h2>
         </div>
         {children}
         <div className="ward_input_wrap">
@@ -62,6 +64,7 @@ const WardSignInActivation = (props) =>{
         {redirectLink && <div className="ward_bottom">
           <span>Haven't Activated your ward yet ?</span> <a onClick={onClickAnchr}>{redirectLink}</a>
         </div>}
+    </div>
     </div>
 </div>
   )

@@ -28,14 +28,14 @@ export class Home extends React.Component {
     return (
         <div className="main_wrapper ">
             <div className="heading_wrapper center_colmn_wise">
-                <h4>RealDrip</h4>
+                <div className="home_page_img_wrap"><img src={require('../../assets/Images/logo.png')} /></div>
                 <h2>Infusion management</h2>
                 <h2>system</h2>
             </div>
             <div class="home_login_to center_colmn_wise">
                 <h3 class="head_login_to">Login to</h3>
                 <div className="btn_wrapper">
-                    <button class="mnt_btn" onClick={(e) => this.handleClick(e)}>Management</button>
+                    <button class="mnt_btn_home" onClick={(e) => this.handleClick(e)}>Management</button>
                     <button class="wrd_btn" onClick={(e) => this.handleClickWard(e)}>Ward</button>
                 </div>
             </div>
@@ -43,7 +43,7 @@ export class Home extends React.Component {
     );
   }
 }
-
+ 
 const mapStateToProps = (state) => ({
    // addingUserStarted: state.user.createAdmin.addingUserStarted,
   // addingUserResolved: state.user.createAdmin.addingUserResolved,

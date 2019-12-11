@@ -19,6 +19,7 @@ import ManagementWard from '../pages/managementWard'
 import ManagementDevices from '../pages/managementDevices'
 import ManagementNurses from '../pages/managementNurses'
 import ManagementSetting from '../pages/managementSetting'
+import AddNurse from '../pages/addNurse'
 export default (props) => (
 	<Router>
 		<Switch>
@@ -41,6 +42,7 @@ export default (props) => (
 			<Route exact path="/management-device" component={props => <ManagementDevices {...props}/>}/>
 			<Route exact path="/management-nurse" component={props => <ManagementNurses {...props}/>}/>
 			<Route exact path="/management-setting" component={props => <ManagementSetting {...props}/>}/>
+			<Route exact path="/add-nurse" component={props => <AddNurse {...props}/>}/>
 		</Switch>
 	</Router>
 );
