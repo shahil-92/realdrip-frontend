@@ -20,6 +20,12 @@ import ManagementDevices from '../pages/managementDevices'
 import ManagementNurses from '../pages/managementNurses'
 import ManagementSetting from '../pages/managementSetting'
 import AddNurse from '../pages/addNurse'
+import ConfirmMailSent from '../pages/confirmMailSent'
+import PasswordRecovery from '../pages/passwordRecovery'
+import RecoveryMailSent from '../pages/recoveryMailSent'
+import DeviceValidatePopUp from '../pages/deviceValidatePopUp'
+import PasswordUpdatedPopUp from '../pages/passwordUpdatedPopUp'
+import DeleteOperationPopUp from '../pages/deleteOperationPopUp'
 export default (props) => (
 	<Router>
 		<Switch>
@@ -43,6 +49,12 @@ export default (props) => (
 			<Route exact path="/management-nurse" component={props => <ManagementNurses {...props}/>}/>
 			<Route exact path="/management-setting" component={props => <ManagementSetting {...props}/>}/>
 			<Route exact path="/add-nurse" component={props => <AddNurse {...props}/>}/>
+			<Route exact path="/confirm-mail" component={props => <ConfirmMailSent {...props}/>}/>
+			<Route exact path="/password-recovery" component={props => <PasswordRecovery {...props}/>}/>
+			<Route exact path="/recovery-mailsent" component={props => <RecoveryMailSent {...props}/>}/>
+			<Route exact path="/device-validate-popup" component={props => <DeviceValidatePopUp {...props}/>}/>
+			<Route exact path="/password-update-popup" component={props => <PasswordUpdatedPopUp {...props}/>}/>
+			<Route exact path="/delete-oprtn-popup" component={props => <DeleteOperationPopUp {...props}/>}/>
 		</Switch>
 	</Router>
 );

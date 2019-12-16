@@ -1530,8 +1530,94 @@ input.form-control.cstm_add_file {
   color: lightgray;
 }
 
+/*================pop-up====================*/
+.popup-wrap {
+  display: flex;
+  background: #e1ecef4f;
+  justify-content: center;
+  align-items: center;
+  height: 745px;
+  width: 100%;
+  position: relative;
+}
+.pop-container {
+  text-align: center;
+  background: #fff;
+  padding: 22px 35px;
+  border-radius: 25px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.mail-sent-wrap {
+  font-size: 0.99em;
+  font-weight: 600;
+  padding: 2px 8px;
+}
+.check-mail {
+  color: #1D474B80;
+  padding: 3px 0 0 0; 
+}
+.circle_wrap {
+  padding: 10px;
+}
+.cant-find {
+  opacity: 1;
+  font-size: 0.99em;
+}
+.resend-anchr {
+  color: #0FBB83;
+}
+
+/*==========pasword-recovery==========*/
+.cstm_pswrecovr_input {
+  width: 207px;
+  margin: 5px;
+}
+.password-recovry-btn {
+  background: #0CD891 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #0000001A;
+  border-radius: 4px;
+  padding: 10px 32px;
+  border: 0;
+  text-align: center;
+  letter-spacing: 0;
+  color: #FFFFFF;
+  opacity: 1;
+}
+.password-recovry-wrap {
+  position: relative;
+  margin-top: 35px;
+}
+
+/*======recovry-popup==========*/
 
 
+.recovr-mail-sent-wrap {
+  height: 40px;
+  background: #0CD8911A 0% 0% no-repeat padding-box;
+  opacity: 1;
+  width: 81%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.cant-find-recovr {
+  width: 80%;
+  padding: 5px 0px;
+}
+
+/*==========device-validate-pop-up==============*/
+.device-valiadte-email-sent-wrap {
+  width: 80%;
+  text-align: center;
+  letter-spacing: 0;
+  color: #838383;
+  opacity: 1;
+  padding: 5px 0px;
+  font-size: 0.99em;
+}
 /*------media ----query---dashbpard---- max-width 955 */
 
 
