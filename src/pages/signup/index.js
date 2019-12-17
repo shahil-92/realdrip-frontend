@@ -5,7 +5,7 @@ import { Redirect } from 'react-router-dom';
 import "./signup.css";
 import View from './view';
 import validateSignupInputs from './validation';
-import { createAdminUser } from '../../actions/user/auth';
+// import { createAdminUser } from '../../actions/user/auth';
 
 export class Signup extends React.Component {
   constructor() {
@@ -59,10 +59,10 @@ export class Signup extends React.Component {
       });
     } else {
       this.clearInputErrors();
-      this.props.dispatch(createAdminUser({
-        name, email, password, confirmPassword,
-        location: { address, state, country }
-      }));
+      // this.props.dispatch(createAdminUser({
+      //   name, email, password, confirmPassword,
+      //   location: { address, state, country }
+      // }));
     }
   }
 
