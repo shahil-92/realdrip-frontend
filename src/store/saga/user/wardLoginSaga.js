@@ -1,5 +1,5 @@
 import { put, takeEvery, call } from 'redux-saga/effects'
-import ApiCaller from '../ApiCaller'
+import ApiCaller from '../../ApiCaller'
 
 const API_DATA = (payload) => {
   const body = {

@@ -1,6 +1,6 @@
 import axios from "axios";
 import { checkStatus, parseJSON } from "../utils/responseHandler";
-const API_URL = "//rd-backend-staging.herokuapp.com/api/"
+import { API_URL } from '../utils/constant'
 
 export default async (url, method = 'post', body, token) => {
 	let headers = {
@@ -12,9 +12,9 @@ export default async (url, method = 'post', body, token) => {
 		data: body ? body : null,
 		headers
 	})
-		.then(checkStatus)
-		.then(parseJSON)
-		.catch(error => {
-			throw error;
-		});
+	.then(checkStatus)
+	.then(parseJSON)
+	.catch(error => {
+		throw error;
+	});
 };

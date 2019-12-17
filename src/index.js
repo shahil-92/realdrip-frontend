@@ -2,10 +2,10 @@ import React from 'react';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 import Routes from './routes';
-import Store from './redux/Store';
+import Store from './store/configureStore';
 import 'react-toastify/dist/ReactToastify.min.css'; 
 // import configureStore from './configureStore';
-import './styles.css';
+import './assets/styles.css';
 // const store = configureStore();
 
 render(

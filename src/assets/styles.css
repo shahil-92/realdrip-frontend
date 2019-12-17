@@ -253,7 +253,7 @@ a{
   top: 30px;
 }
 .mid-section-dshbrd {
-  background: #e1ecef4f;
+  background: #F8F9F9;
   float: left;
   height: 100%;
   width: 100%;
@@ -708,7 +708,7 @@ input.form-control.cstm_search {
     margin-left: 10px;
 }
 .dash_active_wrap.oprtn_scroll_list {
-  max-height: 600px;
+  max-height: 400px;
   overflow: auto;
   border-radius: 12px;
 }
@@ -1160,7 +1160,7 @@ ul.conctd_history_ul li {
   justify-content: center;
   align-items: center;
   width: 100%;
-  background: #e1ecef;
+  /* background: #e1ecef; */
 }
 .accont_input_wrap_main {
   width: 40%;
@@ -1837,7 +1837,7 @@ input.form-control.cstm_add_file {
 }
 .right_dashboard{
   display: flex;
-  width: 86%;
+  width: 80%;
   height: 100%;
   background: #fff;
   flex-direction: column;

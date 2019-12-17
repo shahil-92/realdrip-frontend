@@ -20,7 +20,7 @@ export class DeleteOperationPopUp extends React.Component {
     return (
         <div className="popup-wrap">
               <div class="pop-container">
-                <div className="circle_wrap"><img src={require('../../assets/Images/circle-with-check-symbol.svg')} /></div>
+                <div className="circle_wrap"><img src={require('../../assets/Images/rubbish-bin-delete-button.svg')} /></div>
                 <h4 className="mail-sent-wrap">Delete Operation</h4>
                 <div className="delete-oprtn-email-sent-wrap">Are you sure you want to delete this opertaion ?, all stored information about this operation will ne erased.</div>
                 <div className="password-recovry-wrap optn-btn-wrap">
