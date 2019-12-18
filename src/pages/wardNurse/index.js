@@ -62,14 +62,14 @@ export class WardNurse extends React.Component {
                      </div>
 
                       <div className="infusn_device_wrap">
-                        <div className="infusn_wrap">
+                        <div className="infusn_wrap cstm_device_ward">
                           <div className="wrpd_icon_num">
                             <span className="urgnt_txt">45</span>
                           
                           </div>
                           <h5>All registered</h5>
                         </div>
-                        <div className="infusn_wrap">
+                        <div className="infusn_wrap cstm_device_ward">
                           <div className="wrpd_icon_num">
                             <span className="urgnt_txt">43</span>
                             {/* <span className="drip_img_wrap"></span> */}

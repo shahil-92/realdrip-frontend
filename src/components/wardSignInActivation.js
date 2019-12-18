@@ -26,7 +26,7 @@ const WardSignInActivation = (props) =>{
                 <label>Ward Username</label>
                 <Input
                     type={type}
-                    className="form-control"
+                    className="form-control cstm-input"
                     placeholder={holder}
                     data={props}
                     id={id}
@@ -41,7 +41,7 @@ const WardSignInActivation = (props) =>{
                 <label>Password</label>
                 <Input
                     type={type}
-                    className="form-control"
+                    className="form-control cstm-input"
                     placeholder={holder}
                     data={props}
                     id={id}
@@ -59,7 +59,7 @@ const WardSignInActivation = (props) =>{
         </div>
         <div className="ward_btn_wrap">
         <div className="error_message">{errorMessage}</div>
-         <button class="mnt_btn sign_btn_wrd" onClick={onClick}>{buttonLabel}</button>
+         <button class="sign_btn_wrd" onClick={onClick}>{buttonLabel}</button>
         </div>
         {redirectLink && <div className="ward_bottom">
           <span>Haven't Activated your ward yet ?</span> <a onClick={onClickAnchr}>{redirectLink}</a>

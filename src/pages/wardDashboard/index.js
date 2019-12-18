@@ -106,7 +106,7 @@ export class WardDashBoard extends React.Component {
                     <div className="dash_ward_oprtn_wrap">
                       <div className="urgnt_oprtn_wrap">
                         <div className="urgnt_row">
-                          <span className="urgnt_txt">Urgent</span>
+                          <span className="urgnt_txt_red">Urgent</span>
                           <span className="drip_img_wrap"><i class="fa fa-bell cstm_bell"></i></span>
                         </div>
                         <div className="urgnt_number_wrap">

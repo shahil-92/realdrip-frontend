@@ -52,14 +52,14 @@ export class WardDevice extends React.Component {
                   <div className="wrap_left_section">
                     <div className="dash_ward_device_wrap">
                       <div className="infusn_device_wrap">
-                        <div className="infusn_wrap green_device">
+                        <div className="infusn_wrap green_device cstm_device_ward">
                           <div className="wrpd_icon_num">
                             <span className="urgnt_txt">6</span>
                             <span className="drip_img_wrap"><img src={require('../../assets/Images/drip.png')} /></span>
                           </div>
                           <h5>Active Infusion</h5>
                         </div>
-                        <div className="infusn_wrap">
+                        <div className="infusn_wrap cstm_device_ward">
                           <div className="wrpd_icon_num">
                             <span className="urgnt_txt">6</span>
                             {/* <span className="drip_img_wrap"></span> */}
