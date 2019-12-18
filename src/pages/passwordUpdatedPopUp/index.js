@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom'
+import POPUP from '../../components/popUp'
 export class PasswordUpdatedPopUp extends React.Component {
   constructor() {
     super();
@@ -18,15 +19,15 @@ export class PasswordUpdatedPopUp extends React.Component {
 
   render() {
     return (
-        <div className="popup-wrap">
-              <div class="pop-container">
-                <div className="circle_wrap"><img src={require('../../assets/Images/circle-with-check-symbol.svg')} /></div>
-                <h4 className="mail-sent-wrap">Password Successfully Updated</h4>
-                <div className="password-recovry-wrap">
-                    <button class="password-recovry-btn" onClick={this.handleClick}>Sign In</button>
-                </div>
-             </div>
+      <POPUP 
+        src={require('../../assets/Images/circle-with-check-symbol.svg')} 
+        title="Password Successfully Updated"
+        titleClass="mail-sent-wrap" 
+      >
+        <div className="password-recovry-wrap">
+            <button class="password-recovry-btn" onClick={this.handleClick}>Sign In</button>
         </div>
+      </ POPUP>
     );
   }
 }

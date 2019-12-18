@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom'
+import POPUP from '../../components/popUp'
 export class DeviceValidatePopUp extends React.Component {
   constructor() {
     super();
@@ -18,16 +19,27 @@ export class DeviceValidatePopUp extends React.Component {
 
   render() {
     return (
-        <div className="popup-wrap">
-              <div class="pop-container">
-                <div className="circle_wrap"><img src={require('../../assets/Images/circle-with-check-symbol.svg')} /></div>
-                <h4 className="mail-sent-wrap">Device Validate</h4>
-                <div className="device-valiadte-email-sent-wrap">Your RealDrip ID (First device ID) sent to your email after registration</div>
-                <div className="password-recovry-wrap">
+        // <div className="popup-wrap">
+        //       <div class="pop-container">
+        //         <div className="circle_wrap"><img src={require('../../assets/Images/circle-with-check-symbol.svg')} /></div>
+        //         <h4 className="mail-sent-wrap">Device Validate</h4>
+        //         <div className="device-valiadte-email-sent-wrap">Your RealDrip ID (First device ID) sent to your email after registration</div>
+        //         <div className="password-recovry-wrap">
+        //             <button class="password-recovry-btn" onClick={this.handleClick}>Proceed to registration</button>
+        //         </div>
+        //      </div>
+        // </div>
+          <POPUP 
+            src={require('../../assets/Images/circle-with-check-symbol.svg')} 
+            title="Device Validate"
+            subHeading="Your RealDrip ID (First device ID) sent to your email after registration" 
+            subHeadingClass="device-valiadte-email-sent-wrap"
+            titleClass="mail-sent-wrap" 
+        >
+           <div className="password-recovry-wrap">
                     <button class="password-recovry-btn" onClick={this.handleClick}>Proceed to registration</button>
                 </div>
-             </div>
-        </div>
+          </ POPUP>
     );
   }
 }

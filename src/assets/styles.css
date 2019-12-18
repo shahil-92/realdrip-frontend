@@ -1806,6 +1806,16 @@ input.form-control.cstm_add_file {
     font-size: 1.0em;
     padding: 0px 0px 9px 0px;
 }
+.dash_ward_device_wrap.oprtn_wrap {
+  width: 100%;
+  margin: 12px 0;
+}
+.search_icon {
+  position: absolute;
+  right: 26px;
+  top: 17px;
+  font-size: 0.89em;
+}
 .dash_ward_device_wrap.oprtn_wrap.connect_left_top_margin {
   margin-top: 50px;
   width: 100%;
