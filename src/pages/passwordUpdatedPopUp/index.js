@@ -1,23 +1,7 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import { Link } from 'react-router-dom'
-import POPUP from '../../components/popUp'
-export class PasswordUpdatedPopUp extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      showMenu:false
-    };
-  }
+import POPUP from '../../components/popUp';
 
-  handleClick = () =>{
-    // this.setState({showMenu : !this.state.showMenu})
-  }
-  handleRedirectClick = () =>{
-    this.props.history.push('/operation-detail')
- }
-
-  render() {
+export const PasswordUpdatedPopUp = (props) => {
     return (
       <POPUP 
         src={require('../../assets/Images/circle-with-check-symbol.svg')} 
@@ -30,12 +14,5 @@ export class PasswordUpdatedPopUp extends React.Component {
       </ POPUP>
     );
   }
-}
 
-const mapStateToProps = (state) => ({
-   // addingUserStarted: state.user.createAdmin.addingUserStarted,
-  // addingUserResolved: state.user.createAdmin.addingUserResolved,
-  // addingUserError: state.user.createAdmin.addingUserError,
-});
-
-export default connect(mapStateToProps)(PasswordUpdatedPopUp);
+export default PasswordUpdatedPopUp;

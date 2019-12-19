@@ -1602,9 +1602,17 @@ input.form-control.cstm_add_file {
   border-radius: 25px;
   align-items: center;
   display: flex;
+  width: 30%;
   flex-direction: column;
 }
-
+.delete-oprtn-email-sent-wrap {
+  width: 94%;
+}
+.check-mail {
+  color: #1D474B80;
+  padding: 3px 0 0 0;
+  width: 50%;
+}
 .mail-sent-wrap {
   font-size: 0.99em;
   font-weight: 600;

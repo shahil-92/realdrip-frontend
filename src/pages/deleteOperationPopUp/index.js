@@ -1,23 +1,7 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import { Link } from 'react-router-dom'
 import POPUP from '../../components/popUp'
-export class DeleteOperationPopUp extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      showMenu:false
-    };
-  }
 
-  handleClick = () =>{
-    // this.setState({showMenu : !this.state.showMenu})
-  }
-  handleRedirectClick = () =>{
-    this.props.history.push('/operation-detail')
- }
-
-  render() {
+export const DeleteOperationPopUp = (props)=> {
     return (
         <POPUP 
           src={require('../../assets/Images/rubbish-bin-delete-button.svg')} 
@@ -27,18 +11,11 @@ export class DeleteOperationPopUp extends React.Component {
           titleClass="mail-sent-wrap" 
         >
           <div className="password-recovry-wrap optn-btn-wrap">
-              <button class="password-recovry-btn" onClick={this.handleClick}>Yes delete</button>
-              <button class="password-recovry-btn" onClick={this.handleClick}>No</button>
+              <button class="password-recovry-btn">Yes delete</button>
+              <button class="password-recovry-btn">No</button>
           </div>
         </ POPUP>
     );
   }
-}
 
-const mapStateToProps = (state) => ({
-   // addingUserStarted: state.user.createAdmin.addingUserStarted,
-  // addingUserResolved: state.user.createAdmin.addingUserResolved,
-  // addingUserError: state.user.createAdmin.addingUserError,
-});
-
-export default connect(mapStateToProps)(DeleteOperationPopUp);
+export default DeleteOperationPopUp;
