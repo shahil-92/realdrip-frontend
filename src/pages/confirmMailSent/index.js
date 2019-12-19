@@ -1,5 +1,5 @@
 import React from 'react';
-import MAILSENT_POPUP from '../../components/mailSentPopUp';
+import MAILSENT_POPUP from '../../components/popUp/mailSentPopUp';
 
 export const ConfirmMailSent = (props) => {
     return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import POPUP from '../../components/popUp'
+import POPUP from '../../components/popUp/popUp'
 
 export const DeleteOperationPopUp = (props)=> {
     return (

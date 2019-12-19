@@ -7,7 +7,7 @@ const MAILSENT_POPUP = (props) => {
          <div class="pop-container">
             <div className="circle_wrap"><img src={src} /></div>
             <h4 className="mail-sent-wrap">{title}</h4>
-            {subHeadingWithImg && <div className="recovr-mail-sent-wrap"><h4 className="mail-sent-wrap">{subHeadingWithImg}</h4><img className="img-green-recovry" src={require('../assets/Images/circle-with-check-symbol-green.svg')} /></div>}
+            {subHeadingWithImg && <div className="recovr-mail-sent-wrap"><h4 className="mail-sent-wrap">{subHeadingWithImg}</h4><img className="img-green-recovry" src={require('../../assets/Images/circle-with-check-symbol-green.svg')} /></div>}
             {subHeading && <div className={subHeadingClass}>{subHeading}</div>}
             {children}
          </div>
