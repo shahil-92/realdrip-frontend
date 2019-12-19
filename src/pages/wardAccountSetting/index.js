@@ -4,8 +4,8 @@ import { connect } from 'react-redux';
 import Input from '../../components/inputComponent'
 // import { Redirect } from 'react-router-dom';
 import { Link } from 'react-router-dom'
-import HEADER from '../../components/header'
-import DETAILMENU from '../../components/detailMenu'
+import HEADER from '../../components/Headers/header'
+import DETAILMENU from '../../components/Headers/detailMenu'
 export class WardAccountSetting extends React.Component {
   constructor() {
     super();

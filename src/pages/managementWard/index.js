@@ -1,7 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import HEADER from '../../components/header'
+import HEADER from '../../components/Headers/header'
+import DETAILMENU from '../../components/Headers/detailMenu'
 
 export class ManagementWard extends React.Component {
   constructor() {
@@ -35,18 +36,7 @@ export class ManagementWard extends React.Component {
             <div className="right_dashboard">
               <HEADER headerName="management"/>              
               <div class="mid-section-dshbrd_mgnt">
-                {this.state.showMenu && <div className="second_menu_wrap">
-                  <ul>
-                    <li>Home</li>
-                    <li>Operations</li>
-                    <li>Devices</li>
-                    <li>Nurses</li>
-                    <li>Account</li>
-                  </ul>
-                  <ul>
-                    <li>Sign Out</li>
-                  </ul>
-                </div>}
+                {this.state.showMenu && <DETAILMENU />} 
                 <div className="inner_dash_mgnt_left">
                   <div className="left-mid-dash-mgmnt">
                   <div className="wrap_dash_new_wrad">

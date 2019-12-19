@@ -1,7 +1,7 @@
 import React from 'react';
 // import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import WardSignInActivation from '../../components/wardSignInActivation'
+import WardSignInActivation from '../../components/Ward/wardSignInActivation'
 // import { Redirect } from 'react-router-dom';
 // import "./signup.css";
 // import View from './view';

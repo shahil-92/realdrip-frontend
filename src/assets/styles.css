@@ -145,7 +145,7 @@ a{
 }
 .ward_heading_wrap {
   position: absolute;
-  top: 77px;
+  top: 18px;
   left: 34px;
   padding: 20px 35px;
 }
@@ -891,7 +891,7 @@ ul.list_heading_ul.nurse_heding_ul {
   opacity: 1;
 }
 .right-wrap-heading.devics_lst_clmn h3 {
-  font-size: 1.333em;
+  font-size: 16px;
   font-weight: 700;
 }
 .device_page_wrap {
@@ -1108,7 +1108,7 @@ ul.list_heading_ul.ul_contnt.connected_ul li div {
   width: 36%;
 }
 .dash_ward_device_wrap.oprtn_wrap.connect_left_top_margin {
-  margin-top: 50px;
+  margin-top: 8px;
 }
 .history_insuse_tabs_wrap {
   display: flex;
@@ -1120,9 +1120,13 @@ ul.list_heading_ul.ul_contnt.connected_ul li div {
   font-weight: 600;
 }
 .infusion_heading {
-  font-size: 1.39em;
   font-weight: 600;
   margin-bottom: 24px;
+  /* text-align: center; */
+  font-size: 18px;
+  letter-spacing: 0;
+  color: #000000;
+  opacity: 1;
 }
 h3.small_txt_h3 {
   font-size: 1.2em;
@@ -1172,7 +1176,7 @@ ul.conctd_history_ul li {
   width: 50%;
 }
 .wrap_b2_txt {
-  width: 55%;
+  width: 33%;
   display: flex;
   align-items: center;
 }
@@ -1193,7 +1197,7 @@ ul.conctd_history_ul li {
   justify-content: center;
 }
 .wrap_label_main_wrap.cstm_nurse_detail {
-  width: 64%;
+  width: 80%;
 }
 .edit_label_wrap.cstm_nurse_detail {
   width: 52%;
@@ -1825,7 +1829,7 @@ input.form-control.cstm_add_file {
   font-size: 0.89em;
 }
 .dash_ward_device_wrap.oprtn_wrap.connect_left_top_margin {
-  margin-top: 50px;
+  margin-top: 8px;
   width: 100%;
 }
 .history_insuse_tabs_wrap {

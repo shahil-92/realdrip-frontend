@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom'
-import HEADER from '../../components/header'
+import HEADER from '../../components/Headers/header'
 
 
 export class ConnectedInuse extends React.Component {

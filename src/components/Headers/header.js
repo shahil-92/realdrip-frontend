@@ -5,7 +5,7 @@ const HEADER = (props) => {
   return (
     <div className="header_dash">
         <div className="header_right_dash">
-            <img src={require('../assets/Images/logo.png')} />
+            <img src={require('../../assets/Images/logo.png')} />
             {/* <span class="logo_hedng">RealDrip</span> */}
             <span className="ward">{headerName}</span>
         </div>

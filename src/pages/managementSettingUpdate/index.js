@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import Input from '../../components/inputComponent'
 // import { Redirect } from 'react-router-dom';
 import { Link } from 'react-router-dom'
-import HEADER from '../../components/header'
+import HEADER from '../../components/Headers/header'
 
 export class ManagementSettingUpdate extends React.Component {
   constructor() {

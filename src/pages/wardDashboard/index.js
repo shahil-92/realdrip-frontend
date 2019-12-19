@@ -1,8 +1,10 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import HEADER from '../../components/header'
-import DETAILMENU from '../../components/detailMenu'
+import HEADER from '../../components/Headers/header'
+import DETAILMENU from '../../components/Headers/detailMenu'
+import REDCARD from '../../components/Ward/redCard'
+import SMALL_CARD from '../../components/Ward/smallCard'
 export class WardDashBoard extends React.Component {
   constructor() {
     super();
@@ -104,35 +106,28 @@ export class WardDashBoard extends React.Component {
                     <h4 class="sumry_head">Summary</h4>
                   <div className="wrap_left_section">
                     <div className="dash_ward_oprtn_wrap">
-                      <div className="urgnt_oprtn_wrap">
-                        <div className="urgnt_row">
-                          <span className="urgnt_txt_red">Urgent</span>
-                          <span className="drip_img_wrap"><i class="fa fa-bell cstm_bell"></i></span>
-                        </div>
-                        <div className="urgnt_number_wrap">
-                          <span className="cirlcle_dot"></span>
-                          <span className="number_txt_white">1</span>
-                        </div>
-                        <div align="center">
-                          <h5>Operation</h5>
-                          <span>is almost Complete</span>
-                        </div>
-                      </div>
+                      <REDCARD 
+                        wrapperClass="urgnt_oprtn_wrap"
+                        heading="Urgent"
+                        count="1"
+                        subHeading="Operation"
+                        text="is almost Complete"
+                      />
                       <div className="infusn_nrse_wrap">
-                        <div className="infusn_wrap">
-                          <div className="wrpd_icon_num">
-                            <span className="urgnt_txt">6</span>
-                            <span className="drip_img_wrap"><img src={require('../../assets/Images/drip.png')} /></span>
-                          </div>
-                          <h5>Active Infusion</h5>
-                        </div>
-                        <div className="infusn_wrap active_nurse">
-                          <div className="wrpd_icon_num">
-                            <span className="urgnt_txt">6</span>
-                            <span className="drip_img_wrap"><img src={require('../../assets/Images/drip.png')} /></span>
-                          </div>
-                          <h5>Active Nurses</h5>
-                        </div>
+                        <SMALL_CARD 
+                         wrapperClass="infusn_wrap"
+                         innerWrapClass="wrpd_icon_num"
+                         src={require('../../assets/Images/drip.png')}
+                         heading="Active Infusion"
+                         count="6"
+                         />
+                        <SMALL_CARD 
+                          wrapperClass="infusn_wrap active_nurse"
+                          innerWrapClass="wrpd_icon_num"
+                          src={require('../../assets/Images/drip.png')}
+                          heading="Active Nurses"
+                          count="6"
+                         />
                       </div>
                     </div>     
                     <div className="device_in_use_wrapper">

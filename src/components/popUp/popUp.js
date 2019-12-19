@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const POPUP = (props) => {
   const {src, title, subHeading, children, subHeadingClass,titleClass } = props
@@ -12,6 +13,14 @@ const POPUP = (props) => {
         </div>
     </div>
   );
+};
+
+POPUP.propTypes = {
+  src: PropTypes.string,
+  title: PropTypes.string,
+  subHeading: PropTypes.string,
+  titleClass: PropTypes.string,
+  subHeadingClass: PropTypes.string
 };
 
 export default POPUP;

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const MAILSENT_POPUP = (props) => {
   const {src, title, subHeading,subHeadingWithImg, children, subHeadingClass } = props
@@ -13,6 +14,14 @@ const MAILSENT_POPUP = (props) => {
          </div>
         </div>
   );
+};
+
+MAILSENT_POPUP.propTypes = {
+  src: PropTypes.string,
+  title: PropTypes.string,
+  subHeading: PropTypes.string,
+  subHeadingWithImg: PropTypes.string,
+  subHeadingClass: PropTypes.string
 };
 
 export default MAILSENT_POPUP;

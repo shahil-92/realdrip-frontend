@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import WardSignInActivation from '../../components/wardSignInActivation'
+import WardSignInActivation from '../../components/Ward/wardSignInActivation'
 import * as CommonHelper from '../../utils'
 import { toast, ToastContainer } from 'react-toastify';
 
