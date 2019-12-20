@@ -11,7 +11,7 @@ const WardSignInActivation = (props) =>{
   return(
     <div className="main_wrapper ward_main_wrap">
     <div className="ward_left_banner">
-       <img src={require('../../assets/Images/ward_sign_in.png')} />    
+       {/* <img src={require('../../assets/Images/ward_sign_in.png')} />     */}
     </div>
     <div class="ward_sign_wrap">
         <div className="inner_wrap">

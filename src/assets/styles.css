@@ -15,15 +15,9 @@ a{
   cursor: pointer;
 }
 .main_wrapper{
-  background: url(/static/media/Pattern.942d95d5.png) 100% 100%;
-  height: 720px;
+  min-height: 760px;
   width: 100%;
   position: relative;
-  /* display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column; */
-
 }
 .center_colmn_wise {
   display: flex;
@@ -118,8 +112,8 @@ a{
   justify-content: space-between;
 }
 .ward_left_banner{
-  background: url('/static/media/ward_sign_in.d939ec68.png') 100% 100%;
-  height: 100%;
+  background: url(/static/media/ward_sign_in.d939ec68.png);
+  /* height: 100%; */
   width: 48%;
   /* height: 100%; */
   background-position: center;
