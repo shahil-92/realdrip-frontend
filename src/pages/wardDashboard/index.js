@@ -5,6 +5,8 @@ import HEADER from '../../components/Headers/header'
 import DETAILMENU from '../../components/Headers/detailMenu'
 import REDCARD from '../../components/Ward/redCard'
 import SMALL_CARD from '../../components/Ward/smallCard'
+import SPAN_WRAPPER from '../../components/Ward/spanWrapper'
+import DashboardOperationWrap from '../../components/Ward/DashboardOperationWrap'
 export class WardDashBoard extends React.Component {
   constructor() {
     super();
@@ -24,6 +26,7 @@ export class WardDashBoard extends React.Component {
   handleRedirectClick = () =>{
     this.props.history.push('/operation-detail')
  }
+
  activeNurseList = (data) => {
   return data && data.map((data)=>{
     return(
@@ -131,36 +134,60 @@ export class WardDashBoard extends React.Component {
                       </div>
                     </div>     
                     <div className="device_in_use_wrapper">
-                      <div className="device_inuse">
-                        <span class="urgnt_txt">02</span>
-                        <span className="drip_img_wrap"><img class="device_inuse_img" src={require('../../assets/Images/drip.png')} /></span>
-                      </div>
-                      <div className="device_inuse">
-                        <span class="devide_inuse_txt">Devide in use</span>
-                        <span className="device_idle"><span className="idle_number">45</span> <span className="idle_txt">Idle</span></span>
-                      </div>
+                      <SPAN_WRAPPER 
+                        wrapperClass="device_inuse"
+                        spanClassName="urgnt_txt"
+                        spanText="02"
+                        childWrapClass="drip_img_wrap"
+                      >
+                        <img class="device_inuse_img" src={require('../../assets/Images/drip.png')} />
+                      </SPAN_WRAPPER>
+
+                      <SPAN_WRAPPER 
+                        wrapperClass="device_inuse"
+                        spanClassName="devide_inuse_txt"
+                        spanText="Devide in use"
+                        childWrapClass="device_idle"
+                      >
+                        <span className="idle_number">45</span> <span className="idle_txt">Idle</span>
+                      </SPAN_WRAPPER>
                     </div>
 
                     <div className="device_in_use_wrapper time_left_wrapper">
-                      <div className="device_inuse">
-                        <span class="tag_name">Tag Name</span>
-                        <span className="tag_name">Time left</span>
-                      </div>
-                      <div className="device_inuse">
-                        <span class="tag_name">B4</span>
-                        <span className="device_idle">00:12:20</span>
-                      </div>
-                      <div className="device_inuse">
-                        <span class="tag_name">B17</span>
-                        <span className="device_idle">01:40:20</span>
-                      </div>
+                      <SPAN_WRAPPER 
+                        wrapperClass="device_inuse"
+                        spanClassName="tag_name"
+                        spanText="Tag Name"
+                        childWrapClass="tag_name"
+                      >
+                        Time left
+                      </SPAN_WRAPPER>
+
+                      <SPAN_WRAPPER 
+                        wrapperClass="device_inuse"
+                        spanClassName="tag_name"
+                        spanText="B4"
+                        childWrapClass="device_idle"
+                      >
+                        00:12:20
+                      </SPAN_WRAPPER>
+
+                      <SPAN_WRAPPER 
+                        wrapperClass="device_inuse"
+                        spanClassName="tag_name"
+                        spanText="B17"
+                        childWrapClass="device_idle"
+                      >
+                        01:40:20
+                      </SPAN_WRAPPER>
                       <div className="device_inuse see_all_wrap"><span class="see_all_txt">see all</span></div>
                     </div>
                     </div>
                   </div>
 
                   <div className="right-mid-dash">
-                    <div className="right-wrap-heading"> 
+                    <DashboardOperationWrap wardInfusion={wardInfusion.data} wardNurse={wardNurse.data}/>
+                    {/* <div className="right-wrap-heading"> 
                       <div className="infusion_wrap">
                         <h4 class="sumry_head2">Active Infusion</h4>
                         <span class="see_all_txt">see all</span>
@@ -182,7 +209,9 @@ export class WardDashBoard extends React.Component {
                       <div className="active_dsh_list">    
                        {wardNurse.data && this.activeNurseList(wardNurse.data)}
                       </div>
-                    </div>
+                    </div> */}
+
+
                   </div>
                 </div>
               </div>

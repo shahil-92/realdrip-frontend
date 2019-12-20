@@ -115,6 +115,7 @@ a{
 .main_wrapper.ward_main_wrap {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 .ward_left_banner{
   /* background: url('./assets/Images/ward_sign_in.png') 100% 100%; */
@@ -129,25 +130,25 @@ a{
 .ward_sign_wrap {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 50%;
-  justify-content: center;
+  /* align-items: center; */
+  width: 47%;
+  /* justify-content: center; */
+  position: relative;
+}
+.inner_wrap {
   position: relative;
 }
 .ward_input_wrap {
   display: flex;
-  padding: 0 31px;
-  position: absolute;
+  padding: 0;
+  position: relative;
   justify-content: start;
-  left: 28px;
-  width: 100%;
-  margin: -138px 0;
+  width: 100%
 }
 .ward_heading_wrap {
-  position: absolute;
-  top: 18px;
-  left: 34px;
-  padding: 20px 35px;
+  position: relative;
+  top: 0;
+  padding: 20px 0px;
 }
 .ward_input_wrap span{
   position: absolute;
@@ -169,14 +170,13 @@ a{
   letter-spacing: 0px;
 }
 .ward_btn_wrap {
-  position: absolute;
-  margin: -55px -10px;
-  left: 75px;
+  position: relative;
+  margin: 0;
 }
 .ward_bottom {
   position: absolute;
   bottom: 35px;
-  left: 70px;
+  left: 1px;
   font-size: 1.0em;
   font-weight: 700;
 }
@@ -184,7 +184,7 @@ a{
   color: #13D596;
 }
 .input_wrap {
-  padding: 0px 0px 15px 12px;
+  margin-right: 7px;
   width: 266px;
 }
 .input_wrap label {
@@ -192,7 +192,6 @@ a{
   letter-spacing:1px;
 }
 .form-control.cstm-input {
-  width: 247px;
   height: 40px !important;
   opacity: 1;
 }
@@ -2246,6 +2245,10 @@ input.form-control.cstm_add_file {
     float: left;
     position: relative;
     background: #e1ecef4f;
+}
+.btn_wrapper {
+  width: 93%;
+  display: flex;
 }
 .inner_dash_mgnt_right {
   padding: 0px 15px;

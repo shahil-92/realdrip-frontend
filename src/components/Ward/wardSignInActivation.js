@@ -61,10 +61,10 @@ const WardSignInActivation = (props) =>{
         <div className="error_message">{errorMessage}</div>
          <button class="sign_btn_wrd" onClick={onClick}>{buttonLabel}</button>
         </div>
-        {redirectLink && <div className="ward_bottom">
+    </div>
+    {redirectLink && <div className="ward_bottom">
           <span>Haven't Activated your ward yet ?</span> <a onClick={onClickAnchr}>{redirectLink}</a>
         </div>}
-    </div>
     </div>
 </div>
   )
