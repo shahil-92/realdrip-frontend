@@ -6,11 +6,10 @@ export default async (url, method = 'post', body, token) => {
 	console.log('===body=',body)
 	let headers = {
 		"Content-Type": "application/json",
-		"req-token":token
 	};
 	return axios(`${API_URL}${url}`, {
 		method,
-		data: body ? JSON.stringify(body) : null,
+		data: body ? body : null,
 		headers
 	})
 	.then(checkStatus)

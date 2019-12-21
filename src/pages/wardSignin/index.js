@@ -8,8 +8,8 @@ export class WardSignIn extends React.Component {
   constructor() {
     super();
     this.state = {
-      email: "",
-      password: "",
+      email: "ogunniyitunmise@gmail.com",
+      password: "CWh04BkXB2",
       ward_user: "",
       errorMessage:"",
       formErrors:{
@@ -47,13 +47,13 @@ export class WardSignIn extends React.Component {
     const {email, password} = this.state.formErrors;
     // !CommonHelper.isValidPassword(password)
     if(email === '' && password === ''){
-      let data = {
-        email: email,
-        password: password,
-        userType: "ward_user"
-      }
-      this.props.dispatch({ type: 'WARD_LOGIN_SUBMIT', payload: data })
     }
+        let data = {
+          email: email,
+          password: password,
+          userType: "ward_user"
+        }
+        this.props.dispatch({ type: 'WARD_LOGIN_SUBMIT', payload: data })
  }
  
   render() {
