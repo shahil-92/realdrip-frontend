@@ -87,7 +87,9 @@ export class WardDashBoard extends React.Component {
            <div className="inner_dshbrd_wrap">
             <div className="left_dashboard">
               <div className="inner_left_dashboard">
-               <div className="logo" onClick={this.handleClick}><i class="fa fa-bars"></i></div>
+              <div className="logo">
+                <img className="hamburger_btn" src={require('../../assets/Images/sort-button-with-three-lines.svg')}/>
+              </div>
                  <ul className="menu_wrap">
                    <Link to="/ward-dashboard" ><li><img src={require('../../assets/Images/menu1_active.png')} /> </li></Link>
                    <Link to="/ward-operation"><li><img src={require('../../assets/Images/menu4.png')} /></li></Link>
@@ -186,7 +188,7 @@ export class WardDashBoard extends React.Component {
                   </div>
 
                   <div className="right-mid-dash">
-                    <DashboardOperationWrap wardInfusion={wardInfusion.data} wardNurse={wardNurse.data}/>
+                    <DashboardOperationWrap wardInfusion={wardInfusion.data} wardNurse={wardNurse.data} {...this.props}/>
                   </div>
                 </div>
               </div>

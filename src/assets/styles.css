@@ -47,6 +47,9 @@ a{
       bottom: 80px;
       width: 100%;
 }
+.hamburger_btn {
+  height: 14px;
+}
 .head_login_to {
   margin-bottom: 30px;
   text-align: center;
@@ -257,17 +260,19 @@ a{
 }
 .header_dash {
   display: flex;
-  padding: 10px;
+  /* padding: 10px; */
   justify-content: space-between;
   border-bottom: 1px solid #bdbcbc;
   position: relative;
+  height: 52px;
+  align-items: center;
 }
 .header_right_dash {
-  width: 24%;
+  width: 45%;
+  position: relative;
 }
 .header_right_dash img {
-  width: 50%;
-  padding: 0px 0px 0px 20px;
+  width: 22%;
 }
 .logo_hedng {
   font-size: 1.5em;
@@ -285,15 +290,17 @@ a{
   padding: 4px 11px;
   background: #e1ecef;
   border-radius: 25px;
-  margin: 0 0 0 4px;
-  top: 1px;
   font-weight: normal;
   position: relative;
 }
 .header_left_dash {
-  position: absolute;
+  position: relative;
   right: 100px;
-  top: 30px;
+  top: 4px;
+  font-size: 12px;
+  letter-spacing: 0;
+  color: #000000;
+  opacity: 1;
 }
 .mid-section-dshbrd {
   background: #F8F9F9;
@@ -352,12 +359,15 @@ a{
     padding: 60px 0px;
 }
 .see_all_txt {
-  padding: 2px 9px;
-  border-radius: 25px;
-  border: 1px solid gray;
-  /* position: absolute;
-  right: 15px;
-  bottom: -7px; */
+  padding: 0px 10px;
+  font-size: 12px;
+  border: 0.5px solid #0000001A;
+  border-radius: 12px;
+  opacity: 1;
+  color: #000;
+}
+.infusion_wrap.bottom {
+  margin-top: 15px;
 }
 .dash_active_wrap {
   padding: 10px;
@@ -366,19 +376,26 @@ a{
   list-style: none;
   justify-content: space-evenly;
   display: flex;
-  width:100%;
+  width: 100%;
   margin: 0 auto;
   padding: 0;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 0;
+  color: #777289;
+  opacity: 1;
 }
 .active_dsh_list{
   background: #ffff;
   margin-top: 15px !important;
 }
 .ul_contnt {
-  padding: 7px 26px;
-  margin: 0px auto;
-  border-radius: 12px;
+  border-radius: 10px;
   border-top: 1px solid #e3e3e3;
+  height: 88px;
+}
+ul.list_heading_ul li {
+  width: 20%;
 }
 .ul_contnt li{
   width: 20%;
@@ -387,10 +404,10 @@ a{
   padding: 0 9px;
 }
 .wrapper_progress_bar {
-  width: 100%;
+  width: 66%;
   height: 7px;
   background: pink;
-  margin: 8px auto;
+  margin: 1px auto;
   border-radius: 15px;
 }
 .ul_contnt_wrapper {
@@ -403,26 +420,28 @@ a{
   width: 66%;
   height: 7px;
   background: red;
-  margin: 8px 0;
   border-radius: 15px;
 }
 .bld_prcnt {
-  font-size: 1.54em;
+  font-size: 1.03em;
   font-weight: 600;
-  letter-spacing: 1px;
+  letter-spacing: 0px;
+  color: #000;
+  margin-top: 15px;
 }
 .bld_txt {
-  color: #918b8b;
-  font-size: 1.0em;
-  letter-spacing: 1px;
-  font-weight: 500;
+  /* color: #918b8b; */
+  font-size: 14px;
+  letter-spacing: 0;
+  /* font-weight: 500; */
+  color: #B1B0C1;
 }
 .time_in_second.bld_txt {
-  padding: 12px;
-  font-size: 1.2em;
+  margin-top: 15px;
+  font-size: 12px;
 }
 .time_only {
-  font-size: 1.2em;
+  font-size: 14px;
   letter-spacing: 1px;
   font-weight: 600;
 }
@@ -432,7 +451,7 @@ a{
 .speed_hr {
   text-align: center;
   position: relative;
-  padding: 12px;
+  margin-top: 15px;
 }
 .speed_hr span {
   font-size: 1.2em;
@@ -440,7 +459,7 @@ a{
   letter-spacing: 1px;
 }
 .infusn_usr_img {
-  padding: 12px;
+  margin-top: 15px;
 }
 .infusn_usr_img img {
   width: 16px;
@@ -448,12 +467,13 @@ a{
   border-radius: 50%;
 }
 .infusn_usr_fname {
-  padding: 12px;
+  margin-top: 15px;
 }
 .infusn_disease_name {
-  font-size: 1.3em;
+  font-size: 14px;
   font-weight: 600;
-  letter-spacing: 1px;
+  letter-spacing: 0;
+  color: #777289;
 }
 
 /* bottom-right-dashboard */
@@ -469,15 +489,16 @@ a{
 }
 
 .user_img_nme_wrap {
-  padding: 9px 0;
+  padding: 0;
 }
 .user_img_nme_wrap span {
-  /* padding: 21px 0; */
-  font-size: 1.2em;
-  letter-spacing: 1px;
+  font-size: 14px;
   font-weight: 600;
   position: relative;
   top: 2px;
+  letter-spacing: 0;
+  color: #000000;
+  opacity: 1;
 }
 .list_heading_ul.ul_contnt.active_dsh_list.bottom li {
   width: 30% !important;
@@ -489,6 +510,7 @@ a{
   border: none;
   border-bottom: 1px solid #e3e3e3;
   border-radius: 0;
+  height: 55px;
 }
 
 .dash_ward_oprtn_wrap {
@@ -608,6 +630,7 @@ a{
   width: 100%;
   background: #ffff;
   display: flex;
+  margin: 6px 0;
   justify-content: space-between;
 }
 .device_inuse .urgnt_txt{
@@ -625,16 +648,13 @@ a{
 }
 .devide_inuse_txt {
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1.0em;
   opacity: 0.7;
   font-weight: 600;
-  letter-spacing: 1px;
-  
+  letter-spacing: 0px;
 }
 .device_idle {
   position: relative;
-  top: 2px;
-  font-size: 1.2em;
 }
 .idle_number {
   font-weight: 600;
@@ -647,7 +667,6 @@ a{
   font-weight: 600;
   opacity: 0.7;
   letter-spacing: 1px;
-  padding: 12px 0;
 }
 .device_in_use_wrapper.time_left_wrapper {
   position: relative;
@@ -658,7 +677,7 @@ a{
   display: flex;
   flex-direction: column;
   font-size: 2.5em;
-  padding: 13px;
+  padding: 0 13px;
 }
 .menu_wrap {
   list-style: none;
@@ -1800,7 +1819,7 @@ input.form-control.cstm_add_file {
   font-size: 0.89em;
   opacity: 0.7;
   font-weight: 600;
-  letter-spacing: 1px;
+  letter-spacing: 0px;
 } 
 .device_inuse_img {
   right: 0;
@@ -1912,9 +1931,12 @@ input.form-control.cstm_add_file {
   width: 100%;
 }
 .see_all_txt {
-  padding: 2px 4px;
-  border-radius: 25px;
-  border: 1px solid gray;
+  padding: 0px 10px;
+  font-size: 12px;
+  border: 0.5px solid #0000001A;
+  border-radius: 12px;
+  opacity: 1;
+  color: #000;
 }
 .device_in_use_wrapper.time_left_wrapper {
   position: relative;
@@ -1923,9 +1945,12 @@ input.form-control.cstm_add_file {
   margin-left: 0px;
 }
 .bld_prcnt {
-  font-size: 1.25em;
+  font-size: 1.03em;
   font-weight: 600;
-  letter-spacing: 1px;
+  letter-spacing: 0px;
+  color: #000;
+  margin-top: 15px;
+  
 }
 .time_in_second.bld_txt {
   padding: 12px;
@@ -1941,16 +1966,19 @@ input.form-control.cstm_add_file {
   font-weight: 600;
   opacity: 0.7;
   /* letter-spacing: 1px; */
-  padding: 11px 0;
 }
 .list_heading_ul {
   list-style: none;
   justify-content: space-evenly;
   display: flex;
-  width: 100%;
-  margin: 0 auto;
   width: 512px;
+  margin: 0 auto;
   padding: 0;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 0;
+  color: #777289;
+  opacity: 1;
 }
 .dash_active_wrap {
   padding: 10px;
@@ -1977,9 +2005,9 @@ input.form-control.cstm_add_file {
 
 .header_left_dash {
   position: relative;
-  left: 25px;
   top: 0px;
   /* width: 48%; */
+  right: 0;
   font-size: 1.0em;
 }
 .right_dashboard{
@@ -1990,19 +2018,18 @@ input.form-control.cstm_add_file {
   flex-direction: column;
 }
 .header_right_dash img {
-  width: 40%;
+  width: 55%;
   padding: 0;
 }
 .header_right_dash {
-  width: 100%;
+  width: 70%;
 }
 .header_dash {
   display: flex;
-  padding: 0 3px;
   justify-content: flex-start;
   border-bottom: 1px solid #bdbcbc;
   position: relative;
-  flex-direction: column;
+  height: auto;
 }
 
 .dash_ward_device_wrap {

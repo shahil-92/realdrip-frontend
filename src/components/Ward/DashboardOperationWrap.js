@@ -2,24 +2,24 @@
 import PropTypes from 'prop-types';
 
 import React, { useState } from 'react';
-
+ 
 function DashboardOperationWrap(props) {
   console.log('==props==',props)
   const [count, setCount] = useState(0);
   const {wardInfusion, wardNurse} = props;
   const activeNurseList = (data) => {
       console.log('===data==',data)
-        return data && data.map((data)=>{
+        return ['1','2','3'].map((data)=>{
         return(
             <ul className="list_heading_ul ul_contnt active_dsh_list bottom">    
             <li>
                 <div className="user_img_nme_wrap">
                 <img class="user_img" src={require('../../assets/Images/user.png')}></img>
-                <span>{data.name}</span>
+                <span>Shubham</span>
                 </div>    
             </li>
             <li>
-                <div className="time_in_second bld_txt time_btm">Frank Joseph</div>
+                <div className="time_in_second bld_txt">Frank Joseph</div>
             </li>
             <li>
                 <div className="time_only time_btm">12:23pm</div>
@@ -28,14 +28,17 @@ function DashboardOperationWrap(props) {
         )
         })
    }
-  
+
+   const handleRedirectClick = () =>{
+    props.history.push('/operation-detail')
+ }
   const activeInfusionList = (data) => {
-       console.log('===ddd=',data)
-        return data && data.map((data)=>{
+       console.log('===ddd= ',data)
+        return ['1','2','3'].map((data, key)=>{
         return(
-            <ul className="list_heading_ul ul_contnt active_dsh_list" onClick={()=>this.handleRedirectClick()}>    
+            <ul className={(key === 0 ) ? "list_heading_ul ul_contnt active_dsh_list" : "list_heading_ul ul_contnt"} onClick={()=>handleRedirectClick()}>    
                 <li>
-                <div className="bld_prcnt">{data.startVolume}%</div>
+                <div className="bld_prcnt">89%</div>
                 <div className="wrapper_progress_bar"><div className="inner_progress_bar"></div></div>
                 <div className="bld_txt">Blood</div>
                 </li>
@@ -74,14 +77,14 @@ function DashboardOperationWrap(props) {
                 <li>Nurse</li>
                 <li>Patient Case</li>
             </ul>
-            {wardInfusion && activeInfusionList(wardInfusion)}
+            {activeInfusionList()}
         </div>
         <div className="infusion_wrap bottom">
             <h4 class="sumry_head2">Active Nurses</h4>
             <span class="see_all_txt">see all</span>
         </div>
         <div className="active_dsh_list">    
-            {wardNurse && activeNurseList(wardNurse)}
+            {activeNurseList()}
         </div>
     </div>
   );

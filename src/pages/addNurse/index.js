@@ -30,7 +30,7 @@ export class AddNurse extends React.Component {
         <div className="inner_dshbrd_wrap">
          <div className="left_dashboard">
            <div className="inner_left_dashboard">
-            <div className="logo"><i class="fa fa-bars"></i></div>
+            <div className="logo"><img src={require('../../assets/Images/sort-button-with-three-lines.svg')}/></div>
             <ul className="menu_wrap">
                    <Link to="/management-dashboard" ><li><img src={require('../../assets/Images/menu1_active.png')} /> </li></Link>
                    <Link to="/management-ward"><li><img src={require('../../assets/Images/menu4.png')} /></li></Link>
