@@ -112,7 +112,7 @@ a{
   justify-content: space-between;
 }
 .ward_left_banner{
-  background: url(/static/media/ward_sign_in.d939ec68.png);
+  background: url('/static/media/ward_sign_in.d939ec68.png');
   /* height: 100%; */
   width: 48%;
   /* height: 100%; */
@@ -1834,6 +1834,11 @@ input.form-control.cstm_add_file {
   top: 17px;
   font-size: 0.89em;
 }
+.main_wrapper {
+  min-height: 760px;
+  width: 100%;
+  position: relative;
+}
 .dash_ward_device_wrap.oprtn_wrap.connect_left_top_margin {
   margin-top: 8px;
   width: 100%;
@@ -2059,7 +2064,6 @@ input.form-control.cstm_add_file {
   color: #979292;
   letter-spacing: 1px;
   font-weight: 600;
-  top: 29px;
   right: 23px;
   /* width: 50%; */
 }
@@ -2070,8 +2074,8 @@ input.form-control.cstm_add_file {
   bottom: 42px;
 }
 .ward_left_banner {
-  /* background: url(/static/media/ward_sign_in.d939ec68.png) 100% 100%; */
-  height: 100%;
+  background: url('/static/media/ward_sign_in.d939ec68.png') 100% 100%;
+  height: 550px;
   width: 100%;
 }
 .input_wrap {

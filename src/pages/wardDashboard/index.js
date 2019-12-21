@@ -187,31 +187,6 @@ export class WardDashBoard extends React.Component {
 
                   <div className="right-mid-dash">
                     <DashboardOperationWrap wardInfusion={wardInfusion.data} wardNurse={wardNurse.data}/>
-                    {/* <div className="right-wrap-heading"> 
-                      <div className="infusion_wrap">
-                        <h4 class="sumry_head2">Active Infusion</h4>
-                        <span class="see_all_txt">see all</span>
-                      </div>
-                      <div class="dash_active_wrap">
-                        <ul className="list_heading_ul">
-                          <li>Volume</li>
-                          <li>Countdown</li>
-                          <li>Flowerate</li>
-                          <li>Nurse</li>
-                          <li>Patient Case</li>
-                        </ul>
-                        {wardInfusion.data && this.activeInfusionList(wardInfusion.data)}
-                      </div>
-                      <div className="infusion_wrap bottom">
-                        <h4 class="sumry_head2">Active Nurses</h4>
-                        <span class="see_all_txt">see all</span>
-                      </div>
-                      <div className="active_dsh_list">    
-                       {wardNurse.data && this.activeNurseList(wardNurse.data)}
-                      </div>
-                    </div> */}
-
-
                   </div>
                 </div>
               </div>
