@@ -7,13 +7,12 @@ const WardSignInActivation = (props) =>{
     onClick, type, holder, min, onChange, onKeyPress, id, name, 
     data, disabled, onClickAnchr, children,errorMessage
   } = props;
-
   return(
     <div className="main_wrapper ward_main_wrap">
     <div className="ward_left_banner">
        {/* <img src={require('../../assets/Images/ward_sign_in.png')} />     */}
     </div>
-    <div class="ward_sign_wrap">
+    <div className="ward_sign_wrap">
         <div className="inner_wrap">
         <div className="ward_heading_wrap">
             <h4 className="head_ward_h4">{welcomeHeading}</h4>
@@ -21,7 +20,7 @@ const WardSignInActivation = (props) =>{
         </div>
         {children}
         <div className="ward_input_wrap">
-         <div class="input_row">
+         <div className="input_row">
             <div className="input_wrap">
                 <label>Ward Username</label>
                 <Input
@@ -36,6 +35,7 @@ const WardSignInActivation = (props) =>{
                     disabled={disabled}
                     onKeyPress={onKeyPress}
                 />
+                {errorMessage.email && <div className="error-message">{errorMessage.email}</div>}
             </div>
             <div className="input_wrap">
                 <label>Password</label>
@@ -51,6 +51,7 @@ const WardSignInActivation = (props) =>{
                     disabled={disabled}
                     onKeyPress={onKeyPress}
                 />
+                {errorMessage.password && <div className="error-message">{errorMessage.password}</div>}
                 <span>Forget Password?</span>
             </div>
                 
@@ -58,8 +59,8 @@ const WardSignInActivation = (props) =>{
             
         </div>
         <div className="ward_btn_wrap">
-        <div className="error_message">{errorMessage}</div>
-         <button class="sign_btn_wrd" onClick={onClick}>{buttonLabel}</button>
+        {/* <div className="error_message">{errorMessage}</div> */}
+         <button className="sign_btn_wrd" onClick={onClick}>{buttonLabel}</button>
         </div>
     </div>
     {redirectLink && <div className="ward_bottom">

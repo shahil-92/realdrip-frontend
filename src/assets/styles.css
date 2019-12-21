@@ -184,6 +184,15 @@ a{
 .input_wrap {
   margin-right: 7px;
   width: 266px;
+  position: relative;
+}
+.error-message {
+  margin: 5px auto;
+  text-align: left;
+  font: Italic 16px/16px Roboto;
+  letter-spacing: 0;
+  color: #f61e04;
+  opacity: 1;
 }
 .input_wrap label {
   color: #979292;
@@ -194,7 +203,7 @@ a{
   opacity: 1;
 }
 .input_wrap span{
-  position: relative;
+  position: absolute;
   right: 0px;
   top: 6px;
   margin: 0 auto;

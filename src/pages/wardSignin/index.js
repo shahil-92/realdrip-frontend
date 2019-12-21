@@ -8,12 +8,16 @@ export class WardSignIn extends React.Component {
   constructor() {
     super();
     this.state = {
-      email: "ogunniyitunmise@gmail.com",
-      password: "CWh04BkXB2",
+      email: "",
+      password: "",
       ward_user: "",
-      errorMessage:""
-      // "email": "ogunniyitunmise@gmail.com",
-      // "password": "CWh04BkXB2",
+      errorMessage:"",
+      formErrors:{
+        email:'',
+        password:''
+      }
+      // "email": "ogunniyitunmise@gmail.com", ogunniyitunmise@gmail.com
+      // "password": "CWh04BkXB2",CWh04BkXB2
       // "userType": "ward_user"
     };
   }
@@ -31,34 +35,30 @@ export class WardSignIn extends React.Component {
   }
 
   handleChange = (e) => {
-    this.setState({ [e.target.name]: e.target.value })
-    this.setState({errorMessage:""})
+    const {name, value} = e.target
+    const {formErrors} = this.state
+    this.setState({ [name]: value })
+    CommonHelper.handleLoginValidation(formErrors, name, value)
   }
   handleClick = () =>{
      this.props.history.push('/ward-activation')
   }
   handleWardSignIn = () =>{
-    const {email, password} = this.state;
+    const {email, password} = this.state.formErrors;
     // !CommonHelper.isValidPassword(password)
-    if(!CommonHelper.validateEmail(email)){
-      this.setState({errorMessage: "please enter valid Email and Password" })
-    }else if(!CommonHelper.validateEmail(email)){
-      this.setState({errorMessage: "please enter valid Email" })
+    if(email === '' && password === ''){
+      let data = {
+        email: email,
+        password: password,
+        userType: "ward_user"
+      }
+      this.props.dispatch({ type: 'WARD_LOGIN_SUBMIT', payload: data })
     }
-    // else if(!CommonHelper.isValidPassword(password)){
-    //   this.setState({errorMessage: "please enter valid Password" })
-    // }
-    let data = {
-      email: email,
-      password: password,
-      userType: "ward_user"
-    }
-    this.props.dispatch({ type: 'WARD_LOGIN_SUBMIT', payload: data })
  }
-
+ 
   render() {
-    console.log('=-=-==this.state===',this.props) 
-    const {errorMessage} = this.state;
+    console.log('=-=-==this.state===',this.state) 
+    const {formErrors} = this.state;
     return (
       <div>
         <WardSignInActivation 
@@ -69,7 +69,7 @@ export class WardSignIn extends React.Component {
             onClickAnchr={this.handleClick}
             onClick={this.handleWardSignIn}
             onChange={this.handleChange}
-            errorMessage={errorMessage}
+            errorMessage={formErrors}
         />
         <ToastContainer />
       </div>

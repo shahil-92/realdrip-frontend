@@ -45,177 +45,8 @@ export function getStringFirstCharacter(str) {
 	return str.charAt(0);
 }
 
-export function validatePasswordInPersonalInfo(data) {
-	if (
-		data[0].value === undefined ||
-		data[1].value === undefined ||
-		data[2].value === undefined ||
-		data[0].value === '' ||
-		data[1].value === '' ||
-		data[2].value === ''
-	) {
-		return {
-			status: false,
-			message: 'Please fill all required fields'
-		};
-	}
-	if (!isValidPassword(data[1].value)) {
-		return {
-			status: false,
-			message: 'Please enter passowrd in correct format'
-		};
-	}
-	if (data[1].value !== data[2].value) {
-		return {
-			status: false,
-			message: "Password doesn't match"
-		};
-	}
-	return { status: true, message: null };
-}
-
 export function isValidPassword(str) {
 	return /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/.test(str);
-}
-
-export function isValidSignupForm(str) {
-	if (
-		str.email.trim() === '' ||
-		str.password1.trim() === '' ||
-		str.password2.trim() === '' ||
-		str.companyName.trim() === '' ||
-		str.user_type === ''
-	) {
-		return {
-			status: false,
-			message: 'Please fill all the mandatory fields'
-		};
-	}
-	if (!validateEmail(str.email)) {
-		return {
-			status: false,
-			message: 'Please Fill Correct Email'
-		};
-	}
-	if (!isValidPassword(str.password1)) {
-		return {
-			status: false,
-			message: 'Please enter valid password'
-		};
-	}
-	if (str.password1 !== str.password2) {
-		return {
-			status: false,
-			message: "Password doesn't match"
-		};
-	}
-	if (getLengthOfString(str.bluebook) > 3) {
-		return {
-			status: false,
-			message: 'Bluebook score cannot be greater than 3 digits'
-		};
-	}
-	if (getLengthOfString(str.pincode) > 5) {
-		return {
-			status: false,
-			message: 'Zipcode cannot be greater than 6 digits'
-		};
-	}
-	if (str.phone !== '' && getLengthOfString(str.phone) !== 12) {
-		return {
-			status: false,
-			message: 'Phone number should be upto 10 digit'
-		};
-	}
-	return { status: true, message: null };
-}
-
-export function isValidAddProductForm(data) {
-	if (
-		data.name.trim() === '' ||
-		data.delivery_method === '' ||
-		data.quantity.trim() === '' ||
-		data.starting_bid_price.trim() === '' ||
-		data.start_time === '' ||
-		data.end_time === '' ||
-		data.categories_id === '' ||
-		data.country_of_origin === '' ||
-		data.pack === '' ||
-		data.pallet === '' ||
-		data.grade.trim() === '' ||
-		data.size === ''
-	) {
-		return {
-			status: false,
-			message: 'Please fill all mandatory fields'
-		};
-	} else if (
-		typeof data.start_time === 'string' ||
-		typeof data.end_time === 'string' ||
-		typeof data.expiration_date === 'string'
-	) {
-		return {
-			status: false,
-			message: 'Please fill date correctly in YYYY-MM-DD HH:MM AM/PM format'
-		};
-	} else {
-		return { status: true, message: null };
-	}
-}
-export function isValidAddRequestForm(data) {
-	if (
-		data.name === '' ||
-		data.delivery_method === '' ||
-		data.quantity === '' ||
-		data.categories_id === '' ||
-		data.pack === '' ||
-		data.variety === '' ||
-		data.grade === '' ||
-		data.size === ''
-	) {
-		return {
-			status: false,
-			message: 'Please fill all mandatory fields'
-		};
-	} else {
-		return { status: true, message: null };
-	}
-}
-export function isValidEditProductForm(data) {
-	if (data.end_time === '') {
-		return {
-			status: false,
-			message: 'Start time cannot be beyond end time'
-		};
-	} else {
-		return { status: true, message: null };
-	}
-}
-
-export function isValidLoginForm(data) {
-	if (data.email.trim() === '' && data.password.trim() === '') {
-		return { status: false, message: 'Please fill the email and password' };
-	}
-	if (!validateEmail(data.email) && !isValidPassword(data.password)) {
-		return { status: false, message: 'Please fill the correct email and password' };
-	}
-	return { status: true, message: null };
-}
-
-export function isValidContactForm(data) {
-	if (data.first_name === undefined || data.last_name === undefined || data.email === undefined) {
-		return { status: false, message: 'Please fill all the mandatory fields' };
-	}
-	if (!validateEmail(data.email)) {
-		return { status: false, message: 'Please fill the correct email' };
-	}
-	// if (data.phone_namber !== '' && getLengthOfString(data.phone_namber) !== 12) {
-	//   return {
-	//     status: false,
-	//     message: "Phone number should be upto 10 digit"
-	//   }
-	// }
-	return { status: true, message: null };
 }
 
 export function getStringUpperCase(str) {
@@ -295,22 +126,6 @@ export function onKeyPress(evt) {
 	}
 }
 
-export function isResetPasswordForm(data) {
-	if (data.password === '' && data.confirmPassword === '') {
-		return { status: false, message: 'Please fill the Password and Confirm Password' };
-	}
-	if (!isValidPassword(data.password)) {
-		return {
-			status: false,
-			message: 'Must contain password of length 8 with One Uppercase,Lowercase & special Character'
-		};
-	}
-	if (data.password !== data.confirmPassword) {
-		return { status: false, message: "Password doesn't match" };
-	}
-	return { status: true, message: null };
-}
-
 export function getImagePreviewByEnv(image) {
 	if (process.env.NODE_ENV === 'development') {
 		return image.preview;
@@ -318,4 +133,14 @@ export function getImagePreviewByEnv(image) {
 	var arr = image.preview.split('/');
 	arr[2] = 'demo2.ongraph.com:3001';
 	return arr[0] + '//' + arr[1] + arr[2] + '/' + arr[3];
+}
+export function handleLoginValidation(formErrors, name, value){
+	switch(name){
+		case 'email':
+		  return formErrors.email = (validateEmail(value) ? '' : "please input correct mail")
+		case 'password':
+		  return formErrors.password = (value.length < 3 ? 'minimum length 5 is require' : '')
+		default:
+		return;
+	  }
 }

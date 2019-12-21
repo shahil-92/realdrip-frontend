@@ -15,6 +15,10 @@ export class WardActivation extends React.Component {
       name: null,
       email: null,
       country: null,
+      formErrors:{
+        email:'',
+        password:''
+      }
     };
   }
 
@@ -23,6 +27,7 @@ export class WardActivation extends React.Component {
   }
 
   render() {
+    const {formErrors} = this.state;
     return (
         <WardSignInActivation 
             welcomeHeading="Welcome to RealDrip Ward account"
@@ -30,6 +35,7 @@ export class WardActivation extends React.Component {
             buttonLabel="Create account"
             redirectLink="Sign In"
             onClickAnchr={this.handleClick}
+            errorMessage={formErrors}
         >
         <div className="activation_sent"></div>
         </WardSignInActivation>
