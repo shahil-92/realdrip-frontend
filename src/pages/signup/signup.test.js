@@ -25,6 +25,7 @@ describe('<Signup />', () => {
     addingUserError: null,
   };
   const alterProps = newProps => ({ ...props, ...newProps });
+  console.log('=alterProps=====',alterProps)
   describe('Rendering:', () => {
     let wrapper;
     beforeEach(() => {

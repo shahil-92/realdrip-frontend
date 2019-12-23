@@ -1,10 +1,9 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Input from '../../components/inputComponent'
-// import { Redirect } from 'react-router-dom';
 import { Link } from 'react-router-dom'
 import HEADER from '../../components/Headers/header'
+import LEFT_HEADER from '../../components/Headers/leftHeader'
 
 export class WardAccountSetting extends React.Component {
   constructor() {
@@ -13,6 +12,7 @@ export class WardAccountSetting extends React.Component {
       name: null,
       email: null,
       country: null,
+      showMenu:false
     };
   }
 
@@ -22,24 +22,16 @@ export class WardAccountSetting extends React.Component {
   handleWardSignIn = () =>{
     this.props.history.push('/ward-dashboard')
  }
+ handleClickToggle = () =>{
+  this.setState({showMenu : !this.state.showMenu})
+}
 
   render() {
     return (
 
         <div className="main_wrapper ">
         <div className="inner_dshbrd_wrap">
-         <div className="left_dashboard">
-           <div className="inner_left_dashboard">
-            <div className="logo"><i class="fa fa-bars"></i></div>
-            <ul className="menu_wrap">
-                   <Link to="/management-dashboard" ><li><img src={require('../../assets/Images/menu1_active.png')} /> </li></Link>
-                   <Link to="/management-ward"><li><img src={require('../../assets/Images/menu4.png')} /></li></Link>
-                   <Link to="/management-device"><li><img src={require('../../assets/Images/menu2.png')} /></li></Link>
-                   <Link to="/management-nurse"><li><img src={require('../../assets/Images/menu5.png')} /></li></Link>
-                   <Link to="/management-setting"><li><img src={require('../../assets/Images/menu3.png')} /></li></Link>
-              </ul>
-            </div>
-         </div>
+         <LEFT_HEADER onClick={this.handleClickToggle}/>
          <div className="right_dashboard">
            <HEADER headerName="management"/>   
             <div class="mid-section-dshbrd">

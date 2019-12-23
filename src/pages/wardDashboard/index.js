@@ -1,12 +1,12 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Link } from 'react-router-dom';
 import HEADER from '../../components/Headers/header'
 import DETAILMENU from '../../components/Headers/detailMenu'
 import REDCARD from '../../components/Ward/redCard'
 import SMALL_CARD from '../../components/Ward/smallCard'
 import SPAN_WRAPPER from '../../components/Ward/spanWrapper'
 import DashboardOperationWrap from '../../components/Ward/DashboardOperationWrap'
+import LEFT_HEADER from '../../components/Headers/leftHeader'
 export class WardDashBoard extends React.Component {
   constructor() {
     super();
@@ -85,20 +85,7 @@ export class WardDashBoard extends React.Component {
     return (
         <div className="main_wrapper ">
            <div className="inner_dshbrd_wrap">
-            <div className="left_dashboard">
-              <div className="inner_left_dashboard">
-              <div className="logo">
-                <img className="hamburger_btn" src={require('../../assets/Images/sort-button-with-three-lines.svg')}/>
-              </div>
-                 <ul className="menu_wrap">
-                   <Link to="/ward-dashboard" ><li><img src={require('../../assets/Images/menu1_active.png')} /> </li></Link>
-                   <Link to="/ward-operation"><li><img src={require('../../assets/Images/menu4.png')} /></li></Link>
-                   <Link to="/ward-device"><li><img src={require('../../assets/Images/menu2.png')} /></li></Link>
-                   <Link to="/ward-nurse"><li><img src={require('../../assets/Images/menu5.png')} /></li></Link>
-                   <Link to="/ward-setting"><li><img src={require('../../assets/Images/menu3.png')} /></li></Link>
-                 </ul>
-               </div>
-            </div>
+            <LEFT_HEADER onClick={this.handleClick}/>
             <div className="right_dashboard">
                <HEADER headerName="ward"/>
               <div class="mid-section-dshbrd">
