@@ -12,9 +12,9 @@ export class LEFT_HEADER extends React.Component {
 
     handleActiveClick = (data) =>{
         this.setState({active : data.imageName})
-        // setTimeout(() => {
-        // }, 1000);
-        this.props.history.push(data.url)
+        if(this.state.active === data.imageName){
+            this.props.history.push(data.url)
+        }
     }
 
   render() {
