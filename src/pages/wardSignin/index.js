@@ -44,17 +44,17 @@ export class WardSignIn extends React.Component {
      this.props.history.push('/ward-activation')
   }
   handleWardSignIn = () =>{
-    const {email, password} = this.state.formErrors;
+    const {email, password} = this.state;
     // !CommonHelper.isValidPassword(password)
-    if(email === '' && password === ''){
-    }
+    // if(this.state.formErrors.email === '' && this.state.formErrors. === ''){
+    // }
         let data = {
           email: email,
           password: password,
           userType: "ward_user"
         }
-        this.props.dispatch({ type: 'WARD_LOGIN_SUBMIT', payload: data })
- }
+    this.props.dispatch({ type: 'WARD_LOGIN_SUBMIT', payload: data })
+      }
  
   render() {
     console.log('=-=-==this.state===',this.state) 
