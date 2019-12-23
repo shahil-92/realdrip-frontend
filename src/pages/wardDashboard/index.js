@@ -27,57 +27,6 @@ export class WardDashBoard extends React.Component {
     this.props.history.push('/operation-detail')
  }
 
- activeNurseList = (data) => {
-  return data && data.map((data)=>{
-    return(
-      <ul className="list_heading_ul ul_contnt active_dsh_list bottom">    
-        <li>
-          <div className="user_img_nme_wrap">
-            <img class="user_img" src={require('../../assets/Images/user.png')}></img>
-            <span>{data.name}</span>
-          </div>    
-        </li>
-        <li>
-          <div className="time_in_second bld_txt time_btm">Frank Joseph</div>
-        </li>
-        <li>
-          <div className="time_only time_btm">12:23pm</div>
-        </li>
-     </ul>
-    )
-   })
- }
-
- activeInfusionList = (data) => {
-  return data && data.map((data)=>{
-    return(
-      <ul className="list_heading_ul ul_contnt active_dsh_list" onClick={()=>this.handleRedirectClick()}>    
-          <li>
-            <div className="bld_prcnt">{data.startVolume}%</div>
-            <div className="wrapper_progress_bar"><div className="inner_progress_bar"></div></div>
-            <div className="bld_txt">Blood</div>
-          </li>
-          <li>
-            <div className="time_in_second bld_txt">00:13:00</div>
-            <div className="time_only">12:23pm</div>
-          </li>
-          <li>
-            <div className="speed_hr"> <span> 28 </span> <img class="speed_up" src={require('../../assets/Images/dummy_logo.jpg')}></img></div>
-            <div className="speed_unit bld_txt">ml/hr</div>
-          </li>
-          <li>
-            <div className="infusn_usr_img"><img src={require('../../assets/Images/user.png')}></img></div>
-            <div className="infusn_usr_name">Titlayo Olaide</div>
-          </li>
-          <li>
-            <div className="infusn_usr_fname">Frank</div>
-            <div className="infusn_disease_name">Malaria</div>
-          </li>
-      </ul>
-    )
-   })
- }
-
   render() {
     console.log('===',this.props)
     const {wardNurse} = this.props.WardNurse
@@ -85,7 +34,7 @@ export class WardDashBoard extends React.Component {
     return (
         <div className="main_wrapper ">
            <div className="inner_dshbrd_wrap">
-            <LEFT_HEADER onClick={this.handleClick}/>
+            <LEFT_HEADER onClick={this.handleClick} {...this.props}/>
             <div className="right_dashboard">
                <HEADER headerName="ward"/>
               <div class="mid-section-dshbrd">
@@ -131,7 +80,6 @@ export class WardDashBoard extends React.Component {
                       >
                         <img class="device_inuse_img" src={require('../../assets/Images/drip.png')} />
                       </SPAN_WRAPPER>
-
                       <SPAN_WRAPPER 
                         wrapperClass="device_inuse"
                         spanClassName="devide_inuse_txt"
@@ -173,7 +121,6 @@ export class WardDashBoard extends React.Component {
                     </div>
                     </div>
                   </div>
-
                   <div className="right-mid-dash">
                     <DashboardOperationWrap wardInfusion={wardInfusion.data} wardNurse={wardNurse.data} {...this.props}/>
                   </div>

@@ -26,7 +26,7 @@ export class WardNurse extends React.Component {
     return (
         <div className="main_wrapper ">
            <div className="inner_dshbrd_wrap">
-           <LEFT_HEADER onClick={this.handleClick}/>
+           <LEFT_HEADER onClick={this.handleClick} {...this.props}/>
             <div className="right_dashboard">
               <HEADER headerName="ward"/>
               <div class="mid-section-dshbrd">

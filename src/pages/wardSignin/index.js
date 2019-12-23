@@ -16,9 +16,6 @@ export class WardSignIn extends React.Component {
         email:'',
         password:''
       }
-      // "email": "ogunniyitunmise@gmail.com", ogunniyitunmise@gmail.com
-      // "password": "CWh04BkXB2",CWh04BkXB2
-      // "userType": "ward_user"
     };
   }
   static getDerivedStateFromProps(props, state){

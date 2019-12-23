@@ -100,7 +100,7 @@ export class ManagementDevices extends React.Component {
                 <div className="inner_dash_mgnt_right">
                   <div className="right-mid-dash_mgnt">
                       <div className="wrap_device_img_mgnt">
-                         <img className="img_device_info" src={require('../../assets/Images/menu4.png')}/>
+                         <img className="img_device_info" src={require('../../assets/Images/nurse_menu.png')}/>
                       </div>
                       <h4 className="device_info_txt">Device Info</h4>
                       <ul className="device_ul_right_wrap">

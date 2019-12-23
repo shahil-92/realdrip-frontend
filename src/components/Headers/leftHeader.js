@@ -1,24 +1,43 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import * as ImageContainer from '../../utils/images'
+import * as MetaData from '../../utils/metaData'
+export class LEFT_HEADER extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+         active:''
+        };
+    }
 
-const LEFT_HEADER = (props) => {
-  const {onClick} = props
+    handleActiveClick = (data) =>{
+        this.setState({active : data.imageName})
+        // setTimeout(() => {
+        // }, 1000);
+        this.props.history.push(data.url)
+    }
+
+  render() {
+  console.log('===',this.props)
+  const {onClick} = this.props 
+  const { active } = this.state
   return (
     <div className="left_dashboard">
         <div className="inner_left_dashboard">
         <div className="logo"> 
-            <img className="hamburger_btn" src={require('../../assets/Images/sort-button-with-three-lines.svg')} onClick={onClick}/>
+            <img className="hamburger_btn" src={ImageContainer.HamburgurIcon} onClick={onClick}/>
         </div>
         <ul className="menu_wrap">
-            <Link to="/ward-dashboard" ><li><img src={require('../../assets/Images/menu1_active.png')} /> </li></Link>
-            <Link to="/ward-operation"><li><img src={require('../../assets/Images/menu4.png')} /></li></Link>
-            <Link to="/ward-device"><li><img src={require('../../assets/Images/menu2.png')} /></li></Link>
-            <Link to="/ward-nurse"><li><img src={require('../../assets/Images/menu5.png')} /></li></Link>
-            <Link to="/ward-setting"><li><img src={require('../../assets/Images/menu3.png')} /></li></Link>
+        {MetaData.WARD_LEFT_HEADER_DATA.map((data)=>{
+            return(
+                <Link onClick={()=>this.handleActiveClick(data)}><li><img src={(active === data.imageName) ? require(`../../assets/Images/${data.imageName}_active.png`) : require(`../../assets/Images/${data.imageName}.png`) } /> </li></Link>
+            )
+        })}
         </ul>
         </div>
     </div>
   );
-};
+ }
+}
 
 export default LEFT_HEADER;

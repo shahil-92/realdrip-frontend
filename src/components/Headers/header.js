@@ -1,12 +1,12 @@
 import React from 'react';
+import * as ImageContainer from '../../utils/images'
 
 const HEADER = (props) => {
   const {headerName} = props
   return (
     <div className="header_dash">
         <div className="header_right_dash">
-            <img src={require('../../assets/Images/logo.png')} />
-            {/* <span class="logo_hedng">RealDrip</span> */}
+            <img src={ImageContainer.LOGO} />
             <span className="ward">{headerName}</span>
         </div>
         <div className="header_left_dash">

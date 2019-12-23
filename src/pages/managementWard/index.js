@@ -105,7 +105,7 @@ export class ManagementWard extends React.Component {
                   <div className="right-mid-dash_mgnt">
                       <div className="wrap_dash_new_wrad">
                         <div className="img_heading_wrap_mgnt">
-                          <img className="img_ward_info" src={require('../../assets/Images/menu4.png')}/>
+                          <img className="img_ward_info" src={require('../../assets/Images/nurse_menu.png')}/>
                           <h4 className="ward_info_txt">Ward Info</h4>
                         </div>
                         <div className="add_new_device_wrap_mgmnt">
