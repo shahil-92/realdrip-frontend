@@ -67,7 +67,10 @@ export class WardSignIn extends React.Component {
             onClick={this.handleWardSignIn}
             onChange={this.handleChange}
             errorMessage={formErrors}
-        />
+            src={require('../../assets/Images/ward_sign_in.png')}
+            imgClass="img-left-sigin"
+            bottomText="Haven't Activated your ward yet"
+        /> 
         <ToastContainer />
       </div>
     );

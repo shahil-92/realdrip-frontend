@@ -1,16 +1,17 @@
 import React from 'react';
 import Input from '../inputComponent'
-
+ 
 const WardSignInActivation = (props) =>{
   const {
     welcomeHeading, secondHeading, buttonLabel, redirectLink, 
     onClick, type, holder, min, onChange, onKeyPress, id, name, 
-    data, disabled, onClickAnchr, children,errorMessage
+    data, disabled, onClickAnchr, children,errorMessage, src,imgClass,
+    bottomText
   } = props;
   return(
     <div className="main_wrapper ward_main_wrap">
     <div className="ward_left_banner">
-       {/* <img src={require('../../assets/Images/ward_sign_in.png')} />     */}
+       <img src={src} className={imgClass}/>    
     </div>
     <div className="ward_sign_wrap">
         <div className="inner_wrap">
@@ -64,7 +65,7 @@ const WardSignInActivation = (props) =>{
         </div>
     </div>
     {redirectLink && <div className="ward_bottom">
-          <span>Haven't Activated your ward yet ?</span> <a onClick={onClickAnchr}>{redirectLink}</a>
+          <span className="text-color-ward-sign-botm">{bottomText} ?</span> <a onClick={onClickAnchr}>{redirectLink}</a>
         </div>}
     </div>
 </div>

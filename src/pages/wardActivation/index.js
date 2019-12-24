@@ -30,8 +30,13 @@ export class WardActivation extends React.Component {
             redirectLink="Sign In"
             onClickAnchr={this.handleClick}
             errorMessage={formErrors}
+            src={require('../../assets/Images/ward_activate.png')}
+            imgClass="img-left-activation"
+            bottomText="Already Activated your ward yet"
         >
-        <div className="activation_sent"></div>
+        <div className="activation_sent">
+          <div className="activation-txt">Enter detail as sent your mail, or click the activation link in your mail</div>
+        </div>
         </WardSignInActivation>
     );
   }

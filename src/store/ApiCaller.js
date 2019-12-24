@@ -3,7 +3,6 @@ import { checkStatus, parseJSON } from "../utils/responseHandler";
 import { API_URL } from '../utils/constant'
 
 export default async (url, method = 'post', body, token) => {
-	console.log('===body=',body)
 	let headers = {
 		"Content-Type": "application/json",
 		"req-token":token
