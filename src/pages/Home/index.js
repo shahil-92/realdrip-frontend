@@ -21,7 +21,7 @@ export class Home extends React.Component {
 
   render() {
     return (
-        <div className="main_wrapper ">
+        <div className="main_wrapper min-100">
             <div className="heading_wrapper center_colmn_wise">
                 <div className="home_page_img_wrap"><img src={require('../../assets/Images/logo.png')} /></div>
                 <h2>Infusion management <br /> system</h2>
