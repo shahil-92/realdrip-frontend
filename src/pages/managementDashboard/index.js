@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import HEADER from '../../components/Headers/header'
 import DETAILMENU from '../../components/Headers/detailMenu'
 import LEFT_HEADER from '../../components/Headers/leftHeader'
+import CARD_COMPONENT from '../../components/management/managementCard'
 import * as MetaData from '../../utils/metaData'
 export class ManagementDashboard extends React.Component {
   constructor() {
@@ -18,6 +19,18 @@ export class ManagementDashboard extends React.Component {
   handleRedirectClick = () =>{
     this.props.history.push('/operation-detail')
   }
+  handleCardComponent = () => {
+    return MetaData.ManagementDashboardData.map((data,key)=>(
+        <CARD_COMPONENT
+          WrapperCLass = "device_in_use_wrapper mngnt_inner_wrap"
+          spanTextBold = {data.count}
+          src = {data.image}
+          spanText = {data.text}
+          seeAll = "see all"
+          onClick={this.handleRedirectClick}
+        />
+      ))
+  }
  
   render() {
     return (
@@ -26,7 +39,7 @@ export class ManagementDashboard extends React.Component {
             <LEFT_HEADER onClick={this.handleClick} LEFT_HEADER_DATA={MetaData.MANAGEMENT_LEFT_HEADER_DATA} {...this.props}/>
             <div className="right_dashboard">
               <HEADER headerName="management"/>    
-              <div class="mid-section-dshbrd">
+              <div className="mid-section-dshbrd">
                 {this.state.showMenu && <DETAILMENU />}
                 <div className="inner_dash">
                   <div className="wrap_dash_new_wrad">
@@ -38,55 +51,9 @@ export class ManagementDashboard extends React.Component {
                         <div className="add_device_btn">Add new ward </div>
                     </div>
                   </div>
-                 
-
                   <div className="wrap_mngmnt_sectn">
-                    <div className="device_in_use_wrapper mngnt_inner_wrap">
-                      <div className="device_inuse">
-                        <span class="txt_dashboard ">02</span>
-                        <span className="drip_img_wrap"><img class="device_inuse_img" src={require('../../assets/Images/drip.png')} /></span>
-                      </div>
-                      <div className="device_inuse">
-                        <span class="devide_inuse_txt_mgnt">Devide in use</span>
-                        <span class="see_all_txt_mgmnt">see all</span>
-                      </div>
-                    </div>
-
-                    <div className="device_in_use_wrapper mngnt_inner_wrap">
-                      <div className="device_inuse">
-                        <span class="txt_dashboard">02</span>
-                        <span className="drip_img_wrap"><img class="device_inuse_img" src={require('../../assets/Images/drip.png')} /></span>
-                      </div>
-                      <div className="device_inuse">
-                        <span class="devide_inuse_txt_mgnt">Devide in use</span>
-                        <span class="see_all_txt_mgmnt">see all</span>
-                      </div>
-                    </div>
-
-                    <div className="device_in_use_wrapper mngnt_inner_wrap">
-                      <div className="device_inuse">
-                        <span class="txt_dashboard">02</span>
-                        <span className="drip_img_wrap"><img class="device_inuse_img" src={require('../../assets/Images/drip.png')} /></span>
-                      </div>
-                      <div className="device_inuse">
-                        <span class="devide_inuse_txt_mgnt">Devide in use</span>
-                        <span class="see_all_txt_mgmnt">see all</span>
-                      </div>
-                    </div>
-
-                    <div className="device_in_use_wrapper mngnt_inner_wrap">
-                      <div className="device_inuse">
-                        <span class="txt_dashboard">02</span>
-                        <span className="drip_img_wrap"><img class="device_inuse_img" src={require('../../assets/Images/drip.png')} /></span>
-                      </div>
-                      <div className="device_inuse">
-                        <span class="devide_inuse_txt_mgnt">Devide in use</span>
-                        <span class="see_all_txt_mgmnt">see all</span>
-                      </div>
-                    </div>
-
-                 
-                    </div>
+                    {this.handleCardComponent()}
+                  </div>
                 </div>
               </div>
             </div>
@@ -96,10 +63,6 @@ export class ManagementDashboard extends React.Component {
   }
 }
 
-const mapStateToProps = (state) => ({
-   // addingUserStarted: state.user.createAdmin.addingUserStarted,
-  // addingUserResolved: state.user.createAdmin.addingUserResolved,
-  // addingUserError: state.user.createAdmin.addingUserError,
-});
+const mapStateToProps = (state) => ({});
 
 export default connect(mapStateToProps)(ManagementDashboard);

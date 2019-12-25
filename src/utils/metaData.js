@@ -1,4 +1,5 @@
 import * as ImageContainer from './images'
+import { ManagementDashboard } from '../pages/managementDashboard'
 
 export const WARD_LEFT_HEADER_DATA = [
     {
@@ -45,3 +46,5 @@ export const MANAGEMENT_LEFT_HEADER_DATA = [
         url: '/management-setting'
     }
 ]
+
+export const ManagementDashboardData = [{count:'15', text:'Wards registered', image: ImageContainer.OPERATION_LARGE }, {count:'400', text:'Total devices deployed', image: ImageContainer.DEVICE_LARGE },{count:'189', text:'All nurses registered', image: ImageContainer.NURSE_LARGE },{count:'532', text:'All operations done', image: ImageContainer.DRIP_ICON }] 
