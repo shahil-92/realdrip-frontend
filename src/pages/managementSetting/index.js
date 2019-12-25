@@ -4,7 +4,7 @@ import Input from '../../components/inputComponent'
 import { Link } from 'react-router-dom'
 import HEADER from '../../components/Headers/header'
 import LEFT_HEADER from '../../components/Headers/leftHeader'
-
+import * as MetaData from '../../utils/metaData'
 export class WardAccountSetting extends React.Component {
   constructor() {
     super();
@@ -31,7 +31,7 @@ export class WardAccountSetting extends React.Component {
 
         <div className="main_wrapper ">
         <div className="inner_dshbrd_wrap">
-         <LEFT_HEADER onClick={this.handleClickToggle}/>
+         <LEFT_HEADER onClick={this.handleClickToggle} LEFT_HEADER_DATA={MetaData.MANAGEMENT_LEFT_HEADER_DATA} {...this.props}/>
          <div className="right_dashboard">
            <HEADER headerName="management"/>   
             <div class="mid-section-dshbrd">

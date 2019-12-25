@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import HEADER from '../../components/Headers/header'
 import DETAILMENU from '../../components/Headers/detailMenu'
 import LEFT_HEADER from '../../components/Headers/leftHeader'
-
+import * as MetaData from '../../utils/metaData'
 export class ManagementWard extends React.Component {
   constructor() {
     super();
@@ -21,7 +21,7 @@ export class ManagementWard extends React.Component {
     return (
         <div className="main_wrapper ">
            <div className="inner_dshbrd_wrap">
-           <LEFT_HEADER onClick={this.handleClick}/>
+           <LEFT_HEADER onClick={this.handleClick} LEFT_HEADER_DATA={MetaData.MANAGEMENT_LEFT_HEADER_DATA} {...this.props}/>
             <div className="right_dashboard">
               <HEADER headerName="management"/>              
               <div class="mid-section-dshbrd_mgnt">
