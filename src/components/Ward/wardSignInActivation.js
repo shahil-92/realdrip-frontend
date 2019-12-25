@@ -9,7 +9,7 @@ const WardSignInActivation = (props) =>{
     bottomText
   } = props;
   return(
-    <div className="main_wrapper ward_main_wrap">
+    <div className="main_wrapper ward_main_wrap min-100">
     <div className="ward_left_banner">
        <img src={src} className={imgClass}/>    
     </div>
