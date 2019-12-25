@@ -3,7 +3,9 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom'
 import HEADER from '../../components/Headers/header'
 import LEFT_HEADER from '../../components/Headers/leftHeader'
-
+import * as MetaData from '../../utils/metaData'
+import Form from 'react-bootstrap/Form';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export class ConnectedInuse extends React.Component {
   constructor() {
@@ -26,10 +28,9 @@ export class ConnectedInuse extends React.Component {
     return (
         <div className="main_wrapper ">
            <div className="inner_dshbrd_wrap">
-           <LEFT_HEADER onClick={this.handleClickToggle}/>
+           <LEFT_HEADER onClick={this.handleClickToggle} LEFT_HEADER_DATA={MetaData.WARD_LEFT_HEADER_DATA}  {...this.props}/>
             <div className="right_dashboard">
               <HEADER headerName="ward"/>
-              
               <div class="mid-section-dshbrd">
                 {this.state.showMenu && <div className="second_menu_wrap">
                   <ul>
@@ -43,15 +44,16 @@ export class ConnectedInuse extends React.Component {
                     <li>Sign Out</li>
                   </ul>
                 </div>}
-            
-         
-               
                 <div className="inner_dash">
                   <div className="left-mid-dash">
-                   <div className="wrap_ontxt">
-                      <div className="wrap_b2_txt"><span className="b2_txt">B2</span></div>
-                      <div className="wrap_on_txt"><div className="on_txt">On</div> <div className="round_green_circle"></div></div>
-                   </div>
+                  <Form>
+                  <Form.Check 
+                    type="switch"
+                    id="custom-switch"
+                    label="On"
+                    className="cstm-class"
+                  />
+                  </Form>
                    <div className="wrap_label_main_wrap">
                       <div className="label_wrapper"><div className="Label_b2_name">Label</div><div className="small_txt">B2</div></div>
                       <div className="label_wrapper pdng_right_label"><div className="Label_b2_name">ID</div><div className="small_txt">02113322</div></div>

@@ -1,6 +1,6 @@
 // import React from 'react';
 import PropTypes from 'prop-types';
-
+import ProgressBar from 'react-bootstrap/ProgressBar'
 import React, { useState } from 'react';
  
 function DashboardOperationWrap(props) {
@@ -39,7 +39,10 @@ function DashboardOperationWrap(props) {
             <ul className={(key === 0 ) ? "list_heading_ul ul_contnt active_dsh_list" : "list_heading_ul ul_contnt"} onClick={()=>handleRedirectClick()}>    
                 <li>
                 <div className="bld_prcnt">89%</div>
-                <div className="wrapper_progress_bar"><div className="inner_progress_bar"></div></div>
+                <ProgressBar>
+                    
+                    <ProgressBar variant="warning" now={50} key={2} />
+                </ProgressBar>
                 <div className="bld_txt">Blood</div>
                 </li>
                 <li>

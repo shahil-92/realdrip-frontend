@@ -17,6 +17,10 @@ export class WardDevice extends React.Component {
     this.setState({showMenu : !this.state.showMenu})
   }
 
+  handleRedirectClick = () =>{
+    this.props.history.push('/connected-inuse')
+ }
+
   render() {
     return (
         <div className="main_wrapper ">

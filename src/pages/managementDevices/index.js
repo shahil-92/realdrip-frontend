@@ -92,9 +92,6 @@ export class ManagementDevices extends React.Component {
                           <li className="lght_txtmgnt">02020232</li>
                           <li className="bld_txt_mgnt">Idle</li>
                         </ul>
-                       
-                       
-                       
                       </div>      
                   </div>
                 </div>
@@ -117,10 +114,7 @@ export class ManagementDevices extends React.Component {
                           <div className="lght_txtmgnt">Use Count</div>
                           <div className="bld_txt_mgnt">320</div>
                         </li>
-                      </ul>
-                    
-                     
-                      
+                      </ul>  
                   </div>
                   <div className="btn_para">
                        <p>login into ward dashboard to see full information about this device.</p>
