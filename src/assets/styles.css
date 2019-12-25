@@ -36,10 +36,11 @@ a{
   font-size: 1.5em;
 }
 .heading_wrapper h2{
-  font-weight: 600;
+  font-weight: 700;
   font-size: 3.750em;
   color: #000;
   opacity: 1;
+  text-align: center;
 }
 .home_login_to {
       padding: 20px 0px;
@@ -2069,10 +2070,11 @@ input.form-control.cstm_add_file {
   margin: 10px 0px;
 }
 .heading_wrapper h2 {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 2.02em;
   color: #000;
   opacity: 1;
+  text-align: center;
 }
 .wrapper_progress_bar.conted-inuse-bar {
   width: 50%;

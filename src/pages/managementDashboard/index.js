@@ -1,6 +1,5 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Link } from 'react-router-dom'
 import HEADER from '../../components/Headers/header'
 import DETAILMENU from '../../components/Headers/detailMenu'
 import LEFT_HEADER from '../../components/Headers/leftHeader'
@@ -18,7 +17,7 @@ export class ManagementDashboard extends React.Component {
   }
   handleRedirectClick = () =>{
     this.props.history.push('/operation-detail')
- }
+  }
  
   render() {
     return (

@@ -24,8 +24,8 @@ export class Home extends React.Component {
         <div className="main_wrapper ">
             <div className="heading_wrapper center_colmn_wise">
                 <div className="home_page_img_wrap"><img src={require('../../assets/Images/logo.png')} /></div>
-                <h2>Infusion management</h2>
-                <h2>system</h2>
+                <h2>Infusion management <br /> system</h2>
+                
             </div>
             <div class="home_login_to center_colmn_wise">
                 <h3 class="head_login_to">Login to</h3>
