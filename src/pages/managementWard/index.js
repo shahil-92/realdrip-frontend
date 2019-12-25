@@ -17,7 +17,6 @@ export class ManagementWard extends React.Component {
     this.setState({showMenu : !this.state.showMenu})
   }
 
-
   render() {
     return (
         <div className="main_wrapper ">
@@ -97,7 +96,6 @@ export class ManagementWard extends React.Component {
                           <li>20</li>
                           <li>43</li>
                         </ul>
-                       
                       </div>      
                   </div>
                 </div>

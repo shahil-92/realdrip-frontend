@@ -18,7 +18,7 @@ export class ManagementDashboard extends React.Component {
   handleRedirectClick = () =>{
     this.props.history.push('/operation-detail')
  }
-
+ 
   render() {
     return (
         <div className="main_wrapper ">

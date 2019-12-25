@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import HEADER from '../../components/Headers/header'
 import DETAILMENU from '../../components/Headers/detailMenu'
 import LEFT_HEADER from '../../components/Headers/leftHeader'
-
+import * as MetaData from '../../utils/metaData'
 export class WardDevice extends React.Component {
   constructor() {
     super();
@@ -16,15 +16,12 @@ export class WardDevice extends React.Component {
   handleClick = () =>{
     this.setState({showMenu : !this.state.showMenu})
   }
-  handleRedirectClick = () =>{
-    this.props.history.push('/connected-inuse')
- }
 
   render() {
     return (
         <div className="main_wrapper ">
            <div className="inner_dshbrd_wrap">
-           <LEFT_HEADER onClick={this.handleClick} {...this.props}/>
+           <LEFT_HEADER onClick={this.handleClick} LEFT_HEADER_DATA={MetaData.WARD_LEFT_HEADER_DATA} {...this.props}/>
             <div className="right_dashboard">
                <HEADER headerName="ward"/>
               

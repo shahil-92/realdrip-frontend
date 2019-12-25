@@ -22,3 +22,26 @@ export const WARD_LEFT_HEADER_DATA = [
         url: '/ward-setting'
     }
 ]
+
+export const MANAGEMENT_LEFT_HEADER_DATA = [
+    {
+        imageName: 'ward_menu',
+        url: '/management-dashboard'
+    },
+    {
+        imageName: 'operation_menu',
+        url: '/management-ward'
+    },
+    {
+        imageName: 'device_menu',
+        url: '/management-device'
+    },
+    {
+        imageName: 'nurse_menu',
+        url: '/management-nurse'
+    },
+    {
+        imageName: 'setting_menu',
+        url: '/management-setting'
+    }
+]

@@ -7,11 +7,13 @@ import SMALL_CARD from '../../components/Ward/smallCard'
 import SPAN_WRAPPER from '../../components/Ward/spanWrapper'
 import DashboardOperationWrap from '../../components/Ward/DashboardOperationWrap'
 import LEFT_HEADER from '../../components/Headers/leftHeader'
+import * as MetaData from '../../utils/metaData'
 export class WardDashBoard extends React.Component {
   constructor() {
     super();
     this.state = {
-      showMenu:false
+      showMenu:false,
+      activeRoute: false
     };
   }
   componentDidMount(){
@@ -23,18 +25,14 @@ export class WardDashBoard extends React.Component {
   handleClick = () =>{
     this.setState({showMenu : !this.state.showMenu})
   }
-  handleRedirectClick = () =>{
-    this.props.history.push('/operation-detail')
- }
 
   render() {
-    console.log('===',this.props)
     const {wardNurse} = this.props.WardNurse
     const {wardInfusion} = this.props.WardInfusion
     return (
         <div className="main_wrapper ">
            <div className="inner_dshbrd_wrap">
-            <LEFT_HEADER onClick={this.handleClick} {...this.props}/>
+            <LEFT_HEADER onClick={this.handleClick} LEFT_HEADER_DATA={MetaData.WARD_LEFT_HEADER_DATA}  {...this.props}/>
             <div className="right_dashboard">
                <HEADER headerName="ward"/>
               <div class="mid-section-dshbrd">
