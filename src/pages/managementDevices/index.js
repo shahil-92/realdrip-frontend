@@ -5,6 +5,7 @@ import HEADER from '../../components/Headers/header'
 import DETAILMENU from '../../components/Headers/detailMenu'
 import LEFT_HEADER from '../../components/Headers/leftHeader'
 import * as MetaData from '../../utils/metaData'
+import Table from 'react-bootstrap/Table'
 export class ManagementDevices extends React.Component {
   constructor() {
     super();
@@ -48,50 +49,44 @@ export class ManagementDevices extends React.Component {
                                 <span className="oprtn_down_arrow"><i class="fa fa-chevron-down cstm_dwn_arrow"></i></span>
                             </div>
                         </div>
-                      </div>
-                      <div class="dash_active_wrap">
-                      <ul className="list_heading_ul ul_contnt_mgnt">
-                          <li className="lght_txtmgnt">Label</li>
-                          <li className="lght_txtmgnt">Device ID</li>
-                          <li className="lght_txtmgnt">Status</li>
-                        </ul>
-                        </div>
+                      </div>            
                       <div class="dash_active_wrap oprtn_scroll_list">
-                        <ul className="list_heading_ul ul_contnt_mgnt">    
-                          <li className="bld_txt_mgnt">B1</li>
-                          <li className="lght_txtmgnt">02020232</li>
-                          <li className="bld_txt_mgnt">Idle</li>
-                        </ul>
-                        <ul className="list_heading_ul ul_contnt_mgnt">    
-                          <li className="bld_txt_mgnt">B1</li>
-                          <li className="lght_txtmgnt">02020232</li>
-                          <li className="bld_txt_mgnt">Idle</li>
-                        </ul>
-                        <ul className="list_heading_ul ul_contnt_mgnt">    
-                          <li className="bld_txt_mgnt">B1</li>
-                          <li className="lght_txtmgnt">02020232</li>
-                          <li className="bld_txt_mgnt">Idle</li>
-                        </ul>
-                        <ul className="list_heading_ul ul_contnt_mgnt">    
-                          <li className="bld_txt_mgnt">B1</li>
-                          <li className="lght_txtmgnt">02020232</li>
-                          <li className="bld_txt_mgnt">Idle</li>
-                        </ul>
-                        <ul className="list_heading_ul ul_contnt_mgnt">    
-                          <li className="bld_txt_mgnt">B1</li>
-                          <li className="lght_txtmgnt">02020232</li>
-                          <li className="bld_txt_mgnt">Idle</li>
-                        </ul>
-                        <ul className="list_heading_ul ul_contnt_mgnt">    
-                          <li className="bld_txt_mgnt">B1</li>
-                          <li className="lght_txtmgnt">02020232</li>
-                          <li className="bld_txt_mgnt">Idle</li>
-                        </ul>
-                        <ul className="list_heading_ul ul_contnt_mgnt">    
-                          <li className="bld_txt_mgnt">B1</li>
-                          <li className="lght_txtmgnt">02020232</li>
-                          <li className="bld_txt_mgnt">Idle</li>
-                        </ul>
+                        <Table responsive>
+                            <thead>
+                              <tr>
+                                <th className="lght_txtmgnt">Label</th>
+                                <th className="lght_txtmgnt">Device ID</th>
+                                <th className="lght_txtmgnt" >Status</th>  
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td className="bld_txt_mgnt">B1</td>
+                                <td className="lght_txtmgnt">02020232</td>
+                                <td className="bld_txt_mgnt">Idle</td>
+                              </tr>
+                              <tr>
+                                <td className="bld_txt_mgnt">B1</td>
+                                <td className="lght_txtmgnt">02020232</td>
+                                <td className="bld_txt_mgnt">Idle</td>
+                              </tr>
+                              <tr>
+                                <td className="bld_txt_mgnt">B1</td>
+                                <td className="lght_txtmgnt">02020232</td>
+                                <td className="bld_txt_mgnt">Idle</td>
+                              </tr>
+                              <tr>
+                                <td className="bld_txt_mgnt">B1</td>
+                                <td className="lght_txtmgnt">02020232</td>
+                                <td className="bld_txt_mgnt">Idle</td>
+                              </tr>
+                              <tr>
+                                <td className="bld_txt_mgnt">B1</td>
+                                <td className="lght_txtmgnt">02020232</td>
+                                <td className="bld_txt_mgnt">Idle</td>
+                              </tr>
+                            </tbody>
+                        </Table>
                       </div>      
                   </div>
                 </div>

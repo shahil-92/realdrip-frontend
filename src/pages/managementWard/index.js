@@ -5,6 +5,7 @@ import HEADER from '../../components/Headers/header'
 import DETAILMENU from '../../components/Headers/detailMenu'
 import LEFT_HEADER from '../../components/Headers/leftHeader'
 import * as MetaData from '../../utils/metaData'
+import Table from 'react-bootstrap/Table'
 export class ManagementWard extends React.Component {
   constructor() {
     super();
@@ -51,51 +52,55 @@ export class ManagementWard extends React.Component {
                             </div>
                         </div>
                       </div>
-                      <div class="dash_active_wrap">
-                      <ul className="list_heading_ul ul_contnt_mgnt">
-                          <li>Label</li>
-                          <li>Ward name</li>
-                          <li>Devices deployed</li>
-                          <li>Registered Nurses</li>
+                      {/* <div class="dash_active_wrap">
+                        <ul className="list_heading_ul ul_contnt_mgnt">
+                            <li>Label</li>
+                            <li>Ward name</li>
+                            <li>Devices deployed</li>
+                            <li>Registered Nurses</li>
                         </ul>
-                        </div>
+                      </div> */}
                       <div class="dash_active_wrap oprtn_scroll_list">
-                        <ul className="list_heading_ul ul_contnt_mgnt">    
-                         <li>Ward A</li>
-                          <li>Heart center</li>
-                          <li>20</li>
-                          <li>43</li>
-                        </ul>
-                        <ul className="list_heading_ul ul_contnt_mgnt ">    
-                         <li>Ward B</li>
-                          <li>Heart center</li>
-                          <li>20</li>
-                          <li>43</li>
-                        </ul>
-                        <ul className="list_heading_ul ul_contnt_mgnt ">    
-                         <li>Ward C</li>
-                          <li>Heart center</li>
-                          <li>20</li>
-                          <li>43</li>
-                        </ul>
-                        <ul className="list_heading_ul ul_contnt_mgnt ">    
-                         <li>Ward D</li>
-                          <li>Heart center</li>
-                          <li>20</li>
-                          <li>43</li>
-                        </ul>
-                        <ul className="list_heading_ul ul_contnt_mgnt ">    
-                         <li>Ward E</li>
-                          <li>Heart center</li>
-                          <li>20</li>
-                          <li>43</li>
-                        </ul>
-                        <ul className="list_heading_ul ul_contnt_mgnt ">    
-                         <li>Ward F</li>
-                          <li>Heart center</li>
-                          <li>20</li>
-                          <li>43</li>
-                        </ul>
+                        <Table responsive>
+                            <thead>
+                              <tr>
+                                <th className="lght_txtmgnt">Label</th>
+                                <th className="lght_txtmgnt">Ward name</th>
+                                <th className="lght_txtmgnt">Devices deployed</th>
+                                <th className="lght_txtmgnt">Registered Nurses</th>  
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td className="lght_txtmgnt">Ward A</td>
+                                <td className="lght_txtmgnt">Heart center</td>
+                                <td className="lght_txtmgnt">20</td>
+                                <td className="bld_txt_mgnt">43</td>
+                              </tr>
+                              <tr>
+                                <td className="lght_txtmgnt">Ward A</td>
+                                <td className="lght_txtmgnt">Heart center</td>
+                                <td className="lght_txtmgnt">20</td>
+                                <td className="bld_txt_mgnt">43</td>
+                              </tr> <tr>
+                                <td className="lght_txtmgnt">Ward A</td>
+                                <td className="lght_txtmgnt">Heart center</td>
+                                <td className="lght_txtmgnt">20</td>
+                                <td className="bld_txt_mgnt">43</td>
+                              </tr> <tr>
+                                <td className="lght_txtmgnt">Ward A</td>
+                                <td className="lght_txtmgnt">Heart center</td>
+                                <td className="lght_txtmgnt">20</td>
+                                <td className="bld_txt_mgnt">43</td>
+                              </tr> <tr>
+                                <td className="lght_txtmgnt">Ward A</td>
+                                <td className="lght_txtmgnt">Heart center</td>
+                                <td className="lght_txtmgnt">20</td>
+                                <td className="bld_txt_mgnt">43</td>
+                              </tr>
+
+                            </tbody>
+                        </Table>
                       </div>      
                   </div>
                 </div>

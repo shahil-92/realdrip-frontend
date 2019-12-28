@@ -5,6 +5,8 @@ import HEADER from '../../components/Headers/header'
 import DETAILMENU from '../../components/Headers/detailMenu'
 import LEFT_HEADER from '../../components/Headers/leftHeader'
 import * as MetaData from '../../utils/metaData'
+import ProgressBar from 'react-bootstrap/ProgressBar'
+import Table from 'react-bootstrap/Table'
 export class WardOperation extends React.Component {
   constructor() {
     super();
@@ -16,6 +18,39 @@ export class WardOperation extends React.Component {
   handleClick = () =>{
     this.setState({showMenu : !this.state.showMenu})
   }
+
+  activeInfusionList = (data) => {
+    console.log('===ddd= ',data)
+     return ['1','2','3'].map((data, key)=>{
+     return(
+         <tr className={(key === 0 ) ? "list_heading_ul ul_contnt active_dsh_list" : "list_heading_ul ul_contnt"}>    
+             <td>
+             <div className="bld_prcnt">89%</div>
+             <ProgressBar>
+                 <ProgressBar variant="warning" now={50} key={2} />
+             </ProgressBar>
+             <div className="bld_txt">Blood</div>
+             </td>
+             <td>
+             <div className="time_in_second bld_txt">00:13:00</div>
+             <div className="time_only">12:23pm</div>
+             </td>
+             <td>
+             <div className="speed_hr"> <span> 28 </span> <img class="speed_up" src={require('../../assets/Images/dummy_logo.jpg')}></img></div>
+             <div className="speed_unit bld_txt">ml/hr</div>
+             </td>
+             <td>
+             <div className="infusn_usr_img"><img src={require('../../assets/Images/user.png')}></img></div>
+             <div className="infusn_usr_name">Titlayo Olaide</div>
+             </td>
+             <td>
+             <div className="infusn_usr_fname">Frank</div>
+             <div className="infusn_disease_name">Malaria</div>
+             </td>
+         </tr>
+     )
+     })
+}
 
   render() {
     return (
@@ -85,159 +120,23 @@ export class WardOperation extends React.Component {
                                 <span className="oprtn_down_arrow"><i class="fa fa-chevron-down cstm_dwn_arrow"></i></span>
                             </div>
                         </div>
-                      </div>
+                      </div> 
                       <div class="dash_active_wrap">
-                      <ul className="list_heading_ul">
-                          <li>Volume</li>
-                          <li>Countdown</li>
-                          <li>Flowerate</li>
-                          <li>Nurse</li>
-                          <li>Patient Case</li>
-                        </ul>
-                        </div>
-                      <div class="dash_active_wrap oprtn_scroll_list">
-                        <ul className="list_heading_ul ul_contnt active_dsh_list">    
-                          <li>
-                            <div className="bld_prcnt">89%</div>
-                            <div className="wrapper_progress_bar"><div className="inner_progress_bar"></div></div>
-                            <div className="bld_txt">Blood</div>
-                          </li>
-                          <li>
-                            <div className="time_in_second bld_txt">00:13:00</div>
-                            <div className="time_only">12:23pm</div>
-                          </li>
-                          <li>
-                            <div className="speed_hr"> <span> 28 </span> <img class="speed_up" src={require('../../assets/Images/dummy_logo.jpg')}></img></div>
-                            <div className="speed_unit bld_txt">ml/hr</div>
-                          </li>
-                          <li>
-                            <div className="infusn_usr_img"><img src={require('../../assets/Images/user.png')}></img></div>
-                            <div className="infusn_usr_name">Titlayo Olaide</div>
-                          </li>
-                          <li>
-                            <div className="infusn_usr_fname">Frank</div>
-                            <div className="infusn_disease_name">Malaria</div>
-                          </li>
-                        </ul>
-
-                        <ul className="list_heading_ul ul_contnt">    
-                          <li>
-                            <div className="bld_prcnt">89%</div>
-                            <div className="wrapper_progress_bar"><div className="inner_progress_bar"></div></div>
-                            <div className="bld_txt">Blood</div>
-                          </li>
-                          <li>
-                            <div className="time_in_second bld_txt">00:13:00</div>
-                            <div className="time_only">12:23pm</div>
-                          </li>
-                          <li>
-                            <div className="speed_hr"> <span> 28 </span> <img class="speed_up" src={require('../../assets/Images/dummy_logo.jpg')}></img></div>
-                            <div className="speed_unit bld_txt">ml/hr</div>
-                          </li>
-                          <li>
-                            <div className="infusn_usr_img"><img src={require('../../assets/Images/user.png')}></img></div>
-                            <div className="infusn_usr_name">Titlayo Olaide</div>
-                          </li>
-                          <li>
-                            <div className="infusn_usr_fname">Frank</div>
-                            <div className="infusn_disease_name">Malaria</div>
-                          </li>
-                        </ul>
-
-
-                        <ul className="list_heading_ul ul_contnt">    
-                          <li>
-                            <div className="bld_prcnt">89%</div>
-                            <div className="wrapper_progress_bar"><div className="inner_progress_bar"></div></div>
-                            <div className="bld_txt">Blood</div>
-                          </li>
-                          <li>
-                            <div className="time_in_second bld_txt">00:13:00</div>
-                            <div className="time_only">12:23pm</div>
-                          </li>
-                          <li>
-                            <div className="speed_hr"> <span> 28 </span> <img class="speed_up" src={require('../../assets/Images/dummy_logo.jpg')}></img></div>
-                            <div className="speed_unit bld_txt">ml/hr</div>
-                          </li>
-                          <li>
-                            <div className="infusn_usr_img"><img src={require('../../assets/Images/user.png')}></img></div>
-                            <div className="infusn_usr_name">Titlayo Olaide</div>
-                          </li>
-                          <li>
-                            <div className="infusn_usr_fname">Frank</div>
-                            <div className="infusn_disease_name">Malaria</div>
-                          </li>
-                        </ul>
-                        <ul className="list_heading_ul ul_contnt">    
-                          <li>
-                            <div className="bld_prcnt">89%</div>
-                            <div className="wrapper_progress_bar"><div className="inner_progress_bar"></div></div>
-                            <div className="bld_txt">Blood</div>
-                          </li>
-                          <li>
-                            <div className="time_in_second bld_txt">00:13:00</div>
-                            <div className="time_only">12:23pm</div>
-                          </li>
-                          <li>
-                            <div className="speed_hr"> <span> 28 </span> <img class="speed_up" src={require('../../assets/Images/dummy_logo.jpg')}></img></div>
-                            <div className="speed_unit bld_txt">ml/hr</div>
-                          </li>
-                          <li>
-                            <div className="infusn_usr_img"><img src={require('../../assets/Images/user.png')}></img></div>
-                            <div className="infusn_usr_name">Titlayo Olaide</div>
-                          </li>
-                          <li>
-                            <div className="infusn_usr_fname">Frank</div>
-                            <div className="infusn_disease_name">Malaria</div>
-                          </li>
-                        </ul>
-                        <ul className="list_heading_ul ul_contnt">    
-                          <li>
-                            <div className="bld_prcnt">89%</div>
-                            <div className="wrapper_progress_bar"><div className="inner_progress_bar"></div></div>
-                            <div className="bld_txt">Blood</div>
-                          </li>
-                          <li>
-                            <div className="time_in_second bld_txt">00:13:00</div>
-                            <div className="time_only">12:23pm</div>
-                          </li>
-                          <li>
-                            <div className="speed_hr"> <span> 28 </span> <img class="speed_up" src={require('../../assets/Images/dummy_logo.jpg')}></img></div>
-                            <div className="speed_unit bld_txt">ml/hr</div>
-                          </li>
-                          <li>
-                            <div className="infusn_usr_img"><img src={require('../../assets/Images/user.png')}></img></div>
-                            <div className="infusn_usr_name">Titlayo Olaide</div>
-                          </li>
-                          <li>
-                            <div className="infusn_usr_fname">Frank</div>
-                            <div className="infusn_disease_name">Malaria</div>
-                          </li>
-                        </ul>
-                        <ul className="list_heading_ul ul_contnt">    
-                          <li>
-                            <div className="bld_prcnt">89%</div>
-                            <div className="wrapper_progress_bar"><div className="inner_progress_bar"></div></div>
-                            <div className="bld_txt">Blood</div>
-                          </li>
-                          <li>
-                            <div className="time_in_second bld_txt">00:13:00</div>
-                            <div className="time_only">12:23pm</div>
-                          </li>
-                          <li>
-                            <div className="speed_hr"> <span> 28 </span> <img class="speed_up" src={require('../../assets/Images/dummy_logo.jpg')}></img></div>
-                            <div className="speed_unit bld_txt">ml/hr</div>
-                          </li>
-                          <li>
-                            <div className="infusn_usr_img"><img src={require('../../assets/Images/user.png')}></img></div>
-                            <div className="infusn_usr_name">Titlayo Olaide</div>
-                          </li>
-                          <li>
-                            <div className="infusn_usr_fname">Frank</div>
-                            <div className="infusn_disease_name">Malaria</div>
-                          </li>
-                        </ul>
-                      </div>
+                          <Table responsive>
+                              <thead>
+                              <tr className="list_heading_ul">
+                                  <td>Volume</td>
+                                  <td>Countdown</td>
+                                  <td>Flowerate</td>
+                                  <td>Nurse</td>
+                                  <td>Patient Case</td>
+                              </tr>
+                              </thead>
+                              <tbody>
+                              {this.activeInfusionList()}
+                              </tbody>
+                          </Table>
+                      </div>   
                     </div>
                   </div>
                 </div>

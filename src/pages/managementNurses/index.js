@@ -5,6 +5,7 @@ import HEADER from '../../components/Headers/header'
 import DETAILMENU from '../../components/Headers/detailMenu'
 import LEFT_HEADER from '../../components/Headers/leftHeader'
 import * as MetaData from '../../utils/metaData'
+import Table from 'react-bootstrap/Table'
 export class ManagementNurses extends React.Component {
   constructor() {
     super();
@@ -50,62 +51,52 @@ export class ManagementNurses extends React.Component {
                             </div>
                         </div>
                       </div>
-                      <div class="dash_active_wrap">
-                        <ul className="list_heading_ul ul_contnt_mgnt_nurse">
-                          <li className="lght_txtmgnt">Profie</li>
-                          <li className="lght_txtmgnt">Hosipital ID</li>
-                          <li className="lght_txtmgnt">Status</li>
-                        </ul>
-                      </div>
                       <div class="dash_active_wrap oprtn_scroll_list">
-                        <ul className="list_heading_ul ul_contnt_mgnt_nurse">    
-                          <li className="bld_txt name_img_wrap">
-                              <img class="user_img" src={require('../../assets/Images/user.png')}></img>
-                              <span>Frank Joseph</span>
-                          </li> 
-                          <li className="lght_txtmgnt">IKJ/B2011/0100</li>
-                          <li className="bld_txt_mgnt"> <span className="grncircl"></span>Active</li>
-                        </ul>
-                        <ul className="list_heading_ul ul_contnt_mgnt_nurse">    
-                          <li className="bld_txt name_img_wrap">
-                              <img class="user_img" src={require('../../assets/Images/user.png')}></img>
-                              <span>Frank Joseph</span>
-                          </li> 
-                          <li className="lght_txtmgnt">IKJ/B2011/0100</li>
-                          <li className="bld_txt_mgnt"> <span className="grncircl"></span>Active</li>
-                        </ul>
-                        <ul className="list_heading_ul ul_contnt_mgnt_nurse">    
-                          <li className="bld_txt name_img_wrap">
-                              <img class="user_img" src={require('../../assets/Images/user.png')}></img>
-                              <span>Frank Joseph</span>
-                          </li> 
-                          <li className="lght_txtmgnt">IKJ/B2011/0100</li>
-                          <li className="bld_txt_mgnt"> <span className="grncircl"></span>Active</li>
-                        </ul>    
-                        <ul className="list_heading_ul ul_contnt_mgnt_nurse">    
-                          <li className="bld_txt name_img_wrap">
-                              <img class="user_img" src={require('../../assets/Images/user.png')}></img>
-                              <span>Frank Joseph</span>
-                          </li> 
-                          <li className="lght_txtmgnt">IKJ/B2011/0100</li>
-                          <li className="bld_txt_mgnt"> <span className="grncircl"></span>Active</li>
-                        </ul>
-                        <ul className="list_heading_ul ul_contnt_mgnt_nurse">    
-                          <li className="bld_txt name_img_wrap">
-                              <img class="user_img" src={require('../../assets/Images/user.png')}></img>
-                              <span>Frank Joseph</span>
-                          </li> 
-                          <li className="lght_txtmgnt">IKJ/B2011/0100</li>
-                          <li className="bld_txt_mgnt"> <span className="grncircl"></span>Active</li>
-                        </ul>
-                        <ul className="list_heading_ul ul_contnt_mgnt_nurse">    
-                          <li className="bld_txt name_img_wrap">
-                              <img class="user_img" src={require('../../assets/Images/user.png')}></img>
-                              <span>Frank Joseph</span>
-                          </li> 
-                          <li className="lght_txtmgnt">IKJ/B2011/0100</li>
-                          <li className="bld_txt_mgnt"> <span className="grncircl"></span>Active</li>
-                        </ul>
+                          <Table responsive>
+                            <thead>
+                              <tr>
+                                <th className="lght_txtmgnt">Profie</th>
+                                <th className="lght_txtmgnt">Hosipital ID</th>
+                                <th className="lght_txtmgnt" >Status</th>  
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td className="bld_txt_mgnt">
+                                  <img class="user_img" src={require('../../assets/Images/user.png')}></img>
+                                  <span>Frank Joseph</span>
+                                </td>
+                                <td className="lght_txtmgnt">IKJ/B2011/0100</td>
+                                <td className="bld_txt_mgnt"><span className="grncircl"></span>Active</td>
+                              </tr>
+                              <tr>
+                                <td className="bld_txt_mgnt">
+                                  <img class="user_img" src={require('../../assets/Images/user.png')}></img>
+                                  <span>Frank Joseph</span>
+                                </td>
+                                <td className="lght_txtmgnt">IKJ/B2011/0100</td>
+                                <td className="bld_txt_mgnt"><span className="grncircl"></span>Active</td>
+                              </tr>
+                              <tr>
+                                <td className="bld_txt_mgnt">
+                                  <img class="user_img" src={require('../../assets/Images/user.png')}></img>
+                                  <span>Frank Joseph</span>
+                                </td>
+                                <td className="lght_txtmgnt">IKJ/B2011/0100</td>
+                                <td className="bld_txt_mgnt"><span className="grncircl"></span>Active</td>
+                              </tr>
+                              <tr>
+                                <td className="bld_txt_mgnt">
+                                  <img class="user_img" src={require('../../assets/Images/user.png')}></img>
+                                  <span>Frank Joseph</span>
+                                </td>
+                                <td className="lght_txtmgnt">IKJ/B2011/0100</td>
+                                <td className="bld_txt_mgnt"><span className="grncircl"></span>Active</td>
+                              </tr>
+                            </tbody>
+                        </Table>
+                        
+                      
                       </div>      
                   </div>
                 </div>

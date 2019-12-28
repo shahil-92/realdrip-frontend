@@ -5,6 +5,7 @@ import HEADER from '../../components/Headers/header'
 import DETAILMENU from '../../components/Headers/detailMenu'
 import LEFT_HEADER from '../../components/Headers/leftHeader'
 import * as MetaData from '../../utils/metaData'
+import Table from 'react-bootstrap/Table'
 
 export class WardNurse extends React.Component {
   constructor() {
@@ -84,103 +85,36 @@ export class WardNurse extends React.Component {
                                 <span className="oprtn_down_arrow"><i class="fa fa-chevron-down cstm_dwn_arrow"></i></span>
                             </div>
                         </div>
-                      
-                      <div class="dash_active_wrap">
-                        <ul className="list_heading_ul">
-                          <li className="fst_nurs_li">Nurse</li>
-                          <li className="">Hospital ID no.</li>
-                          <li className="">Status</li>
-                          <li className="">All Operations</li>
-                        </ul>
-                     </div>
-                      <div class="dash_active_wrap oprtn_scroll_list active_dsh_list">
-                        <ul className="list_heading_ul nurse_heding_ul" onClick={()=>this.handleRedirectClick()}>
-                          <li>
-                            <div className="bld_txt">
-                              <img class="user_img" src={require('../../assets/Images/user.png')}></img>
-                              <span>Frank Joseph</span>
-                            </div>    
-                          </li>    
-                          <li>
-                            <div className="bld_txt">02:00pm</div>
-                          </li>
-                          <li>
-                            <div className="time_only">B14</div>
-                          </li>
-                          <li>
-                            <div className="speed_unit bld_txt">Abimbola</div>
-                          </li>
-                        </ul>
 
-                        <ul className="list_heading_ul nurse_heding_ul">
-                          <li>
-                            <div className="bld_txt">
-                              <img class="user_img" src={require('../../assets/Images/user.png')}></img>
-                              <span>Frank Joseph</span>
-                            </div>    
-                          </li>    
-                          <li>
-                            <div className="bld_txt">02:00pm</div>
-                          </li>
-                          <li>
-                            <div className="time_only">B14</div>
-                          </li>
-                          <li>
-                            <div className="speed_unit bld_txt">Abimbola</div>
-                          </li>
-                        </ul>
-                        <ul className="list_heading_ul nurse_heding_ul">
-                          <li>
-                            <div className="bld_txt">
-                              <img class="user_img" src={require('../../assets/Images/user.png')}></img>
-                              <span>Frank Joseph</span>
-                            </div>    
-                          </li>    
-                          <li>
-                            <div className="bld_txt">02:00pm</div>
-                          </li>
-                          <li>
-                            <div className="time_only">B14</div>
-                          </li>
-                          <li>
-                            <div className="speed_unit bld_txt">Abimbola</div>
-                          </li>
-                        </ul>
-                        <ul className="list_heading_ul nurse_heding_ul">
-                          <li>
-                            <div className="bld_txt">
-                              <img class="user_img" src={require('../../assets/Images/user.png')}></img>
-                              <span>Frank Joseph</span>
-                            </div>    
-                          </li>    
-                          <li>
-                            <div className="bld_txt">02:00pm</div>
-                          </li>
-                          <li>
-                            <div className="time_only">B14</div>
-                          </li>
-                          <li>
-                            <div className="speed_unit bld_txt">Abimbola</div>
-                          </li>
-                        </ul>
-                        <ul className="list_heading_ul nurse_heding_ul">
-                          <li>
-                            <div className="bld_txt">
-                              <img class="user_img" src={require('../../assets/Images/user.png')}></img>
-                              <span>Frank Joseph</span>
-                            </div>    
-                          </li>    
-                          <li>
-                            <div className="bld_txt">02:00pm</div>
-                          </li>
-                          <li>
-                            <div className="time_only">B14</div>
-                          </li>
-                          <li>
-                            <div className="speed_unit bld_txt">Abimbola</div>
-                          </li>
-                        </ul>
-                      </div>
+                        <Table responsive>
+                        <thead>
+                          <tr className="list_heading_ul">
+                            <td className="fst_nurs_li">Nurse</td>
+                            <td className="">Hospital ID no.</td>
+                            <td className="">Status</td>
+                            <td className="">All Operations</td>
+                          </tr>
+                        </thead>
+                          <tbody>
+                            <tr className="list_heading_ul device_ul" onClick={()=>this.handleRedirectClick()}>    
+                                <td>
+                                <div className="bld_txt">
+                                  <img class="user_img" src={require('../../assets/Images/user.png')}></img>
+                                  <span>Frank Joseph</span>
+                                </div>    
+                              </td>    
+                              <td>
+                                <div className="bld_txt">02:00pm</div>
+                              </td>
+                              <td>
+                                <div className="time_only">B14</div>
+                              </td>
+                              <td>
+                                <div className="speed_unit bld_txt">Abimbola</div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </Table> 
                     </div>
                   </div>
                 </div>

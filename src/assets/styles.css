@@ -434,8 +434,6 @@ a{
 }
 .list_heading_ul {
   list-style: none;
-  justify-content: space-evenly;
-  display: flex;
   width: 100%;
   margin: 0 auto;
   padding: 0;
@@ -506,7 +504,7 @@ ul.list_heading_ul li {
   font-weight: 600;
 }
 .speed_up {
-  width: 6%;
+  width: 12px;
 }
 .speed_hr {
   text-align: center;
