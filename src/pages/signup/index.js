@@ -45,25 +45,25 @@ export class Signup extends React.Component {
   }
 
   register = (event) => {
-    event.preventDefault();
-    // this.props.history.push('/management-signin')
+    // event.preventDefault();
+    this.props.history.push('/management-dashboard')
 
-    const {
-      name, email, country, state, address, password, confirmPassword, agreement
-    } = this.state;
-    const inputErrors = validateSignupInputs({
-      name, email, country, state, address, password, confirmPassword, agreement
-    });
-    if (Object.keys(inputErrors).length) {
-      this.setState({ inputErrors: inputErrors }, () => {
-      });
-    } else {
-      this.clearInputErrors();
-      // this.props.dispatch(createAdminUser({
-      //   name, email, password, confirmPassword,
-      //   location: { address, state, country }
-      // }));
-    }
+    // const {
+    //   name, email, country, state, address, password, confirmPassword, agreement
+    // } = this.state;
+    // const inputErrors = validateSignupInputs({
+    //   name, email, country, state, address, password, confirmPassword, agreement
+    // });
+    // if (Object.keys(inputErrors).length) {
+    //   this.setState({ inputErrors: inputErrors }, () => {
+    //   });
+    // } else {
+    //   this.clearInputErrors();
+    //   // this.props.dispatch(createAdminUser({
+    //   //   name, email, password, confirmPassword,
+    //   //   location: { address, state, country }
+    //   // }));
+    // }
   }
 
   render() {

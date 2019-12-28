@@ -103,13 +103,33 @@ a{
 .progress {
   height: 10px;
   /* width: 50%; */
-  /* margin-bottom: 20px; */
+  margin-top: 5px;
+  margin-bottom: 5px;
   overflow: hidden;
   background-color: #f5f5f5;
   border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
   box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
 }
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+  vertical-align: middle;
+  border-top: 0px solid #ddd;
+}
+tr.ul_contnt {
+  border-radius: 10px;
+  border-top: 0px solid #e3e3e3;
+  height: 88px;
+}
+.progress-bar {
+  float: left;
+  height: 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+  background-color: #337ab7;
+}
+
 .activation-txt {
   font-size: 12px;
   letter-spacing: 0;
@@ -420,7 +440,7 @@ a{
     padding: 60px 0px;
 }
 .see_all_txt {
-  padding: 0px 10px;
+  padding: 1px 15px;
   font-size: 12px;
   border: 0.5px solid #0000001A;
   border-radius: 12px;
@@ -431,7 +451,7 @@ a{
   margin-top: 15px;
 }
 .dash_active_wrap {
-  padding: 10px;
+  padding: 10px 0px;
 }
 .list_heading_ul {
   list-style: none;
@@ -486,7 +506,7 @@ ul.list_heading_ul li {
   font-weight: 600;
   letter-spacing: 0px;
   color: #000;
-  margin-top: 15px;
+  /* margin-top: 15px; */
 }
 .bld_txt {
   /* color: #918b8b; */
@@ -496,7 +516,7 @@ ul.list_heading_ul li {
   color: #B1B0C1;
 }
 .time_in_second.bld_txt {
-  margin-top: 15px;
+  /* margin-top: 15px; */
   font-size: 12px;
 }
 .time_only {
@@ -510,7 +530,7 @@ ul.list_heading_ul li {
 .speed_hr {
   text-align: center;
   position: relative;
-  margin-top: 15px;
+  /* margin-top: 15px; */
 }
 .speed_hr span {
   font-size: 1.2em;
@@ -518,7 +538,7 @@ ul.list_heading_ul li {
   letter-spacing: 1px;
 }
 .infusn_usr_img {
-  margin-top: 15px;
+  /* margin-top: 15px; */
 }
 .infusn_usr_img img {
   width: 16px;
@@ -526,7 +546,7 @@ ul.list_heading_ul li {
   border-radius: 50%;
 }
 .infusn_usr_fname {
-  margin-top: 15px;
+  /* margin-top: 15px; */
 }
 .infusn_disease_name {
   font-size: 14px;
@@ -554,7 +574,7 @@ ul.list_heading_ul li {
   font-size: 14px;
   font-weight: 600;
   position: relative;
-  top: 2px;
+  /* top: 2px; */
   letter-spacing: 0;
   color: #000000;
   opacity: 1;
@@ -703,18 +723,21 @@ ul.list_heading_ul li {
   margin: 6px 0;
   justify-content: space-between;
 }
-.device_inuse .urgnt_txt{
+.device_inuse .urgnt_txt {
   font-size: 3.21em;
+  padding: 0 0px;
 }
 .device_in_use_wrapper {
   position: relative;
-  padding: 28px;
+  padding: 20px 25px;
   background: #fff;
   width: 92%;
-  margin: 13px 0 -6px 0px;
+  margin: 13px 0 0px 0px;
   border-radius: 11px;
-  /* z-index: 11; */
+  z-index: 11;
   box-shadow: 0 0 1px 0px lightgrey;
+  box-shadow: 0px 3px 6px #00000008;
+  border-radius: 10px;
 }
 .devide_inuse_txt {
   text-align: center;
@@ -728,21 +751,39 @@ ul.list_heading_ul li {
 }
 .idle_number {
   font-weight: 600;
+  margin-right: 5px;
 }
 .idle_txt{
   opacity: 0.7;
 }
 .tag_name {
   font-size: 1.0em;
-  font-weight: 600;
-  opacity: 0.7;
-  letter-spacing: 1px;
+  font-weight: 500;
+  color: #B1B0C1;
+  opacity: 1;
+  letter-spacing: 0px;
 }
 .device_in_use_wrapper.time_left_wrapper {
   position: relative;
   z-index: 0;
   top: -23px;
 }
+.device_in_use_wrapper.time_left_wrapper .device_inuse {
+  position: relative;
+  width: 100%;
+  background: #ffff;
+  display: flex;
+  margin: 20px 0;
+  justify-content: space-between;
+}
+
+.device_in_use_wrapper.time_left_wrapper hr {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border: 0;
+  border-top : 0.5px solid #e8e7ef;
+}
+
 .inner_left_dashboard {
   display: flex;
   flex-direction: column;
@@ -771,10 +812,15 @@ ul.list_heading_ul li {
   padding: 15px;
 }
 .device_inuse.see_all_wrap {
-  justify-content: center;
+  justify-content: center !important;
+  margin: 25px 0 15px !important;
 }
 
-
+.active_dsh_list .table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 0px;
+}
 /* operation--- ward--- csss*/
 
 .opertn_srch_mainwrapper {
@@ -1779,7 +1825,7 @@ input.form-control.cstm_add_file {
 
 
 
-@media only screen and (max-width: 955px) {
+@media only screen and (max-width: 1050px) {
   .inner_dash {
     padding: 15px 10px;
     height: 100%;
@@ -2014,7 +2060,7 @@ input.form-control.cstm_add_file {
   font-weight: 600;
   letter-spacing: 0px;
   color: #000;
-  margin-top: 15px;
+  /* margin-top: 15px; */
   
 }
 .time_in_second.bld_txt {

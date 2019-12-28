@@ -67,7 +67,7 @@ export class WardDashBoard extends React.Component {
                           heading="Active Nurses"
                           count="6"
                          />
-                      </div>
+                      </div> 
                     </div>     
                     <div className="device_in_use_wrapper">
                       <SPAN_WRAPPER 
@@ -81,7 +81,7 @@ export class WardDashBoard extends React.Component {
                       <SPAN_WRAPPER 
                         wrapperClass="device_inuse"
                         spanClassName="devide_inuse_txt"
-                        spanText="Devide in use"
+                        spanText="Devices in use"
                         childWrapClass="device_idle"
                       >
                         <span className="idle_number">45</span> <span className="idle_txt">Idle</span>
@@ -97,7 +97,7 @@ export class WardDashBoard extends React.Component {
                       >
                         Time left
                       </SPAN_WRAPPER>
-
+                      {/* <br /> */}
                       <SPAN_WRAPPER 
                         wrapperClass="device_inuse"
                         spanClassName="tag_name"
@@ -106,6 +106,7 @@ export class WardDashBoard extends React.Component {
                       >
                         00:12:20
                       </SPAN_WRAPPER>
+                      <hr />
 
                       <SPAN_WRAPPER 
                         wrapperClass="device_inuse"
