@@ -5,6 +5,8 @@ import HEADER from '../../components/Headers/header'
 import LEFT_HEADER from '../../components/Headers/leftHeader'
 import * as MetaData from '../../utils/metaData'
 import Form from 'react-bootstrap/Form';
+import ProgressBar from 'react-bootstrap/ProgressBar'
+import Table from 'react-bootstrap/Table'
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 export class ConnectedInuse extends React.Component {
@@ -124,30 +126,37 @@ export class ConnectedInuse extends React.Component {
                    {selectedTab === 'inuse' && <div className="right-wrap-heading devics_lst_clmn">  
                       <h3 className="small_txt_h3">Infusion Operation</h3>
                       <div className="dash_active_wrap whitebg">
-                      <ul className="list_heading_ul ul_contnt connected_ul">    
-                          <li>
-                            <div className="bld_prcnt">89%</div>
-                            <div className="wrapper_progress_bar conted-inuse-bar"><div className="inner_progress_bar"></div></div>
-                            <div className="bld_txt">Blood</div>
-                          </li>
-                          <li>
-                            <div className="time_in_second bld_txt">00:13:00</div>
-                            <div className="time_only">12:23pm</div>
-                          </li>
-                          <li>
-                            <div className="speed_hr"> <span> 28 </span> <img class="speed_up" src={require('../../assets/Images/dummy_logo.jpg')}></img></div>
-                            <div className="speed_unit bld_txt">ml/hr</div>
-                          </li>
-                          <li>
-                            <div className="infusn_usr_fname">Frank</div>
-                            <div className="infusn_disease_name">Malaria</div>
-                          </li>
-                          <li>
-                            <div className="infusn_usr_img"><img src={require('../../assets/Images/user.png')}></img></div>
-                            <div className="infusn_usr_name">Titlayo Olaide</div>
-                          </li>
-                        </ul>
-                      </div>
+                     
+                        <Table responsive>
+                            <tbody>
+                            <tr className="list_heading_ul ul_contnt">    
+                              <td>
+                                <div className="bld_prcnt">89%</div>
+                                <div className="wrapper_progress_bar conted-inuse-bar"><div className="inner_progress_bar"></div></div>
+                                <div className="bld_txt">Blood</div>
+                              </td>
+                              <td>
+                                <div className="time_in_second bld_txt">00:13:00</div>
+                                <div className="time_only">12:23pm</div>
+                              </td>
+                              <td>
+                                <div className="speed_hr"> <span> 28 </span> <img class="speed_up" src={require('../../assets/Images/dummy_logo.jpg')}></img></div>
+                                <div className="speed_unit bld_txt">ml/hr</div>
+                              </td>
+                              <td>
+                                <div className="infusn_usr_fname">Frank</div>
+                                <div className="infusn_disease_name">Malaria</div>
+                              </td>
+                              <td>
+                                <div className="infusn_usr_img"><img src={require('../../assets/Images/user.png')}></img></div>
+                                <div className="infusn_usr_name">Titlayo Olaide</div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </Table>
+                        </div>
+                     
+                    
                       <h3 className="small_txt_h3">Device Control</h3>
                       <div class="dash_active_wrap2">
                          <div className="oprtn_device_control whitebg">

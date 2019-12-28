@@ -19,6 +19,10 @@ export class WardNurse extends React.Component {
     this.setState({showMenu : !this.state.showMenu})
   }
 
+  handleRedirectClick = () =>{
+    this.props.history.push('/nurse-detail')
+ }
+  
   render() {
     return (
         <div className="main_wrapper ">

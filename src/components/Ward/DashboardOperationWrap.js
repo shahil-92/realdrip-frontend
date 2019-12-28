@@ -15,8 +15,8 @@ function DashboardOperationWrap(props) {
         <tr className="list_heading_ul ul_contnt active_dsh_list bottom">    
             <td>
                 <div className="user_img_nme_wrap">
-                <img class="user_img" src={require('../../assets/Images/user.png')}></img>
-                <span>Shubham</span>
+                    <img class="user_img" src={require('../../assets/Images/user.png')}></img>
+                    <span>Shubham</span>
                 </div>    
             </td>
             <td>
@@ -65,7 +65,7 @@ function DashboardOperationWrap(props) {
         )
         })
    }
-
+ 
   return (
     <div className="right-wrap-heading"> 
         <div className="infusion_wrap">
