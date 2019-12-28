@@ -11,12 +11,17 @@ export class WardOperation extends React.Component {
   constructor() {
     super();
     this.state = {
-      showMenu:false
+      showMenu:false,
+      activeTab: 'active'
     };
   }
 
   handleClick = () =>{
     this.setState({showMenu : !this.state.showMenu})
+  }
+
+  handleActiveTab = (tab) => {
+    this.setState({activeTab : tab})
   }
 
   activeInfusionList = (data) => {
@@ -53,6 +58,7 @@ export class WardOperation extends React.Component {
 }
 
   render() {
+    const {activeTab} = this.state
     return (
         <div className="main_wrapper ">
            <div className="inner_dshbrd_wrap">
@@ -65,10 +71,10 @@ export class WardOperation extends React.Component {
                   <div className="left-mid-dash">
                     <h2>Operations</h2>
                     <h4 class="sumry_head">Summary</h4>
-                  <div className="oprtn_tabs_main_wrapper">
-                      <div className="oprtn_active_tab">Active</div>
-                      <div className="oprtn_history_tab">History</div>
-                  </div>
+                    <div className="oprtn_tabs_main_wrapper">
+                        <div className={activeTab==="active" ? "oprtn_history_tab activeTab" : 'oprtn_history_tab'}  onClick={() => this.handleActiveTab('active')}>Active</div>
+                        <div className={activeTab==="all" ? "oprtn_history_tab activeTab" : 'oprtn_history_tab'} onClick={() => this.handleActiveTab('all')}>All</div>
+                    </div>
                   <div className="wrap_left_section">
                     <div className="dash_ward_oprtn_wrap">
                       <div className="urgnt_oprtn_wrap">

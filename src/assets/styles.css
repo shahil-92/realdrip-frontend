@@ -17,6 +17,7 @@ a{
 .main_wrapper{
   min-height: 760px;
   width: 100%;
+  cursor: pointer;
   position: relative;
 }
 .center_colmn_wise {
@@ -826,18 +827,13 @@ input.form-control.cstm_search {
   width: 55%;
   justify-content: space-between;
 }
-.oprtn_active_tab {
-   padding: 5px 28px;
-    background: #ffff;
-    margin-bottom: 17px;
-    border-radius: 7px;
-    font-size: 1.2em;
-    height: 34px;
-    font-weight: 600
+.activeTab {
+  background: #ffff;
+  font-weight: 600;
+  opacity: 1 !important;
 }
 .oprtn_history_tab{
     padding: 5px 28px;
-    background: none;
     margin-bottom: 17px;
     border-radius: 10px;
     font-size: 1.2em;

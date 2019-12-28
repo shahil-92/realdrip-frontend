@@ -7,7 +7,7 @@ const SMALL_CARD = (props) => {
     <div className={wrapperClass}>
         <div className={innerWrapClass}>
             <span className="urgnt_txt">{count}</span>
-            <span className="drip_img_wrap"><img src={src} /></span>
+            {src && <span className="drip_img_wrap"><img src={src} /></span>}
         </div>
         <h5>{heading}</h5>
     </div>
