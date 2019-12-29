@@ -365,11 +365,11 @@ tr.ul_contnt {
   top: 7px;
 }
 .ward {
-  font-size: 0.89em;
+  font-size: 12px;
   text-align: center;
   padding: 5px 15px;
-  background: #F0F4FB;
-  border-radius: 23px;
+  background: #F0F4FB 0% 0% no-repeat padding-box;
+  border-radius: 13px;
   font-weight: normal;
   position: relative;
   color: #1D474B;
