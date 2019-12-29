@@ -1,13 +1,13 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Link } from 'react-router-dom'
-import HEADER from '../../components/Headers/header'
-import DETAILMENU from '../../components/Headers/detailMenu'
-import LEFT_HEADER from '../../components/Headers/leftHeader'
-import WardDeviceNurse from '../../components/Ward/WardDeviceNurse'
-import * as MetaData from '../../utils/metaData'
 import Table from 'react-bootstrap/Table'
+import * as MetaData from '../../utils/metaData'
+import ButtonWrapper from '../../components/Button/ButtonWrapper'
+import DETAILMENU from '../../components/Headers/detailMenu'
+import HEADER from '../../components/Headers/header'
+import LEFT_HEADER from '../../components/Headers/leftHeader'
 import SMALL_CARD from '../../components/Ward/smallCard'
+import SearchBar from '../../components/SearchBar/SearchBar'
 
 export class WardNurse extends React.Component {
   constructor() {
@@ -148,11 +148,16 @@ export class WardNurse extends React.Component {
                   </div>
                   <div className="right-mid-dash">
                     <div className="right-wrap-heading devics_lst_clmn">
-                        <WardDeviceNurse
-                          btnWrapperClass = "add_new_device_wrap"
-                          btnText = "Add new Nurse"
-                          dropDownInputWrapClass = "operation_search_tab_bar"
-                          DropdownName = "Name"
+                        <ButtonWrapper 
+                          btnWrapperClass="add_new_device_wrap"
+                          btnClass="add_device_btn"
+                          btnText="Add new Nurse"
+                        />
+                        <SearchBar
+                          SearchdropDownWrapClass ="operation_search_tab_bar"
+                          searchInputWrapClass = "oprtn_search_wrap operation_pdng"
+                          dropDownWrapClass = "oprtn_urgncy_wrap operation_pdng"
+                          DropdownName = "Name" 
                         />
                         {(activeTab === 'active') && this.handleNurseActiveList()}
                         {(activeTab === 'all') && this.handleNurseAllList()} 

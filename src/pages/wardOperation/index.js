@@ -1,12 +1,12 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import HEADER from '../../components/Headers/header'
-import DETAILMENU from '../../components/Headers/detailMenu'
-import LEFT_HEADER from '../../components/Headers/leftHeader'
 import * as MetaData from '../../utils/metaData'
+import Table from 'react-bootstrap/Table'
+import DETAILMENU from '../../components/Headers/detailMenu'
+import HEADER from '../../components/Headers/header'
+import LEFT_HEADER from '../../components/Headers/leftHeader'
 import ProgressBar from 'react-bootstrap/ProgressBar'
 import SearchBar from '../../components/SearchBar/SearchBar'
-import Table from 'react-bootstrap/Table'
 export class WardOperation extends React.Component {
   constructor() {
     super();
@@ -123,13 +123,13 @@ export class WardOperation extends React.Component {
                       <div class="dash_active_wrap">
                           <Table responsive style={{"margin-top":"30px"}}>
                               <thead>
-                              <tr className="list_heading_ul">
-                                  <td>Volume</td>
-                                  <td>Countdown</td>
-                                  <td>Flowerate</td>
-                                  <td>Nurse</td>
-                                  <td>Patient Case</td>
-                              </tr>
+                                <tr className="list_heading_ul">
+                                    <td>Volume</td>
+                                    <td>Countdown</td>
+                                    <td>Flowerate</td>
+                                    <td>Nurse</td>
+                                    <td>Patient Case</td>
+                                </tr>
                               </thead>
                               <tbody>
                               {this.activeInfusionList()}
