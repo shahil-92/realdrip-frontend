@@ -1,11 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Link } from 'react-router-dom';
 import HEADER from '../../components/Headers/header'
 import DETAILMENU from '../../components/Headers/detailMenu'
 import LEFT_HEADER from '../../components/Headers/leftHeader'
 import * as MetaData from '../../utils/metaData'
 import ProgressBar from 'react-bootstrap/ProgressBar'
+import SearchBar from '../../components/SearchBar/SearchBar'
 import Table from 'react-bootstrap/Table'
 export class WardOperation extends React.Component {
   constructor() {
@@ -30,27 +30,27 @@ export class WardOperation extends React.Component {
      return(
          <tr className={(key === 0 ) ? "list_heading_ul ul_contnt active_dsh_list" : "list_heading_ul ul_contnt"}>    
              <td>
-             <div className="bld_prcnt">89%</div>
-             <ProgressBar>
-                 <ProgressBar variant="warning" now={50} key={2} />
-             </ProgressBar>
-             <div className="bld_txt">Blood</div>
+              <div className="bld_prcnt">89%</div>
+              <ProgressBar>
+                  <ProgressBar variant="warning" now={50} key={2} />
+              </ProgressBar>
+              <div className="bld_txt">Blood</div>
              </td>
              <td>
-             <div className="time_in_second bld_txt">00:13:00</div>
-             <div className="time_only">12:23pm</div>
+              <div className="time_in_second bld_txt">00:13:00</div>
+              <div className="time_only">12:23pm</div>
              </td>
              <td>
-             <div className="speed_hr"> <span> 28 </span> <img class="speed_up" src={require('../../assets/Images/dummy_logo.jpg')}></img></div>
-             <div className="speed_unit bld_txt">ml/hr</div>
+              <div className="speed_hr"> <span> 28 </span> <img class="speed_up" src={require('../../assets/Images/dummy_logo.jpg')}></img></div>
+              <div className="speed_unit bld_txt">ml/hr</div>
              </td>
              <td>
-             <div className="infusn_usr_img"><img src={require('../../assets/Images/user.png')}></img></div>
-             <div className="infusn_usr_name">Titlayo Olaide</div>
+              <div className="infusn_usr_img"><img src={require('../../assets/Images/user.png')}></img></div>
+              <div className="infusn_usr_name">Titlayo Olaide</div>
              </td>
              <td>
-             <div className="infusn_usr_fname">Frank</div>
-             <div className="infusn_disease_name">Malaria</div>
+              <div className="infusn_usr_fname">Frank</div>
+              <div className="infusn_disease_name">Malaria</div>
              </td>
          </tr>
      )
@@ -113,20 +113,13 @@ export class WardOperation extends React.Component {
                   <div className="right-mid-dash">
                     <div className="right-wrap-heading"> 
                       <div className="opertn_srch_main_wrapper">
-                        <div className="operation_search_tab_bar">
-                            <div className="oprtn_search_wrap operation_pdng">
-                                <input type="text" className="form-control cstm_search"/>
-                                <span className="search_icon"><i class="fa fa-search" aria-hidden="true"></i></span>
-                            </div>
-                            <div className="oprtn_hmbrgr_image operation_pdng">
-                             <i class="fa fa-bars"></i>
-                            </div>
-                            <div className="oprtn_urgncy_wrap operation_pdng">
-                                <span className="txt_urgncy">Urgency</span>
-                                <span className="oprtn_down_arrow"><i class="fa fa-chevron-down cstm_dwn_arrow"></i></span>
-                            </div>
-                        </div>
-                      </div> 
+                        <SearchBar 
+                          SearchdropDownWrapClass ="operation_search_tab_bar"
+                          searchInputWrapClass = "oprtn_search_wrap operation_pdng"
+                          dropDownWrapClass = "oprtn_urgncy_wrap operation_pdng"
+                          DropdownName = "Urgency"
+                        />
+                      </div>
                       <div class="dash_active_wrap">
                           <Table responsive>
                               <thead>
@@ -155,9 +148,6 @@ export class WardOperation extends React.Component {
 }
 
 const mapStateToProps = (state) => ({
-   // addingUserStarted: state.user.createAdmin.addingUserStarted,
-  // addingUserResolved: state.user.createAdmin.addingUserResolved,
-  // addingUserError: state.user.createAdmin.addingUserError,
 });
 
 export default connect(mapStateToProps)(WardOperation);

@@ -7,7 +7,7 @@ const WardDeviceNurse = (props) => {
   return (
     <div>
         <div className={btnWrapperClass}>
-        <div className="add_device_btn">{btnText}</div>
+          <div className="add_device_btn">{btnText}</div>
         </div>
         <div className={dropDownInputWrapClass}>
             <div className="oprtn_search_wrap operation_pdng">
