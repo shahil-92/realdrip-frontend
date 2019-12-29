@@ -31,15 +31,15 @@ export class WardDevice extends React.Component {
   }
 
   handleDeviceActiveList = (data) => ( 
-    <Table responsive>
-      <thead>
+    <Table className="table-container" responsive>
+      <thead className="wrapper_thead">
         <tr className="list_heading_ul">
           <td className="devic_txt">To be free</td>
           <td className="devic_txt">Label</td>
           <td className="devic_txt">Nurse</td>
         </tr>
       </thead>
-      <tbody>
+      <tbody className="wrapper_tbody white-background">
      {['1','2','3'].map((data)=>{
         return(
         <tr className="list_heading_ul device_ul" onClick={()=>this.handleRedirectClick()}>    
@@ -60,15 +60,15 @@ export class WardDevice extends React.Component {
    )
 
    handleDeviceAllList = (data) => ( 
-    <Table responsive>
-      <thead>
+    <Table className="table-container" responsive>
+      <thead className="wrapper_thead">
         <tr className="list_heading_ul">
           <td className="devic_txt">Label</td>
           <td className="devic_txt">Device ID</td>
           <td className="devic_txt">Status</td>
         </tr>
       </thead>
-      <tbody>
+      <tbody className="wrapper_tbody white-background">
      {['1','2','3'].map((data)=>{
         return(
         <tr className="list_heading_ul device_ul" onClick={()=>this.handleRedirectClick()}>    

@@ -5,8 +5,9 @@ import Routes from './routes';
 import Store from './store/configureStore';
 import 'react-toastify/dist/ReactToastify.min.css'; 
 // import configureStore from './configureStore';
-import './assets/styles.css';
 // const store = configureStore();
+// import 'bootstrap/dist/css/bootstrap.min.css';
+import './assets/styles.css';
 
 render(
     <Provider store={Store}>
