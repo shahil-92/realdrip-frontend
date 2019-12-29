@@ -611,7 +611,7 @@ ul.list_heading_ul li {
 }
 .urgnt_txt {
   font-size: 45px;
-  padding: 0 13px;
+  padding: 0 10px;
   font-weight: bold;
 }
 .urgnt_txt_red {
@@ -700,11 +700,11 @@ ul.list_heading_ul li {
 }
 .drip_img_wrap img {
   position: absolute;
-  right: 3px;
+  right: 10px;
   top: 15px;
 }
 .infusn_wrap h5 {
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 0;
   color: #777289;
   opacity: 1;
@@ -755,6 +755,12 @@ ul.list_heading_ul li {
 }
 .idle_txt{
   opacity: 0.7;
+}
+.infusn_wrap.green_device h5 {
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0;
 }
 .tag_name {
   font-size: 1.0em;
@@ -836,7 +842,7 @@ ul.list_heading_ul li {
   position: relative;
 }
 .operation_pdng {
-  padding: 0 4px;
+  padding: 0 10px;
   justify-content: center;
   position: relative;
   align-items: center;
@@ -854,8 +860,8 @@ ul.list_heading_ul li {
 .search_icon {
   position: absolute;
   right: 26px;
-  top: 12px;
-  font-size: 0.89em
+  top: 11px;
+  font-size: 0.89em;
 }
 input.form-control.cstm_search {
   border-radius: 15px;
@@ -863,10 +869,12 @@ input.form-control.cstm_search {
   height: 39px;
   width: 213px;
   border: none;
+  box-shadow: none;
 }
 .txt_urgncy {
   font-size: 0.89em;
-  padding-right: 5px;
+  padding-right: 10px;
+  font-weight: 600;
 }
 .oprtn_tabs_main_wrapper {
   display: flex;
@@ -878,15 +886,15 @@ input.form-control.cstm_search {
   font-weight: 600;
   opacity: 1 !important;
 }
-.oprtn_history_tab{
-    padding: 5px 28px;
-    margin-bottom: 17px;
-    border-radius: 10px;
-    font-size: 1.2em;
-    height: 34px;
-    opacity: 0.6;
-    font-weight: 600;
-    margin-left: 10px;
+.oprtn_history_tab {
+  padding: 5px 28px;
+  margin-bottom: 17px;
+  border-radius: 15px;
+  font-size: 1.2em;
+  height: 34px;
+  opacity: 0.6;
+  font-weight: 500;
+  margin-left: 0px;
 }
 .dash_active_wrap.oprtn_scroll_list {
   max-height: 400px;
@@ -950,7 +958,7 @@ input.form-control.cstm_search {
   margin: 10px;
   border-radius: 15px;
   font-size: 0.92em;
-  font-weight: 600;
+  font-weight: 500;
 }
 .add_new_device_wrap {
   display: flex;
@@ -1007,9 +1015,9 @@ ul.list_heading_ul.nurse_heding_ul {
   width: 61%;
   background: #fff;
   position: absolute;
-  left: 20%;
+  left: 18%;
   right: -20%;
-  top: 9px;
+  top: 15px;
   border: 1px solid #13D596;
   border-style: dashed;
 }
@@ -1023,7 +1031,7 @@ ul.list_heading_ul.nurse_heding_ul {
 }
 .device_infusn .vlm_txt_right {
   text-align: right !important;
-  font-size: 0.333em;
+  /* font-size: 0.333em; */
   opacity: 1;
 }
 .right-wrap-heading.devics_lst_clmn h3 {
@@ -1070,7 +1078,7 @@ ul.list_heading_ul.nurse_heding_ul {
   font-size: 2.0em;
   font-weight: 700;
   position: relative;
-  top: 12px;
+  top: 16px;
 }
 .nurc_img_wrap img {
   width: 30px;
@@ -1100,10 +1108,17 @@ ul.list_heading_ul.nurse_heding_ul {
 }
 .nurc_img_wrap {
   width: 30%;
+  display: flex;
+  align-items: center;
 }
 .nurc_post {
-  font-size: 1.08em;
-  opacity: 0.7;
+  font-size: 1em;
+  opacity: 1;
+  font-weight: 500;
+  color: #B1B0C1;
+}
+span.nurc_name {
+  color: #777289;
   font-weight: 500;
 }
 .whitebg {
@@ -1113,19 +1128,20 @@ ul.list_heading_ul.nurse_heding_ul {
   padding: 15px;
 }
 .oprtn_instrtn_wrap h5 {
-  font-weight: 600;
+  font-weight: 500;
   padding: 5px 0;
   opacity: 0.7;
 }
 .oprtn_instrtn_wrap div {
-  font-weight: 600;
+  font-weight: 500;
   padding: 5px 0;
   opacity: 0.5;
-  font-size: 0.98em;
+  font-size: 0.85em;
 }
 .dash_active_wrap2 {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .oprtn_device_control.whitebg {
   width: 30%;
@@ -1134,35 +1150,41 @@ ul.list_heading_ul.nurse_heding_ul {
   align-items: center;
   display: flex;
   padding: 14px;
-  margin: 7px;
+  /* margin: 7px; */
 }
 .cstm_icon {
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  background: #13d59663;
+  background: rgba(12, 216, 145, 0.1);
 }
 .cstm_icon .fa {
   padding: 14px 16px;
-  color: #13D596;
+  color: #0FBB83;
 }
 .dash_ward_device_wrap.oprtn_wrap {
-  width: 80%;
+  width: 90%;
   margin: 12px 0;
 }
 .infusn_wrap.device_infusn.oprtn_dtl_wrd {
   margin: 14px 0;
-  padding: 19px 17px 19px 26px;
+  padding: 19px 17px 19px 17px;
 }
 .prcnt_opt_detail {
   font-size: 0.80em;
   font-weight: 600;
-  padding: 10px 1px;
+  padding: 6px 1px;
 }
 .prcnt_op_txt {
   padding: 0px !important;
 }
-
+.infusn_wrap.device_infusn.oprtn_dtl_wrd .wrapper_progress_bar {
+  width: 100%;
+  height: 7px;
+  background: pink;
+  margin: 10px auto 1px;
+  border-radius: 20px;
+}
 
 /*---------======connect -inuse=page css====*/
 .b2_txt {

@@ -121,7 +121,7 @@ export class WardOperation extends React.Component {
                         />
                       </div>
                       <div class="dash_active_wrap">
-                          <Table responsive>
+                          <Table responsive style={{"margin-top":"30px"}}>
                               <thead>
                               <tr className="list_heading_ul">
                                   <td>Volume</td>
