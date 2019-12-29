@@ -1,13 +1,13 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import HEADER from '../../components/Headers/header'
+import * as MetaData from '../../utils/metaData'
+import DashboardOperationWrap from '../../components/Ward/DashboardOperationWrap'
 import DETAILMENU from '../../components/Headers/detailMenu'
+import HEADER from '../../components/Headers/header'
+import LEFT_HEADER from '../../components/Headers/leftHeader'
 import REDCARD from '../../components/Ward/redCard'
 import SMALL_CARD from '../../components/Ward/smallCard'
 import SPAN_WRAPPER from '../../components/Ward/spanWrapper'
-import DashboardOperationWrap from '../../components/Ward/DashboardOperationWrap'
-import LEFT_HEADER from '../../components/Headers/leftHeader'
-import * as MetaData from '../../utils/metaData'
 export class WardDashBoard extends React.Component {
   constructor() {
     super();
