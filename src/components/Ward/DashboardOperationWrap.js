@@ -1,5 +1,4 @@
 // import React from 'react';
-import PropTypes from 'prop-types';
 import ProgressBar from 'react-bootstrap/ProgressBar'
 import React, { useState } from 'react';
 import Table from 'react-bootstrap/Table'
@@ -32,7 +31,7 @@ function DashboardOperationWrap(props) {
 
    const handleRedirectClick = () =>{
     props.history.push('/operation-detail')
- }
+  }
   const activeInfusionList = (data) => {
        console.log('===ddd= ',data)
         return ['1','2','3'].map((data, key)=>{

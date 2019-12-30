@@ -1718,7 +1718,7 @@ tr.list_heading_ul td.devic_txt {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 30px 0;
+  margin: 0;
 }
 .input_row_mgnt {
   display: flex;
@@ -1749,6 +1749,7 @@ tr.list_heading_ul td.devic_txt {
 }
 .mgmnt_input_wrap_main {
   width: 50%;
+  margin-top: 80px;
 }
 
 /*--------------add Nurse--------------------*/
@@ -2400,7 +2401,7 @@ input.form-control.cstm_add_file {
   /* text-align: left; */
   align-items: center;
   justify-content: center;
-  margin: 29px 16px;
+  margin: 0;
 }
 .input_wrap_accnt_row {
   display: flex;
@@ -2524,7 +2525,7 @@ input.form-control.cstm_add_file {
   /* text-align: left; */
   align-items: center;
   justify-content: center;
-  margin: 29px 16px;
+  margin: 0;
 }
 .input_wrap_accnt_row {
   display: flex;

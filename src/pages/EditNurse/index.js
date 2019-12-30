@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import * as MetaData from '../../utils/metaData'
 import AddEditForm from '../../components/Form/AddEditForm'
 
-export class AddNurse extends React.Component {
+export class EditNurse extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -28,10 +28,10 @@ export class AddNurse extends React.Component {
     return (
       <AddEditForm
         sectionName = "Nurses"
-        TitleName = "Add new nurse"
+        TitleName = "Edit nurse"
         Label_first = "Name"
         Label_Second = "Hospital ID no."
-        btnText = "Add"
+        btnText = "Update"
         fileTitle = "Attach profile picture"
       {...this.props}/>
     );
@@ -41,4 +41,4 @@ export class AddNurse extends React.Component {
 const mapStateToProps = (state) => ({
 });
 
-export default connect(mapStateToProps)(AddNurse);
+export default connect(mapStateToProps)(EditNurse);
