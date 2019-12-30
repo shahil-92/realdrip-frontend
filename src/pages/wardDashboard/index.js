@@ -25,6 +25,9 @@ export class WardDashBoard extends React.Component {
   handleClick = () =>{
     this.setState({showMenu : !this.state.showMenu})
   }
+  handleClickSeeall = () => {
+    this.props.history.push('/ward-device')
+  }
 
   render() {
     const {wardNurse} = this.props.WardNurse
@@ -116,7 +119,7 @@ export class WardDashBoard extends React.Component {
                       >
                         01:40:20
                       </SPAN_WRAPPER>
-                      <div className="device_inuse see_all_wrap"><span class="see_all_txt">see all</span></div>
+                      <div className="device_inuse see_all_wrap" onClick={this.handleClickSeeall}><span class="see_all_txt">see all</span></div>
                     </div>
                     </div>
                   </div>
