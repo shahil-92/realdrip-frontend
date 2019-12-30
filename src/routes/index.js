@@ -21,6 +21,8 @@ import ManagementNurses from '../pages/managementNurses'
 import ManagementSetting from '../pages/managementSetting'
 import AddNurse from '../pages/addNurse'
 import AddNewDevice from '../pages/AddNewDevice'
+import EditDevices from '../pages/EditDevices'
+import EditNurse from '../pages/EditNurse'
 import ConfirmMailSent from '../pages/confirmMailSent'
 import PasswordRecovery from '../pages/passwordRecovery'
 import RecoveryMailSent from '../pages/recoveryMailSent'
@@ -51,6 +53,8 @@ export default (props) => (
 			<Route exact path="/management-setting" component={props => <ManagementSetting {...props}/>}/>
 			<Route exact path="/add-nurse" component={props => <AddNurse {...props}/>}/>
 			<Route exact path="/add-device" component={props => <AddNewDevice {...props}/>}/>
+			<Route exact path="/edit-device" component={props => <EditDevices {...props}/>}/>
+			<Route exact path="/edit-nurse" component={props => <EditNurse {...props}/>}/>
 			<Route exact path="/confirm-mail" component={props => <ConfirmMailSent {...props}/>}/>
 			<Route exact path="/password-recovery" component={props => <PasswordRecovery {...props}/>}/>
 			<Route exact path="/recovery-mailsent" component={props => <RecoveryMailSent {...props}/>}/>

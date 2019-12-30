@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import * as MetaData from '../../utils/metaData'
 import AddEditForm from '../../components/Form/AddEditForm'
 
-export class AddNewDevice extends React.Component {
+export class EditDevices extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -17,10 +17,10 @@ export class AddNewDevice extends React.Component {
     return (
       <AddEditForm
         sectionName = "Devices"
-        TitleName = "Add new Device"
+        TitleName = "Edit Device"
         Label_first = "Input Device ID"
         Label_Second = "Label to put on device"
-        btnText = "Add"
+        btnText = "Update"
       {...this.props}/>
     );
   }
@@ -29,4 +29,4 @@ export class AddNewDevice extends React.Component {
 const mapStateToProps = (state) => ({
 });
 
-export default connect(mapStateToProps)(AddNewDevice);
+export default connect(mapStateToProps)(EditDevices);
