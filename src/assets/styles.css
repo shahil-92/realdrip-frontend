@@ -252,6 +252,9 @@ tr.ul_contnt {
   position: relative;
   margin: 0;
 }
+.margnTop {
+  margin-top: 20px;
+}
 .ward_bottom {
   position: absolute;
   bottom: 35px;

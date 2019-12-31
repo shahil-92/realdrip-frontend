@@ -30,6 +30,10 @@ export class WardNurse extends React.Component {
     this.setState({activeTab : tab})
   }
 
+  handleAddNurse = () => {
+    this.props.history.push('/add-nurse')
+  }
+
   handleNurseActiveList = (data) => ( 
     <Table responsive>
       <thead>
@@ -115,11 +119,11 @@ export class WardNurse extends React.Component {
                 <div className="inner_dash">
                   <div className="left-mid-dash">
                     <h2>Nurses</h2>
-                    <h4 class="sumry_head">Summary</h4>
-                    <div className="oprtn_tabs_main_wrapper">
-                        <div className={activeTab==="active" ? "oprtn_history_tab activeTab" : 'oprtn_history_tab'}  onClick={() => this.handleActiveTab('active')}>Active</div>
-                        <div className={activeTab==="all" ? "oprtn_history_tab activeTab" : 'oprtn_history_tab'} onClick={() => this.handleActiveTab('all')}>All</div>
+                    <div className="oprtn_tabs_main_wrapper margnTop">
+                        <div className={activeTab ==="active" ? "oprtn_history_tab activeTab" : 'oprtn_history_tab'}  onClick={() => this.handleActiveTab('active')}>Active</div>
+                        <div className={activeTab ==="all" ? "oprtn_history_tab activeTab" : 'oprtn_history_tab'} onClick={() => this.handleActiveTab('all')}>All</div>
                     </div>
+                    <h4 class="sumry_head">Summary</h4>
                   <div className="wrap_left_section">
                     <div className="dash_ward_device_wrap">
                       <SMALL_CARD 
@@ -152,6 +156,7 @@ export class WardNurse extends React.Component {
                           btnWrapperClass="add_new_device_wrap"
                           btnClass="add_device_btn"
                           btnText="Add new Nurse"
+                          onclick={this.handleAddNurse}
                         />
                         <SearchBar
                           SearchdropDownWrapClass ="operation_search_tab_bar"
