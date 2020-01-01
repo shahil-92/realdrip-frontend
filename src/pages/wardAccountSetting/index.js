@@ -35,11 +35,12 @@ export class WardAccountSetting extends React.Component {
             <HEADER headerName="ward"/>     
             <div class="mid-section-dshbrd">
             {this.state.showMenu && <DETAILMENU />}
-            <div className="main_wrapper ward_main_wrap">
+            
+            <div className="main_wrapper_ward_accnt_setng">
+                <div className="ward_heading_wrap">
+                    <h4 class="head_accnt_h3">Account Settings</h4>
+                </div>
                 <div class="accnt_signin_wrap">
-                    <div className="ward_heading_wrap">
-                        <h4 class="head_accnt_h3">Account Settings</h4>
-                    </div>
                     <div className="accont_input_wrap_main">
                     <div class="input_column">
                         <div className="input_wrap_accnt">
@@ -68,7 +69,7 @@ export class WardAccountSetting extends React.Component {
                                 management account or inform the management.
                             </h4>
                             <div className="accnt_btn_wrap">
-                            <button class="mnt_btn accnt_btn sign_btn_wrd">login to management</button>
+                            <button class="accnt_btn_login_mgnt">login to management</button>
                             </div>
                         </div>
                     </div>

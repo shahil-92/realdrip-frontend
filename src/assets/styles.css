@@ -322,6 +322,13 @@ tr.ul_contnt {
 }
 
 /* ------ ward-dashboard ----- */
+.infusn_nrse_wrap.whiteBG {
+  background: #fff;
+  border-radius: 10px;
+}
+.operation-history.progress>div {
+  background: #CECDD8 !important;
+}
 .inner_dshbrd_wrap {
   display: flex;
     flex: 1 auto;
@@ -542,20 +549,14 @@ ul.list_heading_ul li {
   /* margin-top: 15px; */
 }
 .speed_hr span {
-  font-size: 1.2em;
+  font-size: 14px;
   font-weight: 600;
   letter-spacing: 1px;
-}
-.infusn_usr_img {
-  /* margin-top: 15px; */
 }
 .infusn_usr_img img {
   width: 16px;
   height: 16px;
   border-radius: 50%;
-}
-.infusn_usr_fname {
-  /* margin-top: 15px; */
 }
 .infusn_disease_name {
   font-size: 14px;
@@ -837,6 +838,28 @@ ul.list_heading_ul li {
   margin-bottom: 0px;
 }
 /* operation--- ward--- csss*/
+
+.oprtn_histry_img_wrap {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 15px;
+}
+.urgnt_txt.align-center {
+  text-align: center;
+}
+.oprtn_histry_img_wrap img {
+  width: 14%;
+}
+.btm_oprtn_txt{ 
+  font-size: 14px;
+  letter-spacing: 0;
+  color: #777289;
+  opacity: 1;
+  text-align: center;
+  padding: 8px 0px;
+  font-family: Roboto;
+  margin-bottom: 15px;
+}
 
 .opertn_srch_mainwrapper {
   display: flex;
@@ -1395,6 +1418,19 @@ ul.conctd_history_ul li {
   width: 100%;
   /* background: #e1ecef; */
 }
+.main_wrapper_ward_accnt_setng {
+  padding: 30px;
+}
+.accnt_btn_login_mgnt {
+  padding: 7px 25px;
+  border: 1px solid #777289;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 0;
+  color: #777289;
+  opacity: 1;
+}
 .accont_input_wrap_main {
   width: 40%;
   margin: 0 auto;
@@ -1425,6 +1461,7 @@ input.form-control.cstm_acnt_input {
   padding: 16px 2px;
   line-height: 23px;
   font-size: 1.4em;
+  text-align: center;
   opacity: 0.7;
 }
 .head_accnt_h3 {
@@ -2005,11 +2042,15 @@ input.form-control.cstm_add_file {
 }
 
 @media only screen and (max-width: 720px) {
-  .device_idle {
+ .device_idle {
     position: relative;
     /* top: 2px; */
     font-size: 1.0em;
     padding: 0px 0px 9px 0px;
+}
+.urgnt_txt.align-center {
+  text-align: center;
+  font-size: 46px;
 }
 .dash_ward_device_wrap.oprtn_wrap {
   width: 100%;

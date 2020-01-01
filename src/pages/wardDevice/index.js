@@ -25,7 +25,9 @@ export class WardDevice extends React.Component {
   handleRedirectClick = () =>{
     this.props.history.push('/connected-inuse')
   }
-
+  handleAddNewDevice = () =>{
+    this.props.history.push('/add-device')
+  }
   handleActiveTab = (tab) => {
     this.setState({activeTab : tab})
   }
@@ -139,6 +141,7 @@ export class WardDevice extends React.Component {
                           btnWrapperClass="add_new_device_wrap"
                           btnClass="add_device_btn"
                           btnText="Add new device"
+                          onclick={()=>this.handleAddNewDevice()}
                         />
                         <SearchBar
                           SearchdropDownWrapClass ="operation_search_tab_bar"
