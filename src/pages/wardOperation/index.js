@@ -27,6 +27,10 @@ export class WardOperation extends React.Component {
     this.setState({activeTab : tab})
   }
 
+  handleRedirectToNotUpadted = () => {
+    this.props.history.push('/operation-detail-not-update')
+  }
+
   activeInfusionList = (data) => (
     <Table responsive style={{"margin-top":"30px"}}>
     <thead>
@@ -41,7 +45,7 @@ export class WardOperation extends React.Component {
     <tbody>
      { ['1','2','3'].map((data, key)=>{
      return(
-         <tr className={(key === 0 ) ? "list_heading_ul ul_contnt active_dsh_list" : "list_heading_ul ul_contnt"}>    
+         <tr className={(key === 0 ) ? "list_heading_ul ul_contnt active_dsh_list" : "list_heading_ul ul_contnt"} onClick={this.handleRedirectToNotUpadted}>    
              <td>
               <div className="bld_prcnt">89%</div>
               <ProgressBar>
