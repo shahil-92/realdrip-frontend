@@ -135,7 +135,14 @@ tr.ul_contnt {
   text-align: center;
   background-color: #337ab7;
 }
-
+.nav-tool-tip {
+  margin: 10px;
+  color: #0FBB83;
+  font-weight: 500;
+}
+.main_wrapper_mgnt_setng.margin80 {
+  margin: 80px 0;
+}
 .activation-txt {
   font-size: 12px;
   letter-spacing: 0;
@@ -814,9 +821,9 @@ ul.list_heading_ul li {
   display: flex;
   width: 10%;
   background: #fff;
-  height: 100%;
+  height: auto;
   position: absolute;
-  z-index: 1;
+  z-index: 111;
   padding: 9px 20px;
   flex-direction: column;
   justify-content: space-between;
@@ -1789,7 +1796,7 @@ tr.list_heading_ul td.devic_txt {
 }
 .mgmnt_input_wrap_main {
   width: 50%;
-  margin-top: 80px;
+  margin-top: 40px;
 }
 
 /*--------------add Nurse--------------------*/
@@ -2199,9 +2206,9 @@ input.form-control.cstm_add_file {
   display: flex;
   width: 33%;
   background: #fff;
-  height: 100%;
+  height: auto;
   position: absolute;
-  z-index: 1;
+  z-index: 111;
   padding: 9px 20px;
   flex-direction: column;
   justify-content: space-between;

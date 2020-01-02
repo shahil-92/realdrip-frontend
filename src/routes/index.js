@@ -21,6 +21,7 @@ import ManagementNurses from '../pages/managementNurses'
 import ManagementSetting from '../pages/managementSetting'
 import AddNurse from '../pages/addNurse'
 import AddNewDevice from '../pages/AddNewDevice'
+import AddNewWardAccount from '../pages/AddNewWardAccount'
 import EditDevices from '../pages/EditDevices'
 import EditNurse from '../pages/EditNurse'
 import ConfirmMailSent from '../pages/confirmMailSent'
@@ -29,6 +30,7 @@ import RecoveryMailSent from '../pages/recoveryMailSent'
 import DeviceValidatePopUp from '../pages/deviceValidatePopUp'
 import PasswordUpdatedPopUp from '../pages/passwordUpdatedPopUp'
 import DeleteOperationPopUp from '../pages/deleteOperationPopUp'
+import OperationDetailNotUpdated from '../pages/OperationDetailNotUpdated'
 export default (props) => (
 	<Router>
 		<Switch>
@@ -42,6 +44,7 @@ export default (props) => (
 			<Route exact path="/ward-nurse" component={props => <WardNurse {...props}/>} />
 			<Route exact path="/email-confirmation" component={EmailConfirmation} />
 			<Route exact path="/operation-detail" component={props => <OperationDetail {...props}/>}/>
+			<Route exact path="/operation-detail-not-update" component={props => <OperationDetail {...props}/>}/>
 			<Route exact path="/connected-inuse" component={props => <ConnectedInuse {...props}/>}/>
 			<Route exact path="/nurse-detail" component={props => <NurseDetail {...props}/>}/>
 			<Route exact path="/ward-setting" component={props => <WardAccountSetting {...props}/>}/>
@@ -51,6 +54,7 @@ export default (props) => (
 			<Route exact path="/management-device" component={props => <ManagementDevices {...props}/>}/>
 			<Route exact path="/management-nurse" component={props => <ManagementNurses {...props}/>}/>
 			<Route exact path="/management-setting" component={props => <ManagementSetting {...props}/>}/>
+			<Route exact path="/add-ward" component={props => <AddNewWardAccount {...props}/>}/>
 			<Route exact path="/add-nurse" component={props => <AddNurse {...props}/>}/>
 			<Route exact path="/add-device" component={props => <AddNewDevice {...props}/>}/>
 			<Route exact path="/edit-device" component={props => <EditDevices {...props}/>}/>

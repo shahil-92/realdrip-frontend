@@ -12,7 +12,9 @@ export class ManagementDashboard extends React.Component {
       showMenu:false
     };
   }
-
+  handleAddWard = () =>{
+    this.props.history.push('/add-ward')
+  }
   handleClick = () =>{
     this.setState({showMenu : !this.state.showMenu})
   }
@@ -48,7 +50,7 @@ export class ManagementDashboard extends React.Component {
                         <h4 class="sumry_head">Summary</h4>
                     </div>
                     <div className="add_new_device_wrap_mgmnt">
-                        <div className="add_device_btn">Add new ward </div>
+                        <div className="add_device_btn" onClick={this.handleAddWard}>Add new ward </div>
                     </div>
                   </div>
                   <div className="wrap_mngmnt_sectn">

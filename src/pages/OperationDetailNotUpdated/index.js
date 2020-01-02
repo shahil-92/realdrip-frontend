@@ -6,7 +6,7 @@ import DETAILMENU from '../../components/Headers/detailMenu'
 import LEFT_HEADER from '../../components/Headers/leftHeader'
 import * as MetaData from '../../utils/metaData'
 
-export class OperationDetail extends React.Component {
+export class OperationDetailNotUpdated extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -34,7 +34,7 @@ export class OperationDetail extends React.Component {
                 {this.state.showMenu && <DETAILMENU />}
                 <div className="oprtn_dlt_wrap">
                    <div className="patnt_name">
-                      <h2>Frank Jacobs</h2>
+                      <h2>Not Updated</h2>
                    </div>
                    
                     <div className="add_new_device_wrap">
@@ -126,6 +126,30 @@ export class OperationDetail extends React.Component {
                   </div>
                   <div className="right-mid-dash">
                     <div className="right-wrap-heading devics_lst_clmn">  
+                   
+                     <div className="device_page_wrap">
+                        <div className="add_device_page_btn"> <h3>Awaiting actions</h3> <div className="red-color-box">4</div></div>
+                        <div className="actn-update"> Update </div>
+                      </div>
+                      <div class="dash_active_wrap2">
+                         <div className="oprtn_device_control whitebg">
+                             <div>Pause</div>
+                             <div className="cstm_icon"><i class="fa fa-play" aria-hidden="true"></i></div>
+                         </div>
+                         <div className="oprtn_device_control whitebg">
+                             <div>Pause</div>
+                             <div className="cstm_icon"><i class="fa fa-repeat" aria-hidden="true"></i></div>
+                         </div>
+                         <div className="oprtn_device_control whitebg">
+                             <div>Pause</div>
+                             <div className="cstm_icon"><i class="fa fa-play" aria-hidden="true"></i></div>
+                         </div>
+                         <div className="oprtn_device_control whitebg">
+                             <div>Pause</div>
+                             <div className="cstm_icon"><i class="fa fa-play" aria-hidden="true"></i></div>
+                         </div>
+                      </div>
+                      
                       <h3>Doctor Instruction</h3>
                       <div class="dash_active_wrap whitebg">
                          <div className="oprtn_instrtn_wrap">
@@ -138,7 +162,7 @@ export class OperationDetail extends React.Component {
                       <div className="device_page_wrap">
                       <h3>Device Control</h3>
                         <div className="add_device_page_btn" onClick={this.handleRedirectToDeviceDetail}>Device Page</div>
-                    </div>
+                      </div>
                       <div class="dash_active_wrap2">
                          <div className="oprtn_device_control whitebg">
                              <div>Pause</div>
@@ -170,4 +194,4 @@ const mapStateToProps = (state) => ({
   // addingUserError: state.user.createAdmin.addingUserError,
 });
 
-export default connect(mapStateToProps)(OperationDetail);
+export default connect(mapStateToProps)(OperationDetailNotUpdated);

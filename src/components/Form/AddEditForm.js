@@ -40,8 +40,8 @@ export class AddEditForm extends React.Component {
               {this.state.showMenu && 
                  <DETAILMENU />
               }
-            <div className="nav-tool-tip">{sectionName}</div>
-             <div className="main_wrapper_mgnt_setng">
+              <div className="nav-tool-tip">{"<"} {sectionName}</div>
+             <div className="main_wrapper_mgnt_setng margin80">
                   <div className="mgmnt_input_wrap_main">
                     <div className="mgnt_heading_setting">
                         <h4 class="head_accnt_h3">{TitleName}</h4>
