@@ -1048,6 +1048,50 @@ ul.list_heading_ul.nurse_heding_ul {
 tr.list_heading_ul td {
   padding: 30px 15px 25px !important;
 }
+/*===========not-upadted=========*/
+
+.oprtn_awating.whitebg {
+  width: 24%;
+  height: 100px;
+  justify-content: space-between;
+  flex-direction: column;
+  display: flex;
+  padding: 14px;
+  /* margin: 7px; */
+}
+.awaiting-heading-btn-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.awaiting-actn-box-wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+  align-items: center;
+}
+.red-color-box {
+  background: #FE454F33 0% 0% no-repeat padding-box;
+  border-radius: 8px;
+  width: 43px;
+  height: 37px;
+  line-height: 37px;
+  text-align: center;
+  font-weight: 600;
+}
+.actn-update {
+  background: #0CD891 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 14px;
+  width: 79px;
+  height: 32px;
+  text-align: center;
+  line-height: 30px;
+  color: #fff;
+}
+.patnt_ul_list.pading35 {
+  padding: 0 14px;
+}
 /*------------operation----deatil------------css*/
 .oprtn_dlt_wrap {
   display: flex;

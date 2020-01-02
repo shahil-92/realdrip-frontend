@@ -44,7 +44,7 @@ export default (props) => (
 			<Route exact path="/ward-nurse" component={props => <WardNurse {...props}/>} />
 			<Route exact path="/email-confirmation" component={EmailConfirmation} />
 			<Route exact path="/operation-detail" component={props => <OperationDetail {...props}/>}/>
-			<Route exact path="/operation-detail-not-update" component={props => <OperationDetail {...props}/>}/>
+			<Route exact path="/operation-detail-not-update" component={props => <OperationDetailNotUpdated {...props}/>}/>
 			<Route exact path="/connected-inuse" component={props => <ConnectedInuse {...props}/>}/>
 			<Route exact path="/nurse-detail" component={props => <NurseDetail {...props}/>}/>
 			<Route exact path="/ward-setting" component={props => <WardAccountSetting {...props}/>}/>

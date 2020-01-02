@@ -42,35 +42,35 @@ export class OperationDetailNotUpdated extends React.Component {
                     </div>
                 </div>
                 <div className="patnt_list_wrap">
-                        <ul className="patnt_ul_list">
+                        <ul className="patnt_ul_list pading35">
                             <li>
-                                <div className="nurc_img_wrap">
+                                {/* <div className="nurc_img_wrap">
                                   <img  src={require('../../assets/Images/user.png')}/>
-                                </div>
+                                </div> */}
                                 <div className="nurc_detail_wrap">
                                     <span className="nurc_post">Nurse</span>
-                                    <span className="nurc_name">Tatilayo Olaide</span>
-                                </div>
-                            </li>
-                            <li>
-                                
-                                <div className="nurc_detail_wrap">
-                                    <span className="nurc_post">Nurse</span>
-                                    <span className="nurc_name">Tatilayo Olaide</span>
+                                    <span className="nurc_name">Not Updated</span>
                                 </div>
                             </li>
                             <li>
                                 
                                 <div className="nurc_detail_wrap">
                                     <span className="nurc_post">Nurse</span>
-                                    <span className="nurc_name">Tatilayo Olaide</span>
+                                    <span className="nurc_name">Not Updated</span>
                                 </div>
                             </li>
                             <li>
                                 
                                 <div className="nurc_detail_wrap">
                                     <span className="nurc_post">Nurse</span>
-                                    <span className="nurc_name">Tatilayo Olaide</span>
+                                    <span className="nurc_name">Not Updated</span>
+                                </div>
+                            </li>
+                            <li>
+                                
+                                <div className="nurc_detail_wrap">
+                                    <span className="nurc_post">Nurse</span>
+                                    <span className="nurc_name">Not Updated</span>
                                 </div>
                             </li>
                         </ul>
@@ -127,25 +127,25 @@ export class OperationDetailNotUpdated extends React.Component {
                   <div className="right-mid-dash">
                     <div className="right-wrap-heading devics_lst_clmn">  
                    
-                     <div className="device_page_wrap">
-                        <div className="add_device_page_btn"> <h3>Awaiting actions</h3> <div className="red-color-box">4</div></div>
+                     <div className="awaiting-heading-btn-wrap">
+                        <div className="awaiting-actn-box-wrap"> <h3>Awaiting actions</h3> <div className="red-color-box">4</div></div>
                         <div className="actn-update"> Update </div>
                       </div>
                       <div class="dash_active_wrap2">
-                         <div className="oprtn_device_control whitebg">
-                             <div>Pause</div>
+                         <div className="oprtn_awating whitebg">
+                             <div>set stop volume</div>
                              <div className="cstm_icon"><i class="fa fa-play" aria-hidden="true"></i></div>
                          </div>
-                         <div className="oprtn_device_control whitebg">
-                             <div>Pause</div>
+                         <div className="oprtn_awating whitebg">
+                             <div>fill volumne content</div>
                              <div className="cstm_icon"><i class="fa fa-repeat" aria-hidden="true"></i></div>
                          </div>
-                         <div className="oprtn_device_control whitebg">
-                             <div>Pause</div>
+                         <div className="oprtn_awating whitebg">
+                             <div>input Patient name</div>
                              <div className="cstm_icon"><i class="fa fa-play" aria-hidden="true"></i></div>
                          </div>
-                         <div className="oprtn_device_control whitebg">
-                             <div>Pause</div>
+                         <div className="oprtn_awating whitebg">
+                             <div>input Patient name</div>
                              <div className="cstm_icon"><i class="fa fa-play" aria-hidden="true"></i></div>
                          </div>
                       </div>
