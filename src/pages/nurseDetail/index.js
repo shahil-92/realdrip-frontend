@@ -5,6 +5,8 @@ import HEADER from '../../components/Headers/header'
 import DETAILMENU from '../../components/Headers/detailMenu'
 import LEFT_HEADER from '../../components/Headers/leftHeader'
 import * as MetaData from '../../utils/metaData'
+import ProgressBar from 'react-bootstrap/ProgressBar'
+import Table from 'react-bootstrap/Table'
 
 export class NurseDetail extends React.Component {
   constructor() {
@@ -34,7 +36,7 @@ export class NurseDetail extends React.Component {
               <div class="mid-section-dshbrd">
                 {this.state.showMenu && <DETAILMENU />}               
                 <div className="inner_dash">
-                  <div className="left-mid-dash">
+                  <div className="left-mid-dash left-mid-nurse-detail">
                    <div className="nurse_profile_detail">
                     <div className="wrap_img_profile">
                         <div className="wrap_b2_txt"><img src={require('../../assets/Images/user.png')}></img></div>
@@ -51,8 +53,8 @@ export class NurseDetail extends React.Component {
                     <div className="dash_ward_device_wrap oprtn_wrap connect_left_top_margin">
                     <h4 class="sumry_head">Status</h4>
                     <div className="status_wrapper">
-                        <div className="status_icon_txt_wrap"><div className="con_text">Connected</div> <div className="status_img_wrap"><img src={require('../../assets/Images/drip.png')} /></div></div>
-                        <div className="status_icon_txt_wrap"><div className="con_text">In use</div> <div className="status_img_wrap"><img src={require('../../assets/Images/drip.png')} /></div></div>
+                        <div className="status_icon_txt_wrap"><div className="con_text">Active</div> <div className="status_img_wrap"><img src={require('../../assets/Images/operation_menu_active.png')} /></div></div>
+                        {/* <div className="status_icon_txt_wrap"><div className="con_text">In use</div> <div className="status_img_wrap"><img src={require('../../assets/Images/drip.png')} /></div></div> */}
                     </div>
                     <h4 class="sumry_head">Summary</h4>
                    
@@ -68,24 +70,24 @@ export class NurseDetail extends React.Component {
                      <div className="infusn_device_wrap">
                         <div className="infusn_wrap">
                           <div className="wrpd_icon_num">
-                            <span className="urgnt_txt">45</span>
+                            <span className="urgnt_txt">28</span>
                           
                           </div>
-                          <h5>Active Infusion</h5>
+                          <h5>Completed</h5>
                         </div>
                         <div className="infusn_wrap">
                           <div className="wrpd_icon_num">
-                            <span className="urgnt_txt">43</span>
+                            <span className="urgnt_txt">2</span>
                             {/* <span className="drip_img_wrap"></span> */}
                           </div>
-                          <h5>Active Infusion</h5>
+                          <h5>Terminated</h5>
                         </div>
                       </div>
 
                     </div>
                     </div>
                   </div>
-                  <div className="right-mid-dash">
+                  <div className="right-mid-dash right-mid-nurse-detail">
                   <h4 class="infusion_heading">Infusion Operation</h4>
                     <div className="history_insuse_tabs_wrap">
                         <div className="con_text active" onClick={()=>this.handleClick('inuse')}>In use</div>
@@ -106,32 +108,37 @@ export class NurseDetail extends React.Component {
                     </div>
 
                    {selectedTab === 'inuse' && <div className="right-wrap-heading devics_lst_clmn">  
-                      <h3 className="small_txt_h3">Infusion Operation</h3>
-                      <div className="dash_active_wrap whitebg">
-                      <ul className="list_heading_ul ul_contnt connected_ul">    
-                          <li>
-                            <div className="bld_prcnt">89%</div>
-                            <div className="wrapper_progress_bar conted-inuse-bar"><div className="inner_progress_bar"></div></div>
-                            <div className="bld_txt">Blood</div>
-                          </li>
-                          <li>
-                            <div className="time_in_second bld_txt">00:13:00</div>
-                            <div className="time_only">12:23pm</div>
-                          </li>
-                          <li>
-                            <div className="speed_hr"> <span> 28 </span> <img class="speed_up" src={require('../../assets/Images/dummy_logo.jpg')}></img></div>
-                            <div className="speed_unit bld_txt">ml/hr</div>
-                          </li>
-                          <li>
-                            <div className="infusn_usr_fname">Frank</div>
-                            <div className="infusn_disease_name">Malaria</div>
-                          </li>
-                          <li>
-                            <div className="infusn_usr_img"><img src={require('../../assets/Images/user.png')}></img></div>
-                            <div className="infusn_usr_name">Titlayo Olaide</div>
-                          </li>
-                        </ul>
-                      </div>
+                    <h3 className="small_txt_h3">Infusion Operation</h3>
+                        <div className="dash_active_wrap white-background">
+                      
+                          <Table responsive>
+                              <tbody>
+                              <tr className="list_heading_ul ul_contnt h70">    
+                                <td>
+                                  <div className="bld_prcnt">89%</div>
+                                  <div className="wrapper_progress_bar conted-inuse-bar"><div className="inner_progress_bar"></div></div>
+                                  <div className="bld_txt">Blood</div>
+                                </td>
+                                <td>
+                                  <div className="time_in_second bld_txt">00:13:00</div>
+                                  <div className="time_only">12:23pm</div>
+                                </td>
+                                <td>
+                                  <div className="speed_hr"> <span> 28 </span> <img class="speed_up" src={require('../../assets/Images/dummy_logo.jpg')}></img></div>
+                                  <div className="speed_unit bld_txt">ml/hr</div>
+                                </td>
+                                <td>
+                                  <div className="infusn_usr_fname">Frank</div>
+                                  <div className="infusn_disease_name">Malaria</div>
+                                </td>
+                                <td>
+                                  <div className="infusn_usr_img"><img src={require('../../assets/Images/user.png')}></img></div>
+                                  <div className="infusn_usr_name">Titlayo Olaide</div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </Table>
+                          </div>
                       <h3 className="small_txt_h3">Awating actions</h3>
                       <div class="dash_active_wrap2">
                          <div className="oprtn_device_control whitebg">

@@ -69,8 +69,8 @@ export class ConnectedInuse extends React.Component {
                     <div className="dash_ward_device_wrap oprtn_wrap connect_left_top_margin">
                     <h4 class="sumry_head">Status</h4>
                     <div className="status_wrapper">
-                        <div className="status_icon_txt_wrap"><div className="con_text">Connected</div> <div className="status_img_wrap"><img src={require('../../assets/Images/drip.png')} /></div></div>
-                        <div className="status_icon_txt_wrap"><div className="con_text">In use</div> <div className="status_img_wrap"><img src={require('../../assets/Images/drip.png')} /></div></div>
+                        <div className="status_icon_txt_wrap"><div className="con_text">Connected</div> <div className="status_img_wrap"><img src={require('../../assets/Images/wifi-medium-signal-symbol.svg')} /></div></div>
+                        <div className="status_icon_txt_wrap"><div className="con_text">In use</div> <div className="status_img_wrap"><img src={require('../../assets/Images/operation_menu_active.png')} /></div></div>
                     </div>
                     <h4 class="sumry_head">Summary</h4>
                    
@@ -125,11 +125,11 @@ export class ConnectedInuse extends React.Component {
 
                    {selectedTab === 'inuse' && <div className="right-wrap-heading devics_lst_clmn">  
                       <h3 className="small_txt_h3">Infusion Operation</h3>
-                      <div className="dash_active_wrap whitebg">
+                      <div className="dash_active_wrap white-background">
                      
                         <Table responsive>
                             <tbody>
-                            <tr className="list_heading_ul ul_contnt">    
+                            <tr className="list_heading_ul ul_contnt h70">    
                               <td>
                                 <div className="bld_prcnt">89%</div>
                                 <div className="wrapper_progress_bar conted-inuse-bar"><div className="inner_progress_bar"></div></div>
@@ -172,8 +172,8 @@ export class ConnectedInuse extends React.Component {
                              <div className="cstm_icon"><i class="fa fa-play" aria-hidden="true"></i></div>
                          </div>
                          <div className="oprtn_device_control whitebg hospital-wifi">
-                            <div className="first-div">
-                             <i class="fa fa-play" aria-hidden="true"></i>
+                            <div className="first-div">  
+                             <div className="color"><img src={require('../../assets/Images/wifi-medium-signal-symbol.svg')} /></div>
                              <div className="color">Hospital wifi</div>
                             </div>
                             
