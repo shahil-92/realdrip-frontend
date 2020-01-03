@@ -2177,6 +2177,15 @@ input.form-control.cstm_add_file {
     font-size: 1.0em;
     padding: 0px 0px 9px 0px;
 }
+.left-mid-dash.left-mid-nurse-detail {
+  width: 100%;
+  border-right: 0px
+
+}
+.right-mid-dash.right-mid-nurse-detail {
+  width: 100%;
+  margin-left: 1%;
+}
 .urgnt_txt.align-center {
   text-align: center;
   font-size: 46px;
