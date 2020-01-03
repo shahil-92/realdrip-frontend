@@ -432,11 +432,28 @@ tr.ul_contnt {
   /* background: red; */
   height: 100%;
 }
-.sumry_head{
-  padding: 26px 0;
+.sumry_head {
+  padding: 35px 0 10px;
   font-size: 1.2em;
   font-weight: 600;
   letter-spacing: 1px;
+}
+.con_text {
+  font-weight: 500;
+  padding-left: 14px;
+  /* padding-right: 14px; */
+}
+.status_img_wrap img {
+  margin-left: 14px;
+  width: 15px;
+}
+.infusn_device_wrap .infusn_wrap {
+  background: #fff;
+  padding: 12px 15px;
+  border-radius: 12px;
+}
+.infusn_wrap.device_infusn h5.prcnt_op_txt {
+  padding: 8px 0px !important;
 }
 .sumry_head2{
   font-size: 1.28em;
@@ -1132,6 +1149,7 @@ tr.list_heading_ul td {
 }
 .right-wrap-heading.devics_lst_clmn h3 {
   font-size: 16px;
+  margin: 25px 0 5px;
   font-weight: 700;
 }
 .device_page_wrap {
@@ -1247,6 +1265,7 @@ span.nurc_name {
   display: flex;
   padding: 14px;
   /* margin: 7px; */
+  font-weight: 500;
 }
 .cstm_icon {
   height: 40px;
@@ -1316,34 +1335,37 @@ span.nurc_name {
 }
 .wrap_label_main_wrap {
   display: flex;
-  justify-content: space-between;
-  width: 52%;
+  justify-content: flex-start;
+  width: 100%;
   margin-top: 20px;
 }
 .label_wrapper {
-  width: 82%;
+  /* width: 82%; */
+  padding-right: 20px;
   border-right: 1px solid lightgray;
 }
 ul.list_heading_ul.ul_contnt.connected_ul li div {
   font-size: 0.89em;
 }
 .label_wrapper.pdng_right_label {
-  padding: 0 13px;
+  padding: 0 0px 0 20px;
+  border-right: 0px solid lightgray;
 }
 .small_txt {
   font-size: 1.0em;
   font-weight: 600;
 }
 .edit_label_wrap {
-  padding: 6px 37px;
-    background: white;
-    margin: 17px 0;
-    width: 40%;
-    border-radius: 11px;
-    font-size: 12px;
-    color: #dce2e4f0;
-    font-weight: 600;
-    letter-spacing: 1px;
+  padding: 6px 10px;
+  background: white;
+  margin: 20px 0;
+  width: 50%;
+  border-radius: 11px;
+  font-size: 12px;
+  color: #777289;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 1px;
 }
 .status_wrapper {
   display: flex;
@@ -1366,9 +1388,30 @@ ul.list_heading_ul.ul_contnt.connected_ul li div {
 }
 .history_insuse_tabs_wrap {
   display: flex;
-  width: 16%;
-  justify-content: space-between;
+  width: 100%;
+  justify-content: flex-start;
   font-size: 1.23em;
+}
+.history_insuse_tabs_wrap .con_text {
+  padding-left: 0px;
+  padding-right: 20px;
+}
+.hospital-wifi {
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+}
+.hospital-wifi .first-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  margin: 5px 0px;
+  align-items: center;
+}
+.hospital-wifi .first-div div.color{
+  color: #B1B0C1;
+  font-size: 13px;
 }
 .con_text.active {
   font-weight: 600;
@@ -1427,7 +1470,9 @@ ul.conctd_history_ul li {
   font-weight: 600;
 }
 .wrapper_progress_bar.conted-inuse-bar {
-  width: 50%;
+  width: 100%;
+  margin-top: 6px;
+  margin-bottom: 6px;
 }
 .wrap_b2_txt {
   width: 33%;

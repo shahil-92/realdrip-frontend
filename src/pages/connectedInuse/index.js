@@ -171,9 +171,16 @@ export class ConnectedInuse extends React.Component {
                              <div>Pause</div>
                              <div className="cstm_icon"><i class="fa fa-play" aria-hidden="true"></i></div>
                          </div>
-                         <div className="oprtn_device_control whitebg">
+                         <div className="oprtn_device_control whitebg hospital-wifi">
+                            <div className="first-div">
+                             <i class="fa fa-play" aria-hidden="true"></i>
+                             <div className="color">Hospital wifi</div>
+                            </div>
+                            
+                            <div className="first-div">
                              <div>Pause</div>
                              <div className="cstm_icon"><i class="fa fa-play" aria-hidden="true"></i></div>
+                            </div>
                          </div>
                       </div>
                       </div> }
