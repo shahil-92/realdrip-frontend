@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import HEADER from '../../components/Headers/header'
 import LEFT_HEADER from '../../components/Headers/leftHeader'
 import * as MetaData from '../../utils/metaData'
+import DETAILMENU from '../../components/Headers/detailMenu'
 export class WardAccountSetting extends React.Component {
   constructor() {
     super();
@@ -35,6 +36,7 @@ export class WardAccountSetting extends React.Component {
          <div className="right_dashboard">
            <HEADER headerName="management"/>   
             <div class="mid-section-dshbrd">
+            {this.state.showMenu && <DETAILMENU LEFT_HEADER_DATA={MetaData.MANAGEMENT_LEFT_HEADER_DATA} {...this.props}/>}
              <div className="main_wrapper_mgnt_setng">
                     <div className="mgmnt_input_wrap_main">
                     <div className="mgnt_heading_setting">

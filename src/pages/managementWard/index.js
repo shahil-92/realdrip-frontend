@@ -26,7 +26,7 @@ export class ManagementWard extends React.Component {
             <div className="right_dashboard">
               <HEADER headerName="management"/>              
               <div class="mid-section-dshbrd_mgnt">
-                {this.state.showMenu && <DETAILMENU />} 
+                {this.state.showMenu && <DETAILMENU LEFT_HEADER_DATA={MetaData.MANAGEMENT_LEFT_HEADER_DATA} {...this.props}/>} 
                 <div className="inner_dash_mgnt_left">
                   <div className="left-mid-dash-mgmnt">
                   <div className="wrap_dash_new_wrad">

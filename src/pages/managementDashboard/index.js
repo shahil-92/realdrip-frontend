@@ -42,7 +42,7 @@ export class ManagementDashboard extends React.Component {
             <div className="right_dashboard">
               <HEADER headerName="management"/>    
               <div className="mid-section-dshbrd">
-                {this.state.showMenu && <DETAILMENU />}
+                {this.state.showMenu && <DETAILMENU LEFT_HEADER_DATA={MetaData.MANAGEMENT_LEFT_HEADER_DATA} {...this.props}/>}
                 <div className="inner_dash">
                   <div className="wrap_dash_new_wrad">
                     <div className="mngmnt_top_heading">

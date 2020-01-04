@@ -5,6 +5,7 @@ import HEADER from '../../components/Headers/header'
 import DETAILMENU from '../../components/Headers/detailMenu'
 import LEFT_HEADER from '../../components/Headers/leftHeader'
 import * as MetaData from '../../utils/metaData'
+import Input from '../../components/inputComponent'
 
 export class OperationDetailNotUpdated extends React.Component {
   constructor() {
@@ -128,25 +129,51 @@ export class OperationDetailNotUpdated extends React.Component {
                     <div className="right-wrap-heading devics_lst_clmn">  
                    
                      <div className="awaiting-heading-btn-wrap">
-                        <div className="awaiting-actn-box-wrap"> <h3>Awaiting actions</h3> <div className="red-color-box">4</div></div>
+                        <div className="awaiting-actn-box-wrap"> <h3 className="awating-oprtn-not-update">Awaiting actions</h3> <div className="red-color-box">4</div></div>
                         <div className="actn-update"> Update </div>
                       </div>
                       <div class="dash_active_wrap2">
-                         <div className="oprtn_awating whitebg">
-                             <div>set stop volume</div>
-                             <div className="cstm_icon"><i class="fa fa-play" aria-hidden="true"></i></div>
-                         </div>
-                         <div className="oprtn_awating whitebg">
-                             <div>fill volumne content</div>
-                             <div className="cstm_icon"><i class="fa fa-repeat" aria-hidden="true"></i></div>
-                         </div>
-                         <div className="oprtn_awating whitebg">
-                             <div>input Patient name</div>
-                             <div className="cstm_icon"><i class="fa fa-play" aria-hidden="true"></i></div>
-                         </div>
-                         <div className="oprtn_awating whitebg">
-                             <div>input Patient name</div>
-                             <div className="cstm_icon"><i class="fa fa-play" aria-hidden="true"></i></div>
+                         <div className="oprtn_device_control whitebg full-width-flex">
+                          <div className="ward_input_wrap">
+                            <div className="input_row">
+                                <div className="input_wrap">
+                                  <label>set volume up</label>
+                                  <select value={this.state.selvalue} onChange={this.selhandleChange}>
+                                    <option value="set-stop-volume-1">set stop volume 1</option>
+                                    <option value="set-stop-volume-2">set stop volume 2</option>
+                                    <option value="set-stop-volume-3">set stop volume 3</option>
+                                    <option value="set-stop-volume-4">set stop volume 4</option>
+                                  </select>
+                                </div>   
+                                <div className="input_wrap">
+                                    <label>fill volume content</label>
+                                    <Input
+                                        type='text'
+                                        className="form-control cstm-input"
+                                        placeholder="Input Patient name"
+                                        name="input-patient-case"
+                                    />
+                                </div>
+                                <div className="input_wrap">
+                                    <label>Input patient name</label>
+                                    <Input
+                                        type='text'
+                                        className="form-control cstm-input"
+                                        placeholder="Input Patient case"
+                                        name="input-patient-case"
+                                    />
+                                </div>
+                                <div className="input_wrap">
+                                    <label>Input patient name</label>
+                                    <Input
+                                        type='text'
+                                        className="form-control cstm-input"
+                                        placeholder="Input Patient case"
+                                        name="input-patient-case"
+                                    />
+                                </div>   
+                              </div> 
+                            </div>
                          </div>
                       </div>
                       

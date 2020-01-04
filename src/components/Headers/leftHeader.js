@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import * as ImageContainer from '../../utils/images'
-
+ 
 const LEFT_HEADER = (props) => {
     const {LEFT_HEADER_DATA, onClick } = props
     return (

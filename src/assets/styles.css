@@ -351,6 +351,9 @@ tr.ul_contnt {
 .operation-history.progress>div {
   background: #CECDD8 !important;
 }
+.device_page_wrap h3 {
+  margin: 0px !important;
+}
 .inner_dshbrd_wrap {
   display: flex;
     flex: 1 auto;
@@ -1099,6 +1102,9 @@ tr.list_heading_ul td {
   padding: 14px;
   /* margin: 7px; */
 }
+.awating-oprtn-not-update {
+  margin: 0px !important;
+}
 .awaiting-heading-btn-wrap {
   display: flex;
   justify-content: space-between;
@@ -1436,7 +1442,7 @@ ul.list_heading_ul.ul_contnt.connected_ul li div {
   border-radius: 10px;
 }
 .status_img_wrap img {
-  width: 36%;
+  width: 60%;
 }
 .dash_ward_device_wrap.oprtn_wrap.connect_left_top_margin {
   margin-top: 8px;

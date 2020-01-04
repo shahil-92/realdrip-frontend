@@ -96,10 +96,10 @@ export class ConnectedInuse extends React.Component {
                   <div className="right-mid-dash">
                   <h4 class="infusion_heading">Infusion Operation</h4>
                     <div className="history_insuse_tabs_wrap">
-                        <div className="con_text active" onClick={()=>this.handleClick('inuse')}>In use</div>
-                        <div className="con_text" onClick={()=>this.handleClick('history')}>History</div>
+                        <div className={selectedTab === 'inuse' ? "con_text active" : 'con_text'} onClick={()=>this.handleClick('inuse')}>In use</div>
+                        <div className={selectedTab === 'history' ? "con_text active" : 'con_text'} onClick={()=>this.handleClick('history')}>History</div>
                     </div>
-                    <div className="operation_search_tab_bar">
+                    {selectedTab === 'history' && <div className="operation_search_tab_bar">
                         <div className="oprtn_search_wrap operation_pdng">
                             <input type="text" className="form-control cstm_search"/>
                             <span className="search_icon"><i class="fa fa-search" aria-hidden="true"></i></span>
@@ -111,7 +111,7 @@ export class ConnectedInuse extends React.Component {
                             <span className="txt_urgncy">Urgency</span>
                             <span className="oprtn_down_arrow"><i class="fa fa-chevron-down cstm_dwn_arrow"></i></span>
                         </div>
-                    </div>
+                    </div>}
 
                    {selectedTab === 'inuse' && <div className="right-wrap-heading devics_lst_clmn">  
                       <h3 className="small_txt_h3">Infusion Operation</h3>
