@@ -2255,7 +2255,14 @@ input.form-control.cstm_add_file {
     position: relative;
     /* top: 2px; */
     font-size: 1.0em;
-    padding: 0px 0px 9px 0px;
+    margin: 8px 0px 0px 0px;
+}
+.right-wrap-heading {
+  display: flex;
+  /* justify-content: space-between; */
+  position: relative;
+  flex-direction: column;
+  padding: 20px 0px;
 }
 .left-mid-dash.left-mid-nurse-detail {
   width: 100%;
@@ -2400,7 +2407,7 @@ input.form-control.cstm_add_file {
   width: 512px;
   margin: 0 auto;
   padding: 0;
-  text-align: center;
+  align-items: center;
   font-size: 14px;
   letter-spacing: 0;
   color: #777289;
@@ -2496,9 +2503,10 @@ input.form-control.cstm_add_file {
 }
 .ward_heading_wrap {
   position: relative;
-  top: 33px;
+  /* top: 33px; */
   left: 0;
-  padding: 20px 35px;
+  text-align: center;
+  /* padding: 20px 35px; */
 }
 
 .ward_input_wrap {
