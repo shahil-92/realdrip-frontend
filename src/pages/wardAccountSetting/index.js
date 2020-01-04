@@ -28,12 +28,12 @@ export class WardAccountSetting extends React.Component {
 }
   render() {
     return (
-        <div className="main_wrapper ">
+        <div className="main_wrapper wrapper-100vh">
         <div className="inner_dshbrd_wrap">
          <LEFT_HEADER onClick={this.handleClickToggle} LEFT_HEADER_DATA={MetaData.WARD_LEFT_HEADER_DATA} {...this.props}/>
          <div className="right_dashboard">
             <HEADER headerName="ward"/>     
-            <div class="mid-section-dshbrd">
+            <div class="mid-section-dshbrd mid-section-dshbrd-100vh">
             {this.state.showMenu && <DETAILMENU LEFT_HEADER_DATA={MetaData.WARD_LEFT_HEADER_DATA} {...this.props}/>}
             
             <div className="main_wrapper_ward_accnt_setng">

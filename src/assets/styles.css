@@ -239,7 +239,15 @@ tr.ul_contnt {
 .ward_heading_wrap {
   position: relative;
   top: 0;
-  padding: 20px 0px;
+  padding: 20px 20px;
+}
+.mid-section-dshbrd.mid-section-dshbrd-100vh {
+  height: calc(100vh - 52px);
+  min-height: calc(100vh - 52px);
+}
+.wrapper-100vh.main_wrapper{
+  height: 100vh;
+  min-height: 100vh;
 }
 .ward_input_wrap span{
   position: absolute;
@@ -448,6 +456,7 @@ tr.ul_contnt {
 .con_text {
   font-weight: 500;
   padding-left: 14px;
+  color: #B1B0C1;
   /* padding-right: 14px; */
 }
 .status_img_wrap img {
@@ -513,6 +522,7 @@ tr.ul_contnt {
   letter-spacing: 0;
   color: #777289;
   opacity: 1;
+  font-weight: 600;
 }
 .active_dsh_list{
   background: #ffff;
@@ -846,6 +856,7 @@ ul.list_heading_ul li {
 
 .second_menu_wrap {
   display: flex;
+  min-height: calc(100vh - 52px);
   width: 10%;
   background: #fff;
   height: auto;
@@ -1161,7 +1172,7 @@ tr.list_heading_ul td {
 }
 .right-wrap-heading.devics_lst_clmn h3 {
   font-size: 16px;
-  margin: 25px 0 5px;
+  margin: 35px 0 5px;
   font-weight: 700;
 }
 .device_page_wrap {
@@ -1294,7 +1305,7 @@ span.nurc_name {
   margin: 12px 0;
 }
 .infusn_wrap.device_infusn.oprtn_dtl_wrd {
-  margin: 14px 0;
+  margin: 0px 0 15px;
   padding: 19px 17px 19px 17px;
 }
 .prcnt_opt_detail {
@@ -1320,20 +1331,31 @@ span.nurc_name {
 }
 .left-mid-dash.left-mid-nurse-detail {
   width: 24%;
-  border-right: 1px solid #707070;
-
+  border-right: 1px solid #e6e2e2;
 }
 .right-mid-dash.right-mid-nurse-detail {
   width: 73%;
-  margin-left: 1%;
+  /* margin-left: 1%; */
+  padding-left: 3%;
 }
 .nurs_name {
   font-size: 20px;
   font-weight: 600;
 }
 tr.list_heading_ul.ul_contnt.h70 {
-  height: 70px;
+  height: 80px;
 }
+h4.bld_txt_hstry {
+  font-size: 1em;
+  font-weight: 600;
+  padding: 5px 0px;
+}
+.right-mid-dash .dash_active_wrap_history {
+  padding: 20px 0px;
+  color: #777289;
+  font-weight: 500;
+}
+
 .on_txt {
   padding: 2px 12px;
 }
@@ -1388,7 +1410,7 @@ ul.list_heading_ul.ul_contnt.connected_ul li div {
   font-weight: 600;
 }
 .edit_label_wrap {
-  padding: 6px 10px;
+  padding: 4px 18px;
   background: white;
   margin: 20px 0 0 0;
   width: 50%;
@@ -1408,8 +1430,10 @@ ul.list_heading_ul.ul_contnt.connected_ul li div {
   align-items: center;
   justify-content: space-between;
   display: flex;
-  padding: 11px;
+  padding: 10px 12px;
   border-radius: 12px;
+  box-shadow: 0px 3px 6px #00000005;
+  border-radius: 10px;
 }
 .status_img_wrap img {
   width: 36%;
@@ -1445,7 +1469,8 @@ ul.list_heading_ul.ul_contnt.connected_ul li div {
   font-size: 13px;
 }
 .con_text.active {
-  font-weight: 600;
+  font-weight: 500;
+  color: #000;
 }
 .infusion_heading {
   font-weight: 600;
@@ -1512,6 +1537,12 @@ ul.conctd_history_ul li {
 }
 .wrap_b2_txt img {
   width: 100%;
+}
+.wrap_img_profile .wrap_b2_txt img {
+  box-shadow: 0px 0px 1px #333;
+  width: 80px;
+  /* height: 80px; */
+  border-radius: 50%;
 }
 .nurse_profile_detail {
   display: flex;
@@ -1876,6 +1907,25 @@ tr.list_heading_ul td.devic_txt {
   font-weight: 600;
 }
 
+.oprtn_device_control.whitebg.full-width-flex {
+  width: 100%;
+  height: 100px;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  padding: 14px;
+  /* margin: 7px; */
+  font-weight: 400;
+}
+
+.oprtn_device_control.whitebg.full-width-flex .form-control {
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 6px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075) !important;
+}
+
 /*===============management setting============*/
 .main_wrapper_mgnt_setng {
   display: flex;
@@ -2045,6 +2095,30 @@ input.form-control.cstm_add_file {
   padding: 5px 0px;
   font-size: 0.99em;
 }
+
+.dash_active_wrap.white-background {
+  margin-top: 8px !important;
+}
+
+.input_wrap select{
+  height: 40px !important;
+  opacity: 1;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 6px;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075) !important;
+  display: block;
+  width: 100%;
+  color: #555;
+  padding: 0px 10px;
+  background-color: #fff;
+  background-image: none;
+  -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  border: 1px solid #ccc;
+}
+
 /*------media ----query---dashbpard---- max-width 955 */
 
 
@@ -2334,7 +2408,7 @@ input.form-control.cstm_add_file {
 }
 .second_menu_wrap {
   display: flex;
-  width: 33%;
+  width: 10%;
   background: #fff;
   height: auto;
   position: absolute;
@@ -2456,6 +2530,7 @@ input.form-control.cstm_add_file {
   padding: 0px 0px 15px 12px;
   width: 100%;
 }
+
 .input_row {
   display: flex;
   flex-direction: column;

@@ -7,13 +7,15 @@ import LEFT_HEADER from '../../components/Headers/leftHeader'
 import * as MetaData from '../../utils/metaData'
 import ProgressBar from 'react-bootstrap/ProgressBar'
 import Table from 'react-bootstrap/Table'
+import Input from '../../components/inputComponent'
 
 export class NurseDetail extends React.Component {
   constructor() {
     super();
     this.state = {
       selectedTab:'inuse',
-      showMenu: false
+      showMenu: false,
+      selvalue: 'set-stop-volume-1'
     };
   }
 
@@ -22,6 +24,10 @@ export class NurseDetail extends React.Component {
   }
   handleClickToggle = () =>{
     this.setState({showMenu : !this.state.showMenu})
+  }
+
+  selhandleChange = (event) => {
+    this.setState({selvalue: event.target.value});
   }
 
 
@@ -108,7 +114,7 @@ export class NurseDetail extends React.Component {
                     </div>
 
                    {selectedTab === 'inuse' && <div className="right-wrap-heading devics_lst_clmn">  
-                    <h3 className="small_txt_h3">Infusion Operation</h3>
+                    {/* <h3 className="small_txt_h3">Infusion Operation</h3> */}
                         <div className="dash_active_wrap white-background">
                       
                           <Table responsive>
@@ -141,17 +147,35 @@ export class NurseDetail extends React.Component {
                           </div>
                       <h3 className="small_txt_h3">Awating actions</h3>
                       <div class="dash_active_wrap2">
-                         <div className="oprtn_device_control whitebg">
-                             <div>Pause</div>
-                             <div className="cstm_icon"><i class="fa fa-play" aria-hidden="true"></i></div>
-                         </div>
-                         <div className="oprtn_device_control whitebg">
-                             <div>Pause</div>
-                             <div className="cstm_icon"><i class="fa fa-repeat" aria-hidden="true"></i></div>
-                         </div>
-                         <div className="oprtn_device_control whitebg">
-                             <div>Pause</div>
-                             <div className="cstm_icon"><i class="fa fa-play" aria-hidden="true"></i></div>
+                         <div className="oprtn_device_control whitebg full-width-flex">
+                          <div className="ward_input_wrap">
+                            <div className="input_row">
+                                <div className="input_wrap">
+                                  <select value={this.state.selvalue} onChange={this.selhandleChange}>
+                                    <option value="set-stop-volume-1">set stop volume 1</option>
+                                    <option value="set-stop-volume-2">set stop volume 2</option>
+                                    <option value="set-stop-volume-3">set stop volume 3</option>
+                                    <option value="set-stop-volume-4">set stop volume 4</option>
+                                  </select>
+                                </div>   
+                                <div className="input_wrap">
+                                    <Input
+                                        type='text'
+                                        className="form-control cstm-input"
+                                        placeholder="Input Patient name"
+                                        name="input-patient-case"
+                                    />
+                                </div>
+                                <div className="input_wrap">
+                                    <Input
+                                        type='text'
+                                        className="form-control cstm-input"
+                                        placeholder="Input Patient case"
+                                        name="input-patient-case"
+                                    />
+                                </div>  
+                              </div> 
+                            </div>
                          </div>
                       </div>
                       </div> }
