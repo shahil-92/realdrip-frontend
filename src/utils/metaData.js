@@ -4,46 +4,57 @@ import { ManagementDashboard } from '../pages/managementDashboard'
 export const WARD_LEFT_HEADER_DATA = [
     {
         imageName: 'ward_menu',
-        url: '/ward-dashboard'
+        url: '/ward-dashboard',
+        iconName: 'Home'
     },
     {
         imageName: 'operation_menu',
-        url: '/ward-operation'
+        url: '/ward-operation',
+        iconName: 'Operation'
+
     },
     {
         imageName: 'device_menu',
-        url: '/ward-device'
+        url: '/ward-device',
+        iconName: 'Device'
     },
     {
         imageName: 'nurse_menu',
-        url: '/ward-nurse'
+        url: '/ward-nurse',
+        iconName: 'Nurse'
     },
     {
         imageName: 'setting_menu',
-        url: '/ward-setting'
+        url: '/ward-setting',
+        iconName: 'Setting'
     }
 ]
 
 export const MANAGEMENT_LEFT_HEADER_DATA = [
     {
         imageName: 'ward_menu',
-        url: '/management-dashboard'
+        url: '/management-dashboard',
+        iconName: 'home'
     },
     {
         imageName: 'operation_menu',
-        url: '/management-ward'
+        url: '/management-ward',
+        iconName: 'Operation'
     },
     {
         imageName: 'device_menu',
-        url: '/management-device'
+        url: '/management-device',
+        iconName: 'Device'
     },
     {
         imageName: 'nurse_menu',
-        url: '/management-nurse'
+        url: '/management-nurse',
+        iconName: 'Nurse'
     },
     {
         imageName: 'setting_menu',
-        url: '/management-setting'
+        url: '/management-setting',
+        iconName: 'Setting'
     }
 ]
 

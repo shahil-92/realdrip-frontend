@@ -34,7 +34,7 @@ export class NurseDetail extends React.Component {
             <div className="right_dashboard">
               <HEADER headerName="ward"/> 
               <div class="mid-section-dshbrd">
-                {this.state.showMenu && <DETAILMENU />}               
+                {this.state.showMenu && <DETAILMENU LEFT_HEADER_DATA={MetaData.WARD_LEFT_HEADER_DATA} {...this.props}/>}               
                 <div className="inner_dash">
                   <div className="left-mid-dash left-mid-nurse-detail">
                    <div className="nurse_profile_detail">

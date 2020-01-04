@@ -5,6 +5,7 @@ import HEADER from '../../components/Headers/header'
 import LEFT_HEADER from '../../components/Headers/leftHeader'
 import * as MetaData from '../../utils/metaData'
 import Form from 'react-bootstrap/Form';
+import DETAILMENU from '../../components/Headers/detailMenu'
 import ProgressBar from 'react-bootstrap/ProgressBar'
 import Table from 'react-bootstrap/Table'
 // import 'bootstrap/dist/css/bootstrap.min.css';
@@ -34,18 +35,7 @@ export class ConnectedInuse extends React.Component {
             <div className="right_dashboard">
               <HEADER headerName="ward"/>
               <div class="mid-section-dshbrd">
-                {this.state.showMenu && <div className="second_menu_wrap">
-                  <ul>
-                    <li>Home</li>
-                    <li>Operations</li>
-                    <li>Devices</li>
-                    <li>Nurses</li>
-                    <li>Account</li>
-                  </ul>
-                  <ul>
-                    <li>Sign Out</li>
-                  </ul>
-                </div>}
+                {this.state.showMenu && <DETAILMENU LEFT_HEADER_DATA={MetaData.WARD_LEFT_HEADER_DATA} {...this.props}/>}
                 <div className="inner_dash">
                   <div className="left-mid-dash">
                   <Form>

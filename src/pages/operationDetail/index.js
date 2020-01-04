@@ -31,7 +31,7 @@ export class OperationDetail extends React.Component {
             <div className="right_dashboard">
               <HEADER headerName="ward"/> 
               <div class="mid-section-dshbrd">
-                {this.state.showMenu && <DETAILMENU />}
+                {this.state.showMenu && <DETAILMENU LEFT_HEADER_DATA={MetaData.WARD_LEFT_HEADER_DATA} {...this.props}/>}
                 <div className="oprtn_dlt_wrap">
                    <div className="patnt_name">
                       <h2>Frank Jacobs</h2>

@@ -34,7 +34,7 @@ export class WardAccountSetting extends React.Component {
          <div className="right_dashboard">
             <HEADER headerName="ward"/>     
             <div class="mid-section-dshbrd">
-            {this.state.showMenu && <DETAILMENU />}
+            {this.state.showMenu && <DETAILMENU LEFT_HEADER_DATA={MetaData.WARD_LEFT_HEADER_DATA} {...this.props}/>}
             
             <div className="main_wrapper_ward_accnt_setng">
                 <div className="ward_heading_wrap">

@@ -40,7 +40,7 @@ export class WardDashBoard extends React.Component {
                <HEADER headerName="ward" {...this.props}/>
               <div class="mid-section-dshbrd">
                 {this.state.showMenu && 
-                 <DETAILMENU />
+                 <DETAILMENU LEFT_HEADER_DATA={MetaData.WARD_LEFT_HEADER_DATA} {...this.props}/>
                 }
                 <div className="inner_dash">
                   <div className="left-mid-dash">
