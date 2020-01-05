@@ -512,11 +512,12 @@ tr.list_heading_ul.dhabord-ul-heading>td {
 }
 .see_all_txt {
   padding: 1px 15px;
-  font-size: 12px;
+  font-size: 13px;
   border: 0.5px solid #0000001A;
   border-radius: 12px;
   opacity: 1;
   color: #000;
+  font-weight: 500;
 }
 .infusion_wrap.bottom {
   margin-top: 15px;
@@ -814,6 +815,8 @@ ul.list_heading_ul li {
 }
 .device_idle {
   position: relative;
+  font-size: 16px;
+  font-weight: 500;
 }
 .idle_number {
   font-weight: 600;
@@ -845,7 +848,7 @@ ul.list_heading_ul li {
   width: 100%;
   background: #ffff;
   display: flex;
-  margin: 20px 0;
+  margin: 15px 0;
   justify-content: space-between;
 }
 
@@ -853,7 +856,7 @@ ul.list_heading_ul li {
   margin-top: 0px;
   margin-bottom: 0px;
   border: 0;
-  border-top : 0.5px solid #e8e7ef;
+  border-top : 1px solid #e8e7ef;
 }
 
 .inner_left_dashboard {
@@ -2373,12 +2376,13 @@ input.form-control.cstm_add_file {
   width: 100%;
 }
 .see_all_txt {
-  padding: 0px 10px;
-  font-size: 12px;
-  border: 0.5px solid #0000001A;
-  border-radius: 12px;
-  opacity: 1;
-  color: #000;
+    padding: 0px 15px;
+    font-size: 13px;
+    border: 0.5px solid #0000001A;
+    border-radius: 12px;
+    opacity: 1;
+    color: #000;
+    font-weight: 500;
 }
 .device_in_use_wrapper.time_left_wrapper {
   position: relative;
