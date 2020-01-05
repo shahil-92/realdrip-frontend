@@ -5,7 +5,7 @@
 	For development, you will only need Node.js installed on your environement.
 
 # Editor
-	Please use the appropriate Editorconfig plugin for your Editor. For ex- Visual Studio, Atom, Vim
+	Please use your favourite Editor and use appropriate config for your Editor.Editor like- VisualStudio code, Atom, Vim
 
 # Node
 	Node is really easy to install & now include NPM. You should be able to run the following command after the installation procedure below.
@@ -14,7 +14,6 @@
  	npm --version
 
 # Node installation on OS X
-# Node installation on Mac
 	ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 	If everything when fine, you should run
 	brew install node
@@ -31,11 +30,7 @@
 	 npm install or yarn install
 
 # Start & watch
-	npm start or yarn startA common way to update is by doing
-44
-        npm install or yarn install
-45
-
+	npm start
 
 # Test
 	npm run test or yarn test
@@ -45,7 +40,10 @@
 
 # Update sources
 	Some packages usages might change so you should run npm prune & npm install often.
+
 # Languages & tools
-    HTML 
-    JavaScript
+    HTML
     CSS
+    JavaScript
+    React
+    Prettier code formatter    
