@@ -138,7 +138,7 @@ export class ConnectedInuse extends React.Component {
                                 <div className="infusn_disease_name">Malaria</div>
                               </td>
                               <td>
-                                <div className="infusn_usr_img"><img src={require('../../assets/Images/user.png')}></img></div>
+                                <div className="infusn_usr_img"><img src={require('../../assets/Images/user_round_girl.png')}></img></div>
                                 <div className="infusn_usr_name">Titlayo Olaide</div>
                               </td>
                             </tr>

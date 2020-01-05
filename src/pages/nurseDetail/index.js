@@ -45,7 +45,7 @@ export class NurseDetail extends React.Component {
                   <div className="left-mid-dash left-mid-nurse-detail">
                    <div className="nurse_profile_detail">
                     <div className="wrap_img_profile">
-                        <div className="wrap_b2_txt"><img src={require('../../assets/Images/user.png')}></img></div>
+                        <div className="wrap_b2_txt"><img src={require('../../assets/Images/user_round_girl.png')}></img></div>
                         <div className="nurs_name">Titilayo ayoade</div>
                     </div>
                     <div className="wrap_label_main_wrap cstm_nurse_detail">
@@ -140,7 +140,7 @@ export class NurseDetail extends React.Component {
                                   <div className="infusn_disease_name">Malaria</div>
                                 </td>
                                 <td>
-                                  <div className="infusn_usr_img"><img src={require('../../assets/Images/user.png')}></img></div>
+                                  <div className="infusn_usr_img"><img src={require('../../assets/Images/user_round_girl.png')}></img></div>
                                   <div className="infusn_usr_name">Titlayo Olaide</div>
                                 </td>
                               </tr>
