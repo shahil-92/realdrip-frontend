@@ -34,7 +34,7 @@ export class WardOperation extends React.Component {
   activeInfusionList = (data) => (
     <Table responsive style={{"margin-top":"30px"}}>
     <thead>
-      <tr className="list_heading_ul">
+      <tr className="list_heading_ul dhabord-ul-heading">
           <td>Volume</td>
           <td>Countdown</td>
           <td>Aaverage Flowerate</td>
@@ -80,7 +80,7 @@ export class WardOperation extends React.Component {
   activeInfusionListHistory = (data) => (
     <Table responsive style={{"margin-top":"30px"}}>
     <thead>
-      <tr className="list_heading_ul">
+      <tr className="list_heading_ul dhabord-ul-heading">
           <td>Volume</td>
           <td>Countdown</td>
           <td>Flowerate</td>

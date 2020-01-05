@@ -74,7 +74,7 @@ function DashboardOperationWrap(props) {
         <div class="dash_active_wrap">
         <Table responsive>
             <thead>
-            <tr className="list_heading_ul">
+            <tr className="list_heading_ul dhabord-ul-heading">
                 <td>Volume</td>
                 <td>Countdown</td>
                 <td>Flowerate</td>

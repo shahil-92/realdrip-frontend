@@ -20,6 +20,9 @@ tr,td,table,tbody{
 }
 .table>tbody>tr>td{
   padding: 0px 5px !important;
+  font-size: 14px;
+  font-weight: normal;
+  font-family:'Roboto';
 }
 .main_wrapper{
   min-height: 760px;
@@ -239,7 +242,7 @@ tr.ul_contnt {
 .ward_heading_wrap {
   position: relative;
   top: 0;
-  padding: 20px 20px;
+  padding: 20px 0px;
 }
 .mid-section-dshbrd.mid-section-dshbrd-100vh {
   height: calc(100vh - 52px);
@@ -348,6 +351,11 @@ tr.ul_contnt {
   background: #fff;
   border-radius: 10px;
 }
+tr.list_heading_ul.dhabord-ul-heading>td {
+  font-size: 14px;
+  font-weight: normal;
+  font-family: inherit;
+}
 .operation-history.progress>div {
   background: #CECDD8 !important;
 }
@@ -432,21 +440,22 @@ tr.ul_contnt {
   min-height: 695px;
 }
 .inner_dash {
-  padding: 24px 55px;
+  padding: 24px 38px;
   height: 100%;
   width: 100%;
+  float: left;
 }
 .right-mid-dash {
   position: relative;
   float: left;
-  width: 68%;
+  width: 71%;
   /* background: blue; */
   height: 100%;
 }
 .left-mid-dash {
   float: left;
   position: relative;
-  width: 28%;
+  width: 24%;
   /* background: red; */
   height: 100%;
 }
@@ -2455,7 +2464,7 @@ input.form-control.cstm_add_file {
   padding: 0;
 }
 .header_right_dash {
-  width: 70%;
+  width: 74%;
 }
 .header_dash {
   display: flex;
