@@ -45,7 +45,7 @@ export class OperationDetail extends React.Component {
                         <ul className="patnt_ul_list">
                             <li>
                                 <div className="nurc_img_wrap">
-                                  <img  src={require('../../assets/Images/user.png')}/>
+                                  <img  src={require('../../assets/Images/user_round_man.png')}/>
                                 </div>
                                 <div className="nurc_detail_wrap">
                                     <span className="nurc_post">Nurse</span>
