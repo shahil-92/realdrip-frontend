@@ -53,7 +53,7 @@ function DashboardOperationWrap(props) {
                 <div className="speed_unit bld_txt">ml/hr</div>
                 </td>
                 <td>
-                <div className="infusn_usr_img"><img src={require('../../assets/Images/user_round_man.png')}></img></div>
+                <div className="infusn_usr_img"><img src={require('../../assets/Images/nurse.svg')}></img></div>
                 <div className="infusn_usr_name">Titlayo Olaide</div>
                 </td>
                 <td>
