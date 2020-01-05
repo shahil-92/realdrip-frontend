@@ -193,7 +193,7 @@ export class WardOperation extends React.Component {
                     </div>
                   </div>
                   <div className="right-mid-dash">
-                    <div className="right-wrap-heading"> 
+                    <div className="right-wrap-heading ward-opertn-right-warp"> 
                       <div className="opertn_srch_main_wrapper">
                         <SearchBar 
                           SearchdropDownWrapClass ="operation_search_tab_bar"

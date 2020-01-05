@@ -37,7 +37,7 @@ export class WardDashBoard extends React.Component {
            <div className="inner_dshbrd_wrap">
             <LEFT_HEADER onClick={this.handleClick} LEFT_HEADER_DATA={MetaData.WARD_LEFT_HEADER_DATA}  {...this.props}/>
             <div className="right_dashboard">
-               <HEADER headerName="ward" {...this.props}/>
+               <HEADER headerName="Ward" {...this.props}/>
               <div class="mid-section-dshbrd">
                 {this.state.showMenu && 
                  <DETAILMENU LEFT_HEADER_DATA={MetaData.WARD_LEFT_HEADER_DATA} {...this.props}/>

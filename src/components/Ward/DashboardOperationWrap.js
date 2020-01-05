@@ -9,21 +9,22 @@ function DashboardOperationWrap(props) {
   const {wardInfusion, wardNurse} = props;
   const activeNurseList = (data) => {
       console.log('===data==',data)
-        return ['1','2','3'].map((data)=>{
+        return ['1','2','3','4'].map((data)=>{
         return(
         <tr className="list_heading_ul ul_contnt active_dsh_list bottom">    
-            <td>
+            <td className="active-nurse-frst_child">
                 <div className="user_img_nme_wrap">
                     <img class="user_img" src={require('../../assets/Images/user_round_man.png')}></img>
                     <span>Shubham</span>
                 </div>    
             </td>
             <td>
-                <div className="time_in_second bld_txt">Frank Joseph</div>
+                <div className="bld_txt">Frank Joseph</div>
             </td>
             <td>
                 <div className="time_only time_btm">12:23pm</div>
             </td>
+            <hr className="active-nurse-hr"></hr>
         </tr>
         )
         })
@@ -79,7 +80,7 @@ function DashboardOperationWrap(props) {
                 <td>Countdown</td>
                 <td>Flowerate</td>
                 <td>Nurse</td>
-                <td>Patient Case</td>
+                <td>Patient/Case</td>
             </tr>
             </thead>
             <tbody>
