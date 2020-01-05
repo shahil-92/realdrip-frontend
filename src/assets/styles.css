@@ -1188,7 +1188,7 @@ tr.list_heading_ul td {
 .oprtn_dlt_wrap {
   display: flex;
   justify-content: space-between;
-  padding: 8px 62px;
+  padding: 6px 46px;
 }
 .prcnt_op_txt {
   opacity: 0.4;
@@ -1281,7 +1281,7 @@ tr.list_heading_ul td {
 .patnt_list_wrap {
   display: flex;
   justify-content: flex-start;
-  padding: 0 25px;
+  padding: 0 16px;
 }
 .patnt_ul_list {
   list-style: none;
@@ -1361,7 +1361,7 @@ span.nurc_name {
   padding: 19px 17px 19px 17px;
 }
 .prcnt_opt_detail {
-  font-size: 0.80em;
+  font-size: 45px;
   font-weight: 600;
   padding: 6px 1px;
 }
@@ -1454,20 +1454,24 @@ ul.list_heading_ul.ul_contnt.connected_ul li div {
 .label_wrapper.pdng_right_label {
   padding: 0 0px 0 20px;
   border-right: 0px solid lightgray;
-  color: #000000;
-
 }
 .small_txt {
   font-size: 1.0em;
   font-weight: 600;
 }
+.small_txt.conected_bld_txt {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1D474B;
+}
 .edit_label_wrap {
   padding: 4px 18px;
   background: white;
   margin: 20px 0 0 0;
-  width: 50%;
+  width: 38%;
   border-radius: 11px;
   font-size: 12px;
+  opacity: 0.53;
   color: #777289;
   text-align: center;
   letter-spacing: 0px;

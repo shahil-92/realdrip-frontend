@@ -47,8 +47,8 @@ export class ConnectedInuse extends React.Component {
                   />
                   </Form>
                    <div className="wrap_label_main_wrap">
-                      <div className="label_wrapper"><div className="Label_b2_name">Label</div><div className="small_txt">B2</div></div>
-                      <div className="label_wrapper pdng_right_label"><div className="Label_b2_name">ID</div><div className="small_txt">02113322</div></div>
+                      <div className="label_wrapper"><div className="Label_b2_name">Label</div><div className="small_txt conected_bld_txt">B2</div></div>
+                      <div className="label_wrapper pdng_right_label"><div className="Label_b2_name">ID</div><div className="small_txt conected_bld_txt">02113322</div></div>
                    </div>
 
 

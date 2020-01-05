@@ -128,7 +128,7 @@ export class WardDevice extends React.Component {
                         <SMALL_CARD 
                           wrapperClass="infusn_wrap device_infusn"
                           innerWrapClass="wrpd_icon_num"
-                          src={require('../../assets/Images/drip.png')}
+                          src={require('../../assets/Images/device_icon.svg')}
                           heading="All registered"
                           count="43"
                           />
