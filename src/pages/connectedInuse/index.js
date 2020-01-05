@@ -57,10 +57,10 @@ export class ConnectedInuse extends React.Component {
                 
                   <div className="wrap_left_section">
                     <div className="dash_ward_device_wrap oprtn_wrap connect_left_top_margin">
-                    <h4 class="sumry_head">Status</h4>
+                    <h4 class="sumry_head status-heading">Status</h4>
                     <div className="status_wrapper">
-                        <div className="status_icon_txt_wrap"><div className="con_text">Connected</div> <div className="status_img_wrap"><img src={require('../../assets/Images/wifi-medium-signal-symbol.svg')} /></div></div>
-                        <div className="status_icon_txt_wrap"><div className="con_text">In use</div> <div className="status_img_wrap"><img src={require('../../assets/Images/operation_menu_active.png')} /></div></div>
+                        <div className="status_icon_txt_wrap"><div className="con_text_status">Connected</div> <div className="status_img_wrap"><img src={require('../../assets/Images/wifi-medium-signal-symbol.svg')} /></div></div>
+                        <div className="status_icon_txt_wrap"><div className="con_text_status">In use</div> <div className="status_img_wrap"><img src={require('../../assets/Images/operation_menu_active.png')} /></div></div>
                     </div>
                     <h4 class="sumry_head">Summary</h4>
                    
@@ -154,11 +154,11 @@ export class ConnectedInuse extends React.Component {
                              <div className="cstm_icon"><i class="fa fa-play" aria-hidden="true"></i></div>
                          </div>
                          <div className="oprtn_device_control whitebg">
-                             <div>Pause</div>
+                             <div>Reset</div>
                              <div className="cstm_icon"><i class="fa fa-repeat" aria-hidden="true"></i></div>
                          </div>
                          <div className="oprtn_device_control whitebg">
-                             <div>Pause</div>
+                             <div>Switch device off</div>
                              <div className="cstm_icon"><i class="fa fa-play" aria-hidden="true"></i></div>
                          </div>
                          <div className="oprtn_device_control whitebg hospital-wifi">
@@ -168,7 +168,7 @@ export class ConnectedInuse extends React.Component {
                             </div>
                             
                             <div className="first-div">
-                             <div>Pause</div>
+                             <div>Disconnect device</div>
                              <div className="cstm_icon"><i class="fa fa-play" aria-hidden="true"></i></div>
                             </div>
                          </div>
@@ -178,11 +178,11 @@ export class ConnectedInuse extends React.Component {
                       {selectedTab === 'history' &&
                         <div className="dash_active_wrap_history">
                         <ul className="conctd_history_ul">
-                            <li>Volume</li>
-                            <li>Countdown</li>
-                            <li>Flowerate</li>
+                            <li>Duration</li>
+                            <li>Infusion</li>
+                            <li>Ave. Flowerate</li>
+                            <li>Patient</li>
                             <li>Nurse</li>
-                            <li>Patient Case</li>
                           </ul>
                         </div>
                       }
@@ -194,8 +194,8 @@ export class ConnectedInuse extends React.Component {
                             <div className="bld_txt_hstry">12:23pm</div>
                           </li>
                           <li>
-                            <div className="light_txt_hstry">00:13:00</div>
-                            <div className="bld_txt_hstry">12:23pm</div>
+                           <div className="light_txt_hstry">Saline water</div>
+                            <div className="bld_txt_hstry">Completed</div>
                           </li>
                           <li>
                             <div><span className="bld_txt_hstry">28</span> <span className="light_txt_hstry"> ml/hr </span></div>
@@ -215,8 +215,8 @@ export class ConnectedInuse extends React.Component {
                             <div className="bld_txt_hstry">12:23pm</div>
                           </li>
                           <li>
-                            <div className="light_txt_hstry">00:13:00</div>
-                            <div className="bld_txt_hstry">12:23pm</div>
+                          <div className="light_txt_hstry">Saline water</div>
+                            <div className="bld_txt_hstry">Completed</div>
                           </li>
                           <li>
                             <div><span className="bld_txt_hstry">28</span> <span className="light_txt_hstry"> ml/hr </span></div>
@@ -237,8 +237,8 @@ export class ConnectedInuse extends React.Component {
                             <div className="bld_txt_hstry">12:23pm</div>
                           </li>
                           <li>
-                            <div className="light_txt_hstry">00:13:00</div>
-                            <div className="bld_txt_hstry">12:23pm</div>
+                            <div className="light_txt_hstry">Saline water</div>
+                            <div className="bld_txt_hstry">Completed</div>
                           </li>
                           <li>
                             <div><span className="bld_txt_hstry">28</span> <span className="light_txt_hstry"> ml/hr </span></div>
@@ -258,8 +258,8 @@ export class ConnectedInuse extends React.Component {
                             <div className="bld_txt_hstry">12:23pm</div>
                           </li>
                           <li>
-                            <div className="light_txt_hstry">00:13:00</div>
-                            <div className="bld_txt_hstry">12:23pm</div>
+                          <div className="light_txt_hstry">Saline water</div>
+                            <div className="bld_txt_hstry">Completed</div>
                           </li>
                           <li>
                             <div><span className="bld_txt_hstry">28</span> <span className="light_txt_hstry"> ml/hr </span></div>
@@ -279,8 +279,8 @@ export class ConnectedInuse extends React.Component {
                             <div className="bld_txt_hstry">12:23pm</div>
                           </li>
                           <li>
-                            <div className="light_txt_hstry">00:13:00</div>
-                            <div className="bld_txt_hstry">12:23pm</div>
+                          <div className="light_txt_hstry">Saline water</div>
+                            <div className="bld_txt_hstry">Completed</div>
                           </li>
                           <li>
                             <div><span className="bld_txt_hstry">28</span> <span className="light_txt_hstry"> ml/hr </span></div>

@@ -492,6 +492,7 @@ td.active-nurse-frst_child {
   font-weight: 500;
   padding-left: 14px;
   color: #B1B0C1;
+  font-size: 17px;
   /* padding-right: 14px; */
 }
 .status_img_wrap img {
@@ -1495,7 +1496,10 @@ ul.list_heading_ul.ul_contnt.connected_ul li div {
   width: 60%;
 }
 .dash_ward_device_wrap.oprtn_wrap.connect_left_top_margin {
-  margin-top: 8px;
+  margin-top: 90px;
+}
+.sumry_head.status-heading {
+  padding-bottom: 16px;
 }
 .history_insuse_tabs_wrap {
   display: flex;
@@ -1553,6 +1557,11 @@ h3.small_txt_h3 {
 }
 ul.conctd_history_ul li {
   flex: 1;
+  font-size: 14px;
+}
+.status_icon_txt_wrap {
+  font-size: 16px;
+  font-weight: 500;
 }
 .dash_active_wrap_history {
   padding: 10px 0px;
@@ -1566,19 +1575,16 @@ ul.conctd_history_ul li {
   flex-wrap: wrap;
   margin: 15px 0px;
 }
-.history_table_ul.connected_ul li div {
-  padding: 5px 0;
-}
 .histry_table_wrap {
   margin-top: 20px;
 }
 .light_txt_hstry {
-  font-size: 0.98em;
-  opacity: 0.6;
-  font-weight: 600;
+  font-size: 14px;
+  color: #B1B0C1;
+  opacity: 1;
 }
 .bld_txt_hstry {
-  font-size: 0.99em;
+  font-size: 14px;
   font-weight: 600;
 }
 .wrapper_progress_bar.conted-inuse-bar {
