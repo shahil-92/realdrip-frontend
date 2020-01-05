@@ -351,6 +351,7 @@ tr.ul_contnt {
   background: #fff;
   border-radius: 10px;
   margin-right: 14px;
+  padding: 10px;
 }
 tr.list_heading_ul.dhabord-ul-heading>td {
   font-size: 14px;
