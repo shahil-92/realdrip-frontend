@@ -389,7 +389,7 @@ td.active-nurse-frst_child {
 .left_dashboard {
   background: #fff;
   /* float: left; */
-  border-right: 1px solid #bdbcbc;
+  border-right: 1px solid #f5f5f5;
   position: relative;
   width: 4%;
   display: flex;
