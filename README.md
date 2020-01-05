@@ -30,7 +30,7 @@
 	 npm install or yarn install
 
 # Start & watch
-	npm start
+	npm start or yarn start
 
 # Test
 	npm run test or yarn test
