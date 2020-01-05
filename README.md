@@ -1,4 +1,4 @@
-# Realdrip-Frontend
+# RealDrip-Frontend
 
 # Requirements
 
