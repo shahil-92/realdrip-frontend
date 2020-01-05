@@ -10,8 +10,8 @@
 # Node
 	Node is really easy to install & now include NPM. You should be able to run the following command after the installation procedure below.
 
->> node --version
->> npm --version
+ 	node --version
+ 	npm --version
 
 # Node installation on OS X
 # Node installation on Mac
@@ -26,24 +26,26 @@
 	sudo apt-get install nodejs
 
 # Install
->> git https://github.com/shahil-92/realdrip-frontend.git
->> cd PROJECT
->> npm install or yarn install
+	 git https://github.com/shahil-92/realdrip-frontend.git
+	 cd PROJECT
+	 npm install or yarn install
 
 # Start & watch
->> npm start or yarn start
+	npm start or yarn startA common way to update is by doing
+44
+        npm install or yarn install
+45
+
 
 # Test
->> npm run test or yarn test
+	npm run test or yarn test
 
 # Build for production
->> npm run build or yarn build
+	npm run build or yarn build
 
 # Update sources
-	Some packages usages might change so you should rCSS
->> npm install or yarn install
-
+	Some packages usages might change so you should run npm prune & npm install often.
 # Languages & tools
-# HTML
-# JavaScript
-# CSS
+    HTML 
+    JavaScript
+    CSS
