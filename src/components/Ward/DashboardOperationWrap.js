@@ -14,7 +14,7 @@ function DashboardOperationWrap(props) {
         <tr className="list_heading_ul ul_contnt active_dsh_list bottom">    
             <td>
                 <div className="user_img_nme_wrap">
-                    <img class="user_img" src={require('../../assets/Images/user.png')}></img>
+                    <img class="user_img" src={require('../../assets/Images/user_round_man.png')}></img>
                     <span>Shubham</span>
                 </div>    
             </td>
@@ -53,7 +53,7 @@ function DashboardOperationWrap(props) {
                 <div className="speed_unit bld_txt">ml/hr</div>
                 </td>
                 <td>
-                <div className="infusn_usr_img"><img src={require('../../assets/Images/user.png')}></img></div>
+                <div className="infusn_usr_img"><img src={require('../../assets/Images/user_round_man.png')}></img></div>
                 <div className="infusn_usr_name">Titlayo Olaide</div>
                 </td>
                 <td>

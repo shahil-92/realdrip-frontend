@@ -612,8 +612,8 @@ ul.list_heading_ul li {
   letter-spacing: 1px;
 }
 .infusn_usr_img img {
-  width: 16px;
-  height: 16px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
 }
 .infusn_disease_name {
@@ -630,7 +630,6 @@ ul.list_heading_ul li {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  padding: 10px;
   margin: 0 16px;
   background: gainsboro;
 }
@@ -2768,14 +2767,7 @@ input.form-control.cstm_add_file {
   opacity: 0.6;
   padding: 0;
 }
-.user_img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  padding: 10px;
-  margin: 3px 7px;
-  background: gainsboro;
-}
+
 .ul_contnt_mgnt_nurse li {
   width: 27%;
   text-align: left;
