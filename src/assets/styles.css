@@ -478,7 +478,7 @@ td.active-nurse-frst_child {
 }
 .sumry_head {
   padding: 23px 0 37px;
-  font-size: 1.2em;
+  font-size: 18px;
   font-weight: 600;
   letter-spacing: 1px;
 }
@@ -1006,7 +1006,7 @@ input.form-control.cstm_search {
   padding: 5px 28px;
   margin-bottom: 17px;
   border-radius: 8px;
-  font-size: 1.2em;
+  font-size: 16px;
   height: 34px;
   opacity: 0.6;
   font-weight: 500;
@@ -1025,7 +1025,9 @@ input.form-control.cstm_search {
   width: 85%;
   flex-direction: column;
 }
-
+tr.list_heading_ul.fontWeight500 > td {
+  font-weight: 500;
+}
 .table-container.table {
   margin: 15px 0;
   width: 90%;

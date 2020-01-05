@@ -35,7 +35,7 @@ export class WardDevice extends React.Component {
   handleDeviceActiveList = (data) => ( 
     <Table className="table-container" responsive>
       <thead className="wrapper_thead">
-        <tr className="list_heading_ul">
+        <tr className="list_heading_ul fontWeight500">
           <td className="devic_txt">To be free</td>
           <td className="devic_txt">Label</td>
           <td className="devic_txt">Nurse</td>
@@ -64,7 +64,7 @@ export class WardDevice extends React.Component {
    handleDeviceAllList = (data) => ( 
     <Table className="table-container" responsive>
       <thead className="wrapper_thead">
-        <tr className="list_heading_ul">
+        <tr className="list_heading_ul fontWeight500">
           <td className="devic_txt">Label</td>
           <td className="devic_txt">Device ID</td>
           <td className="devic_txt">Status</td>

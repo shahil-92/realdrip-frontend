@@ -37,7 +37,7 @@ export class WardNurse extends React.Component {
   handleNurseActiveList = (data) => ( 
     <Table responsive>
       <thead>
-        <tr className="list_heading_ul">
+        <tr className="list_heading_ul fontWeight500">
           <td className="fst_nurs_li">Nurse</td>
           <td className="">Hospital ID no.</td>
           <td className="">Assigned patient</td>
@@ -73,7 +73,7 @@ export class WardNurse extends React.Component {
    handleNurseAllList = (data) => ( 
     <Table responsive>
     <thead>
-      <tr className="list_heading_ul">
+      <tr className="list_heading_ul fontWeight500">
         <td className="fst_nurs_li">Nurse</td>
         <td className="">Hospital ID no.</td>
         <td className="">Status</td>
