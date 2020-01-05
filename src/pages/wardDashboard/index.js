@@ -66,7 +66,7 @@ export class WardDashBoard extends React.Component {
                         <SMALL_CARD 
                           wrapperClass="infusn_wrap active_nurse"
                           innerWrapClass="wrpd_icon_num"
-                          src={require('../../assets/Images/drip.png')}
+                          src={require('../../assets/Images/active_infusion_man.svg')}
                           heading="Active Nurses"
                           count="6"
                          />
@@ -79,7 +79,7 @@ export class WardDashBoard extends React.Component {
                         spanText="02"
                         childWrapClass="drip_img_wrap"
                       >
-                        <img class="device_inuse_img" src={require('../../assets/Images/drip.png')} />
+                        <img class="device_inuse_img" src={require('../../assets/Images/device_icon.svg')} />
                       </SPAN_WRAPPER>
                       <SPAN_WRAPPER 
                         wrapperClass="device_inuse"
