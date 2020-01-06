@@ -2192,6 +2192,11 @@ span.switch-handle.btn.btn-light {
   border-radius: 50%;
   background-color: #fff;
 }
+.switch.btn {
+  border-radius: 8px;
+  /* min-width: 3.7rem;
+  min-height: calc(1.5em + .75rem + 2px); */
+}
 /* .switch.btn {
   border-radius: 8px;
   min-width: 3.7rem;
