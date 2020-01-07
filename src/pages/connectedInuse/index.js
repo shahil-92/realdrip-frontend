@@ -8,6 +8,7 @@ import Form from 'react-bootstrap/Form';
 import DETAILMENU from '../../components/Headers/detailMenu'
 import ProgressBar from 'react-bootstrap/ProgressBar'
 import Table from 'react-bootstrap/Table'
+import BootstrapSwitchButton from 'bootstrap-switch-button-react'
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 export class ConnectedInuse extends React.Component {
@@ -39,12 +40,22 @@ export class ConnectedInuse extends React.Component {
                 <div className="inner_dash">
                   <div className="left-mid-dash">
                   <Form>
-                  <Form.Check 
+                  {/* <Form.Check 
                     type="switch"
                     id="custom-switch"
                     label="On"
                     className="cstm-class"
-                  />
+                  /> */}
+                    <BootstrapSwitchButton
+                      checked={true}
+                      onlabel='On'
+                      offlabel='Off'
+                      width={100}
+                      onstyle="outline-success" offstyle="outline-danger" 
+                      // onChange={(checked: boolean) => {
+                      //     this.setState({ isUserAdmin: checked })
+                      // }}
+                    />
                   </Form>
                    <div className="wrap_label_main_wrap">
                       <div className="label_wrapper"><div className="Label_b2_name">Label</div><div className="small_txt conected_bld_txt">B2</div></div>

@@ -7,6 +7,7 @@ import 'react-toastify/dist/ReactToastify.min.css';
 // import configureStore from './configureStore';
 // const store = configureStore();
 // import 'bootstrap/dist/css/bootstrap.min.css';
+// https://gitbrent.github.io/bootstrap-switch-button-react/ --> Bootstrap Switch 
 import './assets/styles.css';
 
 render(
