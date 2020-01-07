@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom'
 import HEADER from '../../components/Headers/header'
+import DeleteOperationPopUp from '../deleteOperationPopUp'
 import DETAILMENU from '../../components/Headers/detailMenu'
 import LEFT_HEADER from '../../components/Headers/leftHeader'
 import * as MetaData from '../../utils/metaData'
@@ -10,7 +11,8 @@ export class OperationDetail extends React.Component {
   constructor() {
     super();
     this.state = {
-      showMenu:false
+      showMenu:false,
+      deleteOperation:false,
     };
   }
 
@@ -22,8 +24,15 @@ export class OperationDetail extends React.Component {
     this.props.history.push('/connected-inuse')
   }
 
+  handleDeleteOperation = () => {
+    this.setState({deleteOperation: true})
+  }
+  handleDeleteConfirm = (data) => {
+    this.setState({deleteOperation: false})
+  }
 
   render() {
+    const {deleteOperation} = this.state
     return (
         <div className="main_wrapper ">
            <div className="inner_dshbrd_wrap">
@@ -38,7 +47,7 @@ export class OperationDetail extends React.Component {
                    </div>
                    
                     <div className="add_new_device_wrap">
-                        <div className="add_device_btn">Delete Operation</div>
+                        <div className="add_device_btn" onClick={this.handleDeleteOperation}>Delete Operation</div>
                     </div>
                 </div>
                 <div className="patnt_list_wrap">
@@ -159,6 +168,7 @@ export class OperationDetail extends React.Component {
               </div>
             </div>
           </div>
+          {deleteOperation && <DeleteOperationPopUp handleDeleteConfirm={this.handleDeleteConfirm}/>}
         </div>
     );
   }

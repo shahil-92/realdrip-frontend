@@ -2063,13 +2063,13 @@ input.form-control.cstm_add_file {
 
 /*================pop-up====================*/
 .popup-wrap {
-  display: flex;
-  background: #e1ecef4f;
-  justify-content: center;
-  align-items: center;
-  height: 745px;
+  background: #83838340 0% 0% no-repeat padding-box;;
   width: 100%;
-  position: relative;
+  position: absolute;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .pop-container {
   text-align: center;
@@ -2079,10 +2079,18 @@ input.form-control.cstm_add_file {
   align-items: center;
   display: flex;
   width: 30%;
+  position: absolute;
   flex-direction: column;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .delete-oprtn-email-sent-wrap {
   width: 94%;
+  font-size: 14px;
+  color: #B1B0C1;
+  line-height: 17px;
+  margin-top: 10px;
 }
 .check-mail {
   color: #1D474B80;
@@ -2118,16 +2126,36 @@ input.form-control.cstm_add_file {
   background: #0CD891 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 6px #0000001A;
   border-radius: 4px;
-  padding: 10px 32px;
+  padding: 10px 18px;
   border: 0;
   text-align: center;
   letter-spacing: 0;
   color: #FFFFFF;
   opacity: 1;
+  width: 47%;
 }
 .password-recovry-wrap {
   position: relative;
   margin-top: 35px;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+.password-recovry-btn {
+  background: #ffff;
+  box-shadow: 0px 3px 6px #0000001A;
+  border-radius: 4px;
+  padding: 10px 18px;
+  border: 0;
+  text-align: center;
+  letter-spacing: 0;
+  color: #FE454F;
+  opacity: 1;
+  width: 47%;
+}
+.password-recovry-btn.green-btn {
+  background: #0CD891;
+  color: #fff;
 }
 
 /*======recovry-popup==========*/
@@ -2372,6 +2400,16 @@ span.switch-handle.btn.btn-light {
   position: relative;
   flex-direction: column;
   padding: 20px 0px;
+}
+.left_dashboard {
+  background: #fff;
+  /* float: left; */
+  border-right: 1px solid #f5f5f5;
+  position: relative;
+  width: 15%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 .left-mid-dash.left-mid-nurse-detail {
   width: 100%;

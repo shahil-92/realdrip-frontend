@@ -33,7 +33,7 @@ export class WardAccountSetting extends React.Component {
          <LEFT_HEADER onClick={this.handleClickToggle} LEFT_HEADER_DATA={MetaData.WARD_LEFT_HEADER_DATA} {...this.props}/>
          <div className="right_dashboard">
             <HEADER headerName="Ward"/>     
-            <div class="mid-section-dshbrd mid-section-dshbrd-100vh">
+            <div class="mid-section-dshbrd">
             {this.state.showMenu && <DETAILMENU LEFT_HEADER_DATA={MetaData.WARD_LEFT_HEADER_DATA} {...this.props}/>}
             
             <div className="main_wrapper_ward_accnt_setng">
