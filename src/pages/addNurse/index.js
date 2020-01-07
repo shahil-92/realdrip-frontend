@@ -13,16 +13,9 @@ export class AddNurse extends React.Component {
     };
   }
 
-//   handleClick = () =>{
-//      this.props.history.push('/ward-activation')
-//   }
-//   handleWardSignIn = () =>{
-//     this.props.history.push('/ward-dashboard')
-//  }
-
-//  handleClickToggle = () =>{
-//   this.setState({showMenu : !this.state.showMenu})
-// }
+  handleSubmit = () => {
+    this.props.history.push('/ward-nurse')
+  }
 
   render() {
     return (
@@ -33,6 +26,7 @@ export class AddNurse extends React.Component {
         Label_Second = "Hospital ID no."
         btnText = "Add"
         fileTitle = "Attach profile picture"
+        btnClick={this.handleSubmit}
       {...this.props}/>
     );
   }

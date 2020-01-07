@@ -13,6 +13,10 @@ export class AddNewDevice extends React.Component {
     };
   }
 
+  handleSubmit = () => {
+    this.props.history.push('/ward-device')
+  }
+
   render() {
     return (
       <AddEditForm
@@ -21,6 +25,7 @@ export class AddNewDevice extends React.Component {
         Label_first = "Input Device ID"
         Label_Second = "Label to put on device"
         btnText = "Add"
+        btnClick={this.handleSubmit}
       {...this.props}/>
     );
   }

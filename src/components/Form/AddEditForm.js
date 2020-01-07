@@ -29,7 +29,7 @@ export class AddEditForm extends React.Component {
 
   render() {
       const { sectionName, TitleName, Label_first, Label_Second, onChange,
-             firstPlaceholder, secondPlaceholder, filePlaceholder, btnText, fileTitle } = this.props
+             firstPlaceholder, secondPlaceholder, filePlaceholder, btnText, fileTitle, btnClick } = this.props
     return (
         <div className="main_wrapper ">
         <div className="inner_dshbrd_wrap">
@@ -75,7 +75,7 @@ export class AddEditForm extends React.Component {
                         <span className="user_input_icon"><i class="fa fa-user-plus cstm_user_icon"></i></span>
                     </div>}
                      <div className="accnt_btn_wrap">
-                        <button class="mnt_btn">{btnText}</button>
+                        <button class="btn-add-nurse" onClick={btnClick}>{btnText}</button>
                     </div>
                 </div>
               </div>
