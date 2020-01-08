@@ -202,10 +202,17 @@
 .header-text {
 	font-size: 13px;
 }
-.login-head{
-	font-size: 1.0em;
+.login-head {
+    font-size: 1.0em;
     color: #0cd891;
     font-weight: 600;
+    letter-spacing: 1px;
+}
+.login-head {
+    font-size: 1.0em;
+    color: #0cd891;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 .pass-forget{
 	font: size 8px;
@@ -218,11 +225,11 @@
 	background-color: #fff;
 }
 
-.form-title{
-	font-size: 2.240em;
+.form-title {
+    font-size: 2.240em;
     font-weight: 700;
     letter-spacing: 0px;
-    padding: 28px 0px;
+    padding: 5px 0px 24px;
 }
 .form-subtitle{
 	font-size:19px;
@@ -235,14 +242,25 @@
 	margin-top: -8px;
 
 }
-.form-label{
-	font-size: 1.2em;
-	padding-bottom: 4px;
-    font-weight: bold;
+.form-label {
+    font-size: 14px;
+    padding-bottom: 0px;
+    font-weight: 500;
+    color: #777289;
+}
+.radio label span {
+    color: #777289;
+    font-size: 12px;
+    line-height: 14px;
+}
+.card-block.login-top .form-group {
+    margin-bottom: 20px;
 }
 .form-control::placeholder {
-    opacity: 0.7;
-    font-size: 1.18em;
+    opacity: 1;
+	font-size: 12px;
+	color: #B1B0C1;
+	line-height: 14px;
 }
 .modal-label{
 	font-size: 12px;
@@ -1464,7 +1482,7 @@ a.card:not(.bg-inverse):hover {
 
 /* Card block */
 .card-block {
-	padding: 24px 24px;
+    padding: 17px 24px;
 }
 
 .card-block:first-child {

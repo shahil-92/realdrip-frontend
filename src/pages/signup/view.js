@@ -13,7 +13,7 @@ const View = props => (
           <div className="container-fluid">
             <div className="row">
               <div className="col-sm-12 no-padding-x wrp-mngmnt-form">
-                <div className="col-sm-6 no-padding-x hidden-xs">
+                <div className="col-sm-6 no-padding-x hidden-xs"  style={{height:'100vh'}}>
                   <img alt="" className="img img-responsive focus-image" src={require('../../assets/Images/ward_sign_in.png')} />
                 </div>
                 <div className="col-sm-6">
