@@ -2454,6 +2454,16 @@ span.switch-on.btn.btn-outline-success {
     font-size: 1.0em;
     margin: 8px 0px 0px 0px;
 }
+.oprtn_device_control.whitebg.full-width-flex {
+  width: 100%;
+  height: auto;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  padding: 14px;
+  /* margin: 7px; */
+  font-weight: 400;
+}
 .patnt_name {
   padding: 11px 0;
 }
@@ -2468,8 +2478,8 @@ span.switch-on.btn.btn-outline-success {
   text-align: center;
   opacity: 0.7;
 }
-.active-nurse-frst_child {
-  width: 45%;
+td.active-nurse-frst_child {
+  width: 45% !important;
 }
 .right-wrap-heading {
   display: flex;
