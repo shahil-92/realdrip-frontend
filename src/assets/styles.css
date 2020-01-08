@@ -2407,6 +2407,13 @@ span.switch-handle.btn.btn-light {
     font-size: 1.0em;
     margin: 8px 0px 0px 0px;
 }
+.table-container.table {
+  margin: 15px 0;
+  width: 100%;
+}
+.active-nurse-frst_child {
+  width: 45%;
+}
 .right-wrap-heading {
   display: flex;
   /* justify-content: space-between; */
@@ -2565,7 +2572,7 @@ span.switch-handle.btn.btn-light {
   list-style: none;
   justify-content: space-evenly;
   display: flex;
-  width: 512px;
+  width: 100%;
   margin: 0 auto;
   padding: 0;
   align-items: center;
