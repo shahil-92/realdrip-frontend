@@ -2407,6 +2407,9 @@ span.switch-handle.btn.btn-light {
     font-size: 1.0em;
     margin: 8px 0px 0px 0px;
 }
+.patnt_name {
+  padding: 11px 0;
+}
 .table-container.table {
   margin: 15px 0;
   width: 100%;
