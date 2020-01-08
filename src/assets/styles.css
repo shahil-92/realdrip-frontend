@@ -2431,8 +2431,8 @@ span.switch-handle.btn.btn-light {
   text-align: center;
   opacity: 0.7;
 }
-.active-nurse-frst_child {
-  width: 45%;
+td.active-nurse-frst_child {
+  width: 45% !important;
 }
 .right-wrap-heading {
   display: flex;
