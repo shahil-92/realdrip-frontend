@@ -2228,7 +2228,53 @@ input.form-control.cstm_add_file {
   transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
   border: 1px solid #ccc;
 }
-span.switch-handle.btn.btn-light {
+
+.toggle {
+  position: relative;
+  top: -7px;
+  margin-left: 60px;
+}
+.toggle input[type="checkbox"] {
+  display: none;
+}
+.toggle label {
+  color: #4FBCA1;
+  position: relative;
+  cursor: pointer;
+}
+.toggle input[type="checkbox"] + label::before {
+  content: ' ';
+  display: block;
+  height: 15px;
+  width: 35px;
+  border: 1px solid #13D59633;
+  border-radius: 9px;
+  position: absolute;
+  top: 0px;
+  left: -60px;
+  background: #13D59633 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+}
+.toggle input[type="checkbox"] + label::after {
+  content: ' ';
+  display: block;
+  height: 20px;
+  width: 20px;
+  border: 1px solid #0CD891;
+  border-radius: 50%;
+  position: absolute;
+  top: -2px;
+  left: -69px;
+  background: #0CD891 0% 0% no-repeat padding-box;
+  transition: all 0.3s ease-in;
+}
+.toggle input[type="checkbox"]:checked + label::after {
+  left: -40px;
+  transition: all 0.3s ease-in;
+}
+
+
+/* span.switch-handle.btn.btn-light {
   position: relative;
   margin: 6.4px auto;
   padding-top: 5px;
@@ -2249,8 +2295,8 @@ span.switch-off.btn.btn-outline-danger {
 .switch.btn {
   border-radius: 8px;
   width: 75px !important;
-  /* min-width: 3.7rem;
-  min-height: calc(1.5em + .75rem + 2px); */
+  min-width: 3.7rem;
+  min-height: calc(1.5em + .75rem + 2px);
 }
 span.switch-on.btn.btn-outline-success {
   position: absolute;
@@ -2284,7 +2330,7 @@ span.switch-on.btn.btn-outline-success {
   border: 0;
   border-radius: 0;
   box-shadow: none;
-}
+} */
 /* .switch.btn {
   border-radius: 8px;
   min-width: 3.7rem;
@@ -2301,7 +2347,7 @@ span.switch-on.btn.btn-outline-success {
   -moz-user-select: none;
   -webkit-user-select: none;
 } */
-.btn-outline-success {
+/* .btn-outline-success {
   background-color: #13D59633;
   border-color: #13D59633;
   color: #000;
@@ -2320,6 +2366,56 @@ span.switch-on.btn.btn-outline-success {
 .switch.btn-outline-success span.switch-handle.btn.btn-light {
   background-color: #0CD891;
   border-color: #0CD891;
+} */
+
+
+/*======wifii popup container==========*/
+
+.wifii-pop-container {
+  text-align: center;
+  background: #fff;
+  padding: 22px 35px;
+  border-radius: 25px;
+  display: flex;
+  width: 30%;
+  position: absolute;
+  flex-direction: column;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.conted_wraper {
+  text-align: left;
+}
+.lght_txtmgnt_wifii_input {
+  font-size: 16px;
+  color: #B1B0C1;
+  opacity: 1;
+  font-weight: normal;
+  text-align: left;
+}
+i.fa.fa-angle-left.cstm-left-angle {
+  margin: 0 8px;
+  color: #0FBB83;
+  font-size: 18px;
+  font-weight: 600;
+}
+.conted_wraper {
+  text-align: left;
+  font-size: 16px;
+  font-weight: 500;
+}
+.btn-add-wifii-connect {
+  background: #0CD891 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #0000001A;
+  border-radius: 4px;
+  opacity: 1;
+  color: #fff;
+  border: 0;
+  padding: 10px 0px;
+  width: 35%;
+  font-size: 16px;
+  margin-top: 25px;
 }
 
 /*------media ----query---dashbpard---- max-width 955 */

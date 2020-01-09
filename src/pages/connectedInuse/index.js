@@ -8,7 +8,6 @@ import Form from 'react-bootstrap/Form';
 import DETAILMENU from '../../components/Headers/detailMenu'
 import ProgressBar from 'react-bootstrap/ProgressBar'
 import Table from 'react-bootstrap/Table'
-import BootstrapSwitchButton from 'bootstrap-switch-button-react'
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 export class ConnectedInuse extends React.Component {
@@ -39,27 +38,16 @@ export class ConnectedInuse extends React.Component {
                 {this.state.showMenu && <DETAILMENU LEFT_HEADER_DATA={MetaData.WARD_LEFT_HEADER_DATA} {...this.props}/>}
                 <div className="inner_dash">
                   <div className="left-mid-dash">
-                  <Form>
-                  {/* <Form.Check 
-                    type="switch"
-                    id="custom-switch"
-                    label="On"
-                    className="cstm-class"
-                  /> */}
-                    <BootstrapSwitchButton
-                      checked={true}
-                      onlabel='On'
-                      offlabel='Off'
-                      width={100}
-                      onstyle="outline-success" offstyle="outline-danger" 
-                      // onChange={(checked: boolean) => {
-                      //     this.setState({ isUserAdmin: checked })
-                      // }}
-                    />
-                  </Form>
-                   <div className="wrap_label_main_wrap">
-                      <div className="label_wrapper"><div className="Label_b2_name">Label</div><div className="small_txt conected_bld_txt">B2</div></div>
-                      <div className="label_wrapper pdng_right_label"><div className="Label_b2_name">ID</div><div className="small_txt conected_bld_txt">02113322</div></div>
+
+                   <div className="main_wrap_switch_conted">
+                      <div class="toggle">
+                        <input type="checkbox" id="temp"/>
+                        <label for="temp"/>
+                      </div>
+                      <div className="wrap_label_main_wrap">
+                        <div className="label_wrapper"><div className="Label_b2_name">Label</div><div className="small_txt conected_bld_txt">B2</div></div>
+                        <div className="label_wrapper pdng_right_label"><div className="Label_b2_name">ID</div><div className="small_txt conected_bld_txt">02113322</div></div>
+                      </div>
                    </div>
 
 
@@ -170,7 +158,10 @@ export class ConnectedInuse extends React.Component {
                          </div>
                          <div className="oprtn_device_control whitebg">
                              <div>Switch device off</div>
-                             <div className="cstm_icon"><i class="fa fa-play" aria-hidden="true"></i></div>
+                              <div class="toggle">
+                                <input type="checkbox" id="temp1"/>
+                                <label for="temp1"/>
+                              </div>
                          </div>
                          <div className="oprtn_device_control whitebg hospital-wifi">
                             <div className="first-div">  
@@ -180,7 +171,10 @@ export class ConnectedInuse extends React.Component {
                             
                             <div className="first-div">
                              <div>Disconnect device</div>
-                             <div className="cstm_icon"><i class="fa fa-play" aria-hidden="true"></i></div>
+                             <div class="toggle">
+                                <input type="checkbox" id="temp2"/>
+                                <label for="temp2"/>
+                              </div>
                             </div>
                          </div>
                       </div>
