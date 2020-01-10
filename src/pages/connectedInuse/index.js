@@ -8,6 +8,7 @@ import Form from 'react-bootstrap/Form';
 import DETAILMENU from '../../components/Headers/detailMenu'
 import ProgressBar from 'react-bootstrap/ProgressBar'
 import Table from 'react-bootstrap/Table'
+import CustomSwitch from '../../components/Form/CustomSwitch'
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 export class ConnectedInuse extends React.Component {
@@ -38,22 +39,18 @@ export class ConnectedInuse extends React.Component {
                 {this.state.showMenu && <DETAILMENU LEFT_HEADER_DATA={MetaData.WARD_LEFT_HEADER_DATA} {...this.props}/>}
                 <div className="inner_dash">
                   <div className="left-mid-dash">
-
                    <div className="main_wrap_switch_conted">
-                      <div class="toggle">
-                        <input type="checkbox" id="temp"/>
-                        <label for="temp"/>
-                      </div>
+                      <CustomSwitch
+                          wrapperClass="toggle"
+                          inputId="temp"
+                          tempId="temp"
+                      />
                       <div className="wrap_label_main_wrap">
                         <div className="label_wrapper"><div className="Label_b2_name">Label</div><div className="small_txt conected_bld_txt">B2</div></div>
                         <div className="label_wrapper pdng_right_label"><div className="Label_b2_name">ID</div><div className="small_txt conected_bld_txt">02113322</div></div>
                       </div>
                    </div>
-
-
                   <div className="edit_label_wrap">Edit Label</div>
-                 
-                
                   <div className="wrap_left_section">
                     <div className="dash_ward_device_wrap oprtn_wrap connect_left_top_margin">
                     <h4 class="sumry_head status-heading">Status</h4>
@@ -61,8 +58,7 @@ export class ConnectedInuse extends React.Component {
                         <div className="status_icon_txt_wrap"><div className="con_text_status">Connected</div> <div className="status_img_wrap"><img src={require('../../assets/Images/wifi-medium-signal-symbol.svg')} /></div></div>
                         <div className="status_icon_txt_wrap"><div className="con_text_status">In use</div> <div className="status_img_wrap"><img src={require('../../assets/Images/operation_menu_active.png')} /></div></div>
                     </div>
-                    <h4 class="sumry_head">Summary</h4>
-                   
+                    <h4 class="sumry_head">Summary</h4>             
                      <div className="infusn_wrap device_infusn  oprtn_dtl_wrd">
                           <div className="wrpd_icon_num">
                             <span className="urgnt_txt">
@@ -88,7 +84,6 @@ export class ConnectedInuse extends React.Component {
                           <h5>Active Infusion</h5>
                         </div>
                       </div>
-
                     </div>
                     </div>
                   </div>
@@ -157,11 +152,12 @@ export class ConnectedInuse extends React.Component {
                              <div className="cstm_icon"><i class="fa fa-repeat" aria-hidden="true"></i></div>
                          </div>
                          <div className="oprtn_device_control whitebg">
-                             <div>Switch device off</div>
-                              <div class="toggle">
-                                <input type="checkbox" id="temp1"/>
-                                <label for="temp1"/>
-                              </div>
+                             <div>Switch device off</div>     
+                              <CustomSwitch
+                                wrapperClass="toggle"
+                                inputId="temp1"
+                                tempId="temp1"
+                              />
                          </div>
                          <div className="oprtn_device_control whitebg hospital-wifi">
                             <div className="first-div">  
@@ -171,10 +167,11 @@ export class ConnectedInuse extends React.Component {
                             
                             <div className="first-div">
                              <div>Disconnect device</div>
-                             <div class="toggle">
-                                <input type="checkbox" id="temp2"/>
-                                <label for="temp2"/>
-                              </div>
+                             <CustomSwitch
+                                wrapperClass="toggle"
+                                inputId="temp2"
+                                tempId="temp2"
+                              />
                             </div>
                          </div>
                       </div>
