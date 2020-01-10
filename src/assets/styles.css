@@ -2486,10 +2486,10 @@ span.switch-on.btn.btn-outline-success {
 .wifii-pop-container {
   text-align: center;
   background: #fff;
-  padding: 22px 35px;
+  padding: 42px 67px 80px;
   border-radius: 25px;
   display: flex;
-  width: 30%;
+  width: 35%;
   position: absolute;
   flex-direction: column;
   top: 50%;
@@ -2574,6 +2574,11 @@ i.fa.fa-angle-left.cstm-left-angle {
 .wifii_td_icon img {
   width: 25px;
   height: 25px;
+}
+.conted_wraper.wifii_network {
+  color: #777289;
+  font-weight: 500;
+  font-size: 18px;
 }
 /*------media ----query---dashbpard---- max-width 955 */
 

@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 import Input from '../inputComponent'
 
 export const WifiiPopUp = (props) => {
-    const { mainIcon, heading, subHeading, placeholder, children, visibilityIcon, btnText, btnClick  } = props
+    const {ArrowHeadingWrapClass, leftArrowClass, topHeading, mainIcon, heading, subHeading, placeholder, children, visibilityIcon, btnText, btnClick  } = props
     return (
        <div className="popup-wrap">
        <div class="wifii-pop-container">
-          <div className="conted_wraper"> <i class="fa fa-angle-left cstm-left-angle"></i>Connect to</div>
+        <div className={ArrowHeadingWrapClass}> {leftArrowClass &&<i className={leftArrowClass}></i>}{topHeading}</div>
           <div className="circle_wrap"><img src={mainIcon} /></div>
             <h4 className="mail-sent-wrap">{heading}</h4>
             <label className='lght_txtmgnt_wifii_input'>{subHeading}</label>

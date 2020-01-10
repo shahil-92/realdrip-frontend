@@ -307,6 +307,7 @@ export class ConnectedInuse extends React.Component {
               </div>
             </div>
           </div>
+          {SwitchToggle && <WifiiPopUpWrap />}
         </div>
     );
   }
