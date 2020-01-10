@@ -78,6 +78,7 @@ export class Signup extends React.Component {
         getInput={this.getInput}
         register={this.register}
         location={{country: this.state.country, state: this.state.state}}
+        {...this.props}
       />
     );
   }

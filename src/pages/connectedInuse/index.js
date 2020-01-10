@@ -18,7 +18,9 @@ export class ConnectedInuse extends React.Component {
     this.state = {
       selectedTab:'inuse',
       showMenu: false,
-      SwitchToggle: false
+      SwitchToggle: false,
+      SwitchToggleDevice: false,
+      SwitchToggleBasic: false
     };
   }
 
@@ -31,12 +33,18 @@ export class ConnectedInuse extends React.Component {
   handleSwtich = (event) => {
     this.setState({SwitchToggle : !this.state.SwitchToggle})
   }
+  handleSwtichFirst = (event) => {
+    this.setState({SwitchToggleBasic : !this.state.SwitchToggleBasic})
+  }
+  handleSwtichDevice = (event) => {
+    this.setState({SwitchToggleDevice : !this.state.SwitchToggleDevice})
+  }
   closeModal = () => {
     this.setState({SwitchToggle: false})
   }
 
   render() {
-    const { selectedTab, SwitchToggle } = this.state
+    const { selectedTab, SwitchToggle, SwitchToggleBasic, SwitchToggleDevice } = this.state
     return (
         <div className="main_wrapper ">
            <div className="inner_dshbrd_wrap">
@@ -52,6 +60,8 @@ export class ConnectedInuse extends React.Component {
                           wrapperClass="toggle"
                           inputId="temp"
                           tempId="temp"
+                          onChange={(event)=>this.handleSwtichFirst(event)}
+                          SwitchToggle={SwitchToggleBasic}
                       />
                       <div className="wrap_label_main_wrap">
                         <div className="label_wrapper"><div className="Label_b2_name">Label</div><div className="small_txt conected_bld_txt">B2</div></div>
@@ -165,6 +175,8 @@ export class ConnectedInuse extends React.Component {
                                 wrapperClass="toggle"
                                 inputId="temp1"
                                 tempId="temp1"
+                                onChange={(event)=>this.handleSwtichDevice(event)}
+                                SwitchToggle={SwitchToggleDevice}
                               />
                          </div>
                          <div className="oprtn_device_control whitebg hospital-wifi">

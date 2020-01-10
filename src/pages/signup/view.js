@@ -4,6 +4,8 @@ import { CountryDropdown, RegionDropdown } from 'react-country-region-selector';
 import ErrorText from '../../components/common/errorText';
 import LoadingIcon from '../../components/common/spinner';
 
+
+
 const View = props => (
   <div className="app-ui">
     <div className="app-layout-canvas">
@@ -110,7 +112,7 @@ const View = props => (
                       </div>
 
                       <div className="alrdyaccnt">
-                          <p> Already have a management account? <span className="login-head">Sign in</span></p>
+                          <p> Already have a management account? <span className="login-head" onClick={()=>{props.history.push('/management-signin')}}>Sign in</span></p>
                       </div>
                     </form>
                   </div>

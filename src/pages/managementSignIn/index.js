@@ -1,47 +1,93 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import WardSignInActivation from '../../components/Ward/wardSignInActivation'
-
+import * as CommonHelper from '../../utils'
+import { toast, ToastContainer } from 'react-toastify';
+import Spinner from '../../components/common/spinner'
 export class ManagementSignIn extends React.Component {
   constructor() {
     super();
     this.state = {
-      name: null,
-      email: null,
-      country: null,
+      email: "ogunniyitunmise@gmail.com",
+      password: "CWh04BkXB2",
+      ward_user: "",
+      errorMessage:"",
+      formErrors:{
+        email:'',
+        password:'',
+        
+      },
+      isloading: false,
     };
   }
+  static getDerivedStateFromProps(props, state){
+    console.log('===props=',props.loginResponse)
+    console.log('=====state=',state)
+    const {changingStatus , wardLogin} = props && props.loginResponse
+    const {token, user} = wardLogin
+    if(changingStatus === 'success'){
+      localStorage.setItem('token', token);
+      // state.setState({isloading: false})
+      // state.isloading = false
+      CommonHelper.isToster(toast.success, 'Login Has Been Successfull');
+      props.history.push('/ward-dashboard')
+      return
+    }else{
+      return null
+    }
+  }
 
+  handleChange = (e) => {
+    const {name, value} = e.target
+    const {formErrors} = this.state
+    this.setState({ [name]: value })
+    CommonHelper.handleLoginValidation(formErrors, name, value)
+  }
   handleClick = () =>{
-    this.props.history.push('/signup')
+     this.props.history.push('/ward-activation')
   }
   handleWardSignIn = () =>{
+    const {email, password} = this.state;
+    this.setState({isloading: true})
+    // !CommonHelper.isValidPassword(password)
+    // if(this.state.formErrors.email === '' && this.state.formErrors. === ''){
+    // }
+    // let data = {
+    //   email: email,
+    //   password: password,
+    //   userType: "ward_user"
+    // }
+    // this.props.dispatch({ type: 'WARD_LOGIN_SUBMIT', payload: data })
     this.props.history.push('/management-dashboard')
- }
-
+    }
+  
   render() {
+    console.log('=-=-==this.state===',this.state) 
+    const {formErrors, isloading} = this.state;
     return (
+      <div>
         <WardSignInActivation 
             welcomeHeading="Welcome Back"
             secondHeading="Management Sign In" 
             buttonLabel="Sign In"
             onClickAnchr={this.handleClick}
             onClick={this.handleWardSignIn}
-            // type
-            // holder
-            // onChange
-            // onKeyPress
-            // id
-            // name
-        />
+            onChange={this.handleChange}
+            errorMessage={formErrors}
+            src={require('../../assets/Images/ward_sign_in.png')}
+            imgClass="img-left-sigin"
+        /> 
+        <ToastContainer />
+        <div className="loaderWraper">
+           <Spinner display={isloading}/>
+        </div>
+      </div>
     );
   }
 }
 
 const mapStateToProps = (state) => ({
-   // addingUserStarted: state.user.createAdmin.addingUserStarted,
-  // addingUserResolved: state.user.createAdmin.addingUserResolved,
-  // addingUserError: state.user.createAdmin.addingUserError,
-});
+  loginResponse: state.WardLogin
+})
 
 export default connect(mapStateToProps)(ManagementSignIn);
