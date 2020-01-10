@@ -1730,8 +1730,120 @@ tr.list_heading_ul td.devic_txt {
   justify-content: space-between;
 }
 .device_in_use_wrapper.mngnt_inner_wrap {
-  width: 45%;
+  width: calc(50% - 30px);
+  margin: 15px;
+  padding: 35px;
 }
+.device_in_use_wrapper.mngnt_inner_wrap .txt_dashboard {
+  font-size: 4em;
+  font-weight: 700;
+  letter-spacing: 0px;
+}
+.device_in_use_wrapper.mngnt_inner_wrap:nth-child(1) .drip_img_wrap img {
+  width: 56px;
+  height: 56px;
+  right: 0px;
+}
+.device_in_use_wrapper.mngnt_inner_wrap:nth-child(2) .drip_img_wrap img {
+  width: 45px;
+  height: 44px;
+  right: 0px;
+}
+.device_in_use_wrapper.mngnt_inner_wrap:nth-child(3) .drip_img_wrap img {
+  width: 33px;
+  height: 48px;
+  right: 0px;
+}
+.device_in_use_wrapper.mngnt_inner_wrap:nth-child(4) .drip_img_wrap img {
+  width: 31px;
+  height: 54px;
+  right: 0px;
+}
+.device_in_use_wrapper.mngnt_inner_wrap .devide_inuse_txt_mgnt {
+  /* text-align: center; */
+  color: #777289;
+  line-height: 23px;
+  font-size: 19px;
+  opacity: 1;
+  font-weight: 600;
+  letter-spacing: 0px;
+}
+.device_in_use_wrapper.mngnt_inner_wrap .see_all_txt_mgmnt {
+  border-radius: 28px;
+  border: 1px solid gray;
+  padding: 4px 8px;
+  border: 0.5px solid #0000001A;
+  border-radius: 12px;
+  font-size: 12px;
+  line-height: 14px;
+}
+.device_in_use_wrapper.mngnt_inner_wrap .device_inuse {
+  position: relative;
+  width: calc(100% - 30px);
+  background: #ffff;
+  display: flex;
+  margin: 15px;
+  justify-content: space-between;
+}
+
+.left-mid-dash-mgmnt .add_new_device_wrap_mgmnt {
+  /* display: flex; */
+  /* justify-content: flex-end; */
+  margin: 10px 0px;
+  position: absolute;
+  right: 0;
+}
+
+.operation_search_tab_bar_mgnt .oprtn_search_wrap.operation_pdng {
+  padding: 0px 6px;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  display: flex;
+  margin-right: 10px;
+}
+.left-mid-dash-mgmnt .dash_active_wrap.oprtn_scroll_list {
+  max-height: 400px;
+  overflow: auto;
+  border-radius: 12px;
+}
+
+.left-mid-dash-mgmnt .dash_active_wrap.oprtn_scroll_list table thead tr th {
+  color: #1D474B80;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 27px 0 20px;
+  text-align: center;
+}
+
+.left-mid-dash-mgmnt .dash_active_wrap.oprtn_scroll_list table tbody tr td {
+  color: #000;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  padding: 25px 0 25px !important;
+  text-align: center;
+}
+
+.left-mid-dash-mgmnt .dash_active_wrap.oprtn_scroll_list table tbody tr:hover {
+  background-color: #fff;
+}
+
+.left-mid-dash-mgmnt .dash_active_wrap.oprtn_scroll_list table thead tr ,
+.left-mid-dash-mgmnt .dash_active_wrap.oprtn_scroll_list table tbody tr{
+  margin: 25px 0 !important;
+  padding: 15px 0 !important;
+}
+
+
+
+
+
+
+
+
+
+
 .txt_dashboard {
   font-size: 3.244em;
   font-weight: 600;
