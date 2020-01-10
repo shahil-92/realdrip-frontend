@@ -31,7 +31,7 @@ import DeviceValidatePopUp from '../pages/deviceValidatePopUp'
 import PasswordUpdatedPopUp from '../pages/passwordUpdatedPopUp'
 import DeleteOperationPopUp from '../pages/deleteOperationPopUp'
 import OperationDetailNotUpdated from '../pages/OperationDetailNotUpdated'
-import WifiiPopUp from '../pages/WifiiPopUp'
+import WifiiPopUpWrap from '../pages/WifiiPopUpWrap'
 export default (props) => (
 	<Router>
 		<Switch>
@@ -66,7 +66,7 @@ export default (props) => (
 			<Route exact path="/device-validate-popup" component={props => <DeviceValidatePopUp {...props}/>}/>
 			<Route exact path="/password-update-popup" component={props => <PasswordUpdatedPopUp {...props}/>}/>
 			<Route exact path="/delete-oprtn-popup" component={props => <DeleteOperationPopUp {...props}/>}/>
-			<Route exact path="/wifii" component={props => <WifiiPopUp {...props}/>}/>
+			<Route exact path="/wifii" component={props => <WifiiPopUpWrap {...props}/>}/>
 		</Switch>
 	</Router>
 );

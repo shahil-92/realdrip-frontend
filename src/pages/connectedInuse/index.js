@@ -9,6 +9,7 @@ import DETAILMENU from '../../components/Headers/detailMenu'
 import ProgressBar from 'react-bootstrap/ProgressBar'
 import Table from 'react-bootstrap/Table'
 import CustomSwitch from '../../components/Form/CustomSwitch'
+import WifiiPopUpWrap from '../WifiiPopUpWrap'
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 export class ConnectedInuse extends React.Component {
@@ -16,7 +17,8 @@ export class ConnectedInuse extends React.Component {
     super();
     this.state = {
       selectedTab:'inuse',
-      showMenu: false
+      showMenu: false,
+      SwitchToggle: false
     };
   }
 
@@ -26,9 +28,13 @@ export class ConnectedInuse extends React.Component {
   handleClickToggle = () =>{
     this.setState({showMenu : !this.state.showMenu})
   }
+  handleSwtich = (event) => {
+    console.log('===switch==',event)
+    this.setState({SwitchToggle : !this.state.SwitchToggle})
+  }
 
   render() {
-    const { selectedTab } = this.state
+    const { selectedTab, SwitchToggle } = this.state
     return (
         <div className="main_wrapper ">
            <div className="inner_dshbrd_wrap">
@@ -171,6 +177,7 @@ export class ConnectedInuse extends React.Component {
                                 wrapperClass="toggle"
                                 inputId="temp2"
                                 tempId="temp2"
+                                onChange={this.handleSwtich}
                               />
                             </div>
                          </div>
@@ -294,10 +301,7 @@ export class ConnectedInuse extends React.Component {
                             <div className="light_txt_hstry">Frank</div>
                           </li>
                         </ul>
-
                       </div>}
-                      
-
                   </div>
                 </div>
               </div>
