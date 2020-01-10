@@ -5,6 +5,7 @@ import WifiiAvailableNetworks from '../../components/popUp/WifiiAvailableNetwork
 // import MAILSENT_POPUP from '../../components/popUp/mailSentPopUp'
  
 export const WifiiPopUpWrap = (props) => {
+    const { PopUpClick } = props
     return (
         <WifiiPopUp
             ArrowHeadingWrapClass="conted_wraper wifii_network"
@@ -12,20 +13,21 @@ export const WifiiPopUpWrap = (props) => {
             mainIcon ={require('../../assets/Images/wifi-signal-waves.svg')} 
             heading = "Scanning for wi-fi"
             subHeading = "Available Networks"
+            PopUpClick={PopUpClick}
         >
               <WifiiAvailableNetworks 
                 leftIconSrc={require('../../assets/Images/computer.svg')}
-                text="Scanning for wifi"
+                text="Hospital Network"
                 rightIconSrc={require('../../assets/Images/wifi-medium-signal-symbol.svg')}
             />
               <WifiiAvailableNetworks 
                 leftIconSrc={require('../../assets/Images/computer.svg')}
-                text="Hospital Internet"
+                text="Ward B wifii"
                 rightIconSrc={require('../../assets/Images/wifi-medium-signal-symbol.svg')}
             />
               <WifiiAvailableNetworks 
-                leftIconSrc={require('../../assets/Images/computer.svg')}
-                text="Hospital Internet"
+                leftIconSrc={require('../../assets/Images/smartphone-dock.svg')}
+                text="Tunde's Phone"
                 rightIconSrc={require('../../assets/Images/wifi-medium-signal-symbol.svg')}
             />
         </WifiiPopUp>

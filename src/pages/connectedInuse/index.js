@@ -29,8 +29,10 @@ export class ConnectedInuse extends React.Component {
     this.setState({showMenu : !this.state.showMenu})
   }
   handleSwtich = (event) => {
-    console.log('===switch==',event)
     this.setState({SwitchToggle : !this.state.SwitchToggle})
+  }
+  closeModal = () => {
+    this.setState({SwitchToggle: false})
   }
 
   render() {
@@ -177,7 +179,8 @@ export class ConnectedInuse extends React.Component {
                                 wrapperClass="toggle"
                                 inputId="temp2"
                                 tempId="temp2"
-                                onChange={this.handleSwtich}
+                                onChange={(event)=>this.handleSwtich(event)}
+                                SwitchToggle={SwitchToggle}
                               />
                             </div>
                          </div>
@@ -307,7 +310,7 @@ export class ConnectedInuse extends React.Component {
               </div>
             </div>
           </div>
-          {SwitchToggle && <WifiiPopUpWrap />}
+          {SwitchToggle && <WifiiPopUpWrap PopUpClick={this.closeModal}/>}
         </div>
     );
   }

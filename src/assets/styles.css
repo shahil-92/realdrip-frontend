@@ -2512,6 +2512,7 @@ span.switch-on.btn.btn-outline-success {
   font-size: 14px;
   font-weight: normal;
   color: #B1B0C1;
+  margin-left: 8px;
 }
 .input_wrap_wifii {
   display: flex;
@@ -2564,7 +2565,7 @@ i.fa.fa-angle-left.cstm-left-angle {
 .wifii_td_icon_name {
   width: 38%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
 }
 .wifii_td_icon_name img {
@@ -2572,8 +2573,8 @@ i.fa.fa-angle-left.cstm-left-angle {
   height: 25px;
 }
 .wifii_td_icon img {
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
 }
 .conted_wraper.wifii_network {
   color: #777289;

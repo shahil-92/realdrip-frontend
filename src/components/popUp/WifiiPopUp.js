@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 import Input from '../inputComponent'
 
 export const WifiiPopUp = (props) => {
-    const {ArrowHeadingWrapClass, leftArrowClass, topHeading, mainIcon, heading, subHeading, placeholder, children, visibilityIcon, btnText, btnClick  } = props
+    const {PopUpClick, ArrowHeadingWrapClass, leftArrowClass, topHeading, mainIcon, heading, subHeading, placeholder, children, visibilityIcon, btnText, btnClick  } = props
     return (
-       <div className="popup-wrap">
+       <div className="popup-wrap" onClick={PopUpClick}>
        <div class="wifii-pop-container">
         <div className={ArrowHeadingWrapClass}> {leftArrowClass &&<i className={leftArrowClass}></i>}{topHeading}</div>
           <div className="circle_wrap"><img src={mainIcon} /></div>

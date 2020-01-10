@@ -3,11 +3,11 @@ import React from 'react';
 
 const CustomSwitch = (props) => {
   const {
-    wrapperClass, inputId, onChange, tempId, className
+    wrapperClass, inputId, onChange, tempId, className, SwitchToggle
   } = props;
   return (
     <div class={wrapperClass}>
-        <input type="checkbox" id={inputId} onChange={onChange} className={className}/>
+        <input type="checkbox" id={inputId} checked={SwitchToggle} onChange={(event)=>onChange(event)} className={className}/>
         <label for={tempId}/>
     </div>
   );
