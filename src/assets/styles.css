@@ -1815,8 +1815,6 @@ tr.list_heading_ul td.devic_txt {
 }
 
 .left-mid-dash-mgmnt .add_new_device_wrap_mgmnt {
-  /* display: flex; */
-  /* justify-content: flex-end; */
   margin: 10px 0px;
   position: absolute;
   right: 0;
@@ -1834,6 +1832,7 @@ tr.list_heading_ul td.devic_txt {
   max-height: unset;
   overflow: auto;
   border-radius: 12px;
+  width: 70%;
 }
 
 .left-mid-dash-mgmnt .dash_active_wrap.oprtn_scroll_list table thead tr th {
@@ -1851,8 +1850,25 @@ tr.list_heading_ul td.devic_txt {
   font-weight: 500;
   padding: 25px 0 25px !important;
   text-align: center;
+  width: 20%;
 }
-
+td.bld_txt_mgnt.width28 {
+  width: 28% !important;
+}
+.login_to_ward_btn {
+  border: 1px solid #777289;
+  border-radius: 4px;
+  opacity: 1;
+  width: 28%;
+  text-align: center;
+  margin-top: 29px;
+  padding: 10px;
+}
+.login_to_ward_btn {
+  color: #777289;
+  font-size: 16px;
+  font-weight: normal;
+}
 .left-mid-dash-mgmnt .dash_active_wrap.oprtn_scroll_list table tbody tr:hover {
   background-color: #fff;
 }
@@ -2052,6 +2068,7 @@ tr.list_heading_ul td.devic_txt {
   opacity: 1;
   color: #B1B0C1;
   line-height: 18px;
+  margin-bottom: 45px;
   /* width: 100%; */
   /* padding: 0 138px 0px 0px; */
   float: left;
@@ -2656,6 +2673,11 @@ i.fa.fa-angle-left.cstm-left-angle {
     display: flex;
     flex-direction: column;
 }
+.left-mid-dash-mgmnt .add_new_device_wrap_mgmnt {
+  margin: 10px 0px;
+  position: relative;
+  right: 0;
+}
 .wrap_label_main_wrap {
   display: flex;
   justify-content: space-between;
@@ -2775,6 +2797,16 @@ i.fa.fa-angle-left.cstm-left-angle {
     /* top: 2px; */
     font-size: 1.0em;
     margin: 8px 0px 0px 0px;
+}
+.img_device_info {
+  width: 30%;
+  margin: 28px 0;
+}
+.left-mid-dash-mgmnt .dash_active_wrap.oprtn_scroll_list {
+  max-height: unset;
+  overflow: auto;
+  border-radius: 12px;
+  width: 100%;
 }
 .wifii_td_icon_name {
   width: 56%;
@@ -3030,7 +3062,8 @@ td.active-nurse-frst_child {
   position: relative;
   top: 0px;
   /* width: 48%; */
-  right: 0;
+  /* right: 0; */
+  text-align: left;
   font-size: 1.0em;
 }
 .right_dashboard{
@@ -3045,13 +3078,14 @@ td.active-nurse-frst_child {
   padding: 0;
 }
 .header_right_dash {
-  width: 74%;
+  width: 84%;
 }
 .header_dash {
   display: flex;
   justify-content: flex-start;
   border-bottom: 1px solid #bdbcbc;
   position: relative;
+  flex-direction: column;
   height: auto;
 }
 
@@ -3213,10 +3247,20 @@ td.active-nurse-frst_child {
 .btn_para {
   position: relative;
   bottom: 0;
-  font-size: 1.4em;
+  font-size: 14px;
   font-weight: 600;
   opacity: 0.6;
   padding: 0;
+  margin-bottom: 20px;
+}
+.login_to_ward_btn {
+  border: 1px solid #777289;
+  border-radius: 4px;
+  opacity: 1;
+  width: 50%;
+  text-align: center;
+  margin-top: 29px;
+  padding: 10px;
 }
 .wrad_name_label_wrap {
   display: flex;
@@ -3228,14 +3272,13 @@ td.active-nurse-frst_child {
 .add_new_device_wrap_mgmnt {
   display: flex;
   justify-content: flex-start;
-  margin: 10px 0px;
+  margin: 17px 0px !important;
   position: relative;
   left: 4px;
 }
 .wrap_dash_new_wrad {
   display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
+  justify-content: space-between;
 }
 .img_ward_info {
   width: 21%;
@@ -3344,6 +3387,17 @@ td.active-nurse-frst_child {
   font-weight: 600;
   opacity: 0.6;
   padding: 0;
+  margin-bottom: 10px;
+}
+
+.login_to_ward_btn {
+  border: 1px solid #777289;
+  border-radius: 4px;
+  opacity: 1;
+  width: 48%;
+  text-align: center;
+  margin-top: 29px;
+  padding: 10px;
 }
 
 .ul_contnt_mgnt_nurse li {

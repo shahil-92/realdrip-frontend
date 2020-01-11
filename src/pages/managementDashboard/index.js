@@ -18,8 +18,9 @@ export class ManagementDashboard extends React.Component {
   handleClick = () =>{
     this.setState({showMenu : !this.state.showMenu})
   }
-  handleRedirectClick = () =>{
-    this.props.history.push('/operation-detail')
+  handleRedirectClick = (url) =>{
+    console.log('==url=',url)
+    this.props.history.push(url)
   }
   handleCardComponent = () => {
     return MetaData.ManagementDashboardData.map((data,key)=>(
@@ -29,7 +30,7 @@ export class ManagementDashboard extends React.Component {
           src = {data.image}
           spanText = {data.text}
           seeAll = "see all"
-          onClick={this.handleRedirectClick}
+          onClick={()=>this.handleRedirectClick(data.url)}
         />
       ))
   }
