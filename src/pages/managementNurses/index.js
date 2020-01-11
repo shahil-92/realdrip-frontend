@@ -21,7 +21,7 @@ export class ManagementNurses extends React.Component {
 
   render() {
     return (
-        <div className="main_wrapper ">
+        <div className="main_wrapper min-100-only">
            <div className="inner_dshbrd_wrap">
            <LEFT_HEADER onClick={this.handleClick} LEFT_HEADER_DATA={MetaData.MANAGEMENT_LEFT_HEADER_DATA} {...this.props}/>
             <div className="right_dashboard">
@@ -51,7 +51,7 @@ export class ManagementNurses extends React.Component {
                             </div>
                         </div>
                       </div>
-                      <div class="dash_active_wrap oprtn_scroll_list">
+                      <div class="dash_active_wrap oprtn_scroll_list reg_users_table">
                           <Table responsive>
                             <thead>
                               <tr>

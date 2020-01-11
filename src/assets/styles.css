@@ -58,6 +58,9 @@ tr,td,table,tbody{
   min-height: 100vh;
   max-height: 100vh;
 }
+.min-100-only{
+  min-height: 100vh;
+}
 .home_login_to {
       padding: 20px 0px;
       position: absolute;
@@ -278,8 +281,8 @@ tr.ul_contnt {
 }
 .head_ward_h2 {
   font-size: 2.0em;
-  font-weight: 600;
-  letter-spacing: 0px;
+  font-weight: 800;
+  letter-spacing: 1px;
   color: #000;
 }
 .ward_btn_wrap {
@@ -336,7 +339,7 @@ tr.ul_contnt {
   text-align: right;
   font: Italic 0.78em/1.2 Roboto;
   letter-spacing: 0;
-  color: #B1B0C1;
+  color: #838383;
   opacity: 1;
 }
 .input_row {
@@ -1093,18 +1096,43 @@ tr.list_heading_ul.fontWeight500 > td {
   justify-content: flex-end;
 }
 .add_device_btn {
-  border: 1px solid lightgray;
-  padding: 5px 19px;
+  /* border: 1px solid #e8e5e5; */
+  padding: 5px 20px;
   margin: 10px;
-  border-radius: 15px;
+  /* border-radius: 15px; */
   font-size: 0.92em;
   font-weight: 500;
+  box-shadow: 0px 3px 6px #00000029;
+  border: 0.25px solid #707070;
+  border-radius: 14px;
 }
+.right-mid-dash_mgnt .img_heading_wrap_mgnt .img_ward_info {
+  width: 56px;
+  height: 56px;
+  margin: 20px 0 25px;
+}
+
+
 .add_new_device_wrap {
   display: flex;
   justify-content: flex-end;
   margin: 10px 0px;
 }
+
+.right-mid-dash_mgnt .add_new_device_wrap_mgmnt {
+  /* display: flex; */
+  /* justify-content: flex-end; */
+  margin: 10px 0px;
+  position: absolute;
+  right: 0;
+}
+
+.right-mid-dash_mgnt .add_new_device_wrap_mgmnt .add_device_btn {
+  /* border: 1px solid #e8e5e5; */
+  padding: 5px 20px;
+  margin: 10px 0px;
+}
+
 ul.list_heading_ul.device_ul {
   /* display: flex; */
   /* justify-content: space-evenly; */
@@ -1803,7 +1831,7 @@ tr.list_heading_ul td.devic_txt {
   margin-right: 10px;
 }
 .left-mid-dash-mgmnt .dash_active_wrap.oprtn_scroll_list {
-  max-height: 400px;
+  max-height: unset;
   overflow: auto;
   border-radius: 12px;
 }
@@ -1931,11 +1959,13 @@ tr.list_heading_ul td.devic_txt {
   height: 100%;
   width: 55%;
   float: left;
+  min-height: 100vh;
   background: #e1ecef4f;
 }
 .inner_dash_mgnt_right {
   padding: 0px 57px;
-  height: 100%;
+  height: 100%; 
+  min-height: 100vh;
   width: 45%;
   float: left;
   background: #fff;
@@ -1958,25 +1988,27 @@ tr.list_heading_ul td.devic_txt {
   display: flex;
 }
 .ward_info_ul_wrap {
-  padding: 10px 0;
-  border-bottom: 1px solid gray;
+  padding: 15px 0;
+  border-bottom: 1px solid #dedede;
 }
 .ward_name {
-  font-size: 1.2em;
-  font-weight: 600;
-  opacity: 0.7;
-  width: 36%;
+  font-size: 16px;
+  font-weight: 500;
+  opacity: 1;
+  width: 50%;
+  color: #777289;
 }
 .ward_label {
   font-size: 1.2em;
   font-weight: 600;
-  width: 36%;
-  /* opacity: 0.7; */
+  width: 50%;
+  opacity: 1;
+  color: #000;
 }
 .img_cntnt_wrap {
   display: flex;
   float: left;
-  width: 50%;
+  width: 100%;
 }
 .img_info_list {
   width: 44%;
@@ -1989,19 +2021,23 @@ tr.list_heading_ul td.devic_txt {
   display: flex;
   width: 75%;
   flex-direction: column;
-  padding: 14px 0;
+  padding: 20px 0;
 }
 .ward_name_img_txt {
-  font-size: 1.2em;
-  font-weight: 600;
-  opacity: 0.7;
+  font-size: 16px;
+  font-weight: 500;
+  opacity: 1;
+  color: #777289;
+}
+.ward_name_img_txt:nth-child(2) {
+  color: #000;
 }
 .two_img_cntnt_wrap {
   /* display: block; */
   /* height: auto; */
   /* width: 100%; */
   display: flex;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid #dedede;
 }
 .mid-section-dshbrd_mgnt {
   float: left;
@@ -2010,11 +2046,15 @@ tr.list_heading_ul td.devic_txt {
 }
 .btn_para {
   position: absolute;
-  bottom: 0;
-  font-size: 1.4em;
-  font-weight: 600;
-  opacity: 0.6;
-  padding: 0 138px 0px 0px;
+  bottom: 15px;
+  font-size: 15px;
+  font-weight: 500;
+  opacity: 1;
+  color: #B1B0C1;
+  line-height: 18px;
+  /* width: 100%; */
+  /* padding: 0 138px 0px 0px; */
+  float: left;
 }
 .oprtn_urgncy_wrap.operation_pdng.mgnt_sort_by {
   width: 34%;
@@ -2076,9 +2116,32 @@ tr.list_heading_ul td.devic_txt {
   background: green;
   position: absolute;
   border-radius: 50%;
-  top: 5px;
-  left: 70px;
+  top: 50%;
+  left: 0px;
   right: -70px;
+  transform: translate(0,-50%);
+}
+.reg_users_table .user_img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 0 16px 0 0;
+  background: gainsboro;
+}
+.left-mid-dash-mgmnt .dash_active_wrap.oprtn_scroll_list.reg_users_table table thead tr th {
+  color: #1D474B80;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 27px 15px 20px;
+  text-align: left;
+}
+.left-mid-dash-mgmnt .dash_active_wrap.oprtn_scroll_list.reg_users_table table tbody tr td {
+  color: #000;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  padding: 25px 15px 25px !important;
+  text-align: left;
 }
 .bld_txt.name_img_wrap {
   position: relative;

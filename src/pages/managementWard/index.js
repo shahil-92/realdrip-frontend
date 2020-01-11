@@ -20,7 +20,7 @@ export class ManagementWard extends React.Component {
 
   render() {
     return (
-        <div className="main_wrapper ">
+        <div className="main_wrapper min-100-only">
            <div className="inner_dshbrd_wrap">
            <LEFT_HEADER onClick={this.handleClick} LEFT_HEADER_DATA={MetaData.MANAGEMENT_LEFT_HEADER_DATA} {...this.props}/>
             <div className="right_dashboard">
@@ -174,11 +174,11 @@ export class ManagementWard extends React.Component {
                             Ward Label
                           </div>  
                         </div>
-                     </div>  
+                     </div> 
                   </div>
-                  <div className="btn_para">
+                     <div className="btn_para">
                        <p>login into ward dashboard to see full information about this device.</p>
-                     </div>
+                     </div> 
                 </div>
               </div>
             </div>
