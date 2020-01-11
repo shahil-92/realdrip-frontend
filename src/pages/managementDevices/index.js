@@ -20,8 +20,8 @@ export class ManagementDevices extends React.Component {
   };
 
   handleloginWard = () => {
-    this.props.history.push('/ward-signin')
-  }
+    this.props.history.push("/ward-signin");
+  };
 
   render() {
     return (
@@ -152,7 +152,10 @@ export class ManagementDevices extends React.Component {
                     login into ward dashboard to see full information about this
                     device.
                   </p>
-                  <div className="login_to_ward" onClick={()=>this.handleloginWard()}>
+                  <div
+                    className="login_to_ward"
+                    onClick={() => this.handleloginWard()}
+                  >
                     <div className="login_to_ward_btn">login to ward</div>
                   </div>
                 </div>
