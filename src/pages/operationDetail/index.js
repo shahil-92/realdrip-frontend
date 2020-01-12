@@ -168,7 +168,7 @@ export class OperationDetail extends React.Component {
                 </div>
                 <div className="right-mid-dash">
                   <div className="right-wrap-heading devics_lst_clmn">
-                    <h3>Doctor Instruction</h3>
+                    <h3 className="opt_detl_heading_right_bold">Doctor as note</h3>
                     <div class="dash_active_wrap whitebg">
                       <div className="oprtn_instrtn_wrap">
                         <h5>Instruction</h5>
@@ -176,9 +176,8 @@ export class OperationDetail extends React.Component {
                         <div>2. let him have a 30 minute of sleep</div>
                       </div>
                     </div>
-
                     <div className="device_page_wrap">
-                      <h3>Device Control</h3>
+                      <h3 className="opt_detl_heading_right_bold">Device Control</h3>
                       <div
                         className="add_device_page_btn"
                         onClick={this.handleRedirectToDeviceDetail}

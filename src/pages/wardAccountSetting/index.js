@@ -56,8 +56,8 @@ export class WardAccountSetting extends React.Component {
                         <label>Ward Username</label>
                         <Input
                           type="text"
-                          className="form-control cstm_acnt_input"
-                          placeholder="name"
+                          className="form-control cstm_acnt_input fillbg"
+                          placeholder="Ward B"
                         />
                       </div>
                       <div className="input_wrap_accnt">
@@ -65,13 +65,13 @@ export class WardAccountSetting extends React.Component {
                         <Input
                           type="text"
                           className="form-control cstm_acnt_input"
-                          placeholder="name"
+                          placeholder="**********"
                         />
                       </div>
                     </div>
                     <div className="accnt_btn_wrap">
-                      <button class="mnt_btn accnt_btn sign_btn_wrd">
-                        Login
+                      <button class="mnt_btn accnt_btn sign_btn_wrd" onClick={()=>this.props.history.push('/ward-dashboard')}>
+                        Update
                       </button>
                     </div>
 
@@ -81,7 +81,7 @@ export class WardAccountSetting extends React.Component {
                         management account or inform the management.
                       </h4>
                       <div className="accnt_btn_wrap">
-                        <button class="accnt_btn_login_mgnt">
+                        <button class="accnt_btn_login_mgnt" onClick={()=>this.props.history.push('/management-signin')}>
                           login to management
                         </button>
                       </div>

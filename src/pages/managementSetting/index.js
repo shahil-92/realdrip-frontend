@@ -47,7 +47,7 @@ export class WardAccountSetting extends React.Component {
               )}
               <div className="main_wrapper_mgnt_setng">
                 <div className="mgmnt_input_wrap_main">
-                  <div className="mgnt_heading_setting">
+                  <div className="mgnt_heading_setting margin-cstm-mgnt-setting">
                     <h4 class="head_accnt_h3">Management Account Settings</h4>
                   </div>
                   <div class="input_row_mgnt">

@@ -162,10 +162,9 @@ export class OperationDetailNotUpdated extends React.Component {
                   <div className="right-wrap-heading devics_lst_clmn">
                     <div className="awaiting-heading-btn-wrap">
                       <div className="awaiting-actn-box-wrap">
-                        {" "}
-                        <h3 className="awating-oprtn-not-update">
+                        <h3 className="awating-oprtn-not-update opt_detl_heading_right_bold">
                           Awaiting actions
-                        </h3>{" "}
+                        </h3>
                         <div className="red-color-box">4</div>
                       </div>
                       <div className="actn-update"> Update </div>
@@ -179,6 +178,7 @@ export class OperationDetailNotUpdated extends React.Component {
                               <select
                                 value={this.state.selvalue}
                                 onChange={this.selhandleChange}
+                                className="border-btm"
                               >
                                 <option value="set-stop-volume-1">
                                   set stop volume 1
@@ -198,7 +198,7 @@ export class OperationDetailNotUpdated extends React.Component {
                               <label>fill volume content</label>
                               <Input
                                 type="text"
-                                className="form-control cstm-input"
+                                className="form-control cstm-input border-btm"
                                 placeholder="Input Patient name"
                                 name="input-patient-case"
                               />
@@ -207,7 +207,7 @@ export class OperationDetailNotUpdated extends React.Component {
                               <label>Input patient name</label>
                               <Input
                                 type="text"
-                                className="form-control cstm-input"
+                                className="form-control cstm-input border-btm"
                                 placeholder="Input Patient case"
                                 name="input-patient-case"
                               />
@@ -216,7 +216,7 @@ export class OperationDetailNotUpdated extends React.Component {
                               <label>Input patient name</label>
                               <Input
                                 type="text"
-                                className="form-control cstm-input"
+                                className="form-control cstm-input border-btm"
                                 placeholder="Input Patient case"
                                 name="input-patient-case"
                               />
@@ -226,7 +226,7 @@ export class OperationDetailNotUpdated extends React.Component {
                       </div>
                     </div>
 
-                    <h3>Doctor Instruction</h3>
+                    <h3 className="opt_detl_heading_right_bold">Doctor Instruction</h3>
                     <div class="dash_active_wrap whitebg">
                       <div className="oprtn_instrtn_wrap">
                         <h5>Instruction</h5>
@@ -236,7 +236,7 @@ export class OperationDetailNotUpdated extends React.Component {
                     </div>
 
                     <div className="device_page_wrap">
-                      <h3>Device Control</h3>
+                      <h3 className="opt_detl_heading_right_bold">Device Control</h3>
                       <div
                         className="add_device_page_btn"
                         onClick={this.handleRedirectToDeviceDetail}
