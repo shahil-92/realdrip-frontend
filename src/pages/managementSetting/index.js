@@ -44,7 +44,7 @@ export class WardAccountSetting extends React.Component {
                   LEFT_HEADER_DATA={MetaData.MANAGEMENT_LEFT_HEADER_DATA}
                   {...this.props}
                 />
-              )}
+              )} 
               <div className="main_wrapper_mgnt_setng">
                 <div className="mgmnt_input_wrap_main">
                   <div className="mgnt_heading_setting margin-cstm-mgnt-setting">
