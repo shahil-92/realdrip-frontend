@@ -94,7 +94,7 @@ export class AddNewWardAccount extends React.Component {
                     />
                   </div>
                   <div className="accnt_btn_wrap">
-                    <button class="mnt_btn accnt_btn sign_btn_wrd">
+                    <button class="mnt_btn accnt_btn add-wrd-btn">
                       Create new ward account
                     </button>
                   </div>

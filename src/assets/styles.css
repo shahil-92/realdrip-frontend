@@ -2890,6 +2890,12 @@ button.mnt_btn.accnt_btn.sign_btn_wrd {
     font-size: 1.0em;
     margin: 8px 0px 0px 0px;
 }
+.mnt_btn {
+  top: 0px;
+}
+.sign_btn_wrd{
+  top: 0px
+}
 .mgnt_heading_setting.margin-cstm-mgnt-setting {
   margin-bottom: 10px;
   text-align: center;

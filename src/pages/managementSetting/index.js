@@ -104,10 +104,14 @@ export class WardAccountSetting extends React.Component {
                       placeholder="**********"
                     />
                   </div>
-                  <div className="accnt_btn_wrap">
-                    <button class="mnt_btn accnt_btn sign_btn_wrd">Edit</button>
-                  </div>
-                </div>
+                
+                    <div className="accnt_btn_wrap">
+                        <button class="mnt_btn accnt_btn sign_btn_wrd" onClick={()=>this.props.history.push('/ward-dashboard')}>
+                          Update
+                        </button>
+                      </div>
+                    </div>
+               
               </div>
             </div>
           </div>
