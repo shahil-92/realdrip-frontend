@@ -2257,6 +2257,17 @@ select.border-btm {
   align-items: center;
   justify-content: center;
 }
+input.form-control.cstm_mgnt_input_clmn.fillbg {
+  background: #77728919 0% 0% no-repeat padding-box;
+}
+input.form-control.cstm_acnt_input.fillbg.font-size12::placeholder {
+  font-size: 12px;
+}
+input.form-control.cstm_mgnt_input_clmn.fillbg.font-size12::placeholder {
+  font-size: 12px;
+  color: #000;
+  font-weight: 600;
+}
 .mgnt_heading_setting.margin-cstm-mgnt-setting {
   margin-bottom: 82px;
 }
@@ -2878,6 +2889,10 @@ button.mnt_btn.accnt_btn.sign_btn_wrd {
     /* top: 2px; */
     font-size: 1.0em;
     margin: 8px 0px 0px 0px;
+}
+.mgnt_heading_setting.margin-cstm-mgnt-setting {
+  margin-bottom: 10px;
+  text-align: center;
 }
 input.form-control.cstm_search {
   border-radius: 15px;

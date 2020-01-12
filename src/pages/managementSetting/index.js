@@ -57,8 +57,8 @@ export class WardAccountSetting extends React.Component {
                       </label>
                       <Input
                         type="text"
-                        className="form-control cstm_acnt_input"
-                        placeholder="name"
+                        className="form-control cstm_acnt_input fillbg font-size12"
+                        placeholder="lkeja general hospital"
                       />
                     </div>
                     <div className="input_wrap_accnt_row">
@@ -67,8 +67,8 @@ export class WardAccountSetting extends React.Component {
                       </label>
                       <Input
                         type="text"
-                        className="form-control cstm_acnt_input"
-                        placeholder="name"
+                        className="form-control cstm_acnt_input fillbg font-size12"
+                        placeholder="admin@lakejageneralhospital.com"
                       />
                     </div>
                   </div>
@@ -77,31 +77,31 @@ export class WardAccountSetting extends React.Component {
                       <label className="lght_txtmgnt">Location</label>
                       <Input
                         type="text"
-                        className="form-control cstm_acnt_input"
-                        placeholder="name"
+                        className="form-control cstm_acnt_input fillbg font-size12"
+                        placeholder="Nigeria"
                       />
                     </div>
                     <div className="input_wrap_accnt_row wthout_label">
                       <Input
                         type="text"
-                        className="form-control cstm_acnt_input"
-                        placeholder="name"
+                        className="form-control cstm_acnt_input fillbg font-size12"
+                        placeholder="Lagos"
                       />
                     </div>
                   </div>
                   <div className="input_wrap_accnt wthout_label">
                     <Input
                       type="text"
-                      className="form-control cstm_mgnt_input_clmn"
-                      placeholder="name"
+                      className="form-control cstm_mgnt_input_clmn fillbg font-size12"
+                      placeholder="17, GRA ikeja Lahos, Nigeria"
                     />
                   </div>
                   <div className="input_wrap_accnt_mgnt">
                     <label className="lght_txtmgnt">Password</label>
                     <Input
                       type="text"
-                      className="form-control cstm_mgnt_input_clmn"
-                      placeholder="name"
+                      className="form-control cstm_mgnt_input_clmn fillbg font-size12"
+                      placeholder="**********"
                     />
                   </div>
                   <div className="accnt_btn_wrap">
