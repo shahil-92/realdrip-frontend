@@ -6,12 +6,14 @@ import DETAILMENU from "../../components/Headers/detailMenu";
 import LEFT_HEADER from "../../components/Headers/leftHeader";
 import * as MetaData from "../../utils/metaData";
 import Input from "../../components/inputComponent";
-
+import CustomSwitch from "../../components/Form/CustomSwitch";
 export class OperationDetailNotUpdated extends React.Component {
   constructor() {
     super();
     this.state = {
-      showMenu: false
+      showMenu: false,
+      deleteOperation: false,
+      SwitchToggleDevice: false,
     };
   }
 
@@ -23,7 +25,19 @@ export class OperationDetailNotUpdated extends React.Component {
     this.props.history.push("/connected-inuse");
   };
 
+  handleSwtichDevice = event => {
+    this.setState({ SwitchToggleDevice: !this.state.SwitchToggleDevice });
+  };
+
+  handleDeleteOperation = () => {
+    this.setState({ deleteOperation: true });
+  };
+  handleDeleteConfirm = data => {
+    this.setState({ deleteOperation: false });
+  };
+
   render() {
+    const { deleteOperation, SwitchToggleDevice } = this.state;
     return (
       <div className="main_wrapper ">
         <div className="inner_dshbrd_wrap">
@@ -232,23 +246,27 @@ export class OperationDetailNotUpdated extends React.Component {
                     </div>
                     <div class="dash_active_wrap2">
                       <div className="oprtn_device_control whitebg">
-                        <div>Pause</div>
-                        <div className="cstm_icon">
-                          <i class="fa fa-play" aria-hidden="true"></i>
+                          <div>Pause</div>
+                          <div className="cstm_icon">
+                            <i class="fa fa-play" aria-hidden="true"></i>
+                          </div>
                         </div>
-                      </div>
-                      <div className="oprtn_device_control whitebg">
-                        <div>Pause</div>
-                        <div className="cstm_icon">
-                          <i class="fa fa-repeat" aria-hidden="true"></i>
+                        <div className="oprtn_device_control whitebg">
+                          <div>Reset</div>
+                          <div className="cstm_icon">
+                            <i class="fa fa-repeat" aria-hidden="true"></i>
+                          </div>
                         </div>
-                      </div>
-                      <div className="oprtn_device_control whitebg">
-                        <div>Pause</div>
-                        <div className="cstm_icon">
-                          <i class="fa fa-play" aria-hidden="true"></i>
+                        <div className="oprtn_device_control whitebg">
+                            <div>Switch device off</div>
+                            <CustomSwitch
+                              wrapperClass="toggle"
+                              inputId="temp1"
+                              tempId="temp1"
+                              onChange={event => this.handleSwtichDevice(event)}
+                              SwitchToggle={SwitchToggleDevice}
+                            />
                         </div>
-                      </div>
                     </div>
                   </div>
                 </div>

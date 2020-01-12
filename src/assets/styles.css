@@ -369,6 +369,7 @@ tr.list_heading_ul.dhabord-ul-heading>td {
   font-size: 14px;
   font-weight: 500;
   font-family: inherit;
+  width: 20%;
   padding: 9px 10px !important;
 }
 td.active-nurse-frst_child {
@@ -512,6 +513,8 @@ td.active-nurse-frst_child {
 }
 .infusn_wrap.device_infusn h5.prcnt_op_txt {
   padding: 8px 0px !important;
+  font-size: 14px;
+  font-weight: 500;
 }
 .sumry_head2{
   font-size: 1.28em;
@@ -1028,7 +1031,29 @@ input.form-control.cstm_search {
   overflow: auto;
   border-radius: 12px;
 }
-
+.opt-dtl-cont-card {
+  font-size: 14px;
+  font-weight: 500;
+  color: #777289;
+}
+.opt-dtl-bld-cont-card {
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+  color: #000;
+  top: -4px;
+}
+.drip_img_wrap_opt_dtl {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 3px;
+  align-items: center;
+}
+.drip_img_wrap_opt_dtl img {
+  height: 25px;
+  width: 22px;
+}
 /* device ward dashboard css----*/
 .dash_ward_device_wrap {
   display: flex;
@@ -1089,7 +1114,7 @@ tr.list_heading_ul.fontWeight500 > td {
   text-align: left !important;
 }
 .right-wrap-heading.devics_lst_clmn {
-  padding: 25px 0;
+  padding: 0px 25px 0 0;
 }
 .add_new_device_wrap {
   display: flex;
@@ -1223,9 +1248,17 @@ tr.list_heading_ul td {
   opacity: 0.4;
 }
 .vlm_txt {
-  font-size: 0.36em;
+  font-size: 14px !important;
   font-weight: 600;
   opacity: 1 !important;
+}
+.vlm_txt_right {
+  font-size: 14px;
+  font-weight: 500;
+}
+.vlm_op_txt {
+  font-size: 14px;
+  font-weight: 500;
 }
 .dot-dot-line {
   /* height: 1px; */
@@ -1279,13 +1312,13 @@ tr.list_heading_ul td {
   height: 8px;
   width: 8px;
   background: #13D596;
-  top: 19px;
+  top: 5px;
   border-radius: 100%;
 }
 .bloodflow {
   position: absolute;
   font-size: 21px;
-  top: 12px;
+  top: 0;
   left: 50%;
   right: -50%;
   font-weight: 600;
@@ -1331,14 +1364,15 @@ tr.list_heading_ul td {
   align-items: center;
 }
 .nurc_post {
-  font-size: 1em;
+  font-size: 14px;
   opacity: 1;
-  font-weight: 500;
+  font-weight: normal;
   color: #B1B0C1;
 }
 span.nurc_name {
   color: #777289;
   font-weight: 500;
+  font-size: 16px;
 }
 .whitebg {
   background: #fff;
@@ -1393,7 +1427,7 @@ span.nurc_name {
 .prcnt_opt_detail {
   font-size: 45px;
   font-weight: 600;
-  padding: 6px 1px;
+  padding: 0px;
 }
 .prcnt_op_txt {
   padding: 0px !important;

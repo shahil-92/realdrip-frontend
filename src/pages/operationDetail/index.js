@@ -6,13 +6,14 @@ import DeleteOperationPopUp from "../deleteOperationPopUp";
 import DETAILMENU from "../../components/Headers/detailMenu";
 import LEFT_HEADER from "../../components/Headers/leftHeader";
 import * as MetaData from "../../utils/metaData";
-
+import CustomSwitch from "../../components/Form/CustomSwitch";
 export class OperationDetail extends React.Component {
   constructor() {
     super();
     this.state = {
       showMenu: false,
-      deleteOperation: false
+      deleteOperation: false,
+      SwitchToggleDevice: false,
     };
   }
 
@@ -24,6 +25,10 @@ export class OperationDetail extends React.Component {
     this.props.history.push("/connected-inuse");
   };
 
+  handleSwtichDevice = event => {
+    this.setState({ SwitchToggleDevice: !this.state.SwitchToggleDevice });
+  };
+
   handleDeleteOperation = () => {
     this.setState({ deleteOperation: true });
   };
@@ -32,7 +37,7 @@ export class OperationDetail extends React.Component {
   };
 
   render() {
-    const { deleteOperation } = this.state;
+    const { deleteOperation, SwitchToggleDevice } = this.state;
     return (
       <div className="main_wrapper ">
         <div className="inner_dshbrd_wrap">
@@ -97,25 +102,26 @@ export class OperationDetail extends React.Component {
                   </li>
                 </ul>
               </div>
-
               <div className="inner_dash">
                 <div className="left-mid-dash">
                   <div className="wrap_left_section">
                     <div className="dash_ward_device_wrap oprtn_wrap">
                       <div className="infusn_wrap device_infusn oprtn_dtl_wrd">
                         <div className="wrpd_icon_num">
-                          <span className="urgnt_txt">
+                          <div className="urgnt_txt wrap_blood_prcnt_opt_dtl">
                             <h3 className="prcnt_opt_detail">89%</h3>
                             <h5 className="prcnt_op_txt">Dispense 462cl</h5>
                             <div className="wrapper_progress_bar">
                               <div className="inner_progress_bar"></div>
                             </div>
-                          </span>
-                          <span className="drip_img_wrap">
+                          </div>
+                          <div className="drip_img_wrap_opt_dtl">             
                             <img
                               src={require("../../assets/Images/drip.png")}
                             />
-                          </span>
+                            <div className="opt-dtl-cont-card">Content</div>
+                            <div className="opt-dtl-bld-cont-card">Blood</div>
+                          </div>
                         </div>
                       </div>
                       <div className="infusn_wrap device_infusn  oprtn_dtl_wrd">
@@ -188,16 +194,20 @@ export class OperationDetail extends React.Component {
                         </div>
                       </div>
                       <div className="oprtn_device_control whitebg">
-                        <div>Pause</div>
+                        <div>Reset</div>
                         <div className="cstm_icon">
                           <i class="fa fa-repeat" aria-hidden="true"></i>
                         </div>
                       </div>
                       <div className="oprtn_device_control whitebg">
-                        <div>Pause</div>
-                        <div className="cstm_icon">
-                          <i class="fa fa-play" aria-hidden="true"></i>
-                        </div>
+                          <div>Switch device off</div>
+                          <CustomSwitch
+                            wrapperClass="toggle"
+                            inputId="temp1"
+                            tempId="temp1"
+                            onChange={event => this.handleSwtichDevice(event)}
+                            SwitchToggle={SwitchToggleDevice}
+                          />
                       </div>
                     </div>
                   </div>
