@@ -52,10 +52,10 @@ export class ManagementWard extends React.Component {
                   </div>
                   <div className="opertn_srch_main_wrapper_mgnt">
                     <div className="operation_search_tab_bar_mgnt">
-                      <div className="oprtn_search_wrap operation_pdng">
+                      <div className="oprtn_search_wrap operation_pdng mgnt_search_wrap">
                         <input
                           type="text"
-                          className="form-control cstm_search"
+                          className="form-control cstm_search inputSearchwidth"
                         />
                         <span className="search_icon">
                           <i class="fa fa-search" aria-hidden="true"></i>
@@ -85,43 +85,43 @@ export class ManagementWard extends React.Component {
                       <tbody>
                         <tr>
                           <td className="lght_txtmgnt">Ward A</td>
-                          <td className="lght_txtmgnt">Heart center</td>
+                          <td className="lght_txtmgnt light-gray">Heart center</td>
                           <td className="lght_txtmgnt">20</td>
                           <td className="bld_txt_mgnt">43</td>
                         </tr>
                         <tr>
                           <td className="lght_txtmgnt">Ward A</td>
-                          <td className="lght_txtmgnt">Heart center</td>
+                          <td className="lght_txtmgnt light-gray">Heart center</td>
                           <td className="lght_txtmgnt">20</td>
                           <td className="bld_txt_mgnt">43</td>
                         </tr>
                         <tr>
                           <td className="lght_txtmgnt">Ward A</td>
-                          <td className="lght_txtmgnt">Heart center</td>
+                          <td className="lght_txtmgnt light-gray">Heart center</td>
                           <td className="lght_txtmgnt">20</td>
                           <td className="bld_txt_mgnt">43</td>
                         </tr>
                         <tr>
                           <td className="lght_txtmgnt">Ward A</td>
-                          <td className="lght_txtmgnt">Heart center</td>
+                          <td className="lght_txtmgnt light-gray">Heart center</td>
                           <td className="lght_txtmgnt">20</td>
                           <td className="bld_txt_mgnt">43</td>
                         </tr>
                         <tr>
                           <td className="lght_txtmgnt">Ward A</td>
-                          <td className="lght_txtmgnt">Heart center</td>
+                          <td className="lght_txtmgnt light-gray">Heart center</td>
                           <td className="lght_txtmgnt">20</td>
                           <td className="bld_txt_mgnt">43</td>
                         </tr>
                         <tr>
                           <td className="lght_txtmgnt">Ward A</td>
-                          <td className="lght_txtmgnt">Heart center</td>
+                          <td className="lght_txtmgnt light-gray">Heart center</td>
                           <td className="lght_txtmgnt">20</td>
                           <td className="bld_txt_mgnt">43</td>
                         </tr>
                         <tr>
                           <td className="lght_txtmgnt">Ward A</td>
-                          <td className="lght_txtmgnt">Heart center</td>
+                          <td className="lght_txtmgnt light-gray">Heart center</td>
                           <td className="lght_txtmgnt">20</td>
                           <td className="bld_txt_mgnt">43</td>
                         </tr>
@@ -141,7 +141,7 @@ export class ManagementWard extends React.Component {
                       <h4 className="ward_info_txt">Ward Info</h4>
                     </div>
                     <div className="add_new_device_wrap_mgmnt">
-                      <div className="add_device_btn">Add new ward </div>
+                      <div className="add_device_btn">manage ward </div>
                     </div>
                   </div>
                   <div className="ward_info_ul_wrap">
@@ -164,8 +164,8 @@ export class ManagementWard extends React.Component {
                         />
                       </div>
                       <div className="wrad_img_txt">
-                        <div className="ward_name_img_txt">Ward Name</div>
-                        <div className="ward_name_img_txt">Ward Label</div>
+                        <div className="ward_name_img_txt">Decice deployed</div>
+                        <div className="ward_name_img_txt">20</div>
                       </div>
                     </div>
                     <div className="img_cntnt_wrap">
@@ -176,8 +176,8 @@ export class ManagementWard extends React.Component {
                         />
                       </div>
                       <div className="wrad_img_txt">
-                        <div className="ward_name_img_txt">Ward Name</div>
-                        <div className="ward_name_img_txt">Ward Label</div>
+                        <div className="ward_name_img_txt">Registered Nurses</div>
+                        <div className="ward_name_img_txt">43</div>
                       </div>
                     </div>
                   </div>
@@ -189,9 +189,9 @@ export class ManagementWard extends React.Component {
                       />
                     </div>
                     <div className="wrad_img_txt">
-                      <div className="ward_name_img_txt">Ward Name</div>
-                      <div className="ward_name_img_txt">Ward Label</div>
-                    </div>
+                      <div className="ward_name_img_txt">Total operations</div>
+                      <div className="ward_name_img_txt">213</div>
+                    </div> 
                   </div>
                 </div>
                 <div className="btn_para">

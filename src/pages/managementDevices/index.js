@@ -50,10 +50,10 @@ export class ManagementDevices extends React.Component {
                   </div>
                   <div className="opertn_srch_main_wrapper_mgnt">
                     <div className="operation_search_tab_bar_mgnt">
-                      <div className="oprtn_search_wrap operation_pdng">
+                      <div className="oprtn_search_wrap operation_pdng mgnt_search_wrap">
                         <input
                           type="text"
-                          className="form-control cstm_search"
+                          className="form-control cstm_search inputSearchwidth"
                         />
                         <span className="search_icon">
                           <i class="fa fa-search" aria-hidden="true"></i>
@@ -73,49 +73,49 @@ export class ManagementDevices extends React.Component {
                       <thead>
                         <tr>
                           <th className="lght_txtmgnt">Label</th>
-                          <th className="lght_txtmgnt">Device ID</th>
+                          <th className="lght_txtmgnt light-gray">Device ID</th>
                           <th className="lght_txtmgnt">Status</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
                           <td className="bld_txt_mgnt">B1</td>
-                          <td className="lght_txtmgnt">02020232</td>
+                          <td className="lght_txtmgnt light-gray">02020232</td>
                           <td className="bld_txt_mgnt">Idle</td>
                         </tr>
                         <tr>
                           <td className="bld_txt_mgnt">B1</td>
-                          <td className="lght_txtmgnt">02020232</td>
+                          <td className="lght_txtmgnt light-gray">02020232</td>
                           <td className="bld_txt_mgnt">Idle</td>
                         </tr>
                         <tr>
                           <td className="bld_txt_mgnt">B1</td>
-                          <td className="lght_txtmgnt">02020232</td>
+                          <td className="lght_txtmgnt light-gray">02020232</td>
                           <td className="bld_txt_mgnt">Idle</td>
                         </tr>
                         <tr>
                           <td className="bld_txt_mgnt">B1</td>
-                          <td className="lght_txtmgnt">02020232</td>
+                          <td className="lght_txtmgnt light-gray">02020232</td>
                           <td className="bld_txt_mgnt">Idle</td>
                         </tr>
                         <tr>
                           <td className="bld_txt_mgnt">B1</td>
-                          <td className="lght_txtmgnt">02020232</td>
+                          <td className="lght_txtmgnt light-gray">02020232</td>
                           <td className="bld_txt_mgnt">Idle</td>
                         </tr>
                         <tr>
                           <td className="bld_txt_mgnt">B1</td>
-                          <td className="lght_txtmgnt">02020232</td>
+                          <td className="lght_txtmgnt light-gray">02020232</td>
                           <td className="bld_txt_mgnt">Idle</td>
                         </tr>
                         <tr>
                           <td className="bld_txt_mgnt">B1</td>
-                          <td className="lght_txtmgnt">02020232</td>
+                          <td className="lght_txtmgnt light-gray">02020232</td>
                           <td className="bld_txt_mgnt">Idle</td>
                         </tr>
                         <tr>
                           <td className="bld_txt_mgnt">B1</td>
-                          <td className="lght_txtmgnt">02020232</td>
+                          <td className="lght_txtmgnt light-gray">02020232</td>
                           <td className="bld_txt_mgnt">Idle</td>
                         </tr>
                       </tbody>

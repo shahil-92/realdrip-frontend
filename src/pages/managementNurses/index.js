@@ -50,10 +50,10 @@ export class ManagementNurses extends React.Component {
                   </div>
                   <div className="opertn_srch_main_wrapper_mgnt">
                     <div className="operation_search_tab_bar_mgnt">
-                      <div className="oprtn_search_wrap operation_pdng">
+                      <div className="oprtn_search_wrap operation_pdng mgnt_search_wrap">
                         <input
                           type="text"
-                          className="form-control cstm_search"
+                          className="form-control cstm_search inputSearchwidth"
                         />
                         <span className="search_icon">
                           <i class="fa fa-search" aria-hidden="true"></i>
