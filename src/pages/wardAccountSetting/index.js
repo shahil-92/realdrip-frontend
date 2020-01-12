@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import HEADER from "../../components/Headers/header";
 import DETAILMENU from "../../components/Headers/detailMenu";
 import LEFT_HEADER from "../../components/Headers/leftHeader";
+import EditMailSent from "../EditMailSent"
 import * as MetaData from "../../utils/metaData";
 export class WardAccountSetting extends React.Component {
   constructor() {

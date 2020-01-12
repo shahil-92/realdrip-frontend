@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import HEADER from "../../components/Headers/header";
 import LEFT_HEADER from "../../components/Headers/leftHeader";
 import * as MetaData from "../../utils/metaData";
+import EditMailSent from "../EditMailSent"
 import DETAILMENU from "../../components/Headers/detailMenu";
 export class WardAccountSetting extends React.Component {
   constructor() {
@@ -13,7 +14,8 @@ export class WardAccountSetting extends React.Component {
       name: null,
       email: null,
       country: null,
-      showMenu: false
+      showMenu: false,
+      showPopUp: false
     };
   }
 
@@ -26,8 +28,15 @@ export class WardAccountSetting extends React.Component {
   handleClickToggle = () => {
     this.setState({ showMenu: !this.state.showMenu });
   };
+  handleUpdate = () => {
+    this.setState({ showPopUp: true })
+  }
+  handleCloseModal = () => {
+    this.setState({ showPopUp: false})
+  }
 
   render() {
+    const {showPopUp} = this.state
     return (
       <div className="main_wrapper ">
         <div className="inner_dshbrd_wrap">
@@ -104,18 +113,17 @@ export class WardAccountSetting extends React.Component {
                       placeholder="**********"
                     />
                   </div>
-                
-                    <div className="accnt_btn_wrap">
-                        <button class="mnt_btn accnt_btn sign_btn_wrd" onClick={()=>this.props.history.push('/ward-dashboard')}>
-                          Update
-                        </button>
-                      </div>
+                  <div className="accnt_btn_wrap">
+                      <button class="mnt_btn accnt_btn sign_btn_wrd" onClick={()=>this.handleUpdate()}>
+                        Update
+                      </button>
                     </div>
-               
+                  </div>
               </div>
             </div>
           </div>
         </div>
+        {showPopUp && <EditMailSent ClosePopUp={()=>this.handleCloseModal()}/>}
       </div>
     );
   }

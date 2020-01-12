@@ -91,7 +91,6 @@ tr,td,table,tbody{
   border: 0;
   color: #ffffff;
   position: relative;
-  top: 34px;
   margin: 0 0px;
   height: 40px;
   font-size: 1em;
@@ -173,6 +172,7 @@ tr.ul_contnt {
   opacity: 1;
   font-weight: 500;
   line-height: 14px;
+  padding: 10px;
 }
 .mnt_btn {
   padding: 10px 29px;
@@ -182,7 +182,6 @@ tr.ul_contnt {
   margin: 0px 7px;
   box-shadow: 0 0 6px 0px;
   position: relative;
-  top: 34px;
 }
 .mnt_btn_home {
   /* padding: 10px 29px;  */
@@ -288,7 +287,7 @@ tr.ul_contnt {
 }
 .ward_btn_wrap {
   position: relative;
-  margin: 0;
+  margin: 15px 0px;
 }
 .margnTop {
   margin-top: 20px;
@@ -1741,6 +1740,7 @@ input.form-control.cstm_acnt_input {
 }
 .accnt_btn_wrap {
   display: flex;
+  margin-top: 50px;
   align-items: center;
   justify-content: center;
 }
@@ -2369,16 +2369,18 @@ input.form-control.cstm_add_file {
 .pop-container {
   text-align: center;
   background: #fff;
-  padding: 22px 35px;
+  padding: 22px 0px;
   border-radius: 25px;
   align-items: center;
+  justify-content: center;
   display: flex;
-  width: 30%;
+  width: 28%;
   position: absolute;
   flex-direction: column;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  height: 38%;
 }
 .delete-oprtn-email-sent-wrap {
   width: 94%;
@@ -2942,9 +2944,10 @@ button.mnt_btn.accnt_btn.sign_btn_wrd {
 .pop-container {
   text-align: center;
   background: #fff;
-  padding: 22px 35px;
+  padding: 22px 0px;
   border-radius: 25px;
   align-items: center;
+  justify-content: center;
   display: flex;
   width: 90%;
   position: absolute;
@@ -2952,6 +2955,7 @@ button.mnt_btn.accnt_btn.sign_btn_wrd {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  height: 26%;
 }
 .wifii-pop-container {
   text-align: center;
@@ -3249,6 +3253,7 @@ td.active-nurse-frst_child {
   width: 100%;
   justify-content: center;
   position: relative;
+  padding: 40px 0px;
 }
 .ward_heading_wrap {
   position: relative;
@@ -3260,7 +3265,7 @@ td.active-nurse-frst_child {
 
 .ward_input_wrap {
   display: flex;
-  padding: 31px 25px;
+  padding: 31px 0px;
   position: relative;
   justify-content: start;
   left: 0;
@@ -3279,11 +3284,14 @@ td.active-nurse-frst_child {
   /* width: 50%; */
 }
 .ward_btn_wrap {
-  position: relative;
+  /* position: relative; */
   margin: 30px 0;
-  left: 32px;
-  bottom: 42px;
-}
+  /* left: 32px; */
+  display: flex;
+  /* bottom: 42px; */
+  align-items: center;
+  justify-content: center;
+ }
 .ward_left_banner {
   /* background: url('/static/media/ward_sign_in.d939ec68.png') 100% 100%; */
   height: 550px;

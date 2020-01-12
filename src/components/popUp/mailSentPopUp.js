@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const MAILSENT_POPUP = (props) => {
-  const {src, title, subHeading,subHeadingWithImg, children, subHeadingClass } = props
+  const {src, title, subHeading,subHeadingWithImg, children, subHeadingClass, ClosePopUp } = props
   return (
-        <div className="popup-wrap">
+        <div className="popup-wrap" onClick={ClosePopUp}>
          <div class="pop-container">
             <div className="circle_wrap"><img src={src} /></div>
             <h4 className="mail-sent-wrap">{title}</h4>
