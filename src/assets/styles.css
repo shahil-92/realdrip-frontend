@@ -1867,7 +1867,7 @@ tr.list_heading_ul td.devic_txt {
   max-height: unset;
   overflow: auto;
   border-radius: 12px;
-  width: 80%;
+  width: 100%;
 }
 
 .left-mid-dash-mgmnt .dash_active_wrap.oprtn_scroll_list table thead tr th {
@@ -2211,6 +2211,9 @@ input.form-control.cstm_search.inputSearchwidth {
 }
 .left-mid-dash-mgmnt .dash_active_wrap.oprtn_scroll_list.reg_users_table table tbody tr td.lght_txtmgnt {
   color: #777289bd;
+}
+.left-mid-dash-mgmnt .dash_active_wrap.oprtn_scroll_list.reg_users_table table tbody tr td.bld_txt_mgnt:first-child {
+  min-width: 200px;
 }
 .bld_txt.name_img_wrap {
   position: relative;
