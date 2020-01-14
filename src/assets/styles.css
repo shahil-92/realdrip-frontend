@@ -1011,7 +1011,7 @@ input.form-control.cstm_search {
 }
 .txt_urgncy {
   font-size: 0.89em;
-  padding-right: 10px;
+  /* padding-right: 10px; */
   font-weight: 600;
 }
 .oprtn_tabs_main_wrapper {
@@ -1452,6 +1452,9 @@ span.nurc_name {
 .b2_txt {
   font-size: 1.7em;
   font-weight: 600;
+}
+.dash_active_wrap.white-background.height-auto {
+  height: auto;
 }
 .left-mid-dash.left-mid-nurse-detail {
   width: 24%;

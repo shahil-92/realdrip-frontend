@@ -192,7 +192,7 @@ export class ConnectedInuse extends React.Component {
                   {selectedTab === "inuse" && (
                     <div className="right-wrap-heading devics_lst_clmn">
                       <h3 className="small_txt_h3">Infusion Operation</h3>
-                      <div className="dash_active_wrap white-background">
+                      <div className="dash_active_wrap white-background height-auto">
                         <Table responsive>
                           <tbody>
                             <tr className="list_heading_ul ul_contnt h70">
