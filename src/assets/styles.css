@@ -2781,6 +2781,7 @@ button.mnt_btn.accnt_btn.sign_btn_wrd {
     display: flex;
     flex-direction: column;
 }
+
 .left-mid-dash-mgmnt .add_new_device_wrap_mgmnt {
   margin: 10px 0px;
   position: relative;
@@ -2905,6 +2906,9 @@ button.mnt_btn.accnt_btn.sign_btn_wrd {
     /* top: 2px; */
     font-size: 1.0em;
     margin: 8px 0px 0px 0px;
+}
+.right-wrap-heading.devics_lst_clmn {
+  padding: 0px 0px 0 0;
 }
 .mnt_btn {
   top: 0px;
@@ -3135,7 +3139,7 @@ td.active-nurse-frst_child {
   width: 100%;
 }
 .see_all_txt {
-    padding: 0px 15px;
+    padding: 0px 10px;
     font-size: 13px;
     border: 0.5px solid #0000001A;
     border-radius: 12px;
