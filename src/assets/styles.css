@@ -554,6 +554,8 @@ td.active-nurse-frst_child {
 }
 .dash_active_wrap {
   padding: 0px;
+  height: 251px;
+  overflow-y: scroll;
 }
 .list_heading_ul {
   list-style: none;
@@ -1864,7 +1866,7 @@ tr.list_heading_ul td.devic_txt {
   margin-right: 10px;
 }
 .left-mid-dash-mgmnt .dash_active_wrap.oprtn_scroll_list {
-  max-height: unset;
+  max-height: 500px;
   overflow: auto;
   border-radius: 12px;
   width: 100%;
@@ -2909,7 +2911,7 @@ input.form-control.cstm_search {
   border-radius: 15px;
   background: #ecf1f2;
   height: 39px;
-  width: 142px;
+  width: 100% !important;
   border: none;
   box-shadow: none;
 }
@@ -2933,7 +2935,7 @@ button.mnt_btn.accnt_btn.sign_btn_wrd {
   margin: 28px 0;
 }
 .left-mid-dash-mgmnt .dash_active_wrap.oprtn_scroll_list {
-  max-height: unset;
+  max-height: 400px;
   overflow: auto;
   border-radius: 12px;
   width: 100%;
@@ -3409,8 +3411,13 @@ td.active-nurse-frst_child {
   display: flex;
   justify-content: flex-start;
   /* margin: 17px 0px !important; */
-  position: relative;
-  left: 0px;
+  position: absolute;
+  right: 44px;
+}
+.device_in_use_wrapper.mngnt_inner_wrap {
+  width: calc(50% - 30px);
+  margin: 15px 0;
+  padding: 35px 0;
 }
 .wrap_dash_new_wrad {
   display: flex;
@@ -3445,16 +3452,25 @@ td.active-nurse-frst_child {
 .input_wrap_accnt_row {
   display: flex;
   flex-direction: column;
-  margin: 20px;
+  margin: 10px 20px;
   width: 80%;
 }
 .input_wrap_accnt_mgnt {
   display: flex;
   flex-direction: column;
   text-align: left;
-  margin: 20px;
+  margin: 20px 1px;
   position: relative;
-  left: 8px;
+  width: 84%;
+}
+.input_wrap_accnt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 1px 23px;
+  left: 7%;
+  position: relative;
+  width: 85%;
 }
 .input_row_mgnt {
   display: flex;
