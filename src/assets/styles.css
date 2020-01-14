@@ -554,8 +554,12 @@ td.active-nurse-frst_child {
 }
 .dash_active_wrap {
   padding: 0px;
-  height: 251px;
-  overflow-y: scroll;
+  height: 304px;
+  overflow: auto;
+}
+.dash_active_wrap.minHeight500 {
+  height: 500px;
+  overflow: auto;
 }
 .list_heading_ul {
   list-style: none;
@@ -572,6 +576,8 @@ td.active-nurse-frst_child {
 .active_dsh_list{
   background: #ffff;
   margin-top: 15px !important;
+  height: 340px;
+  overflow: auto;
 }
 .ul_contnt {
   border-radius: 10px;
@@ -2900,6 +2906,10 @@ button.mnt_btn.accnt_btn.sign_btn_wrd {
 .mnt_btn {
   top: 0px;
 }
+.dash_active_wrap.minHeight500 {
+  height: 400px;
+  overflow: auto;
+}
 .sign_btn_wrd{
   top: 0px
 }
@@ -3028,6 +3038,9 @@ td.active-nurse-frst_child {
   width: 100%;
   margin-left: 1%;
 }
+.right-wrap-heading.ward-opertn-right-warp {
+  padding: 16px 0px;
+}
 .urgnt_txt.align-center {
   text-align: center;
   font-size: 46px;
@@ -3053,7 +3066,7 @@ td.active-nurse-frst_child {
 }
 .history_insuse_tabs_wrap {
   display: flex;
-  width: 48%;
+  width: 60%;
   justify-content: space-between;
   font-size: 1.23em;
 }

@@ -43,7 +43,7 @@ export class WardOperation extends React.Component {
         </tr>
       </thead>
       <tbody>
-        {["1", "2", "3"].map((data, key) => {
+        {["1", "2", "3", "4","5", "6"].map((data, key) => {
           return (
             <tr
               className={
@@ -104,7 +104,7 @@ export class WardOperation extends React.Component {
         </tr>
       </thead>
       <tbody>
-        {["1", "2", "3"].map((data, key) => {
+        {["1", "2", "3", "4", "5", "6"].map((data, key) => {
           return (
             <tr
               className={
@@ -259,7 +259,7 @@ export class WardOperation extends React.Component {
                         DropdownName="Urgency"
                       />
                     </div>
-                    <div class="dash_active_wrap">
+                    <div class="dash_active_wrap minHeight500">
                       {activeTab === "active" && this.activeInfusionList()}
                       {activeTab === "all" && this.activeInfusionListHistory()}
                     </div>
