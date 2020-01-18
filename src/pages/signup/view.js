@@ -34,14 +34,14 @@ const View = props => (
                         <label className="col-sm-5 form-label" htmlFor="name">Medical Center Name</label>
                         <label className="col-sm-5 form-label" htmlFor="email">Medical Center Email</label>
                         <div className="col-sm-5">
-                          <input className="form-control" type="text" id="name" name="name" placeholder="Name"
+                          <input className="form-control height40" type="text" id="name" name="name" placeholder="Name"
                             onChange={props.getInput}
                           />
                           <ErrorText text={props.inputErrors.name} />
                         </div>
                         <div className="col-sm-5">
                           <input
-                            className="form-control"
+                            className="form-control height40"
                             type="email" id="email" name="email" placeholder="Email"
                             onChange={props.getInput}
                           />
@@ -52,7 +52,7 @@ const View = props => (
                         <label className="col-sm-10 form-label" htmlFor="location">Location</label>
                         <div className="col-sm-5">
                           <CountryDropdown
-                            className="form-control"
+                            className="form-control height40"
                             id="country"
                             name="country"
                             value={props.location.country || ""}
@@ -62,7 +62,7 @@ const View = props => (
                         </div>
                         <div className="col-sm-5">
                           <RegionDropdown
-                            className="form-control"
+                            className="form-control height40"
                             id="state"
                             name="state"
                             blankOptionLabel="Select Region"
@@ -75,7 +75,7 @@ const View = props => (
                       </div>
                       <div className="form-group">
                         <div className="col-sm-10">
-                          <input className="form-control" type="text" id="Address" name="address" placeholder="Address"
+                          <input className="form-control height40" type="text" id="Address" name="address" placeholder="Address"
                             onChange={props.getInput}
                           />
                           <ErrorText text={props.inputErrors.address} />
@@ -84,14 +84,14 @@ const View = props => (
                       <div className="form-group">
                         <label className="col-sm-10 form-label" htmlFor="location">Password</label>
                         <div className="col-sm-5">
-                          <input className="form-control" type="password" id="password" name="password" placeholder="password"
+                          <input className="form-control height40" type="password" id="password" name="password" placeholder="password"
                             onChange={props.getInput}
                           />
                           <ErrorText text={props.inputErrors.password} />
                         </div>
                         <div className="col-sm-5">
                           <input
-                            className="form-control" type="password" id="confirmPassword" name="confirmPassword" placeholder="confirm password"
+                            className="form-control height40" type="password" id="confirmPassword" name="confirmPassword" placeholder="confirm password"
                             onChange={props.getInput}
                           />
                           <ErrorText text={props.inputErrors.confirmPassword} />

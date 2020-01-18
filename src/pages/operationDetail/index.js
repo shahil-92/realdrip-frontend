@@ -169,7 +169,7 @@ export class OperationDetail extends React.Component {
                 <div className="right-mid-dash">
                   <div className="right-wrap-heading devics_lst_clmn">
                     <h3 className="opt_detl_heading_right_bold">Doctor as note</h3>
-                    <div class="dash_active_wrap whitebg">
+                    <div class="dash_active_wrap whitebg height-auto">
                       <div className="oprtn_instrtn_wrap">
                         <h5>Instruction</h5>
                         <div>1. give patient 360ml of blood</div>

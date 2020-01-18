@@ -173,7 +173,7 @@ export class OperationDetailNotUpdated extends React.Component {
                       <div className="oprtn_device_control whitebg full-width-flex">
                         <div className="ward_input_wrap">
                           <div className="input_row">
-                            <div className="input_wrap">
+                            <div className="input_wrap direction-column">
                               <label>set volume up</label>
                               <select
                                 value={this.state.selvalue}
@@ -227,7 +227,7 @@ export class OperationDetailNotUpdated extends React.Component {
                     </div>
 
                     <h3 className="opt_detl_heading_right_bold">Doctor Instruction</h3>
-                    <div class="dash_active_wrap whitebg">
+                    <div class="dash_active_wrap whitebg height-auto">
                       <div className="oprtn_instrtn_wrap">
                         <h5>Instruction</h5>
                         <div>1. give patient 360ml of blood</div>

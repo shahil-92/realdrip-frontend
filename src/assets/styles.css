@@ -944,6 +944,9 @@ ul.list_heading_ul li {
   justify-content: flex-end;
   margin-top: 15px;
 }
+.dash_active_wrap.whitebg.height-auto {
+  height: auto;
+}
 .right-wrap-heading.ward-opertn-right-warp {
   padding: 88px 0px;
 }
@@ -1053,12 +1056,12 @@ input.form-control.cstm_search {
 }
 .opt-dtl-cont-card {
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
   color: #777289;
 }
 .opt-dtl-bld-cont-card {
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
   position: relative;
   color: #000;
   top: -4px;
@@ -1071,7 +1074,7 @@ input.form-control.cstm_search {
   align-items: center;
 }
 .drip_img_wrap_opt_dtl img {
-  height: 25px;
+  height: 20px;
   width: 22px;
 }
 /* device ward dashboard css----*/
@@ -1418,7 +1421,7 @@ span.nurc_name {
 }
 .oprtn_device_control.whitebg {
   width: 30%;
-  height: 100px;
+  height: 107px;
   justify-content: space-around;
   align-items: center;
   display: flex;
@@ -1808,6 +1811,9 @@ tr.list_heading_ul td.devic_txt {
   margin-left: 8px;
   font-weight: 600;
   letter-spacing: 0px;
+}
+.wrp-mngmnt-form input.form-control.height40 {
+  height: 40px;
 }
 /*------management-----dashboard------*/
 .wrap_mngmnt_sectn {
@@ -2345,8 +2351,8 @@ input.form-control.cstm_acnt_input.fillbg {
 
 /*--------------add Nurse--------------------*/
 input.form-control.cstm_add_file {
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
   border-radius: 100%;
 }
 .btn-add-nurse {
@@ -2374,11 +2380,11 @@ input.form-control.cstm_add_file {
 .user_input_icon {
   position: absolute;
   left: 50%;
-  top: 60%;
-  transform: translate(-50%, -60%);
+  top: 50%;
+  transform: translate(-50%, 0%);
 }
 .fa.fa-user-plus.cstm_user_icon {
-  font-size: 30px;
+  font-size: 18px;
   color: lightgray;
 }
 
@@ -2513,7 +2519,7 @@ input.form-control.cstm_add_file {
   margin-top: 8px !important;
 }
 
-.input_wrap select{
+/* .input_wrap select{
   height: 40px !important;
   opacity: 1;
   font-size: 14px;
@@ -2530,12 +2536,12 @@ input.form-control.cstm_add_file {
   -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
   border: 1px solid #ccc;
-}
+} */
 
 .toggle {
-  position: relative;
-  top: -7px;
   margin-left: 60px;
+  position: relative;
+  top: -5px;
 }
 .toggle input[type="checkbox"] {
   display: none;
@@ -2543,39 +2549,36 @@ input.form-control.cstm_add_file {
 .toggle label {
   color: #4FBCA1;
   position: relative;
-  cursor: pointer;
 }
 .toggle input[type="checkbox"] + label::before {
   content: ' ';
   display: block;
-  height: 30px;
-  width: 69px;
-  border: 1px solid #13D59633;
-  border-radius: 8px;
+  height: 15px;
+  width: 45px;
+  border-radius: 9px;
   position: absolute;
-  top: -12px;
-  left: -60px;
-  background: #13D59633 0% 0% no-repeat padding-box;
-  /* box-shadow: 0px 3px 6px #00000029; */
+  top: 0px;
+  left: -65px;
+  background: #13D59633;
 }
 .toggle input[type="checkbox"] + label::after {
   content: ' ';
   display: block;
-  height: 16px;
-  width: 16px;
-  border: 1px solid #0CD891;
+  height: 20px;
+  width: 20px;
+  border: 1px solid #0FBB83;
   border-radius: 50%;
   position: absolute;
-  top: -5px;
-  left: -50px;
-  background: #0CD891 0% 0% no-repeat padding-box;
+  top: -3px;
+  left: -65px;
+  background: #0FBB83 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
   transition: all 0.3s ease-in;
 }
 .toggle input[type="checkbox"]:checked + label::after {
-  left: -15px;
+  left: -40px;
   transition: all 0.3s ease-in;
 }
-
 /* span.switch-handle.btn.btn-light {
   position: relative;
   margin: 6.4px auto;
@@ -2917,6 +2920,21 @@ button.mnt_btn.accnt_btn.sign_btn_wrd {
     /* top: 2px; */
     font-size: 1.0em;
     margin: 8px 0px 0px 0px;
+}
+.table>tbody>tr>td {
+  padding: 0px 5px !important;
+  font-size: 14px;
+  width: 20%;
+  font-weight: normal;
+  font-family: 'Roboto';
+}
+tr.list_heading_ul.ul_contnt.h70 {
+  height: 80px;
+  min-width: 650px;
+}
+.input_wrap.direction-column {
+  display: flex;
+  flex-direction: column;
 }
 .infusn_wrap {
   background: #fff;
@@ -3375,8 +3393,19 @@ td.active-nurse-frst_child {
   list-style: none;
   display: flex;
   width: 100%;
-  min-width: 600px;
+  min-width: 650px;
   justify-content: space-evenly;
+}
+.patnt_ul_list li {
+  display: flex;
+  border-right: 1px solid lightgray;
+  width: 24%;
+  flex-direction: row;
+}
+span.nurc_name {
+  color: #777289;
+  font-weight: 500;
+  font-size: 14px;
 }
 .patnt_list_wrap {
   overflow: scroll;

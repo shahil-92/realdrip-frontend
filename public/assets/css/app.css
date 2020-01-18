@@ -1,7 +1,7 @@
 .app-ui-mask-disable-scroll {
 	overflow-y: hidden;
 }
-
+ 
 /* Drawer */
 .app-layout-drawer {
 	position: fixed;
@@ -40,7 +40,10 @@
 	-webkit-transform: translateX(0);
 	        transform: translateX(0);
 }
-
+.wrp-mngmnt-form select.form-control.height40 {
+    background-color: white;
+    height: 40px;
+}
 .app-layout-drawer.app-ui-layout-drawer-visible {
 	visibility: visible;
 }
@@ -245,7 +248,7 @@
 .form-label {
     font-size: 14px;
     padding-bottom: 0px;
-    font-weight: 500;
+    font-weight: 400;
     color: #777289;
 }
 .radio label span {
@@ -275,11 +278,11 @@
 	margin-top: 7px;
 }
 .form-btn{
-	padding: 6px 40px 6px 40px;
-	background-color: #0cd891;
-	color:#fff;
-	margin-top: 15px;
-	letter-spacing: 1px;
+	padding: 10px 40px 10px 40px;
+    background-color: #0cd891;
+    color: #fff;
+    margin-top: 15px;
+    letter-spacing: 1px;
 }
 .form-btn:hover{
 	padding: 6px 40px 6px 40px;
