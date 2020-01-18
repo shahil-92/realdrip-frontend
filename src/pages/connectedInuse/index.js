@@ -70,13 +70,17 @@ export class ConnectedInuse extends React.Component {
               <div className="inner_dash">
                 <div className="left-mid-dash">
                   <div className="main_wrap_switch_conted">
-                    <CustomSwitch
+                    {/* <CustomSwitch
                       wrapperClass="toggle"
                       inputId="temp"
                       tempId="temp"
                       onChange={event => this.handleSwtichFirst(event)}
                       SwitchToggle={SwitchToggleBasic}
-                    />
+                    /> */}
+                    <div className="wrap_heading_and_on_off">
+                      <div className="heading"> B2 </div>
+                      <div className="on_off_wrap"><div className="on_off_txt">On</div> <div className="on_off_cirlcle"></div> </div>
+                    </div>
                     <div className="wrap_label_main_wrap">
                       <div className="label_wrapper">
                         <div className="Label_b2_name">Label</div>

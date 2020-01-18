@@ -1468,6 +1468,38 @@ span.nurc_name {
   font-size: 1.7em;
   font-weight: 600;
 }
+.wrap_heading_and_on_off {
+  width: 120px;
+  display: flex;
+  justify-content: flex-start;
+}
+.on_off_wrap {
+  width: 69px;
+  height: 31px;
+  background: #13D59633 0% 0% no-repeat padding-box;
+  border-radius: 8px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.on_off_cirlcle {
+  width: 14px;
+  height: 14px;
+  background: #0CD891;
+  border-radius: 100%;
+}
+
+.on_off_txt {
+  width: 50%;
+  text-align: center;
+  font-weight: 500;
+}
+
+.heading {
+  width: 40px;
+  font-size: 24px;
+  font-weight: 600;
+}
 .dash_active_wrap.white-background.height-auto {
   height: auto;
 }
@@ -2837,6 +2869,9 @@ button.password-recovry-btn.clr_prced_rgstrn {
   width: 100%;
   background: #13D596;
   color: #fff;
+}
+button.btn.form-btn.regstn_form_margin30 {
+  margin: 30px 0 10px;
 }
 /*------media ----query---dashbpard---- max-width 955 */
 

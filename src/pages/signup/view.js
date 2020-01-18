@@ -107,7 +107,7 @@ const View = props => (
                       </div>
                       <div className="form-group m-b-0">
                         <div className="col-xs-8">
-                          <button className="btn form-btn" type="submit" onClick={props.register} disabled={props.addingUserStarted}>Create account</button>
+                          <button className="btn form-btn regstn_form_margin30" type="submit" onClick={props.register} disabled={props.addingUserStarted}>Create account</button>
                         </div>
                       </div>
 
