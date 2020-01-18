@@ -79,7 +79,7 @@ export class ConnectedInuse extends React.Component {
                     /> */}
                     <div className="wrap_heading_and_on_off">
                       <div className="heading"> B2 </div>
-                      <div className="on_off_wrap"><div className="on_off_txt">On</div> <div className="on_off_cirlcle"></div> </div>
+                      <div className={SwitchToggleDevice ? "on_off_wrap swicthOff":"on_off_wrap"}><div className="on_off_txt">{SwitchToggleDevice ? 'Off' : 'On'}</div> <div className={SwitchToggleDevice ? "on_off_cirlcle swicthOff_dark" : "on_off_cirlcle"}></div> </div>
                     </div>
                     <div className="wrap_label_main_wrap">
                       <div className="label_wrapper">

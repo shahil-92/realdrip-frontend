@@ -1468,6 +1468,12 @@ span.nurc_name {
   font-size: 1.7em;
   font-weight: 600;
 }
+.swicthOff {
+  background: #E5E5E5 0% 0% no-repeat padding-box !important;
+}
+.swicthOff_dark {
+  background: #BCBCBC 0% 0% no-repeat padding-box !important;
+}
 .wrap_heading_and_on_off {
   width: 120px;
   display: flex;
