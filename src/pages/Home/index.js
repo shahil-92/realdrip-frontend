@@ -30,13 +30,13 @@ export class Home extends React.Component {
             Infusion management <br /> system
           </h2>
         </div>
-        <div class="home_login_to center_colmn_wise">
-          <h3 class="head_login_to">Login to</h3>
+        <div className="home_login_to center_colmn_wise">
+          <h3 className="head_login_to">Login to</h3>
           <div className="btn_wrapper">
-            <button class="mnt_btn_home" onClick={e => this.handleClick(e)}>
+            <button className="mnt_btn_home" onClick={e => this.handleClick(e)}>
               Management
             </button>
-            <button class="wrd_btn" onClick={e => this.handleClickWard(e)}>
+            <button className="wrd_btn" onClick={e => this.handleClickWard(e)}>
               Ward
             </button>
           </div>

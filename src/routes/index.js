@@ -3,6 +3,7 @@ import { Route, Switch, BrowserRouter as Router } from 'react-router-dom';
 import Signup from '../pages/signup';
 import EmailConfirmation from '../pages/emailConfirmation'
 import Home from '../pages/Home';
+import PurchaseValidation from '../pages/PurchaseValidation'
 import WardSignIn from '../pages/wardSignin'
 import WardActivation from '../pages/wardActivation'
 import WardDashBoard from '../pages/wardDashboard'
@@ -36,6 +37,7 @@ export default (props) => (
 	<Router>
 		<Switch>
 			<Route exact path="/" component={props => <Home {...props} />} />
+			<Route exact path="/purchase-validation" component={props => <PurchaseValidation {...props} />} />
 			<Route exact path="/ward-signin" component={props => <WardSignIn {...props}/>} />
 			<Route exact path="/ward-activation" component={props => <WardActivation {...props}/>} />
 			<Route exact path="/signup" component={props => <Signup {...props}/>} />

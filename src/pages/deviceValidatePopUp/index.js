@@ -2,6 +2,7 @@ import React from "react";
 import POPUP from "../../components/popUp/popUp";
 
 const DeviceValidatePopUp = props => {
+  const { proceedClick } = props
   return (
     <POPUP
       src={require("../../assets/Images/circle-with-check-symbol.svg")}
@@ -10,11 +11,12 @@ const DeviceValidatePopUp = props => {
       subHeadingClass="device-valiadte-email-sent-wrap"
       titleClass="mail-sent-wrap"
     >
-      <div className="password-recovry-wrap">
-        <button class="password-recovry-btn">Proceed to registration</button>
+      <div className="password-recovry-wrap proceed-to-registration-wrap">
+        <button class="password-recovry-btn clr_prced_rgstrn" onClick={proceedClick}>Proceed to registration</button>
       </div>
     </POPUP>
   );
 };
 
 export default DeviceValidatePopUp;
+ 

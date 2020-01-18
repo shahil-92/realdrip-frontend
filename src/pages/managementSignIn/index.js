@@ -59,7 +59,7 @@ export class ManagementSignIn extends React.Component {
     // this.props.dispatch({ type: 'WARD_LOGIN_SUBMIT', payload: data })
     this.props.history.push("/management-dashboard");
   };
-
+ 
   render() {
     console.log("=-=-==this.state===", this.state);
     const { formErrors, isloading } = this.state;
@@ -75,6 +75,9 @@ export class ManagementSignIn extends React.Component {
           errorMessage={formErrors}
           src={require("../../assets/Images/ward_sign_in.png")}
           imgClass="img-left-sigin"
+          redirectLink="Sign Up"
+          onClickAnchr={()=>{this.props.history.push('/purchase-validation')}}
+          bottomText="Don't have a RealDrip management account"
         />
         <ToastContainer />
         <div className="loaderWraper">
