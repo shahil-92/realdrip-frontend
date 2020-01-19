@@ -460,7 +460,7 @@ td.active-nurse-frst_child {
   float: left;
   height: 100%;
   width: 100%;
-  min-height: 100vh;
+  min-height: calc(100vh - 60px);
 }
 .inner_dash {
   padding: 24px 38px;
