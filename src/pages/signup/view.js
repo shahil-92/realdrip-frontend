@@ -30,27 +30,31 @@ const View = props => (
                         <LoadingIcon display={props.addingUserStarted} height={50} width={50} />
                         <p/>
                       </div>
-                      <div className="form-group">
-                        <label className="col-sm-5 form-label" htmlFor="name">Medical Center Name</label>
-                        <label className="col-sm-5 form-label" htmlFor="email">Medical Center Email</label>
-                        <div className="col-sm-5">
-                          <input className="form-control height40" type="text" id="name" name="name" placeholder="Name"
-                            onChange={props.getInput}
-                          />
-                          <ErrorText text={props.inputErrors.name} />
-                        </div>
-                        <div className="col-sm-5">
-                          <input
-                            className="form-control height40"
-                            type="email" id="email" name="email" placeholder="Email"
-                            onChange={props.getInput}
-                          />
-                          <ErrorText text={props.inputErrors.email} />
+                      <div className="col-sm-5">
+                        <div className="form-group">
+                          <label className="form-label" htmlFor="name">Medical Center Name</label>
+                            <input className="form-control height40" type="text" id="name" name="name" placeholder="Name"
+                              onChange={props.getInput}
+                            />
+                            <ErrorText text={props.inputErrors.name} />
                         </div>
                       </div>
-                      <div className="form-group">
-                        <label className="col-sm-10 form-label" htmlFor="location">Location</label>
-                        <div className="col-sm-5">
+                      <div className="col-sm-5">
+                        <div className="form-group">
+                          <label className="form-label" htmlFor="email">Medical Center Email</label>
+                            <input
+                              className="form-control height40"
+                              type="email" id="email" name="email" placeholder="Email"
+                              onChange={props.getInput}
+                            />
+                            <ErrorText text={props.inputErrors.email} />
+                        </div>
+                      </div>
+
+                      
+                      <label className="col-sm-10 form-label" htmlFor="location">Location</label>
+                      <div className="col-sm-5">
+                        <div className="form-group">
                           <CountryDropdown
                             className="form-control height40"
                             id="country"
@@ -60,7 +64,9 @@ const View = props => (
                           />
                           <ErrorText text={props.inputErrors.country} />
                         </div>
-                        <div className="col-sm-5">
+                      </div>
+                      <div className="col-sm-5">
+                        <div className="form-group">
                           <RegionDropdown
                             className="form-control height40"
                             id="state"
@@ -73,23 +79,25 @@ const View = props => (
                           <ErrorText text={props.inputErrors.state} />
                         </div>
                       </div>
-                      <div className="form-group">
-                        <div className="col-sm-10">
+                      <div className="col-sm-10">
+                        <div className="form-group">
                           <input className="form-control height40" type="text" id="Address" name="address" placeholder="Address"
                             onChange={props.getInput}
                           />
                           <ErrorText text={props.inputErrors.address} />
                         </div>
                       </div>
-                      <div className="form-group">
-                        <label className="col-sm-10 form-label" htmlFor="location">Password</label>
-                        <div className="col-sm-5">
+                      <label className="col-sm-10 form-label" htmlFor="location">Password</label>
+                      <div className="col-sm-5">
+                        <div className="form-group">
                           <input className="form-control height40" type="password" id="password" name="password" placeholder="password"
                             onChange={props.getInput}
                           />
                           <ErrorText text={props.inputErrors.password} />
                         </div>
-                        <div className="col-sm-5">
+                      </div>
+                      <div className="col-sm-5">
+                        <div className="form-group">
                           <input
                             className="form-control height40" type="password" id="confirmPassword" name="confirmPassword" placeholder="confirm password"
                             onChange={props.getInput}
@@ -106,7 +114,7 @@ const View = props => (
                         </label>
                       </div>
                       <div className="form-group m-b-0">
-                        <div className="col-xs-8">
+                        <div className="col-xs-12">
                           <button className="btn form-btn regstn_form_margin30" type="submit" onClick={props.register} disabled={props.addingUserStarted}>Create account</button>
                         </div>
                       </div>
