@@ -31,7 +31,7 @@ export class AddEditForm extends React.Component {
       const { sectionName, TitleName, Label_first, Label_Second, onChange,
              firstPlaceholder, secondPlaceholder, filePlaceholder, btnText, fileTitle, btnClick } = this.props
     return (
-        <div className="main_wrapper ">
+        <div className="main_wrapper min-vh-height">
         <div className="inner_dshbrd_wrap">
          <LEFT_HEADER onClick={this.handleClickToggle} LEFT_HEADER_DATA={MetaData.WARD_LEFT_HEADER_DATA}  {...this.props}/>
          <div className="right_dashboard">

@@ -2577,6 +2577,20 @@ input.form-control.cstm_add_file {
   transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
   border: 1px solid #ccc;
 } */
+.min-vh-height .mid-section-dshbrd {
+  background: #F8F9F9;
+  float: left;
+  height: 100%;
+  width: 100%;
+  min-height: calc(100vh - 60px);
+}
+.min-vh-height .main_wrapper_mgnt_setng.margin80 {
+  margin: 80px 0 0;
+}
+.min-vh-height .mgmnt_input_wrap_main {
+  width: 50%;
+  margin-top: 0px;
+}
 .wrp-mngmnt-form .card-block.login-top .form-group {
   margin-bottom: 20px;
   margin-right: 10px;
