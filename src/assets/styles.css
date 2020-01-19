@@ -3042,6 +3042,21 @@ button.btn.form-btn.regstn_form_margin30 {
     font-size: 1.0em;
     margin: 8px 0px 0px 0px;
 }
+.main_wrapper_mgnt_setng.margin80 {
+  margin: 0px 0;
+}
+.btn-add-nurse {
+  background: #0CD891 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #0000001A;
+  border-radius: 4px;
+  opacity: 1;
+  color: #fff;
+  border: 0;
+  padding: 10px 29px;
+  width: 36%;
+  font-size: 16px;
+  margin-top: 25px;
+}
 .btn_wrapper_purchase {
   width: 93%;
   display: flex;
