@@ -696,6 +696,9 @@ ul.list_heading_ul li {
   border-radius: 0;
   height: 85px;
 }
+tr.list_heading_ul.ul_contnt.active_dsh_list.bottom td {
+  min-width: 120px;
+}
 
 .dash_ward_oprtn_wrap {
   display: flex;
@@ -2902,9 +2905,9 @@ button.password-recovry-btn.clr_prced_rgstrn {
 button.btn.form-btn.regstn_form_margin30 {
   margin: 20px 0 10px;
 }
+
+
 /*------media ----query---dashbpard---- max-width 955 */
-
-
 
 @media only screen and (max-width: 1050px) {
   .inner_dash {
@@ -2914,7 +2917,10 @@ button.btn.form-btn.regstn_form_margin30 {
     display: flex;
     flex-direction: column;
 }
-
+.device_in_use_wrapper.time_left_wrapper .device_inuse:first-child {
+  justify-content: space-between;
+  align-items: flex-start;
+}
 .left-mid-dash-mgmnt .add_new_device_wrap_mgmnt {
   margin: 10px 0px;
   position: relative;
@@ -3379,8 +3385,17 @@ td.active-nurse-frst_child {
   color: #777289;
   opacity: 1;
 }
+tr.list_heading_ul.device_ul>td {
+  padding: 0px 5px !important;
+  font-size: 14px;
+  width: 20%;
+  font-weight: normal;
+  font-family: 'Roboto';
+  min-width: 120px;
+}
 .dash_active_wrap {
-  padding: 10px;
+  margin: 10px 0;
+  padding: 10px 0;
   /* width: 100%; */
   overflow: scroll;
   max-width: 512px;
