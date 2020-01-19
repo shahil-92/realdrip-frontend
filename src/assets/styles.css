@@ -2999,7 +2999,9 @@ button.btn.form-btn.regstn_form_margin30 {
   right: 0;
   position: relative;
 }
-
+.oprtn_hmbrgr_image.operation_pdng {
+  width: 0%;
+}
 
 /*ward-opertn--responsive--csss --*/
 
@@ -3522,6 +3524,7 @@ span.nurc_name {
 }
 .add_device_btn {
   margin: 0px;
+  padding: 5px 15px !important;
 }
 .history_table_ul.connected_ul {
   display: flex;
@@ -3586,8 +3589,9 @@ span.nurc_name {
   justify-content: space-between;
 }
 .mngmnt_top_heading {
-  padding: 20px 0px 0px 7px;
+  padding: 14px 0px 0px 0px;
 }
+
 .add_new_device_wrap_mgmnt {
   display: flex;
   justify-content: flex-start;
@@ -3685,6 +3689,21 @@ span.nurc_name {
     float: left;
     position: relative;
     background: #e1ecef4f;
+}
+.operation_pdng {
+  /* padding: 6px 4px; */
+  justify-content: flex-start;
+  /* position: relative; */
+  display: flex;
+  width: 65%;
+}
+.oprtn_hmbrgr_image.operation_pdng {
+  width: 10% !important;
+}
+.oprtn_urgncy_wrap.operation_pdng {
+  width: 26%;
+  display: flex;
+  justify-content: space-between;
 }
 .btn_wrapper {
   width: 93%;
