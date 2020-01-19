@@ -173,12 +173,12 @@ export class OperationDetailNotUpdated extends React.Component {
                       <div className="oprtn_device_control whitebg full-width-flex">
                         <div className="ward_input_wrap">
                           <div className="input_row">
-                            <div className="input_wrap direction-column">
+                            <div className="input_wrap">
                               <label>set volume up</label>
                               <select
                                 value={this.state.selvalue}
                                 onChange={this.selhandleChange}
-                                className="border-btm"
+                                className="border-btm form-control cstm-input"
                               >
                                 <option value="set-stop-volume-1">
                                   set stop volume 1

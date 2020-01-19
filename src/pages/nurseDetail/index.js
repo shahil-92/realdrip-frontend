@@ -224,6 +224,7 @@ export class NurseDetail extends React.Component {
                                 <select
                                   value={this.state.selvalue}
                                   onChange={this.selhandleChange}
+                                  className="form-control cstm-input"
                                 >
                                   <option value="set-stop-volume-1">
                                     set stop volume 1
